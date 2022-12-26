@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Site Title</title>
+		<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+		<meta name="description" content="Site description" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Site Title" />
+		<meta property="og:description" content="Site description" />
+		<meta property="og:image" content="assets/img/opengraph.jpeg" />
+		<meta property="og:locale" content="id_ID" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico" />
+		<meta name="theme-color" content="#ffffff" />
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js" as="script" />
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" as="style" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#countdown {
+				font-size: clamp(0.85rem, 2vw, 30px);
+				text-align: center;
+				font-weight: bold;
+				color: #222;
+				background: #fff;
+				position: sticky;
+				padding: 10px 20px;
+				width: 60%;
+				margin: 0px auto;
+				margin-top: 0px;
+				display: block;
+				border-radius: 30px;
+				min-height: 37px;
+				margin-bottom: 50px;
+			}
+			.rounded-xl {
+				border-radius: 25px;
+			}
+			.bg-grad {
+				background: linear-gradient(-45deg, #b95536, #621e8f, #1a7799, #18886e);
+				background-size: auto;
+				background-size: auto;
+				background-size: 400% 400%;
+				animation: gradient 120s ease infinite;
+			}
+			@keyframes gradient {
+				0% {
+					background-position: 0% 50%;
+				}
+				50% {
+					background-position: 100% 50%;
+				}
+				100% {
+					background-position: 0% 50%;
+				}
+			}
+			h1.h1 {
+				font-size: calc(1.5rem + 1.5vw) !important;
+			}
+			.btn-outline-light.rounded-pill {
+				border-width: 2px;
+			}
+
+			.z-1 {
+				z-index: 1;
+			}
+
+			.env {
+				scale: 1;
+				overflow: hidden;
+				margin-top: 0px;
+				position: absolute;
+				z-index: 0;
+			}
+
+			.card-body {
+				z-index: 2;
+			}
+
+			@media (min-width: 1200px) {
+				.env {
+					scale: 1.8;
+				}
+			}
+		</style>
+	</head>
+	<body class="" >
+		<header class="">
+			<div class="my-3 container-fluid">
+				<div class="row">
+					<div class="mx-auto col-md-11">
+						<div class="row align-items-center">
+							<div class="col-auto mr-auto">
+								<a class="my-0 mr-auto navbar-brand font-weight-bolder h4" href="index.html">
+									<img src="assets/img/logo-idwebhost.svg" alt="idwebhost-web-hosting-terbaik" width="150" height="26" />
+								</a>
+								<p class="ml-3 d-lg-inline d-none">Dapatkan jangkauan lebih luas dengan membangun website di IDwebhost</p>
+							</div>
+							<div class="col-auto">
+								<a class="px-4 btn rounded-pill badge-success" href="https://api.whatsapp.com/send?phone=6282147439346"> <span class="d-none d-lg-inline">Chat</span> Whatsapp </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container-fluid">
+			<section class="row">
+				<div class="d-none d-lg-block"></div>
+				<div class="mx-auto overflow-hidden shadow col-11 bg-grad rounded-xl text-light">
+					<div class="my-5 row align-items-center">
+						<div class="mx-auto mt-3 col-11">
+							<div class="row align-items-center">
+								<div class="col-md-5 col-xl-4 ml-auto">
+									<img src="assets/img/email-hosting.png" class="img-fluid" alt="email-hosting-idwebhost" />
+									<div id="countdown" class="mt-n5 row"></div>
+								</div>
+								<div class="col-lg-6 mr-auto">
+									<h1 class="text-light font-weight-bold h1">Email Bisnis Profesional</h1>
+									<p class="my-4 lead text-light font-weight-light" style="opacity: 1;">Tingkatkan kepercayaan pelanggan dengan memakai email profesional nama@bisniskamu.com. Kirim email super mudah hingga puluhan ribu pesan/hari.</p>
+									<div class="my-5 h4 font-weight-light">
+										<del class="text-light">Rp199.900,-</del>
+										<div class="ml-2 badge badge-success">42% OFF</div>
+										<div class="mt-3 h1 text-light">
+											<span class="h5 text-light font-weight-light">Mulai</span> <br />
+											Rp69.900,-<span class="h5 text-light font-weight-light"> /bulan</span>
+										</div>
+									</div>
+									<a class="px-4 btn btn-lg btn-outline-light rounded-pill buy-clicks" id="" href="#buy-now" onclick="$('#buy-now').collapse('show')">Pesan Sekarang</a>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-5 mt-5 row card-hover" style=" background: rgb(255,255,255);
+			background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,234,241,1) 100%); " id="pricelist">
+				<div class="mx-auto col-lg-8 col-11">
+					<div class="mb-3 text-center row">
+						
+						
+						<div class="mx-auto col-xl col-sm-6 col-xl-4">
+							<div class="mb-4 overflow-hidden shadow card mt-md-n4">
+								<svg class="env" style="margin-top: 28px" id="e6HpFXPsEoR1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 100" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+									<path d="M0,0Q112.888226,64.748201,150,64.748201t150-64.748201L0,0Z" fill="#007bff" stroke-width="0.6" />
+								</svg>
+								<div class="px-3 py-2 badge-primary badge rounded-15-top w-100 z-1">⚡️ Most Popular ⚡️</div>
+
+								<h3 class="mt-3 mb-5 text-white font-weight-bold ls-1 z-1"><span class="lead">HostMail</span> Pro</h3>
+								<div class="pt-0 card-body">
+									<del class="small">Rp119.900</del> <span class="badge badge-danger"> 42% OFF</span>
+									<div class="mt-2 h4 card-title pricing-card-title mo">Rp69.900</div>
+									<ul class="mt-5 mb-5 text-left list-unstyled">
+										<li class="my-1 item-check">Space 25GB</li>
+										<li class="my-1 item-check">Unlimited Akun Email</li>
+										<li class="my-1 item-check">Web Panel cPanel</li>
+										<li class="my-1 item-check">SSL Certificate</li>
+										<li class="my-1 item-check">Up to 55 Email Penerima</li>
+										<li class="my-1 item-check">300 email per jam</li>
+										<li class="my-1 item-check">Lampiran up to 30MB</li>
+										<li class="my-1 item-check">Weekly Auto Backup</li>
+										<li class="my-1 item-check">Filter Anti Spam</li>
+										<li class="my-1 item-check">Support 24/7</li>
+									</ul>
+									<a href="#buy-now" class="btn btn-warning btn-block buy-clicks proSelected">Langganan Sekarang</a>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto col-xl col-sm-6 col-xl-4">
+							<div class="mb-4 overflow-hidden shadow card">
+								<svg class="env" id="e6HpFXPsEoR1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 100" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+									<path d="M0,0Q112.888226,64.748201,150,64.748201t150-64.748201L0,0Z" fill="#007bff" stroke-width="0.6" />
+								</svg>
+								<h3 class="mt-3 mb-5 text-white font-weight-bold ls-1 z-1"><span class="lead">HostMail</span> Biz</h3>
+								<div class="pt-0 card-body">
+									<del class="small">Rp169.900</del> <span class="badge badge-danger"> 29% OFF</span>
+									<div class="mt-2 h4 card-title pricing-card-title mo">Rp119.900</div>
+									<ul class="mt-5 mb-5 text-left list-unstyled">
+										<li class="my-1 item-check">Space 50GB</li>
+										<li class="my-1 item-check">Unlimited Akun Email</li>
+										<li class="my-1 item-check">Web Panel cPanel</li>
+										<li class="my-1 item-check">SSL Certificate</li>
+										<li class="my-1 item-check">Up to 55 Email Penerima</li>
+										<li class="my-1 item-check">400 email per jam</li>
+										<li class="my-1 item-check">Lampiran up to 30MB</li>
+										<li class="my-1 item-check">Weekly Auto Backup</li>
+										<li class="my-1 item-check">Filter Anti Spam</li>
+										<li class="my-1 item-check">Support 24/7</li>
+									</ul>
+									<a href="#buy-now" class="btn btn-warning btn-block buy-clicks bizSelected">Langganan Sekarang</a>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto col-xl col-sm-6 col-xl-4">
+							<div class="mb-4 overflow-hidden shadow card">
+								<svg class="env" id="e6HpFXPsEoR1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 100" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+									<path d="M0,0Q112.888226,64.748201,150,64.748201t150-64.748201L0,0Z" fill="#007bff" stroke-width="0.6" />
+								</svg>
+								<h3 class="mt-3 mb-5 text-white font-weight-bold ls-1 z-1"><span class="lead">HostMail</span> Corp</h3>
+								<div class="pt-0 card-body">
+									<del class="small">Rp199.900</del> <span class="badge badge-danger"> 14% OFF</span>
+									<div class="mt-2 h4 card-title pricing-card-title mo">Rp169.900</div>
+									<ul class="mt-5 mb-5 text-left list-unstyled">
+										<li class="my-1 item-check">Space 100GB</li>
+										<li class="my-1 item-check">Unlimited Akun Email</li>
+										<li class="my-1 item-check">Web Panel cPanel</li>
+										<li class="my-1 item-check">SSL Certificate</li>
+										<li class="my-1 item-check">Up to 55 Email Penerima</li>
+										<li class="my-1 item-check">500 email per jam</li>
+										<li class="my-1 item-check">Lampiran up to 30MB</li>
+										<li class="my-1 item-check">Weekly Auto Backup</li>
+										<li class="my-1 item-check">Filter Anti Spam</li>
+										<li class="my-1 item-check">Support 24/7</li>
+									</ul>
+									<a href="#buy-now" class="btn btn-warning btn-block buy-clicks corpSelected">Langganan Sekarang</a>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12">
+					<p class="text-center small">Harga email hosting belum termasuk PPN 11%</p>
+				</div>
+			</section>
+			<section class="py-5 row bg-light collapse" id="buy-now">
+				<div class="py-5 mx-auto col-xl-5">
+					<div class="border-0 shadow card">
+						<div class="bg-transparent card-header small" id="myModalLabel">Silakan masukkan data diri kamu di bawah ini</div>
+						<div class="card-body" id="register">
+							<div id="msg-finishpage"></div>
+							<div id="msg-customer"></div>
+							<form id="formcustomerhostingpromo" class="form-horizontal" method="post" action="https://idwebhost.com/index.php?action=webcontent.lp_hosting_adword_save" novalidate="novalidate">
+								<input type="hidden" name="token" value="89d5b32853bce680b3c95dc9d662c18d164351b62ddb9cafe255f58e52b63891" />
+								<input type="hidden" id="gclid_field" name="gclid_field" value="" />
+								<input type="hidden" id="total" name="total" value="" />
+								<div class="form">
+									<div class="form-group">
+										<label for="">Nama Lengkap</label>
+										<input id="namalengkap" name="namalengkap" type="text" class="form-control" aria-describedby="nameHelp" />
+									</div>
+									<div class="form-group">
+										<label for="">Email address</label>
+										<input id="email" name="email" type="email" class="form-control" aria-describedby="emailHelp" />
+									</div>
+									<div class="form-group">
+										<label for="">No Handphone</label>
+										<input id="handphone" name="handphone" type="text" class="form-control" aria-describedby="nameHelp" />
+									</div>
+									<div class="form-group">
+										<label for="">Pilih Paket</label>
+										<select id="paket" name="paket" class="form-control">
+											<option selected disabled>-- Pilih --</option>
+											<option value="paket-pro">HostMail Pro</option>
+											<option value="paket-biz">HostMail Biz</option>
+											<option value="paket-corp">HostMail Corp</option>
+										</select>
+									</div>
+								</div>
+								<div class="my-4" id="kontrak" style="display:none">
+									<div class="p-4 rounded bg-light">
+										<div class="form-group kontrak-paket" style="display:none" id="paket-pro">
+											<label for="">Pilih Kontrak</label>
+											<select id="kontrak1" name="kontrak" class="form-control">
+												<option value="1">1 tahun (Rp 69.000)</option>
+												<option value="2">2 tahun (Rp 119.000)</option>
+												<option value="3">3 tahun (Rp 169.000)</option>
+											</select>
+											<div class="odr mt-3">
+												<div class="odr-1th">
+													<del class="text-muted">Rp119.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat Rp50.000</span>
+												</div>
+												<div class="odr-2th" style="display:none">
+													<del class="text-muted">Rp169.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat Rp50.000</span>
+												</div>
+												<div class="odr-3th" style="display:none">
+													<del class="text-muted">Rp199.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat Rp30.000</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group kontrak-paket" style="display:none" id="paket-biz">
+											<label for="">Pilih Kontrak</label>
+											<select id="kontrak2" name="kontrak" class="form-control">
+												<option value="1">1 tahun (Rp 99.000)</option>
+												<option value="2">2 tahun (Rp 119.000)</option>
+												<option value="3">3 tahun (Rp 269.000)</option>
+											</select>
+											<div class="odr mt-3">
+												<div class="odr-1th">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+												<div class="odr-2th" style="display:none">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+												<div class="odr-3th" style="display:none">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+											</div>
+										</div>
+										<div class="form-group kontrak-paket" style="display:none" id="paket-corp">
+											<label for="">Pilih Kontrak</label>
+											<select id="kontrak3" name="kontrak" class="form-control">
+												<option value="1">1 tahun (Rp 169.000)</option>
+												<option value="2">2 tahun (Rp 219.000)</option>
+												<option value="3">3 tahun (Rp 369.000)</option>
+											</select>
+											<div class="odr mt-3">
+												<div class="odr-1th">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+												<div class="odr-2th" style="display:none">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+												<div class="odr-3th" style="display:none">
+													<del class="text-muted">RpXXX.000/tahun</del>
+													<span class="badge badge-pill badge-success small ml-2">Anda hemat RpXX.000</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-body px-0 pb-1" id="has-domain-q">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="custom-control custom-radio p-0 rad-1 active">
+												<input type="radio" id="has-domain-no-radio" name="havedomainname" class="custom-control-input" name="havedomainname" value="0" checked="checked">
+												<label role="button" class="custom-control-label h6 font-weight-bold bg-light py-2 pl-3 pr-5 d-block radio-right rounded-lg" for="has-domain-no-radio">
+													Domain Baru
+												</label>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="custom-control custom-radio p-0 rad-1">
+												<input type="radio" id="has-domain-yes-radio" name="havedomainname" class="custom-control-input" name="havedomainname" value="1">
+												<label role="button" class="custom-control-label h6 font-weight-bold bg-light py-2 pl-3 pr-5 d-block radio-right rounded-lg" for="has-domain-yes-radio">
+													Sudah Punya Domain
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="have-domain-0 px-0 card-body has-domain" id="has-domain-no" style="display: block;">
+									<div class="mb-2">Masukkan nama domain</div>
+									<div class="inputcontainer-domain">
+										<!-- Alert success -->
+										<div class="results_display alert small alert-success available">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-success mr-2">
+												<polyline points="20 6 9 17 4 12" />
+											</svg>
+											Domain Tersedia
+										</div>
+
+										<!-- Alert failed -->
+										<div class="results_display alert small alert-danger notavailable">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x text-danger mr-2">
+												<line x1="18" y1="6" x2="6" y2="18" />
+												<line x1="6" y1="6" x2="18" y2="18" />
+											</svg>
+											Domain Tidak Tersedia
+										</div>
+										<div class="input-group mb-3">
+											<div class="container-spinner" style="width:calc(100% - 55px)">
+												<input type="text" id="checkdomain" class="form-control domainname-available" name="checkdomain" placeholder="domainmu.com">
+												<div id="checkdomain-spinner" class="spinner-border spinner-border-sm float-right input-spinner" role="status" style="display: none;"><span class="sr-only">Loading...</span></div>
+											</div>
+											<div class="input-group-append border-left-0">
+												<button type="button" class="btn btn-primary">
+													Cari
+												</button>
+											</div>
+										</div>
+										<div class="py-2 px-3 bg-light rounded-lg my-2 small" id="checkdomain-price">
+											Harga Domain Rp129.900
+										</div>
+									</div>
+								</div>
+								<div class="have-domain-1 px-0 card-body has-domain" id="has-domain-yes">
+									<div class="form-check radio m0">
+										<label class="form-check-label" for="radiodomainexist1">
+											<input class="form-check-input domain-radio" type="radio" name="radiodomainexist" id="radiodomainexist1" value="1" checked="">
+											Hosting Saja
+											<div class="badge alert-warning font-weight-normal">
+												Gratis domain selamanya tidak berlaku
+											</div>
+										</label>
+									</div>
+									<div class="form-check radio m0">
+										<label class="form-check-label" for="radiodomainexist2">
+											<input class="form-check-input domain-radio" type="radio" name="radiodomainexist" id="radiodomainexist2" value="2">
+											Hosting + Transfer Domain
+										</label>
+									</div>
+									<div class="mt-3">
+										<div class="mb-2">Masukkan nama domain</div>
+										<div class="inputcontainer-domain">
+											<!-- Alert success -->
+											<!-- <div class="results_display alert small alert-success available">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-success mr-2">
+													<polyline points="20 6 9 17 4 12" />
+												</svg>
+												Domain Ditemukan
+											</div> -->
+
+											<!-- Alert failed -->
+											<!-- <div class="results_display alert small alert-danger notavailable">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x text-danger mr-2">
+													<line x1="18" y1="6" x2="6" y2="18" />
+													<line x1="6" y1="6" x2="18" y2="18" />
+												</svg>
+												Domain Tidak Ditemukan
+											</div> -->
+											<div class="input-group">
+												<div class="container-spinner" style="width:calc(100% - 55px)">
+													<input type="text" id="domainorder" class="form-control domainname-available" name="domainorder" placeholder="domainmu.com">
+													<div id="domainorder-spinner" class="spinner-border spinner-border-sm float-right input-spinner" role="status" style="display: none;"><span class="sr-only">Loading...</span></div>
+												</div>
+												<div class="input-group-append border-left-0">
+													<button type="button" class="btn btn-primary">
+														Cari
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="mt-3 step-epp" style="display:none">
+										<div class="mb-2">Masukkan Kode EPP Domainmu</div>
+										<div class="input-group mb-3">
+											<input type="text" class="form-control border-right-0" name="eppcode" id="inputAuthCode" placeholder="Kode EPP / Auth Code" data-toggle="tooltip" data-placement="left" data-trigger="manual" title="" data-original-title="Harus Diisi">
+											<div class="input-group-append border-left-0">
+												<span class="input-group-text bg-white">
+													<a href="" data-toggle="tooltip" data-placement="left" title="" class="float-right" data-original-title="Untuk transfer domain memerlukan kode yang digunakan untuk transfer domain yang sering disebut dengan Kode EPP / Auth Code">
+														<i data-feather="info"></i> Info
+													</a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="">Total</label>
+									<input id="total" name="total" type="text" class="form-control font-weight-bold text-right" aria-describedby="total" value="1.300.000" disabled readonly />
+									<small class="text-muted">+ PPN 11%</small>
+								</div>
+								<div class="row no-gutters small">
+									<div class="col-12">
+										<div class="form-group">
+											<div class="form-check">
+												<input id="tos_checkbox" type="checkbox" class="form-check-input" />
+												<label class="form-check-label" for="tos_checkbox"> Dengan ini saya menyetujui <a href="https://idwebhost.com/tos" target="_blank">Syarat dan Ketentuan</a> </label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row no-gutters small">
+									<div class="col-12">
+										<div class="form-group">
+											<div class="form-check">
+												<input id="newsletter_checkbox" name="subscr_info" type="checkbox" value="1" class="form-check-input" checked="" />
+												<label class="form-check-label" for="newsletter_checkbox"> Saya ingin mengetahui informasi, berita, dan promo terbaru IDwebhost </label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="">
+									<button id="beli" type="submit" class="btn btn-lg btn-warning btn-block font-weight-bold" disabled="disabled">Beli Sekarang</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-5 row" >
+				<div class="mx-auto col-xl-6">
+					<div class=" text-center  " >
+						<img src="assets/img/email-hosting/guaranteed.png" alt="idwebhost-web-hosting-terbaik" width="100" height="100">
+						<h3 class="mt-4 font-weight-bold h2">Jaminan 100% Keamanan <br> & Perlindungan Email Bisnis
+						</h3>
+						<p class="m-0 lead">Tingkatkan produktivitas bisnis dengan Email Hosting dari IDwebhost. Bebas gangguan virus & malware. Email bisnis tanpa ribet dengan nama domain bisnis-mu.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="py-5 row " style="background: #203f7f1c">
+				<div class="mx-auto col-lg-9 col-11">
+					<div class="row ">
+						<div class="col-md-12">
+							<div class="py-2 text-center ">
+								<h2 class="my-5 font-weight-bold">Kenapa Harus Memilih Email Hosting IDwebhost?</h2>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/email-hosting/account.png"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Unlimited Akun Email</h3>
+									<p class="mb-4">Kamu bisa bikin akun email tanpa batas. Maksimalkan potensi bisnis dengan memanfaatkan fitur email hosting by IDwebhost.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/email-hosting/satisfaction.png"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Jaminan Uptime Server 99.9%</h3>
+									<p class="mb-4">IDwebhost menjamin performa stabil tanpa resiko down. Server selalu dalam kondisi prima.</p>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/email-hosting/backup.png"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Weekly Auto Backup</h3>
+									<p class="mb-4">Hilangkan rasa khawatir email penting hilang karena terhapus. IDwebhost menjamin layanan email hosting memiliki fitur weekly auto backup.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/8899071.png"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Kirim Email Sekaligus</h3>
+									<p class="mb-4">Email yang bisa kamu kirim dalam periode 1 jam adalah sebanyak 500
+										email. Kamu bisa memberikan informasi bisnis kepada pelanggan, tapi email ini
+										berbeda dengan newsletter ( <a target="_blank" href="https://idwebhost.com/tos">lihat TOS</a> )
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/lineicon/1008892.svg"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Gratis Sertifikat SSL</h3>
+									<p class="mb-4">Email bisnis lebih tangguh dengan jaminan Sertifikat SSL. Semua aktivitas email bisnis terenkripsi, termasuk email server dan email klien.
+									</p>
+	
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/lineicon/448563.svg"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Support 24/7
+									</h3>
+									<p class="mb-4">Layanan customer service selalu siaga membantu apapun masalah kamu. IDwebhost siap memberikan solusi tepat & cepat.</p>
+	
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/lineicon/386609.svg"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Support Berbagai Webmail
+									</h3>
+									<p class="mb-4">Email hosting IDwebhost bisa kamu kelola menggunakan webmail Horde dan RoundCube.
+									</p>
+	
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto my-3 col-md-5">
+							<div class="row no-gutters">
+								<div class="col-2">
+									<div class="p-2 p-sm-3 rounded-xl bg-warning">
+										<img loading="lazy" src="assets/img/lineicon/3408612.svg"
+											alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+									</div>
+								</div>
+								<div class="pl-4 col-10">
+									<h3 class="mb-3 font-weight-bold h5">Top Mail Client</h3>
+									<p class="mb-4">Email bisnis IDwebhost bisa dikonfigurasi dengan aplikasi mail seperti Windows Mail, Apple Mail, Microsoft Outlook, Thunderbird, eMClient, MailSpring dan aplikasi mail populer lain.</p>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="testi" class="py-5 row bg-grad" >
+				<div class="mx-auto col-md-10">
+					<div class="row justify-content-md-center">
+						<div class="mx-auto col-md-7 ">
+							<div class="py-2 text-center">
+								<img src="assets/img/425058.png" alt="email-hosting-idwebhost" width="100">
+								<h4 class="mt-5  text-light">Nikmati kemudahan komunikasi dalam bisnis dengan menggunakan email bisnis profesional. Coba sekarang dan rasakan bisnis lebih baik.
+
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="testi" class="py-5 row bg-grad" style=" background: rgb(255,255,255);
+			background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(230,234,241,1) 100%); ">
+				<div class="mx-auto mb-5 col-xl-10 col-md-10">
+					<div class="row justify-content-md-center">
+						<div class="mx-auto col-md-10">
+							<div class="py-2 text-center">
+								<h2 class="mt-5 font-weight-bold">Apa Kata Pelanggan Kami?</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mx-auto col-lg-7 col-xl-6 col-md-11">
+					<div class="px-5 row align-items-center justify-content-md-center list-testi">
+						<div class="mx-auto col-auto">
+							<div class="mb-2 bg-white border-0 shadow-sm card">
+								<div class="card-body">
+									<div class="flex">
+										<img class="mx-auto mt-3" src="assets/img/google-logo.svg" alt="review-google" width="24" height="24" />
+									</div>
+									<blockquote class="text-center ">
+										<div class="my-3 rating text-warning w-100">★ ★ ★ ★ ★</div>
+										<p class="mb-4">Jangan ragu hosting disini, harga merakyat, customer service gercep, teknisi tanggap dan profesional.. Kalo ada bintang 1000 aku kasih 2000 wkwkwk
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto col-auto">
+							<div class="mb-2 bg-white border-0 shadow-sm card">
+								<div class="card-body">
+									<div class="flex">
+										<img class="mx-auto mt-3" src="assets/img/google-logo.svg" alt="review-google" width="24" height="24" />
+									</div>
+									<blockquote class="text-center ">
+										<div class="my-3 rating text-warning w-100">★ ★ ★ ★ ★</div>
+										<p class="mb-4">Dalam hitungan menit semua pertanyaan dan masalah cepat ditanggapi, jarang ada layanan seperti ini. Tingkatkan terus support seperti ini, saya puas selama ini percayakan domain dan hosting saya di IDwebhost
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto col-auto">
+							<div class="mb-2 bg-white border-0 shadow-sm card">
+								<div class="card-body">
+									<div class="flex">
+										<img class="mx-auto mt-3" src="assets/img/google-logo.svg" alt="review-google" width="24" height="24" />
+									</div>
+									<blockquote class="text-center ">
+										<div class="my-3 rating text-warning w-100">★ ★ ★ ★ ★</div>
+										<p class="mb-4">Luar biasa...!!!!!!! Baru aja transfer trus konfirmasi pembayaran, web saya langsug aktif...idwebhost memang terbukti handal dan tercepat dalam pelayanan, ga rugi deh berlangganan disini
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+						<div class="mx-auto col-auto">
+							<div class="mb-2 bg-white border-0 shadow-sm card">
+								<div class="card-body">
+									<div class="flex">
+										<img class="mx-auto mt-3" src="assets/img/google-logo.svg" alt="review-google" width="24" height="24" />
+									</div>
+									<blockquote class="text-center ">
+										<div class="my-3 rating text-warning w-100">★ ★ ★ ★ ★</div>
+										<p class="mb-4">Langganan 2-3 website disini, layanan cepat & ramah dan murah
+										</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="py-5 row" style="background: #203f7f1c">
+				<div class="mx-auto col-auto ">
+					<div class="py-5 text-center">
+						<h2 class="font-weight-bold">FAQ</h2>
+					</div>
+					<div class="accordion" id="emailask">
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingOne">
+								<h3 class="mb-0 text-black">
+									<button class="text-left text-black btn font-weight-bolder btn-block" type="button" data-toggle="collapse" data-target="#emailask1" aria-expanded="false" aria-controls="emailask1">Apa itu email hosting IDwebhost?</button>
+								</h3>
+							</div>
+
+							<div id="emailask1" class="collapse show" aria-labelledby="headingOne" data-parent="#emailask">
+								<div class="card-body">
+									<p>Email hosting adalah layanan server hosting IDwebhost khusus untuk layanan email, digunakan untuk aktivitas mengirim dan menerima email.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingTwo">
+								<h3 class="mb-0 text-black">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask2" aria-expanded="false" aria-controls="emailask2">Apa perbedaan email hosting dan email biasa?
+									</button>
+								</h3>
+							</div>
+							<div id="emailask2" class="collapse" aria-labelledby="headingTwo" data-parent="#emailask">
+								<div class="card-body">
+									<p>Email hosting dapat membuat bisnis kamu terlihat lebih profesional dan terpercaya karena bisa custom email nama@bisniskamu.com yang tidak akan kamu dapatkan di layanan email gratis. Berbagai fitur unggulan juga akan kamu dapatkan dengan menggunakan email hosting seperti kapasitas yang lebih besar, layanan backup email, bebas iklan dan pengiriman email yang lebih banyak.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingThree">
+								<h3 class="mb-0">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask3" aria-expanded="false" aria-controls="emailask3">Mengapa saya perlu menggunakan email hosting?</button>
+								</h3>
+							</div>
+							<div id="emailask3" class="collapse" data-parent="#emailask">
+								<div class="card-body">
+									<p class="">Dengan menggunakan email hosting IDwebhost bisnis, kamu akan mendapatkan citra positif karena memiliki server email sendiri yang aman untuk saling berbagi data. Sehingga proses transaksi bisnis menggunakan email menjadi lebih aman dan nyaman.</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingFour">
+								<h3 class="mb-0">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask4" aria-expanded="false" aria-controls="emailask4">Apa bisa transfer layanan email hosting lain ke IDwebhost</button>
+								</h3>
+							</div>
+							<div id="emailask4" class="collapse" data-parent="#emailask">
+								<div class="card-body">
+									<p class="">Kamu bisa melakukan transfer ke email hosting IDwebhost dengan mudah dan cepat. Hubungi Customer Support IDwebhost yang siaga 24/7 dan proses transfer email hosting akan segera dilakukan. ( <a href="https://idwebhost.com/tos">lihat TOS</a> )
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingFive">
+								<h3 class="mb-0 text-black">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask5" aria-expanded="false" aria-controls="emailask5">Apakah email hosting IDwebhost bisa diakses via smartphone?</button>
+								</h3>
+							</div>
+							<div id="emailask5" class="collapse" data-parent="#emailask">
+								<div class="card-body">
+									<p class="">Bisa, email hosting IDwebhost dapat digunakan melalui berbagai device termasuk pc atau laptop, tablet maupun smartphone kapan saja dan dimana saja.</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingSix">
+								<h3 class="mb-0 text-black">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask6" aria-expanded="false" aria-controls="emailask6">Apakah saya perlu memiliki pengetahuan IT untuk memakai layanan email hosting?</button>
+								</h3>
+							</div>
+							<div id="emailask6" class="collapse" data-parent="#emailask">
+								<div class="card-body">
+									<p class="">Tidak. Kamu cukup order dan menginformasikan kebutuhan email hosting, selanjutnya tim Customer Support kami yang akan membuatkan email hosting untuk kamu. Kami juga siap memberikan panduan untuk mempermudah dalam menggunakan email hosting ini.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="mb-4 border-0 card bg-light">
+							<div class="bg-transparent card-header" id="headingSeven">
+								<h3 class="mb-0 text-black">
+									<button class="text-left text-black btn font-weight-bolder btn-block collapsed" type="button" data-toggle="collapse" data-target="#emailask7" aria-expanded="false" aria-controls="emailask7">Apakah email hosting IDwebhost bisa dikonfigurasi ke Gmail?</button>
+								</h3>
+							</div>
+							<div id="emailask7" class="collapse" data-parent="#emailask">
+								<div class="card-body">
+									<p class="">Kamu bisa melakukan konfigurasi email hosting IDwebhost ke akun Gmail.</a> 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="my-5 text-center">
+						<a class="px-5 py-3 btn btn-lg btn-outline-light bg-grad rounded-pill buy-clicks" id="" href="#buy-now" onclick="$('#buy-now').collapse('show')">Pesan Sekarang</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="small text-dark" style="background: #203f7f1c">
+			<div class="container-fluid">
+					<div class="mx-auto py-4 text-center col-xl-10">
+						<p>Copyright © 2021 IDwebhost Allright Reserved</p>
+					</div>
+			</div>
+		</footer>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- slick -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<script src="assets/js/main.js"></script>
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+		<!-- css-->
+		<!-- icon -->
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			var timeInSecs;
+			var ticker;
+
+			function startTimer(secs) {
+				timeInSecs = parseInt(secs);
+				ticker = setInterval("tick()", 1000);
+			}
+
+			function tick() {
+				var secs = timeInSecs;
+				if (secs > 0) {
+					timeInSecs--;
+				} else {
+					clearInterval(ticker);
+					startTimer(30 * 60); // 4 minutes in seconds
+				}
+
+				var days = Math.floor(secs / 86400);
+				secs %= 86400;
+				var hours = Math.floor(secs / 3600);
+				secs %= 3600;
+				var mins = Math.floor(secs / 60);
+				secs %= 60;
+				var pretty = (hours < 10 ? "0" : "") + hours + ":" + (mins < 10 ? "0" : "") + mins + ":" + (secs < 10 ? "0" : "") + secs;
+
+				document.getElementById("countdown").innerHTML = pretty;
+			}
+
+			startTimer(30 * 60); // 4 minutes in seconds
+
+			//Credits to Philip M from codingforum
+
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+
+			$(".list-testi").slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: "<span class='shadow prevArrow rounded-pill'><i data-feather='arrow-left' ></i></span>",
+				nextArrow: "<span class='shadow nextArrow rounded-pill'><i data-feather='arrow-right' ></i></span>",
+				adaptiveHeight: true,
+			});
+		</script>
+		<script>
+			$('.proSelected,.bizSelected,.corpSelected').click(function(e) {
+				let trigger = e.target.classList;
+				let keyword = 'Selected';
+				for (i=0;i<trigger.length;i++) {
+					if ( trigger[i].indexOf(keyword) > -1 ) {
+						let target = trigger[i].split(keyword);
+						$('#paket').val('paket-' + target[0]);
+						$('.kontrak-paket').hide();
+						$('#paket-' + target[0]).show();
+					}
+				}
+				$('#buy-now').collapse('show');
+				$('#kontrak').show();
+			});
+
+			$('#paket').change(function() {
+				$('#kontrak').show();
+				$('.kontrak-paket').hide();
+				$('#' + $(this).val()).show();
+			});
+
+			$('[name="kontrak"]').change(function() {
+				let parent = $(this).closest('.kontrak-paket');
+				parent.find('.odr>*').hide();
+				parent.find('.odr-' + $(this).val() + 'th').show();
+			})
+
+			$('input[name$=havedomainname]').change(function () {
+				var opsi = $(this).val()
+
+				$('[class$=have-domain-]').hide()
+				$('.rad-1').removeClass('active')
+				$(this).closest('.rad-1').addClass('active')
+				$('.have-domain-' + opsi).show()
+			})
+
+			$('input[name$=radiodomainexist]').change(function () {
+				var opsi = $(this).val()
+
+				if ( opsi == 1 ) {
+					$('.step-epp').hide()
+				} else {
+					$('.step-epp').show()
+				}
+			})
+
+			$('#checkdomain,#domainorder').each(function() {
+				let parent = $(this)
+
+				parent.closest('.input-group').find('button').on('click', function() {
+					$('#' + parent.attr('id') + '-spinner').show()
+				})
+
+				parent.on('keypress', function(e) {
+					if (e.which == 13) {
+						$('#' + e.target.id + '-spinner').show()
+					} else {
+						$('#' + e.target.id + '-spinner').hide()
+					}
+				})
+			})
+		</script>
+		<style>
+			.rad-1.active {
+				pointer-events: none;
+			}
+			.radio-right.custom-control-label:before,
+			.radio-right.custom-control-label:after {
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			#has-domain-q .custom-radio,
+			#has-domain-q .custom-control-label {
+				height: 100%;
+			}
+			#has-domain-q .custom-control-label {
+				display: flex !important;
+				align-items: center;
+			}
+
+			@media (max-width: 767px) {
+				#has-domain-q .custom-radio .custom-control-label {
+					border: none;
+				}
+			}
+
+			.container-spinner {
+				position: relative;
+			}
+			.input-spinner {
+				position: absolute;
+				right: 10px;
+				top: calc(50% - 8px);
+			}
+
+			.input-group .input-group-text {
+				height: 100%;
+				padding: 0 .5rem;
+			}
+			.input-group .container-spinner input {
+				border-top-right-radius: 0;
+				border-bottom-right-radius: 0;
+			}
+		</style>
+	</body>
+</html>

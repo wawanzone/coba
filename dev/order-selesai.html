@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="id">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Site Title</title>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="description" content="Site description">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Open Graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Site Title">
+		<meta property="og:description" content="Site description">
+		<meta property="og:image" content="assets/img/opengraph.jpeg">
+		<meta property="og:locale" content="id_ID">
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Preconnect -->
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		<link rel="preconnect" href="https://ajax.googleapis.com" />
+		<!-- Preload JS -->
+		<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js" as="script" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" as="script" />
+		<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" as="script" /> -->
+		<link rel="preload" href="assets/js/main.js" as="script" />
+		<!-- Preload CSS -->
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" as="style" />
+		<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" /> -->
+		<link rel="preload" href="assets/css/main.css" as="style" />
+		<!-- Preload Image -->
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+
+	<body class="">
+		<header class="become sticky-top shadow-xs">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+				<div class="container">
+					<!-- <div class="custom-control custom-switch my-3 mr-3">
+						<input type="checkbox" class="custom-control-input input-lg" onclick="darkLight()" id="customSwitch1">
+						<label for="customSwitch1" class="custom-control-label" aria-label="dark-mode"></label>
+					</div> -->
+					<a class="navbar-brand font-weight-bolder my-0" href="index.html">
+						<!-- <img src="assets/img/logo-negative.svg" alt="logos" width="150"> -->
+						<img src="assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26">
+					</a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+						<div class="d-none mx-auto d-sm-flex text-light">Yuk, selesaikan pesananmu!</div>
+						<ul class="navbar-nav ">
+
+							<li class="nav-item mr-2 my-2">
+								<a href="member-area/member-area-dashboard.html" class="  btn-outline-light btn rounded-pill px-3">
+									Login
+								</a>
+							</li>
+							<li class="nav-item my-2">
+								<a href="https://wa.me/6281212227730" class=" btn btn-success rounded-pill  " data-toggle="tooltip" data-placement="bottom" title="" aria-label="whatsapp" data-original-title="Chat via Whatsapp">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#fff" style="margin-bottom: 2px">
+										<path
+											d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+										</path>
+									</svg> <span class="d-lg-none d-inline d-xl-inline">081212227730</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="" style="background:#203f7f1c;min-height:90vh">
+			<main class="container">
+				<div class=" py-5 mx-auto ">
+					<div class="alert alert-success mb-4" role="alert">
+						<h4 class="alert-heading">Well done!</h4>
+						<div class="mb-0">Pesanan anda sudah kami terima, silahkan lakukan pembayaran</div>
+					</div>
+					<div class="card border-0 overflow-hidden">
+						<div class="card-header border-0 align-items-center">
+							<div class="row align-items-center">
+								<div class="col">
+									<h5 class="mb-0 h5">Invoice <strong>#964112</strong> </h5>
+									2 Jun 2021
+									<span class="badge badge-danger ">Belum Dibayar</span>
+								</div>
+								<div class="col-auto ml-auto ">
+									<a href="index.html" class="btn  btn-warning btn-block font-weight-bold">Bayar Sekarang</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row my-4">
+								<div class="col-sm-3">
+									<h6 class="mb-3">Silahkan transfer:</h6>
+									<div>
+										<h4 class="font-weight-bold text-primary mb-4">Rp1.311.455</h4>
+									</div>
+								</div>
+								<div class="col-sm-auto">
+									<h6 class="mb-3">Ke Rekening:</h6>
+									<div class="row no-gutters p-3 border rounded bg-light">
+										<div class="col-auto">
+											<img class="h20" src="assets/img/bca.svg">
+										</div>
+										<div class="col pl-4">
+											<strong>8165103030</strong> <br>
+											Sayid Munawar <br>
+											Bank BCA Cabang Semarang
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-12 my-3">
+									<div class="alert alert-warning mb-4" role="alert">
+										Silakan tuliskan INV:964112 pada berita transfer agar order Anda dapat langsung aktif.
+									</div>
+								</div>
+								<div class="col-sm-6 mb-3">
+									<h6 class="mb-3">Ditagihkan Kepada:</h6>
+									<div>
+										<strong>Achmad Zaky</strong>
+									</div>
+									<div>Kompleks Warga Indah No 9C, Jl Attahiriyah Pejaten Barat Pasar minggu</div>
+									<div>Jakarta Selatan, DKI Jakarta, 12510</div>
+									<div>Indonesia</div>
+								</div>
+
+								<div class="col-sm-6 mb-3">
+									<h6 class="mb-3">Bayar Kepada:</h6>
+									<div>
+										<strong>© CV. JogjaCamp</strong>
+									</div>
+									<div>Jl. Perintis Kemerdekaan No. 33 Yogyakarta 55161.</div>
+									<div>Telp: (0274) 415585, 415584</div>
+									<div>Fax (0274) 385603</div>
+									<div><a href="https://idwebhost.com/pembayaran">https://idwebhost.com/pembayaran</a></div>
+								</div>
+
+
+
+							</div>
+
+							<div class="table-responsive-sm">
+								<table class="table text-black">
+									<thead>
+										<tr>
+											<th class="text-center">#</th>
+											<th>Item</th>
+
+											<th class="text-right">Unit Cost</th>
+											<th class="text-right">Total</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="text-center">1</td>
+											<td class="text-left strong">Register Domain adaband.xyz</td>
+
+											<td class="text-right">Rp129.900</td>
+											<td class="text-right">Rp129.900</td>
+										</tr>
+										<tr>
+											<td class="text-center"></td>
+											<td class="text-left strong">SSL</td>
+
+											<td class="text-right">Rp129.900</td>
+											<td class="text-right">Rp129.900</td>
+										</tr>
+										<tr>
+											<td class="text-center"></td>
+											<td class="text-left strong">Amankan Kontak Domain</td>
+
+											<td class="text-right">Rp129.900</td>
+											<td class="text-right">Rp129.900</td>
+										</tr>
+										<tr>
+											<td class="text-center"></td>
+											<td class="text-left strong">50 Iklan Indonesia Submission</td>
+
+											<td class="text-right">Rp129.900</td>
+											<td class="text-right">Rp129.900</td>
+										</tr>
+										<tr>
+											<td class="text-center">2</td>
+											<td class="text-left strong">Paket Hosting Cute</td>
+
+											<td class="text-right">Rp238.900</td>
+											<td class="text-right">Rp238.900</td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<div class="row">
+								<div class="col-auto ml-auto">
+									<table class="table table-clear text-black">
+										<tbody>
+											<tr>
+												<td class="text-left">
+													<strong>Subtotal</strong>
+												</td>
+												<td class="text-right">Rp8.497.000</td>
+											</tr>
+											<tr>
+												<td class="text-left">
+													<strong>PPN (10%)</strong>
+												</td>
+												<td class="text-right">Rp8.400</td>
+											</tr>
+											<tr>
+												<td class="text-left">
+													<strong>Kode Unik</strong>
+												</td>
+												<td class="text-right">- Rp457</td>
+											</tr>
+											<tr>
+												<td class="text-left">
+													<strong>Kredit</strong>
+												</td>
+												<td class="text-right">Rp5.000</td>
+											</tr>
+											<tr>
+												<td class="text-left">
+													<strong>Total</strong>
+												</td>
+												<td class="text-right h4">
+													<strong>Rp7.477.000</strong>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</div>
+								<div class="col-sm-12 my-3">
+									<div class="alert alert-info mb-4 text-center" role="alert">
+										Kenaikan PPN untuk seluruh produk dan layanan IDwebhost sesuai dengan keputusan pemerintah terkait tarif pajak pertambahan nilai sebesar <b>11%</b> mulai berlaku pada 1 April 2022 .
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="card-footer">
+							<div class="row align-items-justify">
+								<div class="col-sm-6 col-md-3">
+									<a href="" class="btn btn-link btn-block"><i class="bi bi-file-earmark-text"></i> Detail Tagihan</a>
+								</div>
+								<div class="col-sm-6 col-md-3 ">
+									<a href="member-area/member-area-dashboard.html" class="btn btn-link btn-block"><i class="bi bi-speedometer2"></i> Member Area</a>
+								</div>
+								<div class="col-sm-6 col-md-3">
+									<a href="" class="btn btn-success btn-block ">Beli Hosting Murah</a>
+								</div>
+								<div class="col-sm-6 col-md-3 ">
+									<a href="member-area/member-area-dashboard.html" class="btn btn-success btn-block "> Beli Domain Murah</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+			</main>
+		</div>
+		<!-- jQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+		<!-- Main -->
+		<link rel="stylesheet" href="assets/css/main.css">
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<!-- slect -->
+		<link rel=stylesheet href="https://unpkg.com/bootstrap-select@1.13.8/dist/css/bootstrap-select.css" />
+		<script src="https://unpkg.com/bootstrap-select@1.13.8/dist/js/bootstrap-select.min.js"></script>
+		<!-- icon -->
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<!-- slick -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				const $_SELECT_PICKER = $('.my-image-selectpicker');
+
+				$_SELECT_PICKER.find('option').each((idx, elem) => {
+					const $OPTION = $(elem);
+					const IMAGE_URL = $OPTION.attr('data-thumbnail');
+
+					// BASE_URL + IMAGE_URL
+
+					if (IMAGE_URL) {
+						$OPTION.attr('data-content', "<img src='%i'/> %s".replace(/%i/, IMAGE_URL).replace(/%s/, $OPTION.text()))
+					}
+
+				});
+				$_SELECT_PICKER.selectpicker();
+			});
+		</script>
+		<script>
+			// Example starter JavaScript for disabling form submissions if there are invalid fields
+			(function() {
+				'use strict';
+				window.addEventListener('load', function() {
+					// Fetch all the forms we want to apply custom Bootstrap validation styles to
+					var forms = document.getElementsByClassName('needs-validation');
+					// Loop over them and prevent submission
+					var validation = Array.prototype.filter.call(forms, function(form) {
+						form.addEventListener('submit', function(event) {
+							if (form.checkValidity() === false) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
+							form.classList.add('was-validated');
+						}, false);
+					});
+				}, false);
+			})();
+		</script>
+		<script>
+			$(".toggle-password").click(function() {
+				var input = $($(this).attr("toggle"));
+				if (input.attr("type") == "password") {
+					input.attr("type", "text");
+				} else {
+					input.attr("type", "password");
+				}
+			});
+		</script>
+	</body>
+
+</html>

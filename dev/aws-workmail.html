@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site Title</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="description" content="Site description">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Site Title">
+	<meta property="og:description" content="Site description">
+	<meta property="og:image" content="assets/img/opengraph.jpeg">
+	<meta property="og:locale" content="id_ID">
+	<!-- Favicon -->
+	<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+	<link rel="preconnect" href="https://ajax.googleapis.com" />
+	<!-- Preload JS -->
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+		as="script" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" as="script" />
+	<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" as="script" /> -->
+	<link rel="preload" href="assets/js/main.js" as="script" />
+	<!-- Preload CSS -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		as="style" />
+	<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" /> -->
+	<link rel="preload" href="assets/css/main.css" as="style" />
+	<!-- Preload Image -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="email-hosting">
+	<header class="shadow-xs become sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+			<div class="container-fluid">
+				<!-- <div class="my-3 mr-3 custom-control custom-switch">
+	<input type="checkbox" class="custom-control-input input-lg" onclick="darkLight()" id="customSwitch1">
+	<label for="customSwitch1" class="custom-control-label" aria-label="dark-mode"></label>
+</div> -->
+				<a class="my-0 navbar-brand font-weight-bolder" href="index.html">
+					<!-- <img src="assets/img/logo-negative.svg" alt="logos" width="150"> -->
+					<img src="assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+					<ul class="mx-auto navbar-nav ">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle " href="#" id="hosting-dropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Domain <i data-feather="chevron-down"></i>
+							</a>
+							<div class=" dropdown-menu">
+								<a class="py-3 dropdown-item" href="domain-murah.html">
+									<span><i class="mr-2 " data-feather="globe"></i></span> Domain Murah
+								</a>
+								<a class="py-3 dropdown-item" href="domain-id.html">
+									<span><i class="mr-2 " data-feather="flag"></i></span> Domain ID
+								</a>
+								<a class="py-3 dropdown-item" href="https://resellercamp.com">
+									<span><i class="mr-2 " data-feather="refresh-cw"></i></span> Reseller Domain
+								</a>
+								<a class="py-3 dropdown-item" href="domain-gratis.html">
+									<span><i class="mr-2 " data-feather="smile"></i></span> Domain Gratis
+								</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle " href="#" id="hosting-dropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Hosting <i data-feather="chevron-down"></i>
+							</a>
+							<div class=" dropdown-menu">
+								<a class="py-3 dropdown-item" href="hosting-murah.html">
+									<span><i class="mr-2 " data-feather="cloud"></i></span> Hosting Murah
+								</a>
+								<a class="py-3 dropdown-item" href="hosting-ssd.html">
+									<span><i class="mr-2 " data-feather="hard-drive"></i></span> Hosting SSD
+								</a>
+								<a class="py-3 dropdown-item" href="hosting-unlimited.html">
+									<span><i class="mr-2 " data-feather="database"></i></span> Hosting Unlimited
+								</a>
+								<a class="py-3 dropdown-item" href="wordpress-hosting.html">
+									<span><i class="mr-2 " data-feather="server"></i></span> Hosting Wordpress
+								</a>
+								<a class="py-3 dropdown-item" href="hosting-indonesia.html">
+									<span><i class="mr-2 " data-feather="flag"></i></span> Hosting Indonesia
+								</a>
+								<a class="py-3 dropdown-item" href="gsuite.html">
+									<span><i class="mr-2 " data-feather="mail"></i></span> Email Hosting <span
+										class="align-middle badge badge-success d-lg-none d-xl-inline"><small><b>NEW</b></small></span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown1" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Website <i data-feather="chevron-down"></i>
+							</a>
+							<div class=" dropdown-menu">
+								<a class="py-3 dropdown-item" href="jasa-pembuatan-website.html">
+									<span><i class="mr-2 " data-feather="layout"></i></span> Jasa Pembuatan Website
+								</a>
+
+								<a class="py-3 dropdown-item" href="https://www.jejualan.com">
+									<span><i class="mr-2 " data-feather="shopping-bag"></i></span> Jasa Pembuatan Toko
+									Online
+								</a>
+
+								<a class="py-3 dropdown-item" href="prmosi-online.html">
+									<span><i class="mr-2 " data-feather="thumbs-up"></i></span> Jasa Promosi Online
+									<span class="align-middle badge badge-success"><small><b>NEW</b></small></span>
+								</a>
+
+								<a class="py-3 dropdown-item" href="website-desa-gratis.html">
+									<span><i class="mr-2 " data-feather="globe"></i></span> Website Desa Gratis
+								</a>
+								<a class="py-3 dropdown-item" href="http://wawanzone.com/coba/lp-school">
+									<span><i class="mr-2 " data-feather="globe"></i></span> Website Sekolah Gratis
+								</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Layanan <i data-feather="chevron-down"></i>
+							</a>
+							<div class=" dropdown-menu">
+								<a class="py-3 dropdown-item" href="ssl-murah.html">
+									<span><i class="mr-2" data-feather="lock"></i></span> SSL
+								</a>
+								<a class="py-3 dropdown-item" href="dedicated-server.html">
+									<span><i class="mr-2 " data-feather="server"></i></span> Dedicated Server
+								</a>
+								<a class="py-3 dropdown-item" href="gsuite.html">
+									<span><i class="mr-2 " data-feather="package"></i></span> Google Workspace
+								</a>
+
+							</div>
+						</li>
+						<li class="nav-item ">
+							<a class="mr-2 nav-link" href="vps-murah.html">VPS <span class="d-none d-xl-inline">
+									Murah</span> <span
+									class="align-middle badge badge-success d-lg-none d-xl-inline"><small><b>NEW</b></small></span></a>
+						</li>
+						<li class="nav-item ">
+							<a class="mr-2 nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item ">
+							<a class="mr-2 nav-link text-warning" href="promo.html">Promo</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ">
+						<li class="my-2 mr-2 nav-item">
+							<a href="member-area/member-area-dashboard.html"
+								class="px-3 btn-outline-light btn rounded-pill">
+								Login
+							</a>
+						</li>
+						<li class="my-2 nav-item">
+							<a href="https://wa.me/6281212227730" class=" btn btn-success rounded-pill"
+								data-toggle="tooltip" data-placement="bottom" title="" aria-label="whatsapp"
+								data-original-title="Chat via Whatsapp">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="#fff" style="margin-bottom: 2px">
+									<path
+										d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+									</path>
+								</svg> <span class="d-lg-none d-inline d-xl-inline">081212227730</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="container-fluid">
+		<section class="row bg-midnight ">
+			<div class="mx-auto col-lg-10 col-xl-9 col-11">
+				<div class="row hero align-items-end align-items-lg-center">
+					<div class="my-5 col-lg-6">
+						<img src="assets/img/aws-workmail-min.jpg" alt="idwebhost-web-hosting-terbaik"
+							class="mx-auto d-flex img-fluid " width="585" height="503">
+					</div>
+					<div class="my-5 text-center col-lg-6 text-lg-left">
+						<h1 class="mb-4 font-weight-bold f3"> AWS Workmail</h1>
+						<p class="mb-5 lead">
+							Layanan email bisnis profesional yang aman, terenkripsi menggunakan AWS Key Management
+							Service dan terintegrasi dengan AWS CloudTrail
+						</p>
+						<div class="">
+							<div class="py-3 ">Hanya <del>Rp99.000,-</del>
+								<div class="h1 text-warning"> Rp77.900,- <span class="h6 font-weight-normal">/bulan per
+										akun — Storage 50GB</span></div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="py-5 row bg-midnight align-items-center" style="border: 1px solid #1d4d91;">
+			<div class="col-auto mx-auto">
+				<div class="row">
+					<div class="col-auto ml-0 ">
+						<img src="assets/img/aws-workmail.png" class="my-3 mr-4" alt="">
+					</div>
+					<div class="col-auto">
+						<p class="mb-0 lead"> AWS (Amazon Web Service) adalah penyedia layanan cloud server ternama di
+							dunia,
+							menjangkau 87 zona ketersediaan dalam 27 wilayah geografis di seluruh dunia.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-5 row card-hover" style="background:#203f7f1c;" id="pricelist">
+			<div class="mx-auto col-lg-8 col-11">
+				<div class="py-2 text-center ">
+					<h2 class="mt-5 font-weight-bold">AWS WorkMail Bebas Migrasi Tanpa Biaya</h2>
+					<p class="pb-5 mb-5 lead">Semua database mailing seperti email, kalender, kontak, dan catatan dari
+						Microsoft Office 365, Microsoft Exchange Server, Google Workspace, IMAP dan POP bisa kamu
+						migrasikan ke AWS WorkMail GRATIS. Migrasi sekarang juga!</p>
+				</div>
+				<style>
+					.aq::after {
+						content: '/bulan per akun';
+						font-size: 13px;
+						font-weight: normal;
+						margin-top: 2%;
+					}
+				</style>
+				<div class="py-5 text-center ">
+					<h2 class=" font-weight-bold">Layanan Tambahan</h2>
+				</div>
+				<div class="mb-3 row">
+					<div class="mx-auto col-xl col-sm-6 col-xl-4">
+						<div class="mb-4 overflow-hidden card">
+							<h3 class="pl-3 mt-3 mb-5 font-weight-bold ls-1 z-1 text-primary">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+									class="" width="50" alt="">
+								WorkSpaces
+							</h3>
+							<div class="pt-0 card-body">
+								<div class="mt-2 h4 card-title pricing-card-title mo aq">Rp489.000</div>
+								<ul class="mt-5 mb-5 text-left list-unstyled ">
+									<li class="my-2 item-check">Desktop Virtual</li>
+									<li class="my-2 item-check">Berbasis Cloud <br> (termasuk WorkDocs 50GB)
+									</li>
+									<li class="my-2 item-check">1 vCPU, 2 GB RAM</li>
+									<li class="my-2 item-check">Volume Root 80 GB</li>
+									<li class="my-2 item-check">Volume User 10 GB</li>
+								</ul>
+								<a href="https://member.idwebhost.com/cart.php?gid=25&pidweb=208"
+									class="btn btn-warning btn-block">Pilih Sekarang</a>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto col-xl col-sm-6 col-xl-4">
+						<div class="mb-4 overflow-hidden card ">
+							<h3 class="pl-3 mt-3 mb-5 font-weight-bold ls-1 z-1 text-primary">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+									class="" width="50" alt="">
+								WorkDocs
+							</h3>
+							<div class="pt-0 card-body">
+								<div class="mt-2 h4 card-title pricing-card-title mo aq">Rp99.900</div>
+								<ul class="mt-5 mb-5 text-left list-unstyled ">
+									<li class="my-2 ">Buat, edit, dan bagikan dokumen atau konten dengan
+										mudah.
+										Space 1TB
+									</li>
+								</ul>
+								<a href="https://member.idwebhost.com/cart.php?gid=25&pidweb=209"
+									class="btn btn-warning btn-block">Pilih Sekarang</a>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto col-xl col-sm-6 col-xl-4">
+						<div class="mb-4 overflow-hidden card">
+							<h3 class="pl-3 mt-3 mb-5 font-weight-bold ls-1 z-1 text-primary">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+									class="" width="50" alt="">
+								Chime Pro
+							</h3>
+							<div class="pt-0 card-body">
+								<div class="mt-2 h4 card-title pricing-card-title mo aq">Rp59.000</div>
+								<ul class="mt-5 mb-5 text-left list-unstyled ">
+									<li class="my-1 ">Layanan chat, call dan video conference.</li>
+								</ul>
+								<a href="https://member.idwebhost.com/cart.php?gid=25&pidweb=210"
+									class="btn btn-warning btn-block">Pilih Sekarang</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class=" row">
+			<div class="mx-auto col-10">
+				<div class="py-5 text-center ">
+					<h2 class="mt-5 font-weight-bold">AWS WorkMail Software Development Kit</h2>
+					<p class=" lead">Menggunakan Software Development Kit (SDK) dari AWS, kamu dapat mengintegrasikan
+						WorkMail dengan layanan yang sudah kamu miliki seperti mengelola user, email group, dan agenda
+						meeting.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="py-5 row ">
+			<div class="mx-auto col-xl-9 col-lg-10 col-11">
+				<div class="row ">
+					<div class="col-md-12">
+						<div class="py-2 text-center ">
+							<h2 class="my-5 font-weight-bold">Apa Keunggulan Menggunakan AWS WorkMail</h2>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/386609.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Mudah Kelola Email</h3>
+								<p class="mb-5">Kamu tidak perlu menginstal software dan hardware tambahan. AWS WorkMail
+									menangani semua patch, cadangan, dan upgrade secara otomatis. AWS WorkMail juga
+									memudahkan kamu untuk mengelola <a href="https://idwebhost.com/blog/cara-membuat-database-mysql-di-localhost-phpmyadmin/">database</a>  dan aktivitas mailing perusahaan.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/1716159.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Jaminan Keamanan Tinggi</h3>
+								<p class="mb-5">Keamanan data email perusahaan kamu keamanannya terjamin. AWS WorkMail
+									secara otomatis <a href="https://idwebhost.com/blog/apa-itu-ssl-2/">mengenkripsi</a>  semua data dengan kunci enkripsi yang kamu kendalikan
+									menggunakan AWS Key Management Service (KMS). AWS WorkMail juga memberikan kontrol
+									penuh terhadap pelokalan data.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/email-hosting/satisfaction.png"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Kompatibel Outlook</h3>
+								<p class="mb-5">Kamu dapat terus menggunakan mail client tanpa perlu menginstal
+									perangkat lunak tambahan, seperti plug-in untuk <a href="https://idwebhost.com/blog/backups-dan-restore-semua-data-microsoft-outlook/">Microsoft Outlook</a> . AWS WorkMail
+									support untuk Microsoft Outlook di Windows dan Mac OS X.</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/email-hosting/account.png"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Akses Dimana Saja</h3>
+								<p class="mb-5">Kamu dapat menyinkronkan mailbox dengan perangkat iOS, <a href="https://idwebhost.com/blog/cara-mengatasi-email-android-tidak-bisa-connect-ke-server/">Android</a> , Amazon
+									Fire, dan Windows Phone. Jika kamu melakukan migrasi dari server Microsoft Exchange,
+									perangkat seluler kamu secara otomatis terhubung ke AWS WorkMail tanpa memerlukan
+									konfigurasi ulang. Web client dengan fitur lengkap tersedia untuk mengakses email,
+									kalender, dan kontak..</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/3658744.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Integrasi Active Directory</h3>
+								<p class="mb-5">Kamu akan mudah untuk mengelola pengguna dan grup dengan tool sistem
+									manajemen yang mudah dipahami, seperti Active Directory Users and Computers. AWS
+									WorkMail terintegrasi aman dengan Microsoft Active Directory yang sudah ada sehingga
+									kamu dapat mengakses mailbox. </p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/money-bag.png"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Harga Terjangkau</h3>
+								<p class="mb-5">Kamu tidak perlu khawatir akan mengeluarkan banyak biaya agar bisa
+									menggunakan semua <a href="https://idwebhost.com/blog/apa-itu-email-hosting-pengertian-manfaat-email-hosting/">fitur lengkap</a>  beserta keamanan yang tinggi dari AWS WorkMail.
+									Semua bisa kamu dapatkan dengan harga yang terjangkau.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/2007403.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Terintegrasi AWS CloudTrail</h3>
+								<p class="mb-5">Kamu akan terbebas dari risiko keamanan karena AWS WorkMail terintegrasi
+									dengan AWS CloudTrail. CloudTrail adalah layanan log audit segala aktivitas akun AWS
+									kamu yang mampu melakukan analisis keamanan, pelacakan perubahan, dan pemecahan
+									masalah.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/937502.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Mobile Device Management</h3>
+								<p class="mb-5">Kamu dapat melakukan enkripsi, mengunci, menentukan persyaratan kata
+									kunci, dan menghapus perangkat dari jarak jauh menggunakan AWS Management Console.
+									AWS WorkMail memberlakukan kebijakan keamanan untuk perangkat seluler melalui
+									<a href="https://idwebhost.com/blog/pengertian-dan-jenis-jenis-protokol-jaringan/">protokol</a>  Microsoft Exchange ActiveSync.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/email-hosting/no-spam.png"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Proteksi Spam dan Virus
+								</h3>
+								<p class="mb-5">Kamu akan terlindungi dari email berbahaya dengan fitur scan AWS
+									WorkMail terhadap semua email masuk dan keluar dari <a href="https://idwebhost.com/blog/spam-filter/">spam</a> , malware, dan virus.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/email-hosting/account.png"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Browser Web Client
+								</h3>
+								<p class="">Kamu dapat mengakses AWS WorkMail melalui web client di <a href="https://idwebhost.com/blog/web-browser/">browser</a> seperti Firefox, Chrome, Safari, dan Edge. Selain akses email, kamu juga dapat mengakses
+									kalender bersama, menjadwalkan rapat dengan rekan kerja dengan cepat, atau mencari
+									data contact.
+
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/3076624.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5">Garansi Uang Kembali</h3>
+								<p class="">Kami berani memberi garansi 30 hari uang kembali karena semua pelanggan puas
+									dengan produk dan layanan IDwebhost.</p>
+
+							</div>
+						</div>
+					</div>
+					<div class="mx-auto my-3 col-md-5">
+						<div class="row no-gutters">
+							<div class="col-2">
+								<div class="p-2 p-sm-3 rounded-xl bg-warning">
+									<img loading="lazy" src="assets/img/lineicon/653208.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid" width="90" height="90">
+								</div>
+							</div>
+							<div class="pl-4 col-10">
+								<h3 class="mb-3 font-weight-bold h5"> Support 24/7
+								</h3>
+								<p class="">Layanan fast respon Customer Support yang online 24 jam selalu siaga saat
+									kamu membutuhkan bantuan. Kapanpun dan dimanapun selalu ada solusi cepat dan tepat
+									dari IDwebhost.
+								</p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class=" row bg-midnight">
+			<div class="mx-auto col-xl-7 col-lg-10 col-11">
+				<div class="py-5 mt-5 text-center ">
+					<p class="h4">Komunikasi dan kolaborasi antar tim di perusahaan kamu semakin meningkat
+						menggunakan email bisnis dan keamanan data email perusahaan terjamin. Gunakan email
+						bisnis sekarang juga!
+					</p>
+				</div>
+				<div class="px-5 pt-5 text-center row mb-n5">
+					<div class="col-auto px-5 py-3 mx-auto bg-white shadow rounded-xl">
+						<h3 class="my-3 font-weight-bold h4" style="color: #333">IDwebhost Partner of <img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png"
+								class="py-3 ml-4 " width="100" alt="">
+						</h3>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="py-5 row " style="background:#203f7f1c;">
+			<!-- perubahan kelas kris jadi col-xl-6 col-lg-8 col-11 mx-auto-->
+			<div class="mx-auto col-xl-6 col-lg-8 col-11 ">
+				<div class="mt-5 row">
+					<div class="mx-auto col-12">
+						<div class="py-5 pr-4 ">
+							<h2 class="text-center font-weight-bold">Paling Sering Ditanyakan (FAQ) </h2>
+						</div>
+						<!-- perubahan jadi accordion  -->
+						<div class="accordion" id="awsask">
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingOne">
+									<h3 class="mb-0 text-black">
+										<button class="text-left text-black btn font-weight-bolder btn-block"
+											type="button" data-toggle="collapse" data-target="#awsask1"
+											aria-expanded="true" aria-controls="awsask1">
+											Apa itu AWS WorkMail?
+										</button>
+									</h3>
+								</div>
+								<div id="awsask1" class="collapse show" aria-labelledby="headingOne"
+									data-parent="#awsask">
+									<div class="card-body">
+										<p>AWS (Amazon Web Services) WorkMail adalah layanan <a href="https://idwebhost.com/blog/layanan-email-gratis/">email</a>  dan kalender bisnis
+											yang aman dan terkelola yang support untuk desktop dan seluler. AWS WorkMail
+											memiliki kemampuan untuk mengakses email, kontak, dan kalender dengan lancar
+											menggunakan Microsoft Outlook, web browser, atau aplikasi email iOS dan
+											Android. Kamu dapat mengintegrasikan AWS WorkMail dengan direktori
+											perusahaan yang ada dan mengontrol enkripsi data dan lokasi penyimpanan
+											data.
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingTwo">
+									<h3 class="mb-0 text-black">
+										<button class="text-left text-black btn font-weight-bolder btn-block collapsed"
+											type="button" data-toggle="collapse" data-target="#awsask2"
+											aria-expanded="false" aria-controls="awsask2">
+											Bagaimana saya bisa mengakses AWS WorkMail?
+
+										</button>
+									</h3>
+								</div>
+								<div id="awsask2" class="collapse" aria-labelledby="headingTwo" data-parent="#awsask">
+									<div class="card-body">
+										<p>
+											Kamu dapat mengakses AWS WorkMail dari Microsoft Outlook di Windows dan Mac
+											OS X, serta pada perangkat <a href="https://idwebhost.com/blog/cara-menghilangkan-iklan-di-android/">seluler</a>  yang support Microsoft Exchange
+											ActiveSync termasuk iPhone, iPad, Kindle Fire, Fire Phone, Android, dan
+											Windows Phone. Selain itu, kamu juga bisa menggunakan aplikasi Apple Mail di
+											Mac OS X atau aplikasi web untuk mengakses AWS WorkMail.
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingFourHalf">
+									<h3 class="mb-0 ">
+										<button class="text-left text-black btn font-weight-bolder btn-block collapsed"
+											type="button" data-toggle="collapse" data-target="#awsask45"
+											aria-expanded="false" aria-controls="awsask45">
+											Berapa ukuran file maksimal email AWS WorkMail?
+										</button>
+									</h3>
+								</div>
+								<div id="awsask45" class="collapse" data-parent="#awsask">
+									<div class="card-body">
+										<p>Ukuran file maksimal pada email kirim dan terima pada AWS WorkMail adalah
+											25MB.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingFour">
+									<h3 class="mb-0 text-black">
+										<button class="text-left text-black btn font-weight-bolder btn-block collapsed"
+											type="button" data-toggle="collapse" data-target="#awsask4"
+											aria-expanded="false" aria-controls="awsask4">
+											Berapa batasan jumlah email yang bisa saya kirim?
+
+										</button>
+									</h3>
+								</div>
+								<div id="awsask4" class="collapse" data-parent="#awsask">
+									<div class="card-body">
+										<p>
+											Kamu dapat mengirim email maksimal 10.000 per hari. AWS WorkMail merupakanan
+											layanan email bisnis namun tidak dimaksudkan untuk pengiriman <a href="https://idwebhost.com/blog/tips-email-marketing/">email massal</a> 
+											(bulk e-mail services).
+
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingFive">
+									<h3 class="mb-0 text-black">
+										<button class="text-left text-black btn font-weight-bolder btn-block collapsed"
+											type="button" data-toggle="collapse" data-target="#awsask5"
+											aria-expanded="false" aria-controls="awsask5">
+											Apakah AWS WorkMail support folder untuk publik?
+										</button>
+									</h3>
+								</div>
+								<div id="awsask5" class="collapse" data-parent="#awsask">
+									<div class="card-body">
+										<p>
+											Tidak, AWS WorkMail tidak menyediakan folder untuk publik.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mb-4 border-0 card bg-light">
+								<div class="bg-transparent card-header" id="headingSix">
+									<h3 class="mb-0 text-black">
+										<button class="text-left text-black btn font-weight-bolder btn-block collapsed"
+											type="button" data-toggle="collapse" data-target="#awsask6"
+											aria-expanded="false" aria-controls="awsask6">
+											Bisakah saya mengakses AWS WorkMail dengan aplikasi mail client POP3 atau
+											IMAP yang sudah ada?
+										</button>
+									</h3>
+								</div>
+								<div id="awsask6" class="collapse" data-parent="#awsask">
+									<div class="card-body">
+										<p>Kamu dapat mengakses AWS WorkMail dengan aplikasi mail client yang mendukung
+											protokol <a href="https://idwebhost.com/blog/pop3imap/">IMAP</a> . Namun saat ini AWS WorkMail tidak menawarkan dukungan untuk
+											akses email POP3.
+
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer class="small text-dark ">
+		<div class="container-fluid">
+			<section class="">
+				<div class="mx-auto col-xl-10 col-11">
+					<div class="pt-5 row justify-content-md-center ">
+						<div class="col-lg-4 col-md-3">
+							<h4 class="mb-2 font-weight-bolder">
+								<img loading="lazy" src="assets/img/logo-idwebhost.svg" class="has"
+									alt="idwebhost-web-hosting-terbaik" width="150" height="26">
+							</h4>
+							<p class="mb-3 text-muted">IDwebhost penyedia layanan hosting murah No 1 Indonesia</p>
+							<div class="my-3">
+								<a href="index.html" class="btn btn-danger rounded-pill wh40 "
+									aria-label="idwebhost-instagram" style="border: #b3307d;
+	background: linear-gradient(150deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"><i
+										class="" data-feather="instagram"></i></a>
+								<a href="index.html" class="btn btn-primary rounded-pill wh40 "
+									aria-label="idwebhost-twitter" style="    background: #03A9F4;
+	border-color: #03A9F4;"><i class="" data-feather="twitter"></i></a>
+								<a href="index.html" class="btn btn-primary rounded-pill wh40 "
+									aria-label="idwebhost-facebook" style="    background: #203f7f;
+	border-color: #203f7f;"><i class="" data-feather="facebook"></i></a>
+								<a href="index.html" class="btn btn-danger rounded-pill wh40 "
+									aria-label="idwebhost-youtube"><i class="" data-feather="youtube"></i></a>
+								<a href="index.html" class="btn btn-primary rounded-pill wh40 "
+									aria-label="idwebhost-linkedin"><i class="" data-feather="linkedin"></i></a>
+							</div>
+							<h3 class="h6 text-muted font-weight-bold ">Yogyakarta</h3>
+							<p class="text-muted">
+								Jl. Perintis Kemerdekaan No. 33 <br>
+								Yogyakarta 55161<br>
+								Telp: (0274) 415585 /
+								Fax : 0274-385603 </p>
+							<h3 class="h6 text-muted font-weight-bold ">Jakarta *</h3>
+							<p class="text-muted">
+								Graha JogjaCamp <br>
+								Jl. Mampang Prapatan 19C <br>
+								Jakarta Selatan 12790 <br>
+								Telp: (021) 79184155 /
+								Fax: (021) 7941417
+							</p>
+							<h3 class="h6 text-muted font-weight-bold ">Semarang *</h3>
+							<p class="text-muted">
+								Jogjacamp Semarang <br>
+								Jl. Kedung Mundu Raya No. 99 B <br>
+								Semarang 50274 <br>
+								Telp: (024) 30001000 /
+								Fax: (024) 76581513
+							</p>
+
+						</div>
+						<div class="col-lg-3 col-md-3 ">
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Layanan Hosting
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-layanan-hosting" aria-expanded="false"
+									aria-controls="exp-layanan-hosting">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-layanan-hosting">
+								<li> <a href="hosting-murah.html" class=" text-muted">Hosting Murah</a></li>
+								<li> <a href="hosting-indonesia.html" class=" text-muted">Hosting Indonesia</a></li>
+								<li> <a href="hosting-unlimited.html" class=" text-muted">Hosting Unlimited</a></li>
+								<li> <a href="hostinglaravel.html" class=" text-muted">Hosting Laravel</a></li>
+								<li> <a href="hosting-gratis.html" class=" text-muted">Hosting Gratis</a></li>
+								<li> <a href="wordpress-hosting.html" class=" text-muted">Wordpress Hosting</a></li>
+								<li> <a href="ssl-murah.html" class=" text-muted">SSL Murah</a></li>
+								<li> <a href="vps-murah.html" class=" text-muted">VPS Murah</a></li>
+								<li> <a href="jasa-pembuatan-website.html" class=" text-muted">Jasa Pembuatan
+										Website</a></li>
+								<li> <a href="website-desa-gratis.html" class=" text-muted">Web Desa Gratis</a></li>
+								<li> <a href="gsuite.html" class=" text-muted">G Suite</a></li>
+							</ul>
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Kemitraan
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-kemitraan" aria-expanded="false"
+									aria-controls="exp-kemitraan">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-kemitraan">
+								<li> <a href="afilliasi.html" class=" text-muted">Program Afilliasi</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-3 ">
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Layanan Domain
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-layanan-domain" aria-expanded="false"
+									aria-controls="exp-layanan-domain">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-layanan-domain">
+								<li> <a href=" domain-murah.html" class=" text-muted">Domain Murah</a></li>
+								<li> <a href="domain-id.html" class=" text-muted">Domain ID</a></li>
+								<li> <a href="https://resellercamp.com" class=" text-muted">Reseller Domain</a></li>
+								<li> <a href="domain-gratis.html" class=" text-muted">Domain Gratis</a></li>
+							</ul>
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Informasi
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-informasi" aria-expanded="false"
+									aria-controls="exp-informasi">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-informasi">
+								<li> <a href="tutorial.html" class=" text-muted">Tutorial</a></li>
+								<li> <a href="cek-domain.html" class=" text-muted">Cek Domain</a></li>
+								<li> <a href="promo.html" class=" text-muted">Promo</a></li>
+								<li> <a href="cara-membuat-website.html" class=" text-muted">Cara Membuat Website</a>
+								</li>
+								<li> <a href="cara-mendapatkan-uang-dari-internet.html" class=" text-muted">Cara
+										Mendapatkan Uang Dari Internet</a></li>
+								<li> <a href="jasa-pembuatan-aplikasi-android.html" class=" text-muted">Jasa Pembuatan
+										Aplikasi Android</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-3 ">
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Customer
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-customer" aria-expanded="false"
+									aria-controls="exp-customer">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-customer">
+								<li> <a href="https://member.idwebhost.com" class=" text-muted">Login</a></li>
+								<li> <a href="konfirmasi.html" class=" text-muted">Konfirmasi</a></li>
+								<li> <a href="pembayaran.html" class=" text-muted">Metode Pembayaran</a></li>
+								<li> <a href="tos.html" class=" text-muted">TOS & AUP</a></li>
+								<li> <a href="service-level-agreement.html" class=" text-muted">Service Level
+										Agreement</a></li>
+							</ul>
+							<h3 class="mb-2 font-weight-bold h6 position-relative to-btn">Company
+								<button class="ml-auto btn-sm stretched-link btn d-sm-none has-plus" type="button"
+									data-toggle="collapse" data-target="#exp-company" aria-expanded="false"
+									aria-controls="exp-company">
+								</button>
+							</h3>
+							<ul class="list-unstyled lh-2 collapse d-sm-block" id="exp-company">
+								<li> <a href="review.html" class=" text-muted">Review Pelanggan</a></li>
+								<li> <a href="hosting-terbaik.html" class=" text-muted">Mengapa Kami Hosting Terbaik</a>
+								</li>
+								<li> <a href="tentang.html" class=" text-muted">Tentang Kami</a></li>
+								<li> <a href="blog.html" class=" text-muted">Blog</a></li>
+								<li> <a href="kecewa.html" class=" text-muted">Kecewa? Laporkan disini</a></li>
+								<li> <a href="karir.html" class=" text-muted">Karir</a></li>
+							</ul>
+						</div>
+						<div class="my-4 col-12 ">
+							<div class="m-0 bg-white row align-items-center ">
+								<div class="p-2 text-center col">
+									<img width="71" height="24" loading="lazy" src="assets/img/bca.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="21" loading="lazy" src="assets/img/mandiri.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="18" loading="lazy" src="assets/img/bri.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="22" loading="lazy" src="assets/img/bni.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="36" loading="lazy" src="assets/img/mandiri-syariah.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="18" loading="lazy" src="assets/img/permata.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="27" height="25" loading="lazy" src="assets/img/bii.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted"
+										style="max-height: 25px;">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="26" loading="lazy" src="assets/img/gopay.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="22" loading="lazy" src="assets/img/bca-klikpay.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="24" loading="lazy" src="assets/img/ovo.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="19" loading="lazy" src="assets/img/sakuku.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="24" loading="lazy" src="assets/img/alfamart.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+								<div class="p-2 text-center col-3 col-sm">
+									<img width="71" height="25" loading="lazy" src="assets/img/indomaret.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted ">
+								</div>
+							</div>
+						</div>
+						<div class="col-auto mx-auto ">
+							<img loading="lazy" src="assets/img/bsi-iso.jpg" alt="iso-27001-idwebhost" width="184"
+								height="94" class="p-2 bg-white">
+							<img loading="lazy" src="assets/img/bsi-anab.jpg" alt="bsi-anab-idwebhost" width="184"
+								height="94" class="p-2 bg-white">
+							<img loading="lazy" src="assets/img/icann.svg" alt="icann-idwebhost" width="114" height="94"
+								class="p-2 bg-white">
+						</div>
+
+
+					</div>
+				</div>
+				<div class="mx-auto text-center col-xl-10">
+					<p class="my-3">Copyright © 2021 IDwebhost Allright Reserved</p>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- slick -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<script>
+		jQuery.event.special.touchstart = {
+			setup: function (_, ns, handle) {
+				this.addEventListener("touchstart", handle, {
+					passive: !ns.includes("noPreventDefault")
+				});
+			}
+		};
+		jQuery.event.special.touchmove = {
+			setup: function (_, ns, handle) {
+				this.addEventListener("touchmove", handle, {
+					passive: !ns.includes("noPreventDefault")
+				});
+			}
+		};
+		jQuery.event.special.wheel = {
+			setup: function (_, ns, handle) {
+				this.addEventListener("wheel", handle, {
+					passive: true
+				});
+			}
+		};
+		jQuery.event.special.mousewheel = {
+			setup: function (_, ns, handle) {
+				this.addEventListener("mousewheel", handle, {
+					passive: true
+				});
+			}
+		};
+	</script>
+	<script>
+		$('.list-testi').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: "<span class='shadow prevArrow rounded-pill'><i data-feather='arrow-left' ></i></span>",
+			nextArrow: "<span class='shadow nextArrow rounded-pill'><i data-feather='arrow-right' ></i></span>",
+			adaptiveHeight: true,
+		})
+	</script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<!-- Main -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<!-- custom page-->
+	<!-- icon -->
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><!-- slick -->
+
+</body>
+
+</html>

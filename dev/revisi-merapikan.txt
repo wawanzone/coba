@@ -1,0 +1,44 @@
+1. hosting ssd
+
+- update section header, untuk revisian sudah ada di dropbox hosting-ssd.html
+- update section pricelist untuk disamakan sama home
+
+==========================================================================
+
+2. website-desa-gratis
+
+- di modal popup hapus kelas modal-lg.
+
+- tambahkan kelas d-inline pada 2 chekbox
+
+   <label for="tos_checkbox" class="d-inline control-label">Dengan ini saya menyetujui
+   <label class="d-inline control-label" for="newsletter_checkbox">Saya ingin mengetahui informasi,
+
+
+==========================================================================
+
+3. vps murah popup
+
+<div id="penawaran_msg">
+<p>Penambahan layanan VPS.</p>
+
+Detail
+
+<div class="border p-4 my-4 rounded">
+<b>Nama :</b>
+    	<p class="form-control">Coba</p>
+
+<b>Email :</b>
+    	<p class="text-break form-control">cobanamasayapanjang@jogjacobaidwebhost.com</p>
+
+<b>Telephone :</b>
+    	<p class="form-control">000989766734</p>
+
+<b>Host VPS :</b>
+    	<p class="form-control">cobavps</p>
+
+<b>Layanan :</b>
+    	<p class="form-control">VPS Manage Service, Email Filtering, Backup</p>
+</div>
+
+Terima kasih.</div>

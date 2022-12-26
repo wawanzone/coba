@@ -1,0 +1,1745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Site Title</title>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="description" content="Site description">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Open Graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Site Title">
+		<meta property="og:description" content="Site description">
+		<meta property="og:image" content="assets/img/opengraph.jpeg">
+		<meta property="og:locale" content="id_ID">
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+		<meta name="theme-color" content="#ffffff">
+
+		<style>
+			:root {
+				--blue: #007bff;
+				--indigo: #6610f2;
+				--purple: #6f42c1;
+				--pink: #e83e8c;
+				--red: #dc3545;
+				--orange: #fd7e14;
+				--yellow: #ffc107;
+				--green: #28a745;
+				--teal: #20c997;
+				--cyan: #17a2b8;
+				--white: #fff;
+				--gray: #6c757d;
+				--gray-dark: #343a40;
+				--primary: #007bff;
+				--secondary: #6c757d;
+				--success: #28a745;
+				--info: #17a2b8;
+				--warning: #ffc107;
+				--danger: #dc3545;
+				--light: #f8f9fa;
+				--dark: #343a40;
+				--breakpoint-xs: 0;
+				--breakpoint-sm: 576px;
+				--breakpoint-md: 768px;
+				--breakpoint-lg: 992px;
+				--breakpoint-xl: 1200px;
+				--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+			}
+
+			*,
+			::after,
+			::before {
+				box-sizing: border-box
+			}
+
+			html {
+				font-family: sans-serif;
+				line-height: 1.15;
+				-webkit-text-size-adjust: 100%
+			}
+
+			header,
+			main,
+			nav,
+			section {
+				display: block
+			}
+
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #212529;
+				text-align: left;
+				background-color: #fff
+			}
+
+			h1 {
+				margin-top: 0;
+				margin-bottom: .5rem
+			}
+
+			p {
+				margin-top: 0;
+				margin-bottom: 1rem
+			}
+
+			ul {
+				margin-top: 0;
+				margin-bottom: 1rem
+			}
+
+			b {
+				font-weight: bolder
+			}
+
+			small {
+				font-size: 80%
+			}
+
+			a {
+				color: #007bff;
+				text-decoration: none;
+				background-color: transparent
+			}
+
+			img {
+				vertical-align: middle;
+				border-style: none
+			}
+
+			label {
+				display: inline-block;
+				margin-bottom: .5rem
+			}
+
+			button {
+				border-radius: 0
+			}
+
+			button,
+			input {
+				margin: 0;
+				font-family: inherit;
+				font-size: inherit;
+				line-height: inherit
+			}
+
+			button,
+			input {
+				overflow: visible
+			}
+
+			button {
+				text-transform: none
+			}
+
+			[type=button],
+			button {
+				-webkit-appearance: button
+			}
+
+			[type=button]::-moz-focus-inner,
+			button::-moz-focus-inner {
+				padding: 0;
+				border-style: none
+			}
+
+			input[type=checkbox] {
+				box-sizing: border-box;
+				padding: 0
+			}
+
+			::-webkit-file-upload-button {
+				font: inherit;
+				-webkit-appearance: button
+			}
+
+			.h4,
+			h1 {
+				margin-bottom: .5rem;
+				font-weight: 500;
+				line-height: 1.2
+			}
+
+			h1 {
+				font-size: 2.5rem
+			}
+
+			.h4 {
+				font-size: 1.5rem
+			}
+
+			.lead {
+				font-size: 1.25rem;
+				font-weight: 300
+			}
+
+			.display-4 {
+				font-size: 3.5rem;
+				font-weight: 300;
+				line-height: 1.2
+			}
+
+			.small,
+			small {
+				font-size: 80%;
+				font-weight: 400
+			}
+
+			.img-fluid {
+				max-width: 100%;
+				height: auto
+			}
+
+			.container-fluid {
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto
+			}
+
+			.row {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-right: -15px;
+				margin-left: -15px
+			}
+
+			.no-gutters {
+				margin-right: 0;
+				margin-left: 0
+			}
+
+			.col-lg-4,
+			.col-lg-8,
+			.col-md-12,
+			.col-md-9,
+			.col-sm-3,
+			.col-sm-9,
+			.col-xl-12,
+			.col-xl-2,
+			.col-xl-4,
+			.col-xl-7,
+			.col-xl-8 {
+				position: relative;
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px
+			}
+
+			@media (min-width:576px) {
+				.col-sm-3 {
+					-ms-flex: 0 0 25%;
+					flex: 0 0 25%;
+					max-width: 25%
+				}
+
+				.col-sm-9 {
+					-ms-flex: 0 0 75%;
+					flex: 0 0 75%;
+					max-width: 75%
+				}
+			}
+
+			@media (min-width:768px) {
+				.col-md-9 {
+					-ms-flex: 0 0 75%;
+					flex: 0 0 75%;
+					max-width: 75%
+				}
+
+				.col-md-12 {
+					-ms-flex: 0 0 100%;
+					flex: 0 0 100%;
+					max-width: 100%
+				}
+			}
+
+			@media (min-width:992px) {
+				.col-lg-4 {
+					-ms-flex: 0 0 33.333333%;
+					flex: 0 0 33.333333%;
+					max-width: 33.333333%
+				}
+
+				.col-lg-8 {
+					-ms-flex: 0 0 66.666667%;
+					flex: 0 0 66.666667%;
+					max-width: 66.666667%
+				}
+			}
+
+			@media (min-width:1200px) {
+				.col-xl-2 {
+					-ms-flex: 0 0 16.666667%;
+					flex: 0 0 16.666667%;
+					max-width: 16.666667%
+				}
+
+				.col-xl-4 {
+					-ms-flex: 0 0 33.333333%;
+					flex: 0 0 33.333333%;
+					max-width: 33.333333%
+				}
+
+				.col-xl-7 {
+					-ms-flex: 0 0 58.333333%;
+					flex: 0 0 58.333333%;
+					max-width: 58.333333%
+				}
+
+				.col-xl-8 {
+					-ms-flex: 0 0 66.666667%;
+					flex: 0 0 66.666667%;
+					max-width: 66.666667%
+				}
+
+				.col-xl-12 {
+					-ms-flex: 0 0 100%;
+					flex: 0 0 100%;
+					max-width: 100%
+				}
+			}
+
+			.form-control {
+				display: block;
+				width: 100%;
+				height: calc(1.5em + .75rem + 2px);
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #495057;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid #ced4da;
+				border-radius: .25rem
+			}
+
+			.form-control::-ms-expand {
+				background-color: transparent;
+				border: 0
+			}
+
+			.form-control:-moz-focusring {
+				color: transparent;
+				text-shadow: 0 0 0 #495057
+			}
+
+			.form-control::-webkit-input-placeholder {
+				color: #6c757d;
+				opacity: 1
+			}
+
+			.form-control::-moz-placeholder {
+				color: #6c757d;
+				opacity: 1
+			}
+
+			.form-control:-ms-input-placeholder {
+				color: #6c757d;
+				opacity: 1
+			}
+
+			.form-control::-ms-input-placeholder {
+				color: #6c757d;
+				opacity: 1
+			}
+
+			.form-control-lg {
+				height: calc(1.5em + 1rem + 2px);
+				padding: .5rem 1rem;
+				font-size: 1.25rem;
+				line-height: 1.5;
+				border-radius: .3rem
+			}
+
+			.form-group {
+				margin-bottom: 1rem
+			}
+
+			.btn {
+				display: inline-block;
+				font-weight: 400;
+				color: #212529;
+				text-align: center;
+				vertical-align: middle;
+				background-color: transparent;
+				border: 1px solid transparent;
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				line-height: 1.5;
+				border-radius: .25rem
+			}
+
+			.btn-warning {
+				color: #212529;
+				background-color: #ffc107;
+				border-color: #ffc107
+			}
+
+			.btn-outline-light {
+				color: #f8f9fa;
+				border-color: #f8f9fa
+			}
+
+			.btn-lg {
+				padding: .5rem 1rem;
+				font-size: 1.25rem;
+				line-height: 1.5;
+				border-radius: .3rem
+			}
+
+			.btn-block {
+				display: block;
+				width: 100%
+			}
+
+			.collapse:not(.show) {
+				display: none
+			}
+
+			.dropdown {
+				position: relative
+			}
+
+			.dropdown-toggle {
+				white-space: nowrap
+			}
+
+			.dropdown-toggle::after {
+				display: inline-block;
+				margin-left: .255em;
+				vertical-align: .255em;
+				content: "";
+				border-top: .3em solid;
+				border-right: .3em solid transparent;
+				border-bottom: 0;
+				border-left: .3em solid transparent
+			}
+
+			.dropdown-menu {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				z-index: 1000;
+				display: none;
+				float: left;
+				min-width: 10rem;
+				padding: .5rem 0;
+				margin: .125rem 0 0;
+				font-size: 1rem;
+				color: #212529;
+				text-align: left;
+				list-style: none;
+				background-color: #fff;
+				background-clip: padding-box;
+				border: 1px solid rgba(0, 0, 0, .15);
+				border-radius: .25rem
+			}
+
+			.dropdown-item {
+				display: block;
+				width: 100%;
+				padding: .25rem 1.5rem;
+				clear: both;
+				font-weight: 400;
+				color: #212529;
+				text-align: inherit;
+				white-space: nowrap;
+				background-color: transparent;
+				border: 0
+			}
+
+			.custom-control {
+				position: relative;
+				display: block;
+				min-height: 1.5rem;
+				padding-left: 1.5rem
+			}
+
+			.custom-control-input {
+				position: absolute;
+				left: 0;
+				z-index: -1;
+				width: 1rem;
+				height: 1.25rem;
+				opacity: 0
+			}
+
+			.custom-control-label {
+				position: relative;
+				margin-bottom: 0;
+				vertical-align: top
+			}
+
+			.custom-control-label::before {
+				position: absolute;
+				top: .25rem;
+				left: -1.5rem;
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				content: "";
+				background-color: #fff;
+				border: #adb5bd solid 1px
+			}
+
+			.custom-control-label::after {
+				position: absolute;
+				top: .25rem;
+				left: -1.5rem;
+				display: block;
+				width: 1rem;
+				height: 1rem;
+				content: "";
+				background: no-repeat 50%/50% 50%
+			}
+
+			.custom-switch {
+				padding-left: 2.25rem
+			}
+
+			.custom-switch .custom-control-label::before {
+				left: -2.25rem;
+				width: 1.75rem;
+				border-radius: .5rem
+			}
+
+			.custom-switch .custom-control-label::after {
+				top: calc(.25rem + 2px);
+				left: calc(-2.25rem + 2px);
+				width: calc(1rem - 4px);
+				height: calc(1rem - 4px);
+				background-color: #adb5bd;
+				border-radius: .5rem
+			}
+
+			.nav-link {
+				display: block;
+				padding: .5rem 1rem
+			}
+
+			.navbar {
+				position: relative;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-ms-flex-align: center;
+				align-items: center;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				padding: .5rem 1rem
+			}
+
+			.navbar .container-fluid {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-ms-flex-align: center;
+				align-items: center;
+				-ms-flex-pack: justify;
+				justify-content: space-between
+			}
+
+			.navbar-brand {
+				display: inline-block;
+				padding-top: .3125rem;
+				padding-bottom: .3125rem;
+				margin-right: 1rem;
+				font-size: 1.25rem;
+				line-height: inherit;
+				white-space: nowrap
+			}
+
+			.navbar-nav {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				padding-left: 0;
+				margin-bottom: 0;
+				list-style: none
+			}
+
+			.navbar-nav .nav-link {
+				padding-right: 0;
+				padding-left: 0
+			}
+
+			.navbar-nav .dropdown-menu {
+				position: static;
+				float: none
+			}
+
+			.navbar-collapse {
+				-ms-flex-preferred-size: 100%;
+				flex-basis: 100%;
+				-ms-flex-positive: 1;
+				flex-grow: 1;
+				-ms-flex-align: center;
+				align-items: center
+			}
+
+			.navbar-toggler {
+				padding: .25rem .75rem;
+				font-size: 1.25rem;
+				line-height: 1;
+				background-color: transparent;
+				border: 1px solid transparent;
+				border-radius: .25rem
+			}
+
+			.navbar-toggler-icon {
+				display: inline-block;
+				width: 1.5em;
+				height: 1.5em;
+				vertical-align: middle;
+				content: "";
+				background: no-repeat center center;
+				background-size: 100% 100%
+			}
+
+			@media (max-width:991.98px) {
+				.navbar-expand-lg>.container-fluid {
+					padding-right: 0;
+					padding-left: 0
+				}
+			}
+
+			@media (min-width:992px) {
+				.navbar-expand-lg {
+					-ms-flex-flow: row nowrap;
+					flex-flow: row nowrap;
+					-ms-flex-pack: start;
+					justify-content: flex-start
+				}
+
+				.navbar-expand-lg .navbar-nav {
+					-ms-flex-direction: row;
+					flex-direction: row
+				}
+
+				.navbar-expand-lg .navbar-nav .dropdown-menu {
+					position: absolute
+				}
+
+				.navbar-expand-lg .navbar-nav .nav-link {
+					padding-right: .5rem;
+					padding-left: .5rem
+				}
+
+				.navbar-expand-lg>.container-fluid {
+					-ms-flex-wrap: nowrap;
+					flex-wrap: nowrap
+				}
+
+				.navbar-expand-lg .navbar-collapse {
+					display: -ms-flexbox !important;
+					display: flex !important;
+					-ms-flex-preferred-size: auto;
+					flex-basis: auto
+				}
+
+				.navbar-expand-lg .navbar-toggler {
+					display: none
+				}
+			}
+
+			.navbar-dark .navbar-brand {
+				color: #fff
+			}
+
+			.navbar-dark .navbar-nav .nav-link {
+				color: rgba(255, 255, 255, .5)
+			}
+
+			.navbar-dark .navbar-toggler {
+				color: rgba(255, 255, 255, .5);
+				border-color: rgba(255, 255, 255, .1)
+			}
+
+			.navbar-dark .navbar-toggler-icon {
+				background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+			}
+
+			.card {
+				position: relative;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				min-width: 0;
+				word-wrap: break-word;
+				background-color: #fff;
+				background-clip: border-box;
+				border: 1px solid rgba(0, 0, 0, .125);
+				border-radius: .25rem
+			}
+
+			.card-body {
+				-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+				min-height: 1px;
+				padding: 1.25rem
+			}
+
+			.badge {
+				display: inline-block;
+				padding: .25em .4em;
+				font-size: 75%;
+				font-weight: 700;
+				line-height: 1;
+				text-align: center;
+				white-space: nowrap;
+				vertical-align: baseline;
+				border-radius: .25rem
+			}
+
+			.badge-pill {
+				padding-right: .6em;
+				padding-left: .6em;
+				border-radius: 10rem
+			}
+
+			.badge-success {
+				color: #fff;
+				background-color: #28a745
+			}
+
+			.badge-danger {
+				color: #fff;
+				background-color: #dc3545
+			}
+
+			.align-middle {
+				vertical-align: middle !important
+			}
+
+			.border-left {
+				border-left: 1px solid #dee2e6 !important
+			}
+
+			.border-0 {
+				border: 0 !important
+			}
+
+			.border-secondary {
+				border-color: #6c757d !important
+			}
+
+			.rounded-pill {
+				border-radius: 50rem !important
+			}
+
+			.d-none {
+				display: none !important
+			}
+
+			@media (min-width:992px) {
+				.d-lg-block {
+					display: block !important
+				}
+			}
+
+			.align-items-center {
+				-ms-flex-align: center !important;
+				align-items: center !important
+			}
+
+			.overflow-hidden {
+				overflow: hidden !important
+			}
+
+			.position-absolute {
+				position: absolute !important
+			}
+
+			@supports ((position:-webkit-sticky) or (position:sticky)) {
+				.sticky-top {
+					position: -webkit-sticky;
+					position: sticky;
+					top: 0;
+					z-index: 1020
+				}
+			}
+
+			.sr-only {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0, 0, 0, 0);
+				white-space: nowrap;
+				border: 0
+			}
+
+			.shadow {
+				box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important
+			}
+
+			.my-0 {
+				margin-top: 0 !important
+			}
+
+			.my-0 {
+				margin-bottom: 0 !important
+			}
+
+			.mb-1 {
+				margin-bottom: .25rem !important
+			}
+
+			.mr-2 {
+				margin-right: .5rem !important
+			}
+
+			.mb-2 {
+				margin-bottom: .5rem !important
+			}
+
+			.ml-2 {
+				margin-left: .5rem !important
+			}
+
+			.mt-3,
+			.my-3 {
+				margin-top: 1rem !important
+			}
+
+			.mr-3 {
+				margin-right: 1rem !important
+			}
+
+			.my-3 {
+				margin-bottom: 1rem !important
+			}
+
+			.mt-5,
+			.my-5 {
+				margin-top: 3rem !important
+			}
+
+			.mb-5,
+			.my-5 {
+				margin-bottom: 3rem !important
+			}
+
+			.p-0 {
+				padding: 0 !important
+			}
+
+			.py-2 {
+				padding-top: .5rem !important
+			}
+
+			.py-2 {
+				padding-bottom: .5rem !important
+			}
+
+			.pl-2 {
+				padding-left: .5rem !important
+			}
+
+			.py-3 {
+				padding-top: 1rem !important
+			}
+
+			.px-3 {
+				padding-right: 1rem !important
+			}
+
+			.py-3 {
+				padding-bottom: 1rem !important
+			}
+
+			.px-3 {
+				padding-left: 1rem !important
+			}
+
+			.py-4 {
+				padding-top: 1.5rem !important
+			}
+
+			.pb-4,
+			.py-4 {
+				padding-bottom: 1.5rem !important
+			}
+
+			.pt-5 {
+				padding-top: 3rem !important
+			}
+
+			.mr-auto,
+			.mx-auto {
+				margin-right: auto !important
+			}
+
+			.mx-auto {
+				margin-left: auto !important
+			}
+
+			@media (min-width:768px) {
+				.pr-md-5 {
+					padding-right: 3rem !important
+				}
+
+				.ml-md-auto {
+					margin-left: auto !important
+				}
+			}
+
+			.text-center {
+				text-align: center !important
+			}
+
+			@media (min-width:992px) {
+				.text-lg-left {
+					text-align: left !important
+				}
+			}
+
+			.font-weight-bold {
+				font-weight: 700 !important
+			}
+
+			.font-weight-bolder {
+				font-weight: bolder !important
+			}
+
+			.text-warning {
+				color: #ffc107 !important
+			}
+
+			.text-dark {
+				color: #343a40 !important
+			}
+
+			* {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale
+			}
+
+			html {
+				scroll-behavior: smooth
+			}
+
+			body {
+				font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+			}
+
+			.h4,
+			h1 {
+				color: #013A51
+			}
+
+			.font-weight-bold {
+				font-weight: 800 !important;
+				letter-spacing: -0.6px
+			}
+
+			.bg-midnight.not-infected {
+				color: #013A51
+			}
+
+			.bg-midnight .h4,
+			.bg-midnight h1,
+			.bg-midnight {
+				color: #fff
+			}
+
+			.navbar-dark .navbar-nav .nav-link {
+				color: rgb(255 255 255)
+			}
+
+			.badge-success {
+				color: #104454;
+				background-color: #12eb82
+			}
+
+			.bg-midnight {
+				background: #203F7F
+			}
+
+			.text-midnight {
+				color: #fff
+			}
+
+			.shadow-xs {
+				box-shadow: 0 .04rem .01rem rgba(0, 0, 0, .075) !important
+			}
+
+			.rounded-xxl {
+				border-radius: 0px 0px 35vw 0px;
+				overflow: hidden
+			}
+
+			header .nav-link {
+				line-height: 40px
+			}
+
+			header.sticky-top {
+				backdrop-filter: blur(20px);
+				-webkit-backdrop-filter: blur(10px);
+				background-color: rgba(255, 255, 255, 0.85);
+				z-index: 1030
+			}
+
+			main .display-4 {
+				font-size: 3rem
+			}
+
+			@media (min-width:768px) {
+				main .display-4 {
+					font-size: 5vw
+				}
+
+				.f3 {
+					font-size: 3vw
+				}
+			}
+
+			@media (max-width:768px) {
+				.sticky-top {
+					position: relative;
+					position: relative;
+					top: 0;
+					z-index: 1020
+				}
+			}
+
+			main .card {
+				border-radius: 20px !Important
+			}
+
+			.dropdown-toggle::after {
+				display: none
+			}
+		</style>
+	</head>
+
+	<body class="">
+		<div id="">
+			<header class="become sticky-top shadow-xs">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+					<div class="container-fluid">
+						<div class="custom-control custom-switch my-3 mr-3">
+							<input type="checkbox" class="custom-control-input input-lg" id="customSwitch1">
+							<label class="custom-control-label" for="customSwitch1"></label>
+						</div>
+						<a class="navbar-brand font-weight-bolder h4 my-0" href="index.html">
+							<img src="assets/img/logo-negative.svg" alt="logos" width="150">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto ">
+								<li class="nav-item">
+									<a class=" mr-2 nav-link " href="domain-murah.html">Domain<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item ">
+									<a class=" mr-2 nav-link " href="hosting-murah.html">Hosting<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link  dropdown-toggle " href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Website <i data-feather="chevron-down"></i>
+									</a>
+									<div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item py-3" href="jasa-pembuatan-website.html">
+											<span=""><i class="mr-2 " data-feather="layout"></i></span> Jasa Pembuatan Website
+										</a>
+
+										<a class="dropdown-item py-3" href="https://www.jejualan.com">
+											<span=""><i class="mr-2 " data-feather="shopping-bag"></i></span> Jasa Pembuatan Toko Online
+										</a>
+
+										<a class="dropdown-item py-3" href="prmosi-online.html">
+											<span=""><i class="mr-2 " data-feather="thumbs-up"></i></span> Jasa Promosi Online <span class="badge  badge-success align-middle"><small><b>NEW</b></small></span>
+										</a>
+
+										<a class="dropdown-item py-3" href="website-desa-gratis.html">
+											<span=""><i class="mr-2 " data-feather="globe"></i></span> Website Desa Gratis
+										</a>
+										<a class="dropdown-item py-3" href="http://wawanzone.com/coba/lp-school">
+											<span=""><i class="mr-2 " data-feather="globe"></i></span> Website Sekolah Gratis
+										</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link  dropdown-toggle " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Layanan <i data-feather="chevron-down"></i>
+									</a>
+									<div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item py-3" href="ssl-murah.html">
+											<span=""><i class="mr-2" data-feather="lock"></i></span> SSL
+										</a>
+										<a class="dropdown-item py-3" href="hosting-unlimited.html">
+											<span=""><i class="mr-2 " data-feather="hard-drive"></i></span> Hosting Unlimited
+										</a>
+										<a class="dropdown-item py-3" href="wordpress-hosting.html">
+											<span=""><i class="mr-2 " data-feather="hard-drive"></i></span> Wordpress Hosting
+										</a>
+										<a class="dropdown-item py-3" href="domain-id.html">
+											<span=""><i class="mr-2 " data-feather="flag"></i></span> Domain .ID
+										</a>
+
+										<a class="dropdown-item py-3" href="https://www.resellercamp.com">
+											<span=""><i class="mr-2 " data-feather="refresh-cw"></i></span> Reseller Domain
+										</a>
+										<a class="dropdown-item py-3" href="hosting-indonesia.html">
+											<span=""><i class="mr-2 " data-feather="flag"></i></span> Hosting Indonesia
+										</a>
+										<a class="dropdown-item py-3" href="dedicated-server.html">
+											<span=""><i class="mr-2 " data-feather="server"></i></span> Dedicated Server
+										</a>
+										<a class="dropdown-item py-3" href="vps-murah.html">
+											<span=""><i class="mr-2 " data-feather="shield"></i></span> VPS Murah <span class="badge  badge-success align-middle"><small><b>NEW</b></small></span>
+										</a>
+										<a class="dropdown-item py-3" href="gsuite.html">
+											<span=""><i class="mr-2 " data-feather="package"></i></span> Google Workspace
+										</a>
+									</div>
+								</li>
+								<li class="nav-item ">
+									<a class=" mr-2 nav-link " href="afiliasi.html">Afiliasi<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item ">
+									<a class=" mr-2 nav-link " href="blog.html">Blog<span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item ">
+									<a class=" mr-2 nav-link text-warning" href="promo.html">Promo</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-md-auto">
+								<li class="nav-item ">
+									<a href="member-idwebhost.html" class=" nav-link">
+										<span class="btn-outline-light btn rounded-pill btn-small  px-3"> Login</span></a>
+								</li>
+								<li class="nav-item ">
+									<a href="kecewa.html" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Anda kecewa? Laporkan!">
+										<span class=" py-2"> <i data-feather="alert-triangle"></i></a>
+								</li>
+								<!-- <li class="nav-item ">
+									<a href="order.html" class="nav-link">
+										<span class=" py-2 "> <i data-feather="shopping-cart"></i><span class="badge badge-pill badge-danger position-absolute small">2</span></span></a>
+								</li> -->
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<div class="  ">
+				<main class="container-fluid">
+					<section class="row pt-5 bg-midnight rounded-xxl">
+						<div class="col-md-9 mx-auto">
+							<div class="row ">
+								<div class="col-xl-12 col-md-12  mx-auto ">
+									<div class="  border-0">
+										<form class="">
+											<div class=" form-group row">
+												<div class="col-xl-7 col-sm-9 mb-1">
+													<label for="#text-domain" class="d-none">domain</label>
+													<input type="text" class="form-control form-control-lg border-0 shadow " id="text-domain" placeholder="Your Domain Name">
+												</div>
+												<div class="col-xl-2 col-sm-3 mb-1">
+													<!-- <button type="submit"  class="btn btn-warning mb-2  btn-block btn-lg shadow">Cari </button> -->
+													<a href="#" id="btnFetch" class="btn btn-warning mb-2  btn-block btn-lg shadow">Cari </a>
+												</div>
+											</div>
+											<small class="">
+												<a href="index.html" class="text-midnight"><span class=" "><b class="">.COM</b> Rp 129K</span></a>
+												<a href="index.html" class="text-midnight"><span class=" border-left border-secondary  pl-2 ml-2"> <b class="">.NET</b> Rp 139K </span></a>
+												<a href="index.html" class="text-midnight"><span class=" border-left border-secondary  pl-2 ml-2"><b class="">.XYZ</b> Rp 9K</span></a>
+												<a href="index.html" class="text-midnight"><span class=" border-left border-secondary  pl-2 ml-2"><b class="">.ID</b> Rp 249K </span></a>
+												<a href="index.html" class="text-midnight"><span class=" border-left border-secondary  pl-2 ml-2"><b class="">.CO.ID</b> Rp 249K</span></a>
+												<a href="index.html" class="text-midnight"><span class=" border-left border-secondary  pl-2 ml-2"><b class="">.ONLINE</b> Rp 14K</span></a>
+											</small>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="row bg-transparent not-infected">
+								<div class="col-md-12 mt-4">
+									<div class="card shadow border-0 overflow-hidden">
+										<div class="card-body p-0 row no-gutters" id="search-result" style="min-height:0px;">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row align-items-center">
+								<div class="col-xl-8 col-lg-8 pb-4  text-center text-lg-left">
+									<div class=" pr-md-5 mt-3 py-4 mb-5">
+										<h1 class="font-weight-bold text-midnight  display-4 f3 ">Web Hosting Indonesia Terbaik</h1>
+										<p class="lead my-5 mr-2 text-midnight"><span class="font-weight-bold">100.000</span> lebih pelanggan mempercayakan web hosting nya pada IDwebhost —
+											Hosting Murah mulai <span class="font-weight-bold">Rp10.900/bln</span></p>
+										<a href="hosting-murah.html" class="btn btn-warning py-2 btn-lg ">Lihat Paket Hosting Murah <i data-feather="arrow-right"></i></a>
+									</div>
+								</div>
+								<div class="col-xl-4 col-lg-4 d-none d-lg-block text-dark">
+									<picture>
+										<source srcset="assets/img/2.webp" type="image/webp">
+										<img class="img-fluid  d-lg-block" src="assets/img/2.png" alt="idwebhost-web-hosting-terbaik" style="margin-bottom:-4vw; padding-top:50px;">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="row no-gutters">
+							<div class="col-lg-9 mx-auto">
+								<div class="row no-gutters align-items-center">
+									<div class="slider col-md-12 col-xl-10 mr-auto  shadow-lg card border-0 overflow-hidden" style="margin-top:-4vw;max-width: 1110px">
+										<div class="slider-image">
+											<a href="index.html">
+												<picture>
+													<source srcset="assets/img/slide1.webp" type="image/webp">
+													<img class="img-fluid m-auto d-lg-block" src="assets/img/slide1.jpg" alt="idweb-slider">
+												</picture>
+											</a>
+										</div>
+										<div class="slider-image">
+											<a href="index.html">
+												<picture>
+													<source srcset="assets/img/slide2.webp" type="image/webp">
+													<img class="img-fluid m-auto d-lg-block" src="assets/img/slide2.jpg" alt="idweb-slider">
+												</picture>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="" class="py-5 mt-5 row  ">
+						<div class="col-xl-8 col-lg-10 mx-auto ">
+							<div class="row align-items-center">
+								<div class="col-md-12">
+									<div class=" py-2  text-center">
+										<h2 class="my-5 font-weight-bold">Mengapa Memilih Hosting Murah IDwebhost?</h2>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class=" py-2 ">
+										<iframe style="height: 16.5em;" class="embed-responsive  pr-5" src="https://www.youtube.com/embed/8aBcENkb6mA"
+											srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/FJ12mgR4fPI?autoplay=1><img class='rounded-lg' src=assets/img/yt.jpg alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
+											frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition"></iframe>
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class=" py-2 ">
+										<h4 class="font-weight-bold mt-5 mb-1">Web Hosting Terpercaya</h4>
+										<p class="lead my-0">Berpengalaman sejak 2004 dan telah dipercaya melayani lebih dari 100 ribu pelanggan yang tersebar di seluruh Indonesia maupun yang berada di luar negeri.</p>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class=" py-2 ">
+										<h4 class="font-weight-bold mt-5 mb-1">Hosting Termurah</h4>
+										<p class="lead my-0">Jaminan harga hosting termurah se-Indonesia</p>
+										<h4 class="font-weight-bold mt-5 mb-1">Gratis Domain + SSL</h4>
+										<p class="lead my-0">Dapatkan domain .com gratis dan SSL gratis selamanya</p>
+									</div>
+								</div>
+								<div class="col-md-5 ">
+									<div class=" py-2 ">
+										<img loading="lazy" alt="img-idwebhost" src="assets/img/wallet.svg">
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class=" py-2 ">
+										<img loading="lazy" alt="img-idwebhost" src="assets/img/data_hosting.svg">
+									</div>
+								</div>
+								<div class="col-md-7 ">
+									<div class=" py-2 ">
+										<h4 class="font-weight-bold mt-5 mb-1">24/7 Passionate Support</h4>
+										<p class="lead my-0">Kami melayanimu dengan penuh cinta, 24 jam non-stop</p>
+									</div>
+									<div class=" py-2 ">
+										<h4 class="font-weight-bold mt-5 mb-1">
+											Garansi Uptime 99.9%</h4>
+										<p class="lead my-0">
+											Website ON terus sepanjang tahun, tanpa jeda, tanpa lambat. Buktikan!</p>
+									</div>
+								</div>
+								<div class="col-md-7">
+									<div class=" py-4 ">
+										<h4 class="font-weight-bold mt-5 mb-1">Akses Web 40x Lebih Cepat</h4>
+										<p class="lead my-0">Bandwidth server super cepat, hardware kualitas industri dan web accelerator akan memastikan websitemu berkali-kali lipat lebih cepat diakses</p>
+										<h4 class="font-weight-bold mt-5 mb-1">Dedicated Cloud Backup</h4>
+										<p class="lead my-0">Seluruh data mu di-backup secara terpisah pada dedicated cloud backup server, gratis!</p>
+										<h4 class="font-weight-bold mt-5 mb-1">Garansi 30 Hari Uang Kembali</h4>
+										<p class="lead my-0">Dijamin kamu 100% puas, atau uang kami kembalikan sepenuhnya apabila hosting murah IDwebhost mengecewakan. Tanpa syarat!</p>
+									</div>
+								</div>
+								<div class="col-md-5 ">
+									<div class=" py-2 ">
+										<img loading="lazy" alt="img-idwebhost" src="assets/img/rocket.svg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="" class="py-5 row  bg-light">
+						<div class="col-xl-10 col-lg-10 mx-auto ">
+							<div class="row align-items-center text-center">
+								<div class="col-md-12">
+									<div class=" py-2  text-center">
+										<h2 class="my-5 font-weight-bold">Keuntungan Lainnya</h2>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/seo.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Super Cepat</p>
+										<p class="my-0">Pastikan website mu menggunakan hosting murah Indonesia yang super cepat dengan teknologi paling modern dan server yang handal dan stabil dari datacenter berkualitas.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/domain-murah.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Domain Murah</p>
+										<p class="my-0">Amankan identitas onlinemu dengan domain pilihanmu. Tentukan nama domainmu dengan ratusan pilihan domain populer yang akan mendongkrak usahamu.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/landing.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Jasa Pembuatan Website</p>
+										<p class="my-0">Kamu bisa membuat website lebih mudah dan murah melalui IDwebhost, 2 hari langsung jadi sudah termasuk GRATIS hosting seumur hidup.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/id.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Domain ID</p>
+										<p class="my-0">Tingkatkan kepercayaan pelanggan websitemu dengan domain .ID. Domain ID lebih aman, mudah diingat, dan tanpa syarat apapun untuk mendapatkannya.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/olshop.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Jasa Pembuatan Toko Online</p>
+										<p class="my-0">Buat toko online lebih mudah dan murah dengan jasa pembuatan toko online dari IDwebhost. Hanya dalam 20 detik dan kamu bisa langsung berjualan online.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/server.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Dedicated Server</p>
+										<p class="my-0">Dengan layanan ini kamu bisa melakukan akses kontrol penuh ke server yang memungkinkan websitemu dapat digunakan secara optimal.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/security.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Sertifikat SSL</p>
+										<p class="my-0">Tersedia SSL murah paling populer yang akan menaikkan peringkat pada pencarian Google. SSL akan meningkatkan keamanan dan kepercayaan bisnismu.</p>
+									</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class=" pr-4 pl-2 py-5">
+										<img loading="lazy" src="assets/img/google-suite.svg" class="w50 icon-dark" alt="idwebhost-web-hosting-terbaik">
+										<p class="my-3 font-weight-bold">Google Suite</p>
+										<p class="my-0">Pengen emailmu lebih terpercaya dengan menggunakan nama domain-mu sendiri? Gunakan email dari GMail dan dapatkan storage hingga 30GB.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="faq " class="row py-5">
+						<div class="col-xl-10 col-md-10 mx-auto ">
+							<div class="row  justify-content-md-center align-items-center">
+								<div class="col-xl-10  mx-auto">
+									<h2 class="my-5 font-weight-bold">FAQ</h2>
+									<div class="row py-5 border-top no-gutters border-light">
+										<div class="col-md-6 pr-5">
+											<h5 class="font-weight-bold">
+												Apa itu web hosting?</h5>
+										</div>
+										<div class="col-md-6">
+											<p>Pengertian web hosting adalah layanan penyimpanan online serta penyimpanan data dan file pada website sehingga bisa diakses secara online dan akan selalu aktif setiap hari selama 24 jam. Sebagai layanan
+												web hosting, kami mengedepankan kualitas agar website pelanggan bisa berjalan secara maksimal. Cara paling mudah untuk memaksimalkan layanan web hosting adalah dengan memilih hosting yang terbaik dan
+												berkualitas.</p>
+										</div>
+									</div>
+									<div class="row py-5 border-top no-gutters border-light">
+										<div class="col-md-6 pr-5">
+											<h5 class="font-weight-bold">Bagaimana hosting yang bagus itu?</h5>
+										</div>
+										<div class="col-md-6">
+											<p>Layanan hosting paling bagus adalah yang mampu menyediakan layanan fast reponse selama 24 jam, memiliki akses web 40 kali lebih cepat dengan server uptime hingga 99,9%. Pastikan Anda memilih layanan web
+												hosting terbaik agar performa website tetap terjaga kualitasnya. Berlangganan di IDwebhost adalah pilihan yang bijaksana karena Idwebhost adalah layanan web hosting yang paling bagus di Indonesia yang
+												menyediakan harga murah namun tetap berkualitas.</p>
+										</div>
+									</div>
+									<div class="row py-5 border-top no-gutters border-light">
+										<div class="col-md-6 pr-5">
+											<h5 class="font-weight-bold">Apa perbedaan hosting dan hosting WordPress?
+											</h5>
+										</div>
+										<div class="col-md-6">
+											<p class="">Hosting merupakan layanan penyimpanan online untuk menyimpan semua file dan data pada website. Sedangkan hosting WordPress adalah layanan hosting yang khusus digunakan untuk pengguna CMS
+												WordPress. Pastikan jika Anda ingin menggunakan hosting terbaik maka pilihan terbaik adalah berada di IDwebhost</p>
+										</div>
+									</div>
+									<div class="row py-5 border-top no-gutters border-light">
+										<div class="col-md-6 pr-5">
+											<h5 class="font-weight-bold">Paket hosting apa yang tepat untuk Anda?
+											</h5>
+										</div>
+										<div class="col-md-6">
+											<p class="">IDwebhost menyediakan beberapa paket hosting untuk Anda. Dalam memilih hosting, pastikan Anda memilih sesuai dengan kebutuhan. Paket hosting yang kami rekomendasikan dan paling digemari oleh
+												pelanggan saat ini adalah paket hosting Awesome. Pada paket ini kami memberikan diskon 68% seharga Rp25.900/bulan sudah termasuk gratis 2 domain popular seperti .com maupun .xyz. Paket Awesome juga
+												menawarkan free SSL, free migrasi, dan masih banyak keunggulan lainnya. Dan kalau bingung bisa menghubungi CS kami melalui WhatsApp di nomor 0813 8198 7373 untuk keterangan lebih lanjut.</p>
+										</div>
+									</div>
+									<div class="row py-5 border-top no-gutters border-light">
+										<div class="col-md-6 pr-5">
+											<h5 class="font-weight-bold">Bagaimana cara transfer web ke IDwebhost?
+											</h5>
+										</div>
+										<div class="col-md-6">
+											<p class="">Transfer hosting, transfer cpanel,
+												Caranya sangatlah mudah. Idwebhost memberikan layanan transfer hosting secara gratis kepada website Anda. Kami akan membantu transfer cPanel Anda sekaligus memberikan tambahan hosting gratis selama 3
+												bulan dan sudah termasuk gratis SSL seumur hidup. Jadi, segera saja transfer web Anda dari layanan hosting lain ke IDwebhost.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="testi" class="row py-5 bg-light">
+						<div class="col-xl-10 col-md-10 mx-auto mb-5 ">
+							<div class="row  justify-content-md-center align-items-center">
+								<div class="col-md-12">
+									<div class=" py-2  text-center">
+										<h2 class="mt-5 font-weight-bold">Review Pelanggan Terbaik IDwebhost</h2>
+										<p class="mb-5">Pelanggan terbaik IDwebhost memberikan review dan berbagi pengalaman saat menggunakan layanan hosting</p>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card border-0 shadow-sm mb-2">
+										<div class=" card-body">
+											<blockquote class=" text-center">
+												<div class="rating my-3 text-warning">
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">☆</span>
+												</div>
+												<p class="mb-4 card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+												<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card border-0 shadow-sm mb-2">
+										<div class=" card-body">
+											<blockquote class=" text-center">
+												<div class="rating my-3 text-warning">
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">☆</span>
+												</div>
+												<p class="mb-4 card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+												<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card border-0 shadow-sm mb-2">
+										<div class=" card-body">
+											<blockquote class=" text-center">
+												<div class="rating my-3 text-warning">
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">☆</span>
+												</div>
+												<p class="mb-4 card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+												<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="card border-0 shadow-sm mb-2">
+										<div class=" card-body">
+											<blockquote class=" text-center">
+												<div class="rating my-3 text-warning">
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">★</span>
+													<span class="active">☆</span>
+												</div>
+												<p class="mb-4 card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+												<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+											</blockquote>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</main>
+				<footer class="small text-dark ">
+					<div class="container-fluid">
+						<section id="" class="">
+							<div class="col-xl-10 mx-auto ">
+								<div class="row pt-5 text-center text-sm-left justify-content-md-center ">
+									<div class="col-lg-4 col-md-3">
+										<h4 class=" font-weight-bolder mb-2">
+											<img loading="lazy" src="assets/img/logo.svg" class="has" alt="idwebhost-web-hosting-terbaik" width="150">
+										</h4>
+										<p class="text-muted mb-3">Dwebhost penyedia layanan hosting murah No 1 Indonesia</p>
+										<div class="my-3">
+											<a href="index.html" class="btn btn-danger rounded-pill wh40 " style="border: #b3307d;
+    background: linear-gradient(150deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"><i class="" data-feather="instagram"></i></a>
+											<a href="index.html" class="btn btn-primary rounded-pill wh40 " style="    background: #03A9F4;
+    border-color: #03A9F4;"><i class="" data-feather="twitter"></i></a>
+											<a href="index.html" class="btn btn-primary rounded-pill wh40 " style="    background: #203f7f;
+    border-color: #203f7f;"><i class="" data-feather="facebook"></i></a>
+											<a href="index.html" class="btn btn-danger rounded-pill wh40 "><i class="" data-feather="youtube"></i></a>
+											<a href="index.html" class="btn btn-primary rounded-pill wh40 "><i class="" data-feather="linkedin"></i></a>
+										</div>
+										<p class="text-muted">
+											<b>Yogyakarta</b> <br>
+											Jl. Perintis Kemerdekaan No. 33 <br>
+											Yogyakarta 55161<br>
+											Telp: (0274) 415585 / Fax : 0274-385603 </p>
+										<p class="text-muted"><b>Jakarta *</b> <br>
+											Graha JogjaCamp <br>
+											Jl. Mampang Prapatan 19C <br>
+											Jakarta Selatan 12790. <br>
+											Telp: (021) 79184155 /
+											Fax: (021) 7941417
+										</p>
+										<p class="text-muted"><b>Semarang *</b> <br>
+											Jogjacamp Semarang <br>
+											Jl. Kedung Mundu Raya No. 99 B <br>
+											Semarang 50274 <br>
+											Telp: (024) 6716780 /
+											Fax: (024) 76581513
+										</p>
+
+									</div>
+									<div class="col-lg-3 col-md-3 ">
+										<h6 class="font-weight-bold mb-2">Layanan Hosting</h6>
+										<ul class="list-unstyled lh-2">
+											<li> <a href="hosting-murah.html" class=" text-muted">Hosting Murah</a></li>
+											<li> <a href="hosting-indonesia.html" class=" text-muted">Hosting Indonesia</a></li>
+											<li> <a href="hosting-unlimited.html" class=" text-muted">Hosting Unlimited</a></li>
+											<li> <a href="hostinglaravel.html" class=" text-muted">Hosting Laravel</a></li>
+											<li> <a href="hosting-gratis.html" class=" text-muted">Hosting Gratis</a></li>
+											<li> <a href="wordpress-hosting.html" class=" text-muted">Wordpress Hosting</a></li>
+											<li> <a href="ssl-murah.html" class=" text-muted">SSL Murah</a></li>
+											<li> <a href="vps-murah.html" class=" text-muted">VPS Murah</a></li>
+											<li> <a href="jasa-pembuatan-website.html" class=" text-muted">Jasa Pembuatan Website</a></li>
+											<li> <a href="website-desa-gratis.html" class=" text-muted">Web Desa Gratis</a></li>
+											<li> <a href="gsuite.html" class=" text-muted">Gsuite</a></li>
+										</ul>
+
+									</div>
+									<div class="col-lg-3 col-md-3 ">
+										<h6 class="font-weight-bold mb-2">Layanan Domain</h6>
+										<ul class="list-unstyled lh-2">
+											<li> <a href="domain-murah.html" class=" text-muted">Domain Murah</a></li>
+											<li> <a href="domain-id.html" class=" text-muted">Domain ID</a></li>
+											<li> <a href="https://resellercamp.com" class=" text-muted">Reseller Domain</a></li>
+											<li> <a href="domain-gratis.html" class=" text-muted">Domain Gratis</a></li>
+										</ul>
+										<h6 class="font-weight-bold mb-2">Informasi</h6>
+										<ul class="list-unstyled lh-2">
+											<li> <a href="tutorial.html" class=" text-muted">Tutorial</a></li>
+											<li> <a href="cek-domain.html" class=" text-muted">Cek Domain</a></li>
+											<li> <a href="promo.html" class=" text-muted">Promo</a></li>
+											<li> <a href="cara-membuat-website.html" class=" text-muted">Cara Membuat Website</a></li>
+											<li> <a href="cara-mendapatkan-uang-dari-internet.html" class=" text-muted">Cara Mendapatkan Uang Dari Internet</a></li>
+											<li> <a href="jasa-pembuatan-aplikasi-android.html" class=" text-muted">Jasa Pembuatan Aplikasi Android</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-2 col-md-3 ">
+
+										<h6 class="font-weight-bold mb-2">Customer</h6>
+										<ul class="list-unstyled lh-2">
+											<li> <a href=https://member.idwebhost.com"" class=" text-muted">Login</a></li>
+											<li> <a href="konfirmasi.html" class=" text-muted">Konfirmasi</a></li>
+											<li> <a href="pembayaran.html" class=" text-muted">Metode Pembayaran</a></li>
+											<li> <a href="tos.html" class=" text-muted">TOS & AUP</a></li>
+											<li> <a href="service-level-agreement.html" class=" text-muted">Service Level Agreement</a></li>
+										</ul>
+										<h6 class="font-weight-bold mb-2">Company</h6>
+										<ul class="list-unstyled lh-2">
+											<li> <a href="afiliasi.html" class=" text-muted">Afiliasi</a></li>
+											<li> <a href="review.html" class=" text-muted">Review Pelanggan</a></li>
+											<li> <a href="hosting-terbaik.html" class=" text-muted">Mengapa Kami Hosting Terbaik</a></li>
+											<li> <a href="tentang.html" class=" text-muted">Tentang Kami</a></li>
+											<li> <a href="blog.html" class=" text-muted">Blog</a></li>
+											<li> <a href="kecewa.html" class=" text-muted">Kecewa? Laporkan disini</a></li>
+											<li> <a href="karir.html" class=" text-muted">Karir</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-12 my-4">
+										<img src="assets/img/bank.jpg" alt="idwebhost-web-hosting-terbaik" style="    filter: brightness(1.03);" loading="lazy" class="img-fluid">
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<!-- Modal -->
+						<div class="modal fade" id="popup-hosting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content bg-primary text-white" style="background-size: cover;background-image:url('assets/img/conveti.svg')">
+									<div class="modal-header  bg-transparent border-0">
+										<h5 class="modal-title" id="exampleModalLabel"><a class="navbar-brand font-weight-bolder h4 my-0" href="index.html">
+												<img loading="lazy" src="assets/img/logo-negative.svg" class="has" alt="idwebhost-web-hosting-terbaik" width="150">
+											</a></h5>
+
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body p-md-5 overflow-hidden">
+										<div class="row align-items-end">
+
+											<div class="col-12">
+												<p class="">Sudah Saatnya <b>Go Online </b> Bangun Bisnis Dari Rumah</p>
+
+											</div>
+											<div class="col-md-12">
+												<div class="row m-0 p-3 align-items-center bg-midnight shadow" style="border:3px solid #2ca1fb; border-radius: 15px">
+													<div class="col-6 ">
+														<h2 class="h3 mb-3 font-weight-bold text-white">Hosting <br> 5GB
+														</h2>
+													</div>
+													<div class="col-6 text-right">
+														<span class="font-weight-bold">Diskon Up To </span>
+														<h2 class="display-4 font-weight-bold text-white my-0">
+															68%
+														</h2>
+													</div>
+													<div class="col-md-12">
+														<span class=" badge-success font-weight-bold position-absolute  rounded-pill px-3 py-2 d-block d-md-inline">
+															Gratis 2 Domain +
+															SSL</span>
+													</div>
+												</div>
+											</div>
+											<div class="col-auto ml-auto mt-4">
+												<button type="button" class="btn btn-warning btn-lg mr-auto mt-4 border-0 shadow-lg">Order Sekarang</button>
+											</div>
+											<!-- <div class="col-md-6 pt-2 ml-auto d-none d-md-block">
+												<picture>
+													<source srcset="assets/img/3.webp" type="image/webp">
+													<img class="img-fluid  d-lg-block" src="assets/img/3.png" loading="lazy" alt="idwebhost-web-hosting-terbaik" style="margin-bottom:-5vw">
+												</picture>
+											</div> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</footer>
+			</div>
+			<!-- jQuery -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<!-- Bootstrap -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+			<!-- Main -->
+			<link rel="stylesheet" href="assets/css/main.css">
+			<script type="text/javascript" src="assets/js/main.js"></script>
+			<!-- Font -->
+			<!-- icon -->
+			<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+			<!-- slick -->
+			<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+			<script>
+				// slider
+
+				$('.slider').slick({
+					infinite: true,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					// dots: true,
+					autoplay: true,
+					autoplaySpeed: 5000,
+					prevArrow: "<span class='prevArrow rounded-pill bg-transparent'><i data-feather='arrow-left' ></i></span>",
+					nextArrow: "<span class='nextArrow rounded-pill bg-transparent'><i data-feather='arrow-right' ></i></span>",
+					responsive: [{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							arrows: false,
+						}
+					}, ]
+				});
+
+
+				$(document).ready(function() {
+					var lazyBackgrounds = [].slice.call(document.querySelectorAll(".bg-img"));
+
+					if ("IntersectionObserver" in window) {
+						let lazyBackgroundObserver = new IntersectionObserver(function(entries, observer) {
+							entries.forEach(function(entry) {
+								if (entry.isIntersecting) {
+									entry.target.classList.add("visible");
+									lazyBackgroundObserver.unobserve(entry.target);
+								}
+							});
+						});
+
+						lazyBackgrounds.forEach(function(lazyBackground) {
+							lazyBackgroundObserver.observe(lazyBackground);
+						});
+					}
+				});
+
+
+				// cursor out top, banner show
+				var mouseY = 0;
+				var topValue = 0;
+				var popcounter = 0;
+				window.addEventListener("mouseout", function(e) {
+
+						mouseY = e.clientY;
+						if (mouseY <= topValue) {
+							if (popcounter <= 0) {
+								$('#popup-hosting').modal('show')
+								popcounter++
+							}
+						}
+					},
+					false);
+			</script>
+		</div>
+	</body>
+
+</html>

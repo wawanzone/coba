@@ -1,0 +1,52 @@
+-----------------------------------------
+[~] penyesuaian html tutorial
+-----------------------------------------
+
+bagian logo dibuat seperti ini
+
+<img src="assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26"><span class="ml-2 badge border d-none d-sm-inline-block">Tutorial</span>
+
+-----------------------------------------
+[~] penyesuaian css tutorial
+-----------------------------------------
+
+.navbar-collapse.collapse.show {
+    overflow-y: scroll;
+    max-height: calc(100vh - 72px);
+}
+
+-----------------------------------------
+[+] tambahcan css Tutorial
+-----------------------------------------
+.navbar-collapse.collapse.show::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar-collapse.collapse.show {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+-----------------------------------------
+[+] tambahan css untuk BLOG, biar kalo menu expand bisa scroll, yang sekarang ternyata belum bisa, harus dicollapse dulu
+-----------------------------------------
+
+.navbar-collapse.collapse.show {
+    overflow-y: scroll;
+    max-height: calc(100vh - 72px);
+}
+
+.navbar-collapse.collapse.show::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar-collapse.collapse.show {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}

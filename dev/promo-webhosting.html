@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site Title</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="description" content="Site description">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Site Title">
+	<meta property="og:description" content="Site description">
+	<meta property="og:image" content="assets/img/opengraph.jpeg">
+	<meta property="og:locale" content="id_ID">
+	<!-- Favicon -->
+	<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+		as="script" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		as="style">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<style>
+		#countdown li {
+			display: inline-block;
+			font-size: 1em;
+			list-style-type: none;
+			padding: 1em;
+			text-transform: uppercase;
+			display: inline-block;
+			font-size: 0.7em;
+			list-style-type: none;
+			padding: 1em;
+			text-transform: uppercase;
+			border-radius: 25px;
+			width: 90px;
+			margin-bottom: 3px;
+		}
+
+		#countdown li span {
+			display: block;
+			font-size: 2.5rem;
+		}
+
+
+
+		@media all and (min-width: 992px) {
+			.sc-2 {
+				transform: scale(1.2);
+			}
+
+
+		}
+
+		@media all and (min-width: 1600px) {
+			.sc-2 {
+				transform: scale(1.4);
+			}
+
+		}
+
+		@media all and (max-width: 768px) {
+
+			#countdown li {
+				font-size: 0.5rem;
+				padding: .75rem;
+			}
+
+			#countdown li span {
+				font-size: 1.375rem;
+			}
+
+			.h-xs-230 {
+				height: 230px;
+			}
+		}
+
+		.rounded-xl {
+			border-radius: 25px;
+		}
+
+		.bg-grad {
+			background: #1e308f;
+			background-size: auto;
+			background-size: auto;
+		}
+
+		#buy-click:hover {
+			background: #12eb82;
+		}
+
+		h1.h1 {
+			font-size: calc(2.5rem + 1.5vw) !important
+		}
+
+		.btn-outline-light.rounded-pill {
+			border-width: 2px;
+		}
+	</style>
+
+</head>
+
+<body class="">
+	<header class="">
+		<div class="my-3 container-fluid">
+			<div class="row ">
+				<div class="mx-auto col-md-11">
+					<div class="row align-items-center">
+						<div class="col-auto mr-auto">
+							<a class="my-0 mr-auto navbar-brand font-weight-bolder h4 " href="index.html">
+								<img src="assets/img/logo-idwebhost.svg" alt="idwebhost-web-hosting-terbaik" width="150"
+									height="26">
+							</a>
+
+						</div>
+						<div class="col-auto ">
+							<a class="px-4 btn rounded-pill badge-success"
+								href="https://api.whatsapp.com/send?phone=6281212227730">
+								<span class="d-none d-lg-inline">Chat</span> Whatsapp
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="container-fluid">
+		<section class="row ">
+			<div class="mx-auto overflow-hidden shadow col-11 bg-grad rounded-xl text-light"
+				style="background-image: url('https://idwebhost.com/themes/midnight/assets/img/land.svg')">
+				<div class="my-5 row align-items-center">
+					<div class="mx-auto mt-3 col-11">
+						<div class="row align-items-center">
+							<div class="pt-3 text-center col-lg-5">
+								<img src="assets/img/banner-model-webhost.png" class="img-fluid mb-md-n5" alt="">
+								<div id="countdown" class="mt-n5 row">
+									<ul class="col-auto p-3 mx-auto text-center text-dark badge-success rounded-xl">
+										<li><span id="days"></span>days</li>
+										<li><span id="hours"></span>Hours</li>
+										<li><span id="minutes"></span>Minutes</li>
+										<li><span id="seconds"></span>Seconds</li>
+									</ul>
+								</div>
+							</div>
+							<div class="text-center col-lg-7">
+								<p class="text-white h5 font-weight-light">Promo Hosting Murah Hanya Buat Kamu!</p>
+								<h1 class=" text-light font-weight-bold h1">Membangun website seharga <span
+										class="text-warning">1 cup kopi</span>.
+								</h1>
+								<p class="my-4">
+									Kini semua bisa memiliki website impian.</p>
+								<div class="my-5 h4 font-weight-light">
+									<div class="ml-2 badge badge-success">Gratis Domain</div>
+									<div class="ml-2 badge badge-success">Gratis SSL</div>
+
+									<div class="mt-5 h1 text-light">
+										Rp12.500<span class="h5 text-light font-weight-light">/bulan</span>
+									</div>
+								</div>
+								<a class="px-4 btn btn-lg btn-outline-light rounded-pill" id="buy-click"
+									href="#buy-now">Pesan Sekarang</a>
+							</div>
+
+							<!-- <iframe style="border-radius:50%; position:absolute; right:0px; bottom: 0px;" src="https://open.spotify.com/embed/album/3QEjflTcZBECy0uLxUJSB3?utm_source=generator&theme=0" width="80" height="80" frameBorder="0" allowtransparency="true"
+	allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="py-5 row bg-light collapse " id="buy-now">
+			<div class="py-5 mx-auto col-xl-5">
+				<div class="border-0 shadow card">
+					<div class="bg-transparent card-header small" id="myModalLabel">
+						Silakan masukkan data diri Anda di bawah ini
+					</div>
+					<div class="card-body " id="register">
+						<div id="msg-finishpage"></div>
+						<div id="msg-customer"></div>
+
+						<form id="formcustomerhostingpromo" class="form-horizontal" method="post"
+							action="https://idwebhost.com/index.php?action=webcontent.lp_hosting_adword_save"
+							novalidate="novalidate">
+							<input type="hidden" name="token"
+								value="89d5b32853bce680b3c95dc9d662c18d164351b62ddb9cafe255f58e52b63891">
+							<input type="hidden" id="gclid_field" name="gclid_field" value="">
+							<input type="hidden" id="total" name="total" value="">
+
+							<div class="form">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Nama Lengkap</label>
+									<input id="namalengkap" name="namalengkap" type="text" class="form-control"
+										aria-describedby="nameHelp">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input id="email" name="email" type="email" class="form-control"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">No Handphone</label>
+									<input id="handphone" name="handphone" type="text" class="form-control"
+										aria-describedby="nameHelp">
+								</div>
+							</div>
+							<div class="my-4">
+								<div class=" row">
+									<div class="mb-3 col-xl-12 col-lg-12">
+										<div class="p-4 rounded bg-light">
+											<div class="form-group">
+												<label for="exampleInputEmail1">Pilih Kontrak</label>
+												<select id="kontrak" name="kontrak" class="form-control">
+													<option value="2">2 tahun (Rp 252.000)</option>
+												</select>
+											</div>
+
+											<div class="row odr-1th">
+												<div class="col-md-6">
+													<del class="text-muted">Rp480.000 <small
+															class="text-muted">/tahun</small></del>
+													<p class=" card-title font-weight-bold text-primary h2">Rp150.000
+														<br><small class="text-muted">1 tahun</small>
+													</p>
+													<span class="p-2 badge badge-pill badge-success rounded-0">Anda
+														hemat
+														330.000</span>
+												</div>
+
+												<div class="col-md-6">
+													<ul class="mb-0 text-left list-unstyled small">
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>2GB Disk Space</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Gratis Domain <span class="" data-toggle="tooltip"
+																data-placement="top" title="" tabindex="0"
+																data-original-title="Gratis domain ( .com /.net / .org / .info / .web.id / .xyz ) 1 tahun">
+																<svg xmlns="http://www.w3.org/2000/svg" width="18"
+																	height="18" viewBox="0 0 24 24" fill="none"
+																	stroke="currentColor" stroke-width="2"
+																	stroke-linecap="round" stroke-linejoin="round"
+																	class="feather feather-info text-info small">
+																	<circle cx="12" cy="12" r="10"></circle>
+																	<line x1="12" y1="16" x2="12" y2="12"></line>
+																	<line x1="12" y1="8" x2="12.01" y2="8"></line>
+																</svg>
+															</span></li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Gratis SSL</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unmetered Bandwidth</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unlimited Database</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unlimited Email</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Instant Backup</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="row odr-2th" style="display:none;">
+												<div class="col-md-6">
+													<del class="text-muted">Rp960.000 <small
+															class="text-muted">/tahun</small></del>
+													<p class=" card-title font-weight-bold text-primary h2">Rp252.000
+														<small class="text-muted">/tahun</small>
+													</p>
+													<span class="p-2 badge badge-pill badge-success rounded-0">Anda
+														hemat
+														708.000</span>
+												</div>
+
+												<div class="col-md-6">
+													<ul class="mb-0 text-left list-unstyled small">
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>2GB Disk Space</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Gratis Domain <span class="" data-toggle="tooltip"
+																data-placement="top" title="" tabindex="0"
+																data-original-title="Gratis domain ( .com /.net / .org / .info / .web.id / .xyz ) 1 tahun">
+																<svg xmlns="http://www.w3.org/2000/svg" width="18"
+																	height="18" viewBox="0 0 24 24" fill="none"
+																	stroke="currentColor" stroke-width="2"
+																	stroke-linecap="round" stroke-linejoin="round"
+																	class="feather feather-info text-info small">
+																	<circle cx="12" cy="12" r="10"></circle>
+																	<line x1="12" y1="16" x2="12" y2="12"></line>
+																	<line x1="12" y1="8" x2="12.01" y2="8"></line>
+																</svg>
+															</span></li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Gratis SSL</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unmetered Bandwidth</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unlimited Database</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Unlimited Email</li>
+														<li class="my-1 text-black"><svg
+																xmlns="http://www.w3.org/2000/svg" width="18"
+																height="18" viewBox="0 0 24 24" fill="none"
+																stroke="currentColor" stroke-width="2"
+																stroke-linecap="round" stroke-linejoin="round"
+																class="mr-2 feather feather-check text-success">
+																<polyline points="20 6 9 17 4 12"></polyline>
+															</svg>Instant Backup</li>
+													</ul>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row no-gutters small ">
+								<div class="col-12">
+									<div class="form-group">
+										<div class="form-check">
+											<input id="tos_checkbox" type="checkbox" class="form-check-input">
+											<label class="form-check-label" for="tos_checkbox">
+												Dengan ini saya menyetujui <a href="https://idwebhost.com/tos">Syarat
+													dan Ketentuan</a>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row no-gutters small ">
+								<div class="col-12">
+									<div class="form-group">
+										<div class="form-check">
+											<input id="newsletter_checkbox" name="subscr_info" type="checkbox" value="1"
+												class="form-check-input" checked="">
+											<label class="form-check-label" for="newsletter_checkbox">
+												Saya ingin mengetahui informasi, berita, dan promo terbaru IDwebhost
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="">
+								<button id="beli" type="submit"
+									class="btn btn-lg btn-warning btn-block font-weight-bold" disabled="disabled">Beli
+									Sekarang</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section class="py-5 row ">
+			<div class="mx-auto col-11 ">
+				<div class="row ">
+					<div class="mx-auto mb-4 col-lg">
+						<div class="p-4 py-2 border-0 shadow card h-100">
+							<div class=" w100">
+								<div class="badge-success rounded-pill">
+									<img loading="lazy" src="assets/img/lineicon/1649812.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid">
+								</div>
+							</div>
+							<h2 class="mt-5 font-weight-bold h5">Web Hosting Terbaik Indonesia</h2>
+							<p class="">Web Hosting terbaik dengan 60+ server tersebar di Indonesia & USA. CPanel terbaik versi Cloud Linux OS dilengkapi Litespeed penunjang stabilitas server & Softaculous/Fantastico installer. Full Garansi 99.9% Uptime Server IDwebhost!</p>
+						</div>
+
+					</div>
+					<div class="mx-auto mb-4 col-lg">
+						<div class="p-4 py-2 border-0 shadow card h-100">
+							<div class=" w100">
+								<div class="badge-success rounded-pill">
+									<img loading="lazy" src="assets/img/lineicon/1170219.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid">
+								</div>
+							</div>
+							<h2 class="mt-5 font-weight-bold h5">Terpercaya dan Berpengalaman</h2>
+							<p class="">IDwebhost telah dipercaya 36.000++ website dari dalam dan luar negeri. Layanan Web Hosting Kualitas Dunia Asli Indonesia
+							</p>
+						</div>
+					</div>
+					<div class="mx-auto mb-4 col-lg">
+						<div class="p-4 py-2 border-0 shadow card h-100">
+							<div class=" w100">
+								<div class="badge-success rounded-pill">
+									<img loading="lazy" src="assets/img/lineicon/1671124.svg"
+										alt="idwebhost-web-hosting-terbaik" class="img-fluid">
+								</div>
+							</div>
+							<h2 class="mt-5 font-weight-bold h5">Dukungan Penuh 24 Jam</h2>
+							<p class="">Customer care dengan layanan prima 24/7. Akses layanan pelanggan memalui email, live chat, sms, telepon & pelayanan di kantor IDwebhost
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="col-auto mx-auto my-5">
+				<a class="flex px-4 btn btn-lg badge-success rounded-pill buy-clicks"  href="#buy-now">Pesan Sekarang</a>
+			</div>
+		</section>
+
+	</main>
+	<footer class="small text-dark ">
+		<div class="container-fluid">
+			<section id="" class="">
+				<div class="mx-auto my-4 text-center col-xl-10">
+					<p>Copyright © 2021 IDwebhost Allright Reserved</p>
+				</div>
+			</section>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+		(function () {
+			const second = 1000,
+				minute = second * 60,
+				hour = minute * 60,
+				day = hour * 24;
+
+			let promos = "Sep 14, 2022 00:00:00",
+				countDown = new Date(promos).getTime(),
+				x = setInterval(function () {
+
+					let now = new Date().getTime(),
+						distance = countDown - now;
+
+					document.getElementById("days").innerText = Math.floor(distance / (day)),
+						document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+						document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+						document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+
+					//seconds
+				}, 0)
+		}());
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+	<script src="assets/js/main.js"></script>
+	<!-- Bootstrap -->
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<!-- css-->
+
+	<!-- icon -->
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+</body>
+
+</html>

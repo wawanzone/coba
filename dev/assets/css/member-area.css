@@ -1,0 +1,16 @@
+.breadcrumb {
+    background: transparent;
+}
+
+body.dark .table {
+    color: inherit;
+}
+
+body.dark .page-link {
+    border: 1px solid #dee2e600;
+}
+
+body.dark .page-item.disabled .page-link {
+    background-color: transparent;
+    border-color: #dee2e600;
+}

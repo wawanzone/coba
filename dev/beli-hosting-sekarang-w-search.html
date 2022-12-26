@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Site Title</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="description" content="Site description">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Site Title">
+	<meta property="og:description" content="Site description">
+	<meta property="og:image" content="assets/img/opengraph.jpeg">
+	<meta property="og:locale" content="id_ID">
+	<!-- Favicon -->
+	<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Preconnect -->
+	<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+	<link rel="preconnect" href="https://ajax.googleapis.com" />
+	<!-- Preload JS -->
+	<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+		as="script" />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" as="script" />
+	<link rel="preload" href="https://idwebhost.chatonomy.id/js/chatonomy-widget.min.js?v=2.2" as="script" />
+	<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" as="script" /> -->
+	<link rel="preload" href="assets/js/main.js" as="script" />
+	<!-- Preload CSS -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+		as="style" />
+	<!-- <link rel="preload" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style" /> -->
+	<link rel="preload" href="assets/css/main.css" as="style" />
+	<!-- Preload Image -->
+	<link rel="preload" as="image" href="assets/img/banner-model-min.png" />
+	<link rel="preload" as="image" href="assets/img/banner-model-min.webp" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="homepage">
+	<header class="shadow-xs become sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+			<div class="container">
+				<!-- <div class="my-3 mr-3 custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input input-lg" onclick="darkLight()" id="customSwitch1">
+						<label for="customSwitch1" class="custom-control-label" aria-label="dark-mode"></label>
+					</div> -->
+				<a class="my-0 navbar-brand font-weight-bolder" href="index.html">
+					<!-- <img src="assets/img/logo-negative.svg" alt="logos" width="150"> -->
+					<img src="assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26">
+				</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+					<div class="mx-auto d-none d-sm-flex text-light">Yuk, selesaikan pesananmu!</div>
+					<ul class="navbar-nav ">
+
+						<li class="my-2 mr-2 nav-item">
+							<a href="member-area/member-area-dashboard.html"
+								class="px-3 btn-outline-light btn rounded-pill">
+								Login
+							</a>
+						</li>
+						<li class="my-2 nav-item">
+							<a href="https://wa.me/6281212227730" class=" btn btn-success rounded-pill"
+								data-toggle="tooltip" data-placement="bottom" title="" aria-label="whatsapp"
+								data-original-title="Chat via Whatsapp">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+									fill="#fff" style="margin-bottom: 2px">
+									<path
+										d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+									</path>
+								</svg> <span class="d-lg-none d-inline d-xl-inline">081212227730</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main class="">
+		<div style="background:#203f7f1c;min-height: 90vh">
+			<section id="" class="container p-0">
+				<div class="py-5 mx-auto col-12 ">
+
+					<div class="row align-items-start">
+						<div class="mx-auto col-lg-12 ">
+							<div class="mb-5 border-0 shadow-sm card hosting-display " id="order-paket-hosting">
+								<div class="border-0 card-header ">
+									<div class="row align-items-center">
+										<div class="col">
+											<p class="m-0 text-muted h5">Paket Hosting</p>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class=" row align-items-start">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-3 ">
+												<input type="radio" id="customRadio5" name="customRadio"
+													class="custom-control-input" value="paket-charming">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio5">
+													<p class="m-0 small ">Charming</p>
+													<p class="m-0 h5 fs-5 ">400MB </p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio1" name="customRadio"
+													class="custom-control-input " value="paket-cute">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio1">
+													<p class="m-0 small ">Cute</p>
+													<p class="m-0 h5 fs-5 ">2GB <span class="small text-muted">1
+															Website</span></p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Gratis
+															1 Domain</span>
+														<b class="px-1 text-black small badge-success rounded-pill"
+															data-toggle="tooltip" data-placement="right" title=""
+															data-original-title="gratis domain minimal kontrak 2 tahun.">?</b>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+
+											<div class="p-0 custom-control custom-radio rad-2 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio2" name="customRadio"
+													class="custom-control-input" value="paket-awesome">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio2">
+													<p class="m-0 small ">Awesome </p>
+													<p class="m-0 h5 fs-5 ">5GB <span class="small text-muted">11
+															Website</span></p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Gratis
+															2 Domain</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-3 ">
+												<input type="radio" id="customRadio3" name="customRadio"
+													class="custom-control-input" value="paket-fantastic">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio3">
+													<p class="m-0 small ">Fantastice</p>
+													<p class="m-0 h5 fs-5 ">8GB <span class="small text-muted">21
+															Website</span></p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Gratis
+															2 Domain</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-3 ">
+												<input type="radio" id="customRadio4" name="customRadio"
+													class="custom-control-input" value="paket-corporate">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio4">
+													<p class="m-0 small ">Corporate</p>
+													<p class="m-0 h5 fs-5 ">15GB <span class="small text-muted">51
+															Website</span></p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Gratis
+															2 Domain</span>
+													</p>
+												</label>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="mb-5 border-0 shadow-sm card collapse" id="order-kontrak-hosting">
+								<div class="border-0 card-header ">
+									<div class="row align-items-center">
+										<div class="col">
+											<p class="m-0 text-muted h5">Kontrak</p>
+										</div>
+									</div>
+								</div>
+								<div class="px-0 pb-0 card-body paket-based" id="paket-charming">
+									<div class="m-0 row ">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio20" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio20" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 233.400" for="">
+													<p class="m-0 small">6 Bulan </p>
+													<p class="m-0 h5 fs-5">Rp38.900
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio21" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio21" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 346.800">
+													<p class="m-0 small">1 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp28.900
+														<del class="text-muted small">38.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															120.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio22" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio22" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 573.600">
+													<p class="m-0 small">2 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp23.900
+														<del class="text-muted small">38.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															360.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio23" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio23" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 392.400">
+													<p class="m-0 small">3 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp10.900
+														<del class="text-muted small">38.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															1.008.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+										</div>
+									</div>
+								</div>
+								<div class="px-0 pb-0 card-body paket-based" id="paket-cute">
+									<div class="m-0 row ">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio24" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio24" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 392.400">
+													<p class="m-0 small">6 Bulan </p>
+													<p class="m-0 h5 fs-5">Rp43.900
+													</p>
+
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio25" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio25" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 358.800">
+													<p class="m-0 small">1 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp29.900
+														<del class="text-muted small">43.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															168.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio26" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio26" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 621.600">
+													<p class="m-0 small">2 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp25.900
+														<del class="text-muted small">43.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															432.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio27" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio27" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 621.600">
+													<p class="m-0 small">3 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp19.900
+														<del class="text-muted small">43.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															864.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+										</div>
+									</div>
+								</div>
+								<div class="px-0 pb-0 card-body paket-based" id="paket-awesome">
+									<div class="m-0 row ">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio28" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio28" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 503.400">
+													<p class="m-0 small">6 Tahun</p>
+													<p class="m-0 h5 fs-5">Rp83.900</p>
+
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio29" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio29" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 646.800">
+													<p class="m-0 small">1 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp53.900
+														<del class="text-muted small">83.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															360.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio30" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio30" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 933.600">
+													<p class="m-0 small">2 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp38.900
+														<del class="text-muted small">83.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															1.080.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio31" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio31" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 968.400">
+													<p class="m-0 small">3 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp26.900
+														<del class="text-muted small">83.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															2.052.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+										</div>
+									</div>
+								</div>
+								<div class="px-0 pb-0 card-body paket-based" id="paket-fantastic">
+									<div class="m-0 row ">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio32" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio32" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 761.400">
+													<p class="m-0 small">6 Tahun</p>
+													<p class="m-0 h5 fs-5">Rp126.900</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio33" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio33" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 1.366.800">
+													<p class="m-0 small">1 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp113.900
+														<del class="text-muted small">126.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															158.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio34" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio34" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 2.469.600">
+													<p class="m-0 small">2 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp102.900
+														<del class="text-muted small">126.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															576.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio35" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio35" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 3.128.400">
+													<p class="m-0 small">3 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp86.900
+														<del class="text-muted small">126.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															1.440.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+										</div>
+									</div>
+								</div>
+								<div class="px-0 pb-0 card-body paket-based" id="paket-corporate">
+									<div class="m-0 row ">
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio36" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio36" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 3.023.400">
+													<p class="m-0 small">6 Tahun</p>
+													<p class="m-0 h5 fs-5">Rp503.900</p>
+
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio37" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio37" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 4.726.800">
+													<p class="m-0 small">1 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp393.900
+														<del class="text-muted small">503.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															1.320.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="customRadio38" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio38" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 8.493.600">
+													<p class="m-0 small">2 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp353.900
+														<del class="text-muted small">503.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															3.600.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<div class="ribbon">
+													<span>Popular</span>
+												</div>
+												<input type="radio" id="customRadio39" name="customRadiokontrak"
+													class="custom-control-input ">
+												<label role="button"
+													class="p-2 rounded-lg bg-light custom-control-label p-sm-3 d-block mh-92 radio-right "
+													for="customRadio39" data-toggle="tooltip" data-placement="bottom"
+													title="" tabindex="0" data-original-title="Total 10.832.400">
+													<p class="m-0 small">3 Tahun </p>
+													<p class="m-0 h5 fs-5">Rp300.900
+														<del class="text-muted small">503.900 </del>
+													</p>
+													<p class="m-0 small">
+														<span
+															class="badge badge-pill badge-success font-weight-normal">Hemat
+															7.308.000</span>
+													</p>
+												</label>
+											</div>
+										</div>
+										<div class="mb-3 col-xl col-md-4 col-sm-6">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- alt domain w/ search -->
+							<div class="mb-5 border-0 shadow-sm card " id="">
+								<div class="border-0 card-header ">
+									<div class="row align-items-center">
+										<div class="col">
+											<p class="m-0 text-muted h5">Domain</p>
+										</div>
+									</div>
+								</div>
+								<div class="card-body border-bottom" id="has-domain-q">
+									<div class="mb-2 text-muted">Masukkan nama domain anda</div>
+
+									<!-- start form cek domain -->
+									<form action="" class="domain-w-search ">
+										<div class="mb-3 input-group input-group-lg">
+											<input placeholder="www.domainanda.com" type="text" class="form-control "
+												id="basic-url">
+
+											<div class="input-group-append">
+												<button class="btn btn-warning" type="button"
+													id="cari-domain-exist">Cari</button>
+											</div>
+										</div>
+
+									</form>
+
+									<style>
+									</style>
+									<!-- end form domain -->
+
+									<div class="results_display alert small alert-info notavailable">
+										Domain sudah ada, silakan pilih hosting saja atau hosting+ transfer
+									</div>
+									<div class="results_display alert small alert-success available">
+										Domain ditemukan
+									</div>
+								</div>
+
+								<div class="card-body border-bottom">
+									<div class="my-2 form-check radio m0 d-block">
+										<label class="form-check-label" for="radiodomainexist1" id="transfer-q-no">
+											<input class="form-check-input domain-radio" type="radio"
+												name="radiodomainexist" id="radiodomainexist1" value="1" checked="">
+											Hosting Saja
+											<div id="domain_exist_info" class="badge badge-danger font-weight-normal">
+												<span class="">Gratis domain selamanya tidak berlaku</span>
+											</div>
+										</label>
+									</div>
+									<div class="my-2 form-check radio m0 d-block" id="transfer-q-yes">
+										<label class="form-check-label" for="radiodomainexist2">
+											<input class="form-check-input domain-radio" type="radio"
+												name="radiodomainexist" id="radiodomainexist2" value="2">
+											Hosting + Transfer Domains
+										</label>
+									</div>
+
+									<div class="p-3 mt-3 collapse" id="transfer-yes">
+										<div class="mb-2 text-muted">Masukkan EPP / Auth Code anda</div>
+										<div class="input-group input-group-lg">
+											<input type="text" class="form-control border-right-0" name="eppcode"
+												id="inputAuthCode" placeholder="Kode EPP / Auth Code"
+												data-toggle="tooltip" data-placement="left" data-trigger="manual"
+												title="" data-original-title="Harus Diisi">
+											<div class="input-group-append border-left-0">
+												<span class="bg-white input-group-text" data-toggle="tooltip"
+													data-placement="left" title=""
+													data-original-title="Untuk transfer domain memerlukan kode yang digunakan untuk transfer domain yang sering disebut dengan Kode EPP / Auth Code">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+														fill="currentColor" class="bi bi-info-circle-fill"
+														viewBox="0 0 16 16">
+														<path
+															d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+													</svg>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="mb-2 text-muted">Pilih Add On</div>
+									<div class="pt-3 small">
+
+										<div class="">
+											<div class="fituraddonproducts">
+												<div class="checkbox"> <label> <input type="checkbox"
+															class="addondomain" name="domain[dgh.com][ssl]" value="1">
+														SSL https:// <b class="text-orange f14">Rp 119.000,00 </b>/1
+														Tahun
+													</label> </div>
+											</div>
+											<div class="fituraddonproducts">
+												<div class="checkbox"> <label> <input type="checkbox"
+															class="addondomain" name="domain[dgh.com][googleindex]"
+															value="1"> Google Index <b class="text-orange f14">Rp
+															150.000,00</b> (Satu
+														Kali) </label> </div>
+											</div>
+											<div class="fituraddonproducts">
+												<div class="checkbox"> <label> <input type="checkbox"
+															class="addondomain" name="domain[dgh.com][submission]"
+															value="1"> 50 Iklan Indonesia Submission <b
+															class="text-orange f14">Rp
+															25.000,00</b> (Satu Kali) </label> </div>
+											</div>
+											<div class="fituraddonproducts">
+												<div class="checkbox"> <label> <input type="checkbox"
+															class="addondomain" name="domain[dgh.com][polivalen]"
+															value="1"> Polivalen WooCommerse Theme <b
+															class="text-orange f14">Rp
+															390.000,00</b> (Satu Kali) </label> </div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- aned alt domain w search -->
+
+							<div class="mb-5 alert alert-success collapse" role="alert" id="get-free-xyz">
+								<h4 class="alert-heading">Selamat! </h4>
+								<p>Anda mendapatkan satu lagi domain gratis <span data-toggle="tooltip"
+										data-placement="right" title=""
+										data-original-title="Gratis domain .XYZ berlaku 7 hari sejak order hosting diaktifkan. Silakan order kemudian konfirmasi ke CS."><i
+											data-feather="info" class=""></i>
+									</span></p>
+								<button class="btn btn-sm btn-success" type="button" data-toggle="collapse"
+									data-target="#collapseExample" aria-expanded="false"
+									aria-controls="collapseExample">
+									Ambil Sekarang
+								</button>
+								<img class="d-none d-sm-block position-absolute" style="right:0 ; top: -30px"
+									width="160px" src="https://cdn-icons-png.flaticon.com/512/4213/4213958.png" alt="">
+								<div class="collapse" id="collapseExample">
+									<hr>
+									<!-- start form domain-gratis -->
+									<form method="post" action="" class="form-inline w-100 ">
+										<input type="text" name="domainfreenamehosting"
+											class="mr-2 form-control form-control-lg" style="width: calc( 100% - 80px);"
+											placeholder="Cari nama domain Anda .MY.ID Anda disini" value="">
+										<div class="input-group-append">
+											<button id="cekdomain" class="border-0 btn btn-lg btn-secondary"
+												type="button">Cari</button>
+										</div>
+									</form>
+									<!-- end form domain-gratis -->
+									<div id="resultdomainfreearea">
+										<div class="mt-3 results_display available alert border-success checkbox "
+											id="domain_free_xyz">
+											<label class="m-0 label-list d-block">
+												<div class="m-0 checkbox row align-items-center" id="check_free_xyz">
+													<input class="col-auto mt-1 domaincheck domainfreelist"
+														type="checkbox" name="domainfree[domainbaru.xyz][name]"
+														value="domainbaru.xyz" data-toggle="collapse"
+														data-target="#collapseOne_domain_free_xyz" aria-expanded="true">
+													<div class="domain_name font-weight-bold col-10 col-sm">
+														domainbaru.xyz
+													</div>
+													<div class="domain_harga col-10 col-sm small"><del class="mr10">Rp
+															169.900</del> Rp 9.000/tahun</div>
+													<div class="col-auto pr-0 ml-0 domain_name domain-available small">
+														<span><i data-feather="check"
+																class="p-1 text-light bg-success rounded-pill"></i>
+														</span>
+													</div>
+												</div>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb-5 border-0 shadow-sm card collapse" id="summary">
+								<div class="card-body ">
+									<ul class="list-unstyled ">
+										<li class="">
+											<div class="py-2 shadow-xs row no-gutters ">
+
+												<div class="col-6">
+													<p class="m-0 ">Register Domain </p>
+													<p class="m-0 font-weight-bold ">adaband.xyz
+														<select class="border-0 small ">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+														</select>
+														<span class="font-weight-normal">Tahun</span>
+													</p>
+												</div>
+												<div class="col-auto ml-auto ">
+													<span class="font-weight-bold">Rp129.900 </span>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<div class="p-3 text-muted bg-light position-relative">
+										Kupon Promo
+										<button class="p-0 btn position-absolute btn-link" type="button"
+											data-toggle="collapse" data-target="#kupons" aria-expanded="false"
+											aria-controls="#kupons" style="right:15px">
+											Masukkan Kode
+										</button>
+										<div class="collapse bg-light" id="kupons">
+											<form action="">
+												<div class="pt-3 m-0 ml-auto form-inline small" style="max-width:244px">
+
+													<div class="mb-0 mr-2 form-group">
+														<label for="inputPassword2" class="sr-only">Kode</label>
+														<input type="text" class="py-3 form-control form-control-sm"
+															id="inputPassword2" placeholder="Kode Kupon">
+													</div>
+													<button type="submit" class="btn btn-sm btn-primary"><i
+															data-feather="plus" class=""></i></button>
+
+												</div>
+											</form>
+										</div>
+									</div>
+
+									<hr>
+									<div class="row no-gutters">
+										<div class="col-6">
+											<p class="m-0 text-info">Potongan</p>
+										</div>
+										<div class="col-auto ml-auto ">
+											<span class="font-weight-bold text-info">-Rp149.900 </span>
+										</div>
+									</div>
+									<hr>
+									<div class="row no-gutters">
+										<div class="col-6">
+											<p class="m-0 ">PPN</p>
+										</div>
+										<div class="col-auto ml-auto ">
+											<span class="font-weight-bold">Rp149.900 </span>
+										</div>
+									</div>
+									<hr>
+									<div class="row no-gutters">
+										<div class="col-6">
+											<p class="m-0 ">Total</p>
+										</div>
+										<div class="col-auto ml-auto ">
+											<span class="font-weight-bold h5">Rp. 1.484.560</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="mb-5 alert collapse alert-success" id="sukses-login" role="alert">
+								<strong>Selamat datang Johan</strong> anda sudah berhasil login.
+							</div>
+							<div class="mb-5 border-0 shadow-sm card" id="has-akun-q">
+								<div class="card-body border-bottom">
+									<div class=" row align-items-center justify-content-center">
+										<div class="col-auto rounded-lg ">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="has-akun-yes-radio" name="has-akun"
+													class="custom-control-input " checked value="has-akun-yes">
+												<label role="button" class="mb-0 rounded-lg btn btn-light "
+													for="has-akun-yes-radio">
+													Login Akun
+												</label>
+											</div>
+										</div>
+										<div class="col-auto ">
+											<div class="p-0 custom-control custom-radio rad-1 ">
+												<input type="radio" id="has-akun-no-radio" name="has-akun"
+													class="custom-control-input " value="has-akun-no">
+												<label role="button" class="mb-0 rounded-lg btn btn-light "
+													for="has-akun-no-radio">
+													Daftar Akun
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-body akun-login collapse " id="has-akun-yes">
+									<div class="row ">
+										<!-- start form login -->
+										<form id="formlogin" method="post" action="" novalidate="novalidate"
+											class="mx-auto col-lg-6">
+											<div class="form-row">
+												<div class="form-group col-md-12">
+													<!-- <label for="inputEmail4">Email</label> -->
+													<input type="email" class="form-control" name="emailchecklogin"
+														id="emailchecklogin" placeholder="Email">
+												</div>
+											</div>
+											<div class="form-group ">
+												<!-- <label for="exampleInputPassword1">Password</label> -->
+												<input type="password" class="form-control" id="exampleInputPassword1"
+													placeholder="Password">
+											</div>
+											<div class="form-group ">
+												<input type="button" class="mx-auto btn btn-warning d-flex"
+													value="Login" id="btn-log">
+											</div>
+										</form>
+										<!-- end form login -->
+									</div>
+								</div>
+								<div class="card-body akun-register collapse" id="has-akun-no">
+									<div class=" row">
+										<!-- start form register -->
+										<form id="formregister" method="post" action="" novalidate="novalidate"
+											class="mx-auto col-lg-10">
+											<div class="form-row">
+												<div class="form-group col-md-12">
+													<!-- <label for="inputEmail4">Email</label> -->
+													<input type="email" class="form-control" name="emailchecklogin"
+														id="emailchecklogin" placeholder="Email">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<!-- <label for="inputPassword4">Password</label> -->
+													<input type="password" class="form-control" id="inputPassword4"
+														placeholder="Password">
+												</div>
+												<div class="form-group col-md-6">
+													<!-- <label for="inputPassword4">Ulangi Password</label> -->
+													<input type="password" class="form-control" id="inputPassword5"
+														placeholder="Ulangi Password">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-6">
+													<!-- <label for="inputName">Nama</label> -->
+													<input type="text" class="form-control" id="inputName"
+														placeholder="Nama">
+												</div>
+												<div class="form-group col-md-6">
+													<!-- <label for="inputName">No Handphone</label> -->
+													<input type="text" class="form-control" id="inputPhone"
+														placeholder="No. Hp">
+												</div>
+												<div class="form-group col">
+													<!-- <label for="inputAddress2">Address</label> -->
+													<input type="text" class="form-control" id="inputAddress"
+														placeholder="Alamat">
+												</div>
+											</div>
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<!-- <label for="inputState">Propinsi</label> -->
+													<select id="inputState" class="form-control">
+														<option selected>Pilih Provinsi...</option>
+														<option>...</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<!-- <label for="inputCity">Kota</label> -->
+													<select id="inputState" class="form-control">
+														<option selected>Pilih Kota...</option>
+														<option>...</option>
+													</select>
+												</div>
+												<div class="form-group col-md-4">
+													<!-- <label for="inputZip">Kode Pos</label> -->
+													<input type="text" class="form-control" id="inputZip"
+														placeholder="Kode Pos">
+												</div>
+											</div>
+											<div class="form-group ">
+												<input type="button" class="mx-auto btn btn-warning d-flex"
+													value="Daftar" id="btn-reg">
+											</div>
+										</form>
+										<!-- end form login -->
+									</div>
+								</div>
+							</div>
+							<div class="mb-5 border-0 shadow-sm card collapse" id="payment-box">
+								<div class="border-0 card-header ">
+									<div class="row align-items-center">
+										<div class="col">
+											<p class="m-0 text-muted h5">Payment</p>
+										</div>
+										<div class="col-auto ml-auto">
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-info rounded-0 small" role="alert">
+									Untuk pembayaran melalui indomaret maksimal limit pembayaran 2,5 juta
+								</div>
+								<div class="card-body">
+									<div class="small">
+										<div class="row">
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod"
+														id="payment-method-banktransferbcaadditional"
+														value="banktransferbcaadditional" checked="">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransferbcaadditional">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bca.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BCA
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod"
+														id="payment-method-banktransfermandiriadditional"
+														value="banktransfermandiriadditional">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransfermandiriadditional">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/mandiri.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">Mandiri
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-banktransferbri"
+														value="banktransferbri">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransferbri">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bri.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BRI
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-banktransferbni"
+														value="banktransferbni">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransferbni">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bni.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BNI
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-banktransfermabsi"
+														value="banktransfermabsi">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransfermabsi">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bsi.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BSI
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-banktransferbtpn"
+														value="banktransferbtpn">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransferbtpn">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/btpn.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BTPN
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-banktransferbii"
+														value="banktransferbii">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-banktransferbii">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bii.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BII
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-midtransgopay"
+														value="midtransgopay">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-midtransgopay">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/gopay.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">GoPay
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-ovopay" value="ovopay">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-ovopay">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/ovo.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">OVO
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-nicepay"
+														value="nicepay">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-nicepay">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/alfamart.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">Alfamart
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-sakuku" value="sakuku">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-sakuku">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/sakuku.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">Sakuku
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-midtransbcaklikpay"
+														value="midtransbcaklikpay">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-midtransbcaklikpay">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/bca-klikpay.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">BCA Clickpay
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+
+
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod"
+														id="payment-method-midtransmandiribillpayment"
+														value="midtransmandiribillpayment">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-midtransmandiribillpayment">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/mandiri.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">Mandiri Bill
+																Payment
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<div class="col-md-4 col-lg-3 ">
+												<div class="p-0 custom-control custom-radio rad-1 ">
+													<input type="radio" class="custom-control-input"
+														name="paymentmethod" id="payment-method-midtranspermatava"
+														value="midtranspermatava">
+													<label role="button"
+														class="p-3 custom-control-label my-md-2 d-block radio-right "
+														for="payment-method-midtranspermatava">
+														<div class="row no-gutters">
+															<div class="col-2 col-md-5">
+																<img class="h20" src="assets/img/permata.svg">
+															</div>
+															<div class="pr-3 ml-auto col-9 col-md-6">Permata Virtual
+																Account
+															</div>
+														</div>
+													</label>
+												</div>
+											</div>
+											<style>
+												.h20 {
+													height: 22px;
+												}
+											</style>
+										</div>
+										<br>
+										<div class="row no-gutters ">
+											<div class="col-12">
+												<div class="form-group">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="gridCheck"
+															required>
+														<label class="form-check-label" for="gridCheck">
+															Saya telah membaca dan menyetujui serta tunduk kepada <a
+																href="">Ketentuan Layanan</a>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row no-gutters ">
+											<div class="col-12">
+												<div class="form-group">
+													<div class="form-check">
+														<input class="form-check-input" type="checkbox" id="subsCheck"
+															required>
+														<label class="form-check-label" for="subsCheck">
+															Saya ingin mengetahui informasi, berita, dan promo terbaru
+															IDwebhost
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="">
+											<a href="order-login-register.html"
+												class="btn btn-lg btn-warning btn-block font-weight-bold"
+												type="submit">Checkout</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+	<!-- Main -->
+	<script type="text/javascript" src="assets/js/main.js"></script>
+	<!-- slect -->
+	<link rel=stylesheet href="https://unpkg.com/bootstrap-select@1.13.8/dist/css/bootstrap-select.css" />
+	<script src="https://unpkg.com/bootstrap-select@1.13.8/dist/js/bootstrap-select.min.js"></script>
+	<!-- icon -->
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<!-- slick -->
+	<script>
+		$(document).ready(function () {
+			const $_SELECT_PICKER = $('.my-image-selectpicker');
+
+			$_SELECT_PICKER.find('option').each((idx, elem) => {
+				const $OPTION = $(elem);
+				const IMAGE_URL = $OPTION.attr('data-thumbnail');
+
+				// BASE_URL + IMAGE_URL
+
+				if (IMAGE_URL) {
+					$OPTION.attr('data-content', "<img src='%i'/> %s".replace(/%i/, IMAGE_URL).replace(/%s/, $OPTION.text()))
+				}
+
+			});
+			$_SELECT_PICKER.selectpicker();
+		});
+	</script>
+	<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			'use strict';
+			window.addEventListener('load', function () {
+				// Fetch all the forms we want to apply custom Bootstrap validation styles to
+				var forms = document.getElementsByClassName('needs-validation');
+				// Loop over them and prevent submission
+				var validation = Array.prototype.filter.call(forms, function (form) {
+					form.addEventListener('submit', function (event) {
+						if (form.checkValidity() === false) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
+						form.classList.add('was-validated');
+					}, false);
+				});
+			}, false);
+		})();
+	</script>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+
+
+Lisensi CloudLinux (?)
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk semua panel yang tersedia di IDwebhost atau tanpa panel." class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Lisensi Softaculous (?)
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk VPS dengan panel cPanel/DirectAdmin/Plesk" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Lisensi LiteSpeed (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk VPS dengan panel cPanel/DirectAdmin/Plesk" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Lisensi Imunify360 (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk semua panel yang tersedia di IDwebhost" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Lisensi SitePad (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk semua panel yang tersedia di IDwebhost" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Vps Manage Service (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Full Manage Server Rentang Waktu Layanan 8 Jam/Hari perbulan" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Layanan Backup VPS (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="Untuk VPS dengan panel atau tanpa panel" class="badge text-bold text-white bg-light-blue">?</span>
+
+-------------------------------------------------
+
+Anti Spam Filter (?)
+
+
+<span data-toggle="tooltip" style="margin-top: -3px; width: 18px; height: 18px" data-placement="top" title="info" data-original-title="UUntuk semua panel yang tersedia di IDwebhost" class="badge text-bold text-white bg-light-blue">?</span>

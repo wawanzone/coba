@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="id">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Site Title</title>
+		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+		<meta name="description" content="Site description">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Open Graph -->
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Site Title">
+		<meta property="og:description" content="Site description">
+		<meta property="og:image" content="../assets/img/opengraph.jpeg">
+		<meta property="og:locale" content="id_ID">
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="../assets/img/favicon.ico">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Preconnect -->
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+		<link rel="preconnect" href="https://ajax.googleapis.com" />
+		<!-- Preload JS -->
+		<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script" />
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js" as="script" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" as="script" />
+		<link rel="preload" href="../assets/js/main.js" as="script" />
+		<!-- Preload CSS -->
+		<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" as="style" />
+		<link rel="preload" href="../assets/css/main.css" as="style" />
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/member-area.css">
+	</head>
+
+	<body id="">
+		<header class="become sticky-top shadow-xs">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-midnight">
+				<div class="container-fluid">
+					<div class="custom-control custom-switch my-3 mr-3">
+						<input type="checkbox" class="custom-control-input input-lg" onclick="darkLight()" id="customSwitch1">
+						<label for="customSwitch1" class="custom-control-label" aria-label="dark-mode"></label>
+					</div>
+					<a class="navbar-brand font-weight-bolder h4 my-0" href="index.html">
+						<!-- <img src="../assets/img/logo-negative.svg" alt="logos" width="150"> -->
+						<img src="../assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-dark" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto ">
+							<li class="nav-item">
+								<a class=" mr-2 nav-link " href="../domain-murah.html">Domain<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item ">
+								<a class=" mr-2 nav-link " href="../hosting-murah.html">Hosting<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link  dropdown-toggle " href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Website <i data-feather="chevron-down"></i>
+								</a>
+								<div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item py-3" href="../jasa-pembuatan-website.html">
+										<span=""><i class="mr-2 " data-feather="layout"></i></span> Jasa Pembuatan Website
+									</a>
+
+									<a class="dropdown-item py-3" href="https://www.jejualan.com">
+										<span=""><i class="mr-2 " data-feather="shopping-bag"></i></span> Jasa Pembuatan Toko Online
+									</a>
+
+									<a class="dropdown-item py-3" href="../prmosi-online.html">
+										<span=""><i class="mr-2 " data-feather="thumbs-up"></i></span> Jasa Promosi Online <span class="badge  badge-success align-middle"><small><b>NEW</b></small></span>
+									</a>
+
+									<a class="dropdown-item py-3" href="../website-desa-gratis.html">
+										<span=""><i class="mr-2 " data-feather="globe"></i></span> Website Desa Gratis
+									</a>
+									<a class="dropdown-item py-3" href="http://wawanzone.com/coba/lp-school">
+										<span=""><i class="mr-2 " data-feather="globe"></i></span> Website Sekolah Gratis
+									</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link  dropdown-toggle " href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Layanan <i data-feather="chevron-down"></i>
+								</a>
+								<div class=" dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item py-3" href="../ssl-murah.html">
+										<span=""><i class="mr-2 " data-feather="lock"></i></span> SSL
+									</a>
+									<a class="dropdown-item py-3" href="../hosting-unlimited.html">
+										<span=""><i class="mr-2 " data-feather="hard-drive"></i></span> Hosting Unlimited
+									</a>
+									<a class="dropdown-item py-3" href="../wordpress-hosting.html">
+										<span=""><i class="mr-2 " data-feather="hard-drive"></i></span> Wordpress Hosting
+									</a>
+									<a class="dropdown-item py-3" href="../domain-id.html">
+										<span=""><i class="mr-2 " data-feather="flag"></i></span> Domain .ID
+									</a>
+
+									<a class="dropdown-item py-3" href="https://www.resellercamp.com">
+										<span=""><i class="mr-2 " data-feather="refresh-cw"></i></span> Reseller Domain
+									</a>
+									<a class="dropdown-item py-3" href="../hosting-indonesia.html">
+										<span=""><i class="mr-2 " data-feather="flag"></i></span> Hosting Indonesia
+									</a>
+									<a class="dropdown-item py-3" href="../dedicated-server.html">
+										<span=""><i class="mr-2 " data-feather="server"></i></span> Dedicated Server
+									</a>
+									<a class="dropdown-item py-3" href="../vps-murah.html">
+										<span=""><i class="mr-2 " data-feather="shield"></i></span> VPS Murah <span class="badge  badge-success align-middle"><small><b>NEW</b></small></span>
+									</a>
+									<a class="dropdown-item py-3" href="../gsuite.html">
+										<span=""><i class="mr-2 " data-feather="package"></i></span> Google Workspace
+									</a>
+								</div>
+							</li>
+							<li class="nav-item ">
+								<a class=" mr-2 nav-link " href="../afiliasi.html">Afiliasi<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item ">
+								<a class=" mr-2 nav-link " href="../blog.html">Blog<span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item ">
+								<a class=" mr-2 nav-link text-warning" href="../promo.html">Promo</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-md-auto">
+							<!-- <li class="nav-item ">
+	<a href="member-idwebhost.html" class=" nav-link">
+		<span class="btn-outline-light btn rounded-pill btn-small  px-3"> Login</span></a>
+</li> -->
+							<li class="nav-item dropdown">
+								<a class="nav-link  dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Account <i data-feather="chevron-down"></i>
+								</a>
+								<div class=" dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item py-1" href="member-area-login.html">
+										Login
+									</a>
+									<a class="dropdown-item py-1" href="member-area-forgot-password.html">
+										Forgot Password
+									</a>
+									<a class="dropdown-item py-1" href="member-area-pengaturan-kemanan.html">
+										Pengaturan Keamanan
+									</a>
+									<a class="dropdown-item py-1" href="member-area-data-email.html">
+										Data Email
+									</a>
+									<a class="dropdown-item py-1" href="member-area-ubah-password.html">
+										Ubah Password
+									</a>
+									<a class="dropdown-item py-1 text-danger" href="login.html">
+										Keluar
+									</a>
+
+								</div>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link  dropdown-toggle " href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<span class=" py-2 "> <i data-feather="bell"></i><span class="badge badge-pill badge-danger position-absolute small">5</span></span>
+								</a>
+								<div class=" dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item py-1" href="member-area-login.html">
+										Notif
+									</a>
+								</div>
+							</li>
+							<li class="nav-item ">
+								<a href="order.html" class="nav-link">
+									<span class=" py-2 "> <i data-feather="shopping-cart"></i><span class="badge badge-pill badge-danger position-absolute small">2</span></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main class="container-fluid">
+
+			<section class="row " style="background:#203f7f1c;">
+				<div class="col-md-6 my-5  mx-auto" style="max-width:500px">
+					<div class="card border-0 shadow-lg small">
+						<div class="card-body text-center pt-5">
+							<img loading="lazy" class="mb-3" src="../assets/img/logo-idwebhost.png" alt="idwebhost-web-hosting-terbaik" width="150">
+							<h1 class="h5 text-center"> Member Area Login</h1>
+						</div>
+						<div class="card-body pb-5">
+							<div class="row ">
+								<div class="col-sm-11 mx-auto  ">
+									<form method="post" action="https://member.idwebhost.com/dologincustom.php" role="form">
+										<input type="hidden" name="token" value="ae19cffbad9a498ec1270b2c3c00bec48a4b0e49">
+										<div class="form-group">
+											<label class="font-weight-bolder" for="inputEmail">Alamat Email</label>
+											<input type="email" name="username" class="form-control py-4 " id="inputEmail" placeholder="Masukkan email" autofocus="">
+										</div>
+										<div class="form-group">
+											<label class="font-weight-bolder" for="inputPassword">Password</label><a href="" class="float-right">Forget Password</a>
+											<input type="password" name="password" class="form-control py-4 " id="inputPassword" placeholder="Password" autocomplete="off">
+										</div>
+										<div class="form-group">
+											<label class="font-weight-bolder" for="inputPassword">Kode Validasi</label>
+											<div class="row ">
+												<div class="col-auto">
+													<img class="" src="https://member.idwebhost.com/pwgen.php?gennum=1073" alt="">
+												</div>
+												<div class="col">
+													<input type="text" name="validasi" class="form-control " id="inputEmail" placeholder="Kode validasi" autofocus="">
+												</div>
+											</div>
+										</div>
+										<div class="form-group ">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input" id="customCheck1">
+												<label class="custom-control-label " for="customCheck1">Ingatkan saya</label>
+											</div>
+										</div>
+										<div class="">
+											<!-- <input id="login" type="submit" class="btn btn-warning btn-lg btn-block" value="Masuk"> -->
+											<a href="member-area-dashboard.html" class="btn btn-warning btn-lg btn-block">Login</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer text-center border-0">
+							<p class="my-2">Don't have an account yet? <a href=""> Register</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="small text-dark ">
+			<div class="container-fluid">
+				<section class="">
+					<div class="col-xl-10 mx-auto ">
+						<div class="row pt-5 text-center text-sm-left justify-content-md-center ">
+							<div class="col-lg-4 col-md-3">
+								<h4 class=" font-weight-bolder mb-2">
+									<img loading="lazy" src="../assets/img/logo-idwebhost.svg" class="has" alt="idwebhost-web-hosting-terbaik" width="150" height="26">
+								</h4>
+								<p class="text-muted mb-3">IDwebhost penyedia layanan hosting murah No 1 Indonesia</p>
+								<div class="my-3">
+									<a href="index.html" class="btn btn-danger rounded-pill wh40 " aria-label="idwebhost-instagram" style="border: #b3307d;
+									    background: linear-gradient(150deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);"><i class="" data-feather="instagram"></i></a>
+									<a href="index.html" class="btn btn-primary rounded-pill wh40 " aria-label="idwebhost-twitter" style="    background: #03A9F4;
+									    border-color: #03A9F4;"><i class="" data-feather="twitter"></i></a>
+									<a href="index.html" class="btn btn-primary rounded-pill wh40 " aria-label="idwebhost-facebook" style="    background: #203f7f;
+									    border-color: #203f7f;"><i class="" data-feather="facebook"></i></a>
+									<a href="index.html" class="btn btn-danger rounded-pill wh40 " aria-label="idwebhost-youtube"><i class="" data-feather="youtube"></i></a>
+									<a href="index.html" class="btn btn-primary rounded-pill wh40 " aria-label="idwebhost-linkedin"><i class="" data-feather="linkedin"></i></a>
+								</div>
+								<h3 class="h6 text-muted font-weight-bold ">Yogyakarta</h3>
+								<p class="text-muted">
+									Jl. Perintis Kemerdekaan No. 33 <br>
+									Yogyakarta 55161<br>
+									Telp: (0274) 415585 /
+									Fax : 0274-385603 </p>
+								<h3 class="h6 text-muted font-weight-bold ">Jakarta *</h3>
+								<p class="text-muted">
+									Graha JogjaCamp <br>
+									Jl. Mampang Prapatan 19C <br>
+									Jakarta Selatan 12790 <br>
+									Telp: (021) 79184155 /
+									Fax: (021) 7941417
+								</p>
+								<h3 class="h6 text-muted font-weight-bold ">Semarang *</h3>
+								<p class="text-muted">
+									Jogjacamp Semarang <br>
+									Jl. Kedung Mundu Raya No. 99 B <br>
+									Semarang 50274 <br>
+									Telp: (024) 3000 1000) /
+									Fax: (024) 76581513
+								</p>
+
+							</div>
+							<div class="col-lg-3 col-md-3 ">
+								<h3 class="font-weight-bold mb-2 h6">Layanan Hosting</h3>
+								<ul class="list-unstyled lh-2">
+									<li> <a href="hosting-murah.html" class=" text-muted">Hosting Murah</a></li>
+									<li> <a href="hosting-indonesia.html" class=" text-muted">Hosting Indonesia</a></li>
+									<li> <a href="hosting-unlimited.html" class=" text-muted">Hosting Unlimited</a></li>
+									<li> <a href="hostinglaravel.html" class=" text-muted">Hosting Laravel</a></li>
+									<li> <a href="hosting-gratis.html" class=" text-muted">Hosting Gratis</a></li>
+									<li> <a href="wordpress-hosting.html" class=" text-muted">Wordpress Hosting</a></li>
+									<li> <a href="ssl-murah.html" class=" text-muted">SSL Murah</a></li>
+									<li> <a href="vps-murah.html" class=" text-muted">VPS Murah</a></li>
+									<li> <a href="jasa-pembuatan-website.html" class=" text-muted">Jasa Pembuatan Website</a></li>
+									<li> <a href="website-desa-gratis.html" class=" text-muted">Web Desa Gratis</a></li>
+									<li> <a href="gsuite.html" class=" text-muted">G Suite</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-3 ">
+								<h3 class="font-weight-bold mb-2 h6">Layanan Domain</h3>
+								<ul class="list-unstyled lh-2">
+									<li> <a href="domain-murah.html" class=" text-muted">Domain Murah</a></li>
+									<li> <a href="domain-id.html" class=" text-muted">Domain ID</a></li>
+									<li> <a href="https://resellercamp.com" class=" text-muted">Reseller Domain</a></li>
+									<li> <a href="domain-gratis.html" class=" text-muted">Domain Gratis</a></li>
+								</ul>
+								<h3 class="font-weight-bold mb-2 h6">Informasi</h3>
+								<ul class="list-unstyled lh-2">
+									<li> <a href="tutorial.html" class=" text-muted">Tutorial</a></li>
+									<li> <a href="cek-domain.html" class=" text-muted">Cek Domain</a></li>
+									<li> <a href="promo.html" class=" text-muted">Promo</a></li>
+									<li> <a href="cara-membuat-website.html" class=" text-muted">Cara Membuat Website</a></li>
+									<li> <a href="cara-mendapatkan-uang-dari-internet.html" class=" text-muted">Cara Mendapatkan Uang Dari Internet</a></li>
+									<li> <a href="jasa-pembuatan-aplikasi-android.html" class=" text-muted">Jasa Pembuatan Aplikasi Android</a></li>
+								</ul>
+							</div>
+							<div class="col-lg-2 col-md-3 ">
+								<h3 class="font-weight-bold mb-2 h6">Customer</h3>
+								<ul class="list-unstyled lh-2">
+									<li> <a href="https://member.idwebhost.com" class=" text-muted">Login</a></li>
+									<li> <a href="konfirmasi.html" class=" text-muted">Konfirmasi</a></li>
+									<li> <a href="pembayaran.html" class=" text-muted">Metode Pembayaran</a></li>
+									<li> <a href="tos.html" class=" text-muted">TOS & AUP</a></li>
+									<li> <a href="service-level-agreement.html" class=" text-muted">Service Level Agreement</a></li>
+								</ul>
+								<h3 class="font-weight-bold mb-2 h6">Company</h3>
+								<ul class="list-unstyled lh-2">
+									<li> <a href="afiliasi.html" class=" text-muted">Afiliasi</a></li>
+									<li> <a href="review.html" class=" text-muted">Review Pelanggan</a></li>
+									<li> <a href="hosting-terbaik.html" class=" text-muted">Mengapa Kami Hosting Terbaik</a></li>
+									<li> <a href="tentang.html" class=" text-muted">Tentang Kami</a></li>
+									<li> <a href="blog.html" class=" text-muted">Blog</a></li>
+									<li> <a href="kecewa.html" class=" text-muted">Kecewa? Laporkan disini</a></li>
+									<li> <a href="karir.html" class=" text-muted">Karir</a></li>
+								</ul>
+							</div>
+							<div class="col-12 my-4 ">
+								<div class="row m-0 align-items-center  ">
+									<div class="col text-center p-2">
+										<img loading="lazy" src="../assets/img/bca.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/mandiri.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/bri.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/bni.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/mandiri.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/mandiri-syariah.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/permata.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/bii.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted" style="max-height: 25px;">
+									</div>
+									<div class=" col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/btpn.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/gopay.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/bca-klikpay.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/ovo.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/sakuku.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/alfamart.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+									<div class="col-3 col-sm text-center p-2">
+										<img loading="lazy" src="../assets/img/indomaret.svg" alt="idwebhost-web-hosting-terbaik" class="img-fluid img-muted  ">
+									</div>
+
+								</div>
+							</div>
+							<div class="col-auto  mx-auto ">
+								<img loading="lazy" src="https://img.idwebhost.com/cdn/2020/idwebhost/icon/mark-of-trust-certified-ISOIEC-27001-information-security-management-black-logo-En-GB.webp" alt="" width="184" height="94"
+									class="bg-white p-2">
+								<img loading="lazy" src="https://img.idwebhost.com/cdn/2020/idwebhost/icon/BSI-ANAB-Colour.webp" alt="" width="184" height="94" class="bg-white  p-2">
+							</div>
+
+
+						</div>
+					</div>
+					<div class="col-xl-10 mx-auto text-center">
+						<p class="my-3">Copyright © 2021 IDwebhost Allright Reserved</p>
+					</div>
+				</section>
+
+				<!-- Modal -->
+				<div class="modal fade" id="popup-hosting" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content bg-primary text-white">
+							<div class="modal-header  bg-transparent border-0">
+								<h5 class="modal-title" id="exampleModalLabel"><a class="navbar-brand font-weight-bolder h4 my-0" href="index.html">
+										<img loading="lazy" src="../assets/img/logo-idwebhost-negative.svg" class="has" alt="idwebhost-web-hosting-terbaik" width="150" height="26">
+									</a></h5>
+
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body p-md-5 overflow-hidden">
+								<div class="row align-items-end">
+
+									<div class="col-12">
+										<p class="">Sudah Saatnya <b>Go Online </b> Bangun Bisnis Dari Rumah</p>
+
+									</div>
+									<div class="col-md-12">
+										<div class="row m-0 p-3 align-items-center bg-midnight shadow" style="border:3px solid #2ca1fb; border-radius: 15px">
+											<div class="col-6 ">
+												<h2 class="h3 mb-3 font-weight-bold text-white">Hosting <br> 5GB
+												</h2>
+											</div>
+											<div class="col-6 text-right">
+												<span class="font-weight-bold">Diskon Up To </span>
+												<h2 class="display-4 font-weight-bold text-white my-0">
+													68%
+												</h2>
+											</div>
+											<div class="col-md-12">
+												<span class=" badge-success font-weight-bold position-absolute  rounded-pill px-3 py-2 d-block d-md-inline">
+													Gratis 2 Domain +
+													SSL</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-auto ml-auto mt-4">
+										<button type="button" class="btn btn-warning btn-lg mr-auto mt-4 border-0 shadow-lg">Order Sekarang</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a href="" target="_blank" class="d-block d-md-none btn-wa  fade show  shadow" aria-label="Chat WA" role="alert" rel="noopener">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff">
+				<path
+					d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+				</path>
+			</svg>
+
+		</a>
+		<div class="d-none d-md-block" style="position: fixed; bottom: 30px; left: 20px;">
+
+			<div role="alert" aria-live="assertive" aria-atomic="true" class="toast border-0 badge-warning shadow " data-autohide="true" data-delay="3000">
+				<div class="toast-header bg-transparent border-0">
+					<strong class="mr-auto ">Terimakasih</strong>
+					<small>11 mins ago</small>
+					<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="toast-body ">
+					<div class="row align-items-center no-gutters">
+						<div class="col-auto mx-auto"><span class="h1 text-center">🐙</span></div>
+						<div class="col-9"> <b>Wawanzone di Jogja</b> sudah membeli hosting Cute </div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			jQuery.event.special.touchstart = {
+				setup: function(_, ns, handle) {
+					this.addEventListener("touchstart", handle, {
+						passive: !ns.includes("noPreventDefault")
+					});
+				}
+			};
+			jQuery.event.special.touchmove = {
+				setup: function(_, ns, handle) {
+					this.addEventListener("touchmove", handle, {
+						passive: !ns.includes("noPreventDefault")
+					});
+				}
+			};
+			jQuery.event.special.wheel = {
+				setup: function(_, ns, handle) {
+					this.addEventListener("wheel", handle, {
+						passive: true
+					});
+				}
+			};
+			jQuery.event.special.mousewheel = {
+				setup: function(_, ns, handle) {
+					this.addEventListener("mousewheel", handle, {
+						passive: true
+					});
+				}
+			};
+		</script>
+		<!-- Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+		<!-- Main -->
+		<script src="../assets/js/main.js"></script>
+		<!-- icon -->
+		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script>
+			// toast
+			$('.toast').toast('show')
+			// cursor out top, banner show
+			var mouseY = 0;
+			var topValue = 0;
+			var popcounter = 0;
+			window.addEventListener("mouseout", function(e) {
+
+					mouseY = e.clientY;
+					if (mouseY <= topValue) {
+						if (popcounter <= 0) {
+							$('#popup-hosting').modal('show')
+							popcounter++
+						}
+					}
+				},
+				false);
+		</script>
+		<script>
+			window.CHATONOMY_COMPANY_ID = 4;
+			window.CHATONOMY_COMPANY_NAME = 'idwebhost';
+			window.CHATONOMY_WHITELIST_DEPTS = [2, 4, 5, 6, 14];
+
+			if (window.matchMedia("(min-width: 768px)").matches) {
+				function downloadJSAtOnload() {
+					var element = document.createElement("script");
+					element.src = "https://idwebhost.chatonomy.id/js/chatonomy-widget.min.js?v=2.2";
+					document.body.appendChild(element);
+				}
+				if (window.addEventListener)
+					window.addEventListener("load", downloadJSAtOnload, false);
+				else if (window.attachEvent)
+					window.attachEvent("onload", downloadJSAtOnload);
+				else window.onload = downloadJSAtOnload;
+			};
+		</script>
+
+	</body>
+
+</html>

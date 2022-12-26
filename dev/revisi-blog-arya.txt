@@ -1,0 +1,70 @@
+revisi blog dari mba edha
+
+==========================================
+HTML
+==========================================
+
+1. tambahan topbar-alert sebelum <header>
+
+<div class="alert bg-primary py-2 m-0  border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden" role="alert">
+    <div class="position-relative">
+        <a href="https://idwebhost.com/hosting-murah" class="btn text-white btn-sm btn-link mb-0">⭐️ Hosting 5GB Diskon Up To 68% ⭐️</a>
+    </div>
+    <!-- Close button -->
+    <button type="button" class="close text-white" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+
+2. bagian logo dibuat seperti ini
+
+<img src="assets/img/logo-idwebhost-negative.svg" alt="logos" width="150" height="26"><span class="ml-2 badge border d-none d-sm-inline-block">Blog</span>
+
+==========================================
+CSS
+==========================================
+
+[-] hapus
+
+@media(max-width: 996px) {
+    .navbar-collapse:after {
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        content: "";
+        position: absolute;
+    }
+}
+
+.navbar-collapse.collapse.show {
+    overflow-y: scroll;
+    height: calc(100vh - 72px);
+}
+
+[+] tambah
+
+@media(max-width: 996px) {
+    #navbarSupportedContent ul li a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 991px) {
+    .feather.feather-chevron-down {
+        float: right;
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+}
+
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    .box-logo {
+        width: 30px;
+        overflow: hidden;
+    }
+}
+
+pre {
+    color: inherit;
+}
