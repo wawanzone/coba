@@ -166,7 +166,7 @@ background: linear-gradient(0deg, rgba(6,119,75,1) 0%, rgba(7,118,75,1) 50%, rgb
     .frame-blue{
         background: radial-gradient(circle, rgb(25, 85, 143) 50%, rgb(15, 28, 57) 100%);
         border-radius: 15px;
-        border: 7px solid #df9914;
+        border: 5px solid #df9914;
         color: #fff;
     }
     .w-70{
@@ -270,7 +270,6 @@ background: linear-gradient(0deg, rgba(6,119,75,1) 0%, rgba(7,118,75,1) 50%, rgb
         background: linear-gradient(215deg, rgb(188, 133, 43) 0%, rgb(247, 176, 22) 100%);
       }
 
-      
 }
 
 .grayscale  img{
