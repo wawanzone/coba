@@ -1,0 +1,111 @@
+{{!< default}}
+
+
+{{#post}}
+{{!-- breadcrumb --}}
+{{> bredcrumb-menu}}
+
+{{!-- banner Section  --}}
+{{> cover-banner}}
+
+{{!-- changelog-section --}}
+<div class="changelog-section section-padding">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-md-3 mb-md-0 mb-30">
+                <div class="releases-side">
+                    <div class="releases-heading-inner">
+                        <h3 class="releases-heading">
+                            {{t "Releases"}}
+                        </h3>
+                        <span class="c-shape">
+                            {{> icons/shape}}
+                        </span>
+                    </div>
+                    <ul class="releases-version"></ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="post-full-content version-content-box">
+                    <div class="changelog-space"></div>
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{!-- partials/contact-promo.hbs --}}
+{{^is "home"}} 
+    <div class="bg-promo-section">
+        {{> contact-promo}}
+    </div>
+{{/is}}
+
+{{/post}}
+
+{{#contentFor "scripts"}}
+    <script>
+        $(document).ready(function(){
+            var $heading = $('.post-full-content h2'),
+                $releasesVersion = $('.releases-version')
+            $heading.each(function(){
+                var $titleId = $(this).attr('id'),
+                    $titleText = $(this).text(),
+                    $version = $titleText.split(' ')[1]
+                
+                $releasesVersion.append(`<li><a href="#${$titleId}">v${$version}</a></li>`)  
+                $(this).prepend(`<a href="#${$titleId}">#</a>`)
+            })
+
+
+            // Smooth scrolling on ID
+            var lastId,
+                topMenu = $('.releases-version'),
+                menuItems = topMenu.find('a'),
+                $tableContentID = menuItems.attr('href'),
+                scrollItems = menuItems.map(function () {
+                    var item = $($(this).attr('href'))
+                    if (item.length) {
+                        return item
+                    }
+                })
+            menuItems.click(function (e) {
+                var href = $(this).attr('href')
+                var offsetTop = href === '#' ? 0 : $(href).offset().top - 20
+                $('html, body').stop().animate(
+                    {
+                        scrollTop: offsetTop,
+                    },
+                    300
+                )
+                $(this).parent().addClass('active')
+                e.preventDefault()
+            })
+            $(window).scroll(function () {
+                var fromTop = $(this).scrollTop() + 50
+                var cur = scrollItems.map(function () {
+                    if ($(this).offset().top < fromTop) return this
+                })
+                cur = cur[cur.length - 1]
+                var id = cur && cur.length ? '#'+cur[0].id : ''
+
+                menuItems.each(function(){
+                    if(id === $(this).attr('href')){
+                        $(this).parent().addClass('active').siblings().removeClass('active')
+                    }
+                })
+                if (lastId !== id) {
+                    lastId = id
+                    var elem = menuItems
+                        .parent()
+                        .removeClass('active')
+                        .end()
+                        .filter('[href="#' + id + '"]')
+                    
+                }
+            })
+        })
+    </script>
+{{/contentFor}}

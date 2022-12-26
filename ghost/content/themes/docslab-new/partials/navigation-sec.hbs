@@ -1,0 +1,34 @@
+<div class="navigation-area">
+    <div class="row">
+        <div class="col-md-6 mb-md-0{{#next_post}} mb-30{{/next_post}} nav-left flex-row d-flex justify-content-start align-items-center flex-wrap">
+        {{#prev_post}}
+            <div class="thumb">
+                <a href="{{url}}">
+                    {{> icons/arrow-left}}
+                </a>
+            </div>
+            <div class="detials flex-1">
+                <p>{{t "Previous article"}}</p>
+                <a href="{{ url }}">
+                    <h6>{{ title }}</h6>
+                </a>
+            </div>
+        {{/prev_post}}
+        </div>
+        <div class="col-md-6 nav-right flex-row d-flex justify-content-end align-items-center flex-wrap">
+        {{#next_post}}
+            <div class="detials flex-1">
+                <p>{{t "Next article"}}</p>
+                <a href="{{ url }}">
+                    <h6>{{ title }}</h6>
+                </a>
+            </div>
+            <div class="thumb">
+                <a href="{{url}}">
+                    {{> icons/arrow-right}}
+                </a>
+            </div>
+        {{/next_post}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+{{!< default}}
+
+{{#tag}}
+<div class="breadcrumbs-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pl-0 mb-0">
+                        <li class="breadcrumb-item "><a href="{{@site.url}}">{{t "Home"}}</a></li>
+                        <li class="breadcrumb-item active">{{name}}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{{/tag}}
+
+<div class="post-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="post-wrapper">
+                    {{> docs-sidebar}}
+                    <div class="post-wrapper-content">
+                        {{#tag}}
+                        <div class="post-headlines">
+                            <h1>{{name}}</h1>
+                            {{#if description}}
+                                <p>{{description}}</p>
+                            {{/if}}
+                        </div>
+                        {{/tag}}
+                        <div class="tag-full-content-wrapper posts-wrapper pb-30">
+                            {{> post-card}}
+                        </div>
+                        {{!-- Load More --}}
+                        <div class="loadmore-section pb-50">
+                            <div class="mx-auto text-center">
+                                <div class="read-more-btn">
+                                    <button class="btn btn-primary load-more-posts">
+                                        {{t "Load More"}}
+                                        <span class="loading-posts">
+                                            {{> icons/loader}}
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        {{!-- // Load More --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{!-- partials/contact-promo.hbs --}}
+{{^is "home"}} 
+    <div class="bg-promo-section">
+        {{> contact-promo}}
+    </div>
+{{/is}}

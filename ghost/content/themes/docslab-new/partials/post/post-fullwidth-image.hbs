@@ -1,0 +1,63 @@
+<div class="post-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 custom-post-fullwidth">
+                {{> post-head}}
+                {{#if feature_image}}
+                    <div class="post-feature custom-post-image">
+                        <img srcset="{{img_url feature_image size="m"}} 600w,
+                        {{img_url feature_image size="lm"}} 777w,
+                        {{img_url feature_image size="l"}} 940w,
+                        {{img_url feature_image size="xl"}} 1130w"
+                        sizes="(max-width: 991px) 940px,
+                        (max-width: 1199px) 777px,
+                        1130px" src="{{img_url feature_image size="xl"}}" alt="{{title}}">
+                    </div>
+                {{/if}}
+                {{!-- table-inner-contents --}}
+                {{#if access}}
+                    <div class="table-inner-contents">
+                        <h6 class="table-title">{{t "Table of contents"}}</h6>
+                        <div class="toc"></div>
+                    </div>
+                {{/if}}
+                <div class="post-full-content page-full-content">
+                    {{#if access}}
+                        <div class="post-spacer"></div>
+                        {{content}}
+                    {{else}}
+                        <div class="membership-post-content mb-30">
+                        {{#if html}}
+                            <div class="members-preview-content">
+                                {{{html}}}
+                            </div>
+                        {{else}}
+                            <p>{{custom_excerpt}}</p>
+                        </div>
+                        {{/if}}
+                        {{> members/paid-post-box}}
+                    {{/if}}
+                </div>
+                <div class="post-content-footer">
+                    {{!-- social share icon --}}
+                    {{> social-share}}
+                    {{!-- navigation-sec --}}
+                    {{> navigation-sec}}
+
+                    {{!-- Comment-box --}}
+                    {{#match @custom.select_comment "Disqus"}} 
+                        {{> comments/disqus-comment}}
+                    {{/match}}
+
+                    {{#match @custom.select_comment "Cove"}} 
+                        {{> comments/cove-comments}}
+                    {{/match}}
+
+                    {{#match @custom.select_comment "Native Comments"}} 
+                        {{> comments/native-comments}}
+                    {{/match}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

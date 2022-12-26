@@ -1,0 +1,479 @@
+/* Spacing Classes for padding */
+/* Padding top classes for spaces */
+@for $i from 2 to 41 {
+    .pt-#{$i * 5} {
+        padding-top: #{5px * $i};
+    }
+}
+
+/* Padding bottom classes for spaces */
+@for $i from 2 to 41 {
+    .pb-#{$i * 5} {
+        padding-bottom: #{5px * $i};
+    }
+}
+
+/* Padding Top and bottom classes for spaces */
+@for $i from 2 to 41 {
+    .py-#{$i * 5} {
+        padding-top: #{5px * $i};
+        padding-bottom: #{5px * $i};
+    }
+}
+
+/* Padding Left classes for spaces */
+@for $i from 2 to 21 {
+    .pl-#{$i * 5} {
+        padding-left: #{5px * $i};
+    }
+}
+
+/* Padding Right classes for spaces */
+@for $i from 2 to 21 {
+    .pr-#{$i * 5} {
+        padding-right: #{5px * $i};
+    }
+}
+
+/* Padding Left and Right classes for spaces */
+@for $i from 2 to 21 {
+    .px-#{$i * 5} {
+        padding-left: #{5px * $i};
+        padding-right: #{5px * $i};
+    }
+}
+
+/* Classes for @media queries */
+@media screen and (min-width: 576px) {
+    @for $i from 2 to 41 {
+        .pt-sm-#{$i * 5} {
+            padding-top: #{5px * $i};
+        }
+    }
+
+    /* Padding bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .pb-sm-#{$i * 5} {
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .py-sm-#{$i * 5} {
+            padding-top: #{5px * $i};
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Left classes for spaces */
+    @for $i from 2 to 21 {
+        .pl-sm-#{$i * 5} {
+            padding-left: #{5px * $i};
+        }
+    }
+
+    /* Padding Right classes for spaces */
+    @for $i from 2 to 21 {
+        .pr-sm-#{$i * 5} {
+            padding-right: #{5px * $i};
+        }
+    }
+
+    /* Padding Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .px-sm-#{$i * 5} {
+            padding-left: #{5px * $i};
+            padding-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @for $i from 2 to 41 {
+        .pt-md-#{$i * 5} {
+            padding-top: #{5px * $i};
+        }
+    }
+
+    /* Padding bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .pb-md-#{$i * 5} {
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .py-md-#{$i * 5} {
+            padding-top: #{5px * $i};
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Left classes for spaces */
+    @for $i from 2 to 21 {
+        .pl-md-#{$i * 5} {
+            padding-left: #{5px * $i};
+        }
+    }
+
+    /* Padding Right classes for spaces */
+    @for $i from 2 to 21 {
+        .pr-md-#{$i * 5} {
+            padding-right: #{5px * $i};
+        }
+    }
+
+    /* Padding Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .px-md-#{$i * 5} {
+            padding-left: #{5px * $i};
+            padding-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    @for $i from 2 to 41 {
+        .pt-lg-#{$i * 5} {
+            padding-top: #{5px * $i};
+        }
+    }
+
+    /* Padding bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .pb-lg-#{$i * 5} {
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .py-lg-#{$i * 5} {
+            padding-top: #{5px * $i};
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Left classes for spaces */
+    @for $i from 2 to 21 {
+        .pl-lg-#{$i * 5} {
+            padding-left: #{5px * $i};
+        }
+    }
+
+    /* Padding Right classes for spaces */
+    @for $i from 2 to 21 {
+        .pr-lg-#{$i * 5} {
+            padding-right: #{5px * $i};
+        }
+    }
+
+    /* Padding Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .px-lg-#{$i * 5} {
+            padding-left: #{5px * $i};
+            padding-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    @for $i from 2 to 41 {
+        .pt-xl-#{$i * 5} {
+            padding-top: #{5px * $i};
+        }
+    }
+
+    /* Padding bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .pb-xl-#{$i * 5} {
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .py-xl-#{$i * 5} {
+            padding-top: #{5px * $i};
+            padding-bottom: #{5px * $i};
+        }
+    }
+
+    /* Padding Left classes for spaces */
+    @for $i from 2 to 21 {
+        .pl-xl-#{$i * 5} {
+            padding-left: #{5px * $i};
+        }
+    }
+
+    /* Padding Right classes for spaces */
+    @for $i from 2 to 21 {
+        .pr-xl-#{$i * 5} {
+            padding-right: #{5px * $i};
+        }
+    }
+
+    /* Padding Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .px-xl-#{$i * 5} {
+            padding-left: #{5px * $i};
+            padding-right: #{5px * $i};
+        }
+    }
+}
+
+/* Spacing Classes for margin */
+/* margin top classes for spaces */
+@for $i from 2 to 41 {
+    .mt-#{$i * 5} {
+        margin-top: #{5px * $i};
+    }
+}
+
+/* margin bottom classes for spaces */
+@for $i from 2 to 41 {
+    .mb-#{$i * 5} {
+        margin-bottom: #{5px * $i};
+    }
+}
+
+/* margin Top and bottom classes for spaces */
+@for $i from 2 to 41 {
+    .my-#{$i * 5} {
+        margin-top: #{5px * $i};
+        margin-bottom: #{5px * $i};
+    }
+}
+
+/* margin Left classes for spaces */
+@for $i from 2 to 21 {
+    .ml-#{$i * 5} {
+        margin-left: #{5px * $i};
+    }
+}
+
+/* margin Right classes for spaces */
+@for $i from 2 to 21 {
+    .mr-#{$i * 5} {
+        margin-right: #{5px * $i};
+    }
+}
+
+/* margin Left and Right classes for spaces */
+@for $i from 2 to 21 {
+    .mx-#{$i * 5} {
+        margin-left: #{5px * $i};
+        margin-right: #{5px * $i};
+    }
+}
+
+/* Classes for @media queries */
+@media screen and (min-width: 576px) {
+    @for $i from 2 to 41 {
+        .mt-sm-#{$i * 5} {
+            margin-top: #{5px * $i};
+        }
+    }
+
+    /* margin bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .mb-sm-#{$i * 5} {
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .my-sm-#{$i * 5} {
+            margin-top: #{5px * $i};
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Left classes for spaces */
+    @for $i from 2 to 21 {
+        .ml-sm-#{$i * 5} {
+            margin-left: #{5px * $i};
+        }
+    }
+
+    /* margin Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mr-sm-#{$i * 5} {
+            margin-right: #{5px * $i};
+        }
+    }
+
+    /* margin Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mx-sm-#{$i * 5} {
+            margin-left: #{5px * $i};
+            margin-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    @for $i from 2 to 41 {
+        .mt-md-#{$i * 5} {
+            margin-top: #{5px * $i};
+        }
+    }
+
+    /* margin bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .mb-md-#{$i * 5} {
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .my-md-#{$i * 5} {
+            margin-top: #{5px * $i};
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Left classes for spaces */
+    @for $i from 2 to 21 {
+        .ml-md-#{$i * 5} {
+            margin-left: #{5px * $i};
+        }
+    }
+
+    /* margin Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mr-md-#{$i * 5} {
+            margin-right: #{5px * $i};
+        }
+    }
+
+    /* margin Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mx-md-#{$i * 5} {
+            margin-left: #{5px * $i};
+            margin-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    @for $i from 2 to 41 {
+        .mt-lg-#{$i * 5} {
+            margin-top: #{5px * $i};
+        }
+    }
+
+    /* margin bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .mb-lg-#{$i * 5} {
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .my-lg-#{$i * 5} {
+            margin-top: #{5px * $i};
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Left classes for spaces */
+    @for $i from 2 to 21 {
+        .ml-lg-#{$i * 5} {
+            margin-left: #{5px * $i};
+        }
+    }
+
+    /* margin Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mr-lg-#{$i * 5} {
+            margin-right: #{5px * $i};
+        }
+    }
+
+    /* margin Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mx-lg-#{$i * 5} {
+            margin-left: #{5px * $i};
+            margin-right: #{5px * $i};
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    @for $i from 2 to 41 {
+        .mt-xl-#{$i * 5} {
+            margin-top: #{5px * $i};
+        }
+    }
+
+    /* margin bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .mb-xl-#{$i * 5} {
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Top and bottom classes for spaces */
+    @for $i from 2 to 41 {
+        .my-xl-#{$i * 5} {
+            margin-top: #{5px * $i};
+            margin-bottom: #{5px * $i};
+        }
+    }
+
+    /* margin Left classes for spaces */
+    @for $i from 2 to 21 {
+        .ml-xl-#{$i * 5} {
+            margin-left: #{5px * $i};
+        }
+    }
+
+    /* margin Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mr-xl-#{$i * 5} {
+            margin-right: #{5px * $i};
+        }
+    }
+
+    /* margin Left and Right classes for spaces */
+    @for $i from 2 to 21 {
+        .mx-xl-#{$i * 5} {
+            margin-left: #{5px * $i};
+            margin-right: #{5px * $i};
+        }
+    }
+}
+
+/* Width Classes */
+@for $i from 1 to 23 {
+    .maxw-#{$i * 50} {
+        max-width: #{50px * $i};
+    }
+}
+
+/* max-height Classes */
+@for $i from 1 to 23 {
+    .maxh-#{$i * 50} {
+        max-height: #{50px * $i};
+    }
+}
+
+/* Width Classes */
+@for $i from 1 to 21 {
+    .width-#{$i * 10} {
+        width: #{10px * $i};
+    }
+}
+
+/* height Classes */
+@for $i from 1 to 41 {
+    .height-#{$i * 10} {
+        height: #{10px * $i};
+    }
+}

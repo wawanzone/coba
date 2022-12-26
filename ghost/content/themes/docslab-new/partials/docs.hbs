@@ -1,0 +1,69 @@
+{{#get "tags" limit="all" include="count.posts"}}
+    {{#if tags}}
+    <div class="tag-wrapper section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="section-title">{{t "Find your docs"}}</h2>
+                    <p class="section-text maxw-500 mx-auto">
+                        {{t "The following articles are the most helpful articles. One of them might be the one you look for your product"}}
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-50 pt-md-60 pt-lg-70 docs-wrapper">
+                {{!-- Recent posts --}}
+                {{#foreach tags limit="all" visibility="public"}}
+                    <div class="col-lg-4 col-md-6 single-docs">
+                        <div class="single-tag-item">
+                            <div class="single-tag-box d-flex flex-row flex-wrap">
+                                {{#if feature_image}}
+                                <div class="tag-thumb  maxw-100 w-100 mr-15">
+                                    <img class="tag-feature-img" srcset="{{img_url feature_image size="xxs"}} 30w,
+                                    {{img_url feature_image size="xs"}} 100w"
+                                    sizes="100px" src="{{img_url feature_image size="xs"}}" alt="{{name}}">
+                                </div>
+                                {{/if}}
+                                <div class="tag-details flex-1">
+                                    <a href="{{url}}">{{name}}</a>
+                                    <p class="total-posts"># {{plural count.posts empty=(t "0 article") singular=(t "% article") plural=(t "% articles")}}</p>
+                                    {{#if description}}
+                                        <p class="description-text">{{description}}</p>
+                                    {{/if}}
+                                </div>
+                            </div>
+
+                            {{!-- More Articles --}}
+                            <div class="tags-articles-inner">
+                                {{#get "posts" limit="4" filter="tag:{{slug}}"}}
+                                    {{#if posts}}
+                                    <ul class="tags-articles">
+                                        {{#foreach posts visibility="all"}}
+                                        <li><a href="{{url}}">{{title}}</a></li>
+                                        {{/foreach}}
+                                    </ul>
+                                    {{/if}}
+                                {{/get}}
+                                <div class="articles-details pt-20">
+                                    <a class="btn btn-primary btn-sm" href="{{@site.url}}/tag/{{slug}}">{{t "View All"}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {{/foreach}}
+            </div>
+            <div class="row show-more-docs">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="tags-details">
+                        <a id="show-more-docs" class="btn btn-primary btn-xl d-flex" href="#">
+                            {{t "See More"}}
+                            <span class="loader">
+                                {{> "icons/loader"}}
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+{{/get}}

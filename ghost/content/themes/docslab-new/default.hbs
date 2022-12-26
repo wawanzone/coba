@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{@site.locale}}"
+
+{{#match @custom.select_color_scheme "Light"}} 
+   data-theme="light"
+{{/match}}
+
+{{#match @custom.select_color_scheme "Dark"}} 
+   data-theme="dark"
+{{/match}}
+>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title page=(t "Page %")}}</title>
+    <!-- CSS Files -->
+    {{> google-fonts}}
+    <link rel="stylesheet" type="text/css" href="{{asset "/css/style.css"}}" />
+    <script>
+        if (typeof (Storage) !== 'undefined') {
+            if (localStorage.getItem('selected-theme') == 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+            else if (localStorage.getItem('selected-theme') == 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        }
+    </script>
+    {{{block "fonts_css"}}}
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
+    {{#match @custom.select_color_scheme "Auto"}} 
+    <script>
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.querySelector("html").setAttribute('data-theme', 'dark')
+        }else{
+            document.querySelector("html").setAttribute('data-theme', 'light')
+        }
+    </script>
+    {{/match}}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}"{{#if @custom.rtl_view}} data-direction="rtl"{{/if}}>
+{{!-- Header for all pages --}}
+{{> header}}
+
+{{!-- body --}}
+{{{body}}}
+
+{{!-- Footer --}}
+{{> footer}}
+<script>
+    var pagination_next_page_number = '{{ pagination.next }}',
+        pagination_available_pages_number = '{{ pagination.pages }}',
+        serachContentApi;
+    {{#if @custom.search_content_api}}
+    var serachContentApi = "{{@site.url}}/ghost/api/v4/content/posts/?key={{@custom.search_content_api}}&limit=all&include=tags";
+    {{/if}}
+</script>
+
+{{!-- Jquery scripts --}}
+<script src="{{asset "/js/scripts.js"}}"></script>
+
+{{#is "post,page"}}
+<script src="{{asset "/js/single.js"}}"></script>
+{{/is}}
+
+<script>
+    const switchCard = document.querySelector(".membership-switch"),
+        button = document.querySelectorAll(".membership-switch button"),
+        monthlyPrice = document.querySelectorAll(".single-price-box [data-monthly]"),
+        yearlyPrice = document.querySelectorAll(".single-price-box [data-yearly]");
+        planBtn = document.querySelectorAll(".plan-btn a");
+        yearlyPlan = document.querySelectorAll(".yearly-plan");
+        monthlyPlan = document.querySelectorAll(".monthly-plan");
+        button.forEach(function(item, index) {
+            item.addEventListener("click", function() {
+                switchCard.setAttribute("data-active-price", this.getAttribute("data-price"));
+                if (this.dataset.price === "monthly") {
+                    monthlyPrice.forEach(function(monthly, index) {
+                        monthly.style.display = "block";
+                    });
+                    yearlyPrice.forEach(function(yearly, index) {
+                        yearly.style.display = "none";
+                    });
+                    yearlyPlan.forEach(function(year, index) {
+                        year.style.display = "none";
+                    });
+                    monthlyPlan.forEach(function(month, index) {
+                        month.style.display = "block";
+                    });
+                   
+                } else {
+                    monthlyPrice.forEach(function(monthly, index) {
+                        monthly.style.display = "none";
+                    });
+                    yearlyPrice.forEach(function(yearly, index) {
+                        yearly.style.display = "block";
+                    });
+                    yearlyPlan.forEach(function(year, index) {
+                        year.style.display = "block";
+                    });
+                    monthlyPlan.forEach(function(month, index) {
+                        month.style.display = "none";
+                    });
+                }
+            });
+        });
+    
+</script>
+
+{{!-- to show block scripts --}}
+{{{block "scripts"}}}
+{{!-- ghost footer --}}
+{{ghost_foot}}
+
+</body>
+</html>

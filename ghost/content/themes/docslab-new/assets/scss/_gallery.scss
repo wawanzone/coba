@@ -1,0 +1,123 @@
+/* Gallery post */
+.kg-gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.kg-gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -4px;
+}
+.kg-gallery-row {
+    .kg-gallery-image {
+        flex: 1 1 200px;
+        text-align: center;
+        padding: 8px 4px 0;
+    }
+}
+
+.kg-gallery-row .kg-gallery-image img {
+    height: auto !important;
+}
+
+.kg-card {
+    figcaption {
+        padding: 10px 20px;
+        text-align: center;
+        color: var(--color-text);
+        font-size: 16px;
+        background-color: var(--color-section-bg);
+        width: 100%;
+        a{
+            border-bottom: 2px solid var(--color-primary);
+            color: var(--color-text);
+        }
+    }
+}
+
+.kg-embed-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+}
+
+.kg-gallery-card {
+    max-width: 60vw;
+    min-width: 100%;
+    width: 100%;
+    img {
+        margin: 0;
+    }
+}
+
+.kg-card {
+    margin-top: 30px;
+    .code-wrapper{
+        margin-top: 0;
+    }
+    img {
+        margin-bottom: 0;
+    }
+    iframe {
+        margin-top: 0px;
+    }
+}
+
+.kg-image-card {
+    width: 100% ;
+    max-width: 800px;
+    margin-right: auto;
+    &.kg-width-wide {
+        width: 100%;
+        max-width: 100%;
+    }
+    &.kg-width-full {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Medium zoom style */
+.medium-zoom-overlay {
+    z-index: 5;
+}
+.medium-zoom-image {
+    z-index: 6;
+}
+
+.medium-zoom-overlay {
+    background-color: var(--medium-zoom-bg);
+    z-index: 999;
+}
+
+.medium-zoom-image--opened {
+    z-index: 999;
+}
+
+@media all and (max-width: 575px) {
+    .kg-gallery-row {
+        margin: 0;
+        .kg-gallery-image {
+            flex: 1 1 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+
+/* Cards Style Added */
+.kg-audio-player-container input[type=range],
+.kg-audio-player-container button,
+.kg-audio-title{
+    color: var(--color-heading);
+}
+.kg-audio-player span{
+    color: var(--color-heading) !important;
+}
+.kg-video-card button{
+    color: var(--color-white);
+}

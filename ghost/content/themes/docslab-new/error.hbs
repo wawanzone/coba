@@ -1,0 +1,18 @@
+{{!< default }}
+
+<!-- error-styles start  -->
+<div class="error-content-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="error-styles text-center">
+                    <h1>{{statusCode}}</h1>
+                    <p class="mb-0">{{t "Maybe the URL is incorrect, or the page no longer exist."}}</p>
+                    <h4 class="mb-20">{{message}}</h4>
+                    <a class="error-link btn btn-primary" href="{{@site.url}}">{{t "Go Back Home  →"}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //error-styles end  -->

@@ -1,0 +1,118 @@
+// bookmark 
+a.kg-bookmark-container {
+    display: flex;
+    color: var(--color-text);
+    text-decoration: none;
+    background-color: var(--color-bookmark-bg);
+    justify-content: space-between;
+    border-bottom: 0;
+
+    &:hover {
+        text-decoration: none !important;
+        color: var(--color-text);
+    }
+}
+
+.kg-bookmark-content {
+    min-width: 100px;
+    padding: 30px 20px;
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 25px;
+        margin-bottom: 0;
+    }
+}
+
+.kg-bookmark-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-heading);
+}
+
+.kg-bookmark-description{
+    color: var(--color-desc);
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.kg-bookmark-metadata {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    span{
+        font-size: 14px;
+        color: var(--color-text);
+    }
+}
+
+.kg-bookmark-thumbnail {
+    min-width: 30%;
+    max-width: 30%;
+    position: relative;
+}
+
+.kg-bookmark-thumbnail img {
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.kg-bookmark-icon {
+    width: 22px!important;
+    height: 22px!important;
+    margin-right: 8px;
+    vertical-align: bottom;
+}
+
+.kg-bookmark-author {
+    white-space: nowrap;
+    width: auto;
+    color: var(--color-text) !important;
+}
+
+.kg-bookmark-author:after {
+    content: '•';
+    margin: 0 6px;
+    color: var(--color-primary) !important;
+}
+
+.kg-bookmark-card {
+    opacity: 1;
+}
+
+.kg-bookmark-publisher {
+    opacity: 1;
+    color: var(--color-text) !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.kg-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 575px) {
+    a.kg-bookmark-container {
+        flex-direction: column-reverse;
+    }
+
+    .kg-bookmark-content {
+        padding: 20px;
+    }
+
+    .kg-bookmark-thumbnail {
+        min-width: 100%;
+        max-width: 100%;
+        img{
+            position: relative;
+        }
+    }
+}

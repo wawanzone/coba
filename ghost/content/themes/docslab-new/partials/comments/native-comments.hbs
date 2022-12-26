@@ -1,0 +1,11 @@
+{{#if comments}}
+    {{!-- comment-section --}}
+    <div class="bs-comment-sec{{#match @custom.select_color_scheme "Light"}} comment-bg-light{{/match}} mt-5">
+        <h4 class="text-center mb-4">
+            {{t "Leave a comment"}}
+        </h4>
+        {{comment_count empty="" singular=(t "comment") plural=(t "comments") autowrap="span"}}
+        {{comments title=(t "Member discussion") mode="auto"}}
+        
+    </div>
+{{/if}}

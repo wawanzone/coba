@@ -1,0 +1,112 @@
+/* media for 1366px*/
+@media screen and (max-width: 1366px) {
+    .tag-full-content-wrapper {
+        width: calc(100% - 20px);
+    }
+    
+    .loadmore-section{
+        width: 100%;
+    }
+    
+}
+
+/* media for 1199px*/
+@media screen and (max-width: 1199px) {
+    .single-tag-box {
+        flex-direction: column !important;
+    }
+    .tag-thumb .tag-feature-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* media for 991px*/
+@media screen and (max-width: 991px) {
+    .author-card-box{
+        margin-bottom: 50px;
+    }
+    .single-tag-box {
+        flex-direction: row !important;
+    }
+    .tag-full-content-wrapper{
+        width: 100%;
+    }
+}
+
+/* media for 767px*/
+@media screen and (max-width: 767px) {
+    .post-item-list {
+        flex-direction: column;
+    }
+
+    .feature-thumb-sm {
+        width: 100%;
+        max-width: 100%;
+        height: 250px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .single-price-box {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* media for 575px*/
+@media screen and (max-width: 575px) {
+    .tag-thumb .tag-feature-img {
+        width: 80px;
+        height: 80px;
+        margin-right: 80px;
+    }
+    .maxw-100 {
+        max-width: 80px;
+    }
+    .post-title a {
+        font-size: 22px;
+    }
+    .membership-section .membership-feature {
+        max-height: 250px;
+    }
+    .subscribe-cover-section {
+        padding: 30px 20px;
+    }
+    .members-details {
+        margin-left: 0;
+    }
+    .author {
+        font-size: 28px;
+    }
+}
+
+/* media for 420px*/
+@media screen and (max-width: 420px) {
+    .members-info {
+        position: absolute;
+        top: calc(100% + 16px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .published-date {
+        padding-top: 10px;
+    }
+
+}
+
+
+/* media for 400px*/
+@media screen and (max-width: 400px) {
+    .single-tag-box {
+        flex-direction: column !important;
+    }
+    .tag-thumb .tag-feature-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .sidebar-docs {
+        left: -250px;
+        max-width: 250px;
+    }
+
+}

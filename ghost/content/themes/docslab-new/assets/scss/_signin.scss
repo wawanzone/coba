@@ -1,0 +1,476 @@
+.pricing-sec{
+    padding: 90px 0;
+}
+
+// subscribe-section
+.subscribe-title {
+    padding: 30px 20px;
+    background-color: var(--color-section-bg) !important;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--bg-dark-black);
+        word-spacing: 1.6px;
+        letter-spacing: .2px;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: var(--color-text);
+        margin-bottom: 0;
+    }
+}
+
+.subscribe-form {
+    position: relative;
+
+    button {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+
+    .form-control {
+        font-size: 14px;
+        height: 70px;
+        width: 100%;
+        font-weight: 300;
+        padding: 10px 120px 10px 20px;
+        border: unset;
+        background-color: var(--form-control-bg) !important;
+        border-radius: 4px 0px 0px 4px;
+        border: 1px solid transparent;
+        color: var(--color-text);
+        font-family: var(--font-body);
+        font-weight: 400;
+
+        &:focus {
+            border-color: transparent !important;
+            box-shadow: none !important;
+            background-color: var(--form-control-bg) !important;
+        }
+
+        &::placeholder {
+            color: var(--color-text);
+        }
+    }
+}
+
+.subscribe-form {
+    p {
+        font-size: 14px;
+        margin-bottom: 0;
+        color: var(--color-text);
+        padding-top: 15px;
+
+        a {
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-primary);
+        }
+    }
+}
+
+.signup-form {
+    p {
+        font-size: 14px;
+        color: var(--color-text);
+        margin-bottom: 0;
+        padding-top: 15px;
+
+        a {
+            color: var(--color-text);
+            border-bottom: 2px solid var(--color-primary);
+        }
+    }
+}
+
+.message-text {
+    max-width: 550px;
+}
+
+.message-success {
+    color: var(--color-success);
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
+}
+
+.success .message-success,
+.error .message-error {
+    display: block;
+}
+
+.message-error {
+    color: var(--color-red);
+    font-size: 14px;
+    display: none;
+    margin-top: 10px;
+}
+
+.btn-subscribe {
+    .btn {
+        position: relative;
+        height: 70px;
+    }
+    .button-loader svg {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.loading {
+    .button-text {
+        display: none;
+    }
+
+    .button-loader {
+        display: block;
+    }
+}
+
+.button-loader {
+    display: none;
+
+    svg {
+        height: 25px;
+        width: 25px;
+        path {
+            fill: var(--color-white);
+            opacity: 0.7;
+        }
+    }
+}
+
+
+// account-info
+.account-info {
+ margin: 0 auto;
+ max-width: 500px;
+}
+
+.cancel-subscription {
+ padding-top: 30px;
+ text-align: center;
+}
+
+//subscriber-account-info
+.subscriber-account-info{
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 40px var(--account-box-shadow);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.email-info{
+    .email-address {
+        font-size: 18px;
+        color: var(--color-black);
+        text-align: left;
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    .subscriber-email{
+        font-size: 15px;
+        color: var(--color-gray);
+    }
+}
+
+.plan-info{
+    .plan{
+        font-size: 18px;
+        color: var(--color-black);
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .plan-price {
+        font-size: 15px;
+        color: var(--color-gray);
+        text-align: left;
+    }
+}
+
+
+// account-inner-sec
+.account-information-sub {
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px dashed var(--color-heading);
+}
+.account-details-inner {
+    padding-bottom: 15px;
+    border-bottom: 1px dashed var(--color-heading);
+    .account-details{
+        color: var(--color-heading);
+    }
+}
+
+.account {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-plan{
+    width: 50%;
+}
+
+.customer-name,
+.customer-email,
+.customer-active,
+.customer-card,
+.plan-nickname,
+.start-date {
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--color-heading);
+}
+
+.customer-real-name,
+.customer-email-address,
+.customer-trialing,
+.customer-card-number,
+.plan-interval,
+.end-date {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+// end of account-inner-sec
+
+
+// cancel-subscription
+.mem-edit-bill {
+
+    a {
+        border: 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        border-radius: 0;
+        width: auto;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 10px 20px;
+        color: var(--color-black);
+        background-color: var(--color-section-bg);
+
+        &:hover {
+            text-decoration: none;
+            color: var(--color-black);
+        }
+    }
+}
+
+span.gh-error.gh-error-subscription-cancel {
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    font-size: 14px;
+    color: var(--color-red);
+    text-align: center;
+    width: 100%;
+}
+
+// cancel-subscription
+.cancel-subscription {
+    padding-top: 30px;
+
+    a {
+        border: 0;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+        border-radius: 0;
+        width: auto;
+        display: inline-block;
+        padding: 15px 25px;
+        color: var(--color-white);
+        background-color: var(--color-primary-bg);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .gh-subscription-cancel[data-members-cancel-subscription] {
+        background-color: var(--color-primary-bg);
+        &:hover{
+            color: var(--color-white);
+        }
+    }
+}
+
+.account-informations{
+    h2{
+        color: var(--color-heading);
+        text-align: center;
+    }
+}
+
+.member-name{
+    text-transform: capitalize;
+}
+
+.subscription-message {
+
+    p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: var(--color-text);
+
+        .subscription-expiration-warning {
+            color: var(--color-red);
+        }
+    }
+}
+
+// subscribe-cover
+.subscribe-cover{
+    margin: 0 auto;
+    max-width: 500px;
+    p{
+        color: var(--color-text);
+    }
+}
+
+.expiration-warning{
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 500px;
+    padding-top: 30px;
+    p{
+        color: var(--color-text);
+        text-align: left;
+    }
+}
+
+// subscribe-cover-section
+.subscribe-cover-section {
+    padding: 30px 50px;
+    background-color: var(--color-section-bg) !important;
+    h2{
+        font-size: 36px;
+        font-weight: 700;
+        color: var(--bg-dark-black);
+        word-spacing: 1.6px;
+        letter-spacing: .2px;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: var(--color-text);
+        margin-bottom: 0;
+    }
+}
+
+// membership-section
+.membership-cover-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.membership-section{
+    .membership-feature {
+        width: 50%;
+        max-height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.subscribe-cover-box{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: -120px;
+    width: calc(50% + 120px);
+}
+
+.membership-no-feature{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 50px;
+    max-width: 800px;
+    width: 100%;
+}
+
+
+.free-sign-up{
+    padding: 30px 40px;
+    background-color: var(--color-section-bg) !important;
+    margin-bottom: 100px;
+    h6{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--bg-dark-black);
+        word-spacing: 1.6px;
+        margin-bottom: 0;
+    }
+
+    span {
+        color: var(--color-text);
+        margin-bottom: 0;
+    }
+}
+
+.plan-heading {
+    position: relative;
+}
+
+.m-shape {
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    content: "";
+    transform: translateX(-50%);
+    svg {
+        color: var(--ghost-accent-color);
+    }
+}
+
+
+/* Subscriber information */
+.subscriber-info{
+    padding: 30px 40px;
+    max-width: 400px;
+    margin: 30px auto 10px;
+    text-align: left;
+    list-style: disc;
+    background-color: var(--subscriber-info-bg);
+    box-shadow: 0px 4px 40px var(--account-box-shadow);
+    li{
+        font-family: 'Montserrat', sans-serif;
+        padding: 3px 0;
+        font-size: 14px;
+        color: var(--color-text);
+        strong{
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+/* media for 575px*/
+@media screen and (max-width: 575px) {
+    .subscribe-title h2 {
+        font-size: 24px;
+    }
+    .subscribe-cover-section h2 {
+        font-size: 26px;
+    }
+}
+
+/* media for 450px*/
+@media screen and (max-width: 450px) {
+    .your-plan {
+        width: 100%;
+    }
+}

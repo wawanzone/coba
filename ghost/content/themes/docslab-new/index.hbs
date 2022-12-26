@@ -1,0 +1,61 @@
+{{!< default}}
+
+{{!-- partials/hero.hbs --}}
+{{> hero}}
+
+{{!-- partials/docs.hbs --}}
+{{> docs}}
+
+{{!-- partials/faq.hbs --}}
+{{#if @custom.show_faq}}
+{{> faq}}
+{{/if}}
+
+{{!-- partials/contact-promo.hbs --}}
+{{> contact-promo}}
+
+{{!-- partials/popular-author.hbs --}}
+{{#if @custom.show_popular_author}}
+{{> popular-author}}
+{{/if}}
+
+{{#contentFor "scripts"}}
+<script>
+    $(document).ready(function(){
+        var $showBtn = $('#show-more-docs'),
+            $showbtnWrap = $('.show-more-docs'),
+            $singleDoc = $('.single-docs'),
+            $loader = $('.loader'),
+            $showDocNumber = 6,
+            $showDocFirstNumber = $showDocNumber - 1
+
+        if($singleDoc.length > $showDocNumber){
+            $showbtnWrap.show()
+        }else{
+            $showbtnWrap.remove()
+        }
+        for(var i = 0; i <= $showDocFirstNumber; i++){
+            $singleDoc.eq(i).show()
+        }
+
+        var $lastPostNumber = $showDocNumber,
+            $nextShowItems = $lastPostNumber+$showDocFirstNumber
+        
+        $showBtn.on('click', function(e){
+            e.preventDefault()
+            $loader.show()
+            setTimeout(function(){
+                if($nextShowItems > $singleDoc.length){
+                    $showbtnWrap.remove()
+                }
+                for(var i = $lastPostNumber; i <= $nextShowItems; i++){
+                    $singleDoc.eq(i).show()
+                    $lastPostNumber = i
+                }
+                $nextShowItems = $nextShowItems + $showDocNumber
+                $loader.hide()
+            }, 1000)
+        })
+    })
+</script>
+{{/contentFor}}

@@ -1,0 +1,66 @@
+{{!< default}}
+{{#if @member.paid}}
+<div class="membership-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{> members/subscriber-information}}
+            </div>
+        </div>
+    </div>
+</div> 
+{{else}}
+<div class="membership-section">
+    <div class="container">
+        {{#if @member}}
+        
+        {{#is "page"}}
+        {{#post}}
+        <div class="row">
+            <div class="col-md-12 membership-cover-wrapper">
+                {{#if feature_image}}
+                    <div class="membership-feature">
+                        <img srcset="{{img_url feature_image size="s"}} 300w,
+                        {{img_url feature_image size="m"}} 600w,
+                        {{img_url feature_image size="l"}} 1000w,
+                        {{img_url feature_image size="xl"}} 2000w"
+                        sizes="(max-width: 800px) 400px,
+                        (max-width: 1170px) 700px,
+                        1400px" src="{{img_url feature_image size="xl"}}" alt="{{title}}">
+                    </div>
+                {{/if}}
+                <div class="{{#if feature_image}}subscribe-cover-box{{else}}membership-no-feature mx-auto text-center{{/if}}">
+                    <div class="subscribe-cover-section">
+                        <h2>{{t "Nice, you're a subscriber!"}}</h2>
+                        <p>{{t "Currently, you're not a paying subscriber. You've an active account with access to posts for subscribers only. Upgrade your account and get access to the full library of posts."}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/post}}
+        {{/is}}
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center pt-50 pb-20 pt-lg-80 pb-lg-30">
+                <h4 class="plan-item">
+                    {{t "Upgrade to premium plan"}}
+                </h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-lg-8 mx-auto">
+                <div class="membership-switch" data-active-price="yearly">
+                    <button data-price="monthly">{{t "Monthly"}}</button>
+                    <button data-price="yearly">{{t "Yearly"}}</button>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pb-30 pb-lg-50">
+            {{> members/pricing-tables/pricing-plan}}
+        </div>
+        {{else}}
+            {{!-- Member: Redirect to membership --}}
+            <script>window.location = '{{@site.url}}/membership/';</script>
+        {{/if}}
+    </div>
+</div>
+{{/if}}

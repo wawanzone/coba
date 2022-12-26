@@ -1,0 +1,84 @@
+/* =================================
+            Faq
+===================================*/
+.faq-section{
+    background-color: var(--color-section-bg);
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding:0;
+    border: transparent;
+    background-color: var(--bg-faq-item);
+}
+
+.list-group-box{
+    margin-bottom: 25px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.faq-qus-title {
+    align-items: center;
+    position: relative;
+
+    &.active {
+        color: var(--color-white);
+        background-color: var(--color-primary-bg);
+        width: 100%;
+        h6{
+            a{
+                color: var(--color-white);
+            }
+        }
+    }
+
+    h6 {
+        font-size: 18px;
+        margin-bottom: 0;
+        padding: 25px 45px 25px 20px;
+        
+        a{
+            color: var(--color-heading);
+            transition: 0s;
+        }
+    }
+}
+
+.faq-qus-ans {
+    display: none;
+
+    p {
+        color: var(--color-text);
+        font-size: 16px;
+        padding: 20px 15px;
+        margin-bottom: 0;
+    }
+}
+
+.faq-qus-title {
+	&.active {
+		.minus-icon {
+            display: block;
+            color: var(--color-white);
+		}
+		.plus-icon {
+            display: none;
+		}
+	}
+	.minus-icon, .plus-icon {
+        display: block;
+        color: var(--color-minus-plus);
+        font-size: 40px;
+        line-height: 1;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .minus-icon{
+        display: none;
+    }
+}

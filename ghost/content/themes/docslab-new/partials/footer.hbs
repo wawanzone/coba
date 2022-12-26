@@ -1,0 +1,204 @@
+{{!-- Footer codes here. --}}
+<div class="footer-section ">
+    <div class="container">
+        <div class="row">
+            {{!-- <div class="col-md-6 col-lg-3 footer-widget-box">
+                <div class="footer-widget">
+                    <div class="widget-title">
+                        <h4>{{t "About"}}</h4>
+                        <span class="f-shape">
+                            {{> icons/shape}}
+                        </span>
+                    </div>
+                    {{#if @custom.about_site_footer}}
+                    <p>{{@custom.about_site_footer}}</p>
+                    {{/if}}
+                </div>
+            </div> --}}
+            
+            {{!-- Recent docs  --}}
+            {{!-- {{#get "tags" limit="4" filter="visibility:public" include="count.posts" order="count.posts desc"}}
+                {{#if tags}}
+                <div class="col-md-6 col-lg-3 footer-widget-box">
+                    <div class="footer-widget">
+                        <div class="widget-title">
+                            <h4>{{t "Documentation"}}</h4>
+                            <span class="f-shape">
+                                {{> icons/shape}}
+                            </span>
+                        </div>
+                        {{#foreach tags}}
+                        <div class="flex-row mb-20 single-documentation-post d-flex">
+                            {{#if feature_image}}
+                            <div class="card-thumb maxw-50 w-100 mr-15">
+                                <img class="card-feature-img" srcset="{{img_url feature_image size="xxs"}} 30w,
+                                    {{img_url feature_image size="xs"}} 100w"
+                                    sizes="50px" src="{{img_url feature_image size="xs"}}" alt="{{name}}">
+                            </div>
+                            {{else}}
+                            <div class="no-tags-fea-img maxw-50 w-100 mr-15"></div>
+                            {{/if}}
+                            <div class="card-details mr-15">
+                            <a href="{{url}}">{{name}}</a>
+                            </div>
+                        </div>
+                        {{/foreach}}
+                    </div>
+                </div>
+                {{/if}}
+            {{/get}} --}}
+            
+            {{!-- {{#if @site.secondary_navigation}}
+            <div class="col-md-6 col-lg-3 footer-widget-box">
+                <div class="footer-widget">
+                    <div class="widget-title">
+                        <h4>{{t "Links"}}</h4>
+                        <span class="f-shape">
+                            {{> icons/shape}}
+                        </span>
+                    </div>
+                    {{navigation type="secondary"}}
+                </div>
+            </div>
+            {{/if}} --}}
+            {{!-- <div class="col-md-6 col-lg-3 footer-widget-box">
+                <div class="footer-widget">
+                    <div class="widget-title">
+                        <h4>{{t "Social Links"}}</h4>
+                        <span class="f-shape">
+                            {{> icons/shape}}
+                        </span>
+                    </div>
+                    <div class="social-site">
+                        <ul>
+                            {{#if @site.facebook}}
+                            <li><a href="{{facebook_url}}">{{t "Facebook"}}</a></li>
+                            {{/if}}
+                            {{#if @site.twitter}}
+                            <li><a href="{{twitter_url}}">{{t "Twitter"}}</a></li>
+                            {{/if}}
+                            <li><a href="#">{{t "linkedin"}}</a></li>
+                            <li><a href="#">{{t "Instagram"}}</a></li>
+                            <li><a href="#">{{t "Youtube"}}</a></li>
+                            <li><a href="#">{{t "Unsplash"}}</a></li>  
+                            <li><a href="{{@site.url}}/rss">{{t "RSS"}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> --}}
+        </div>
+    </div>
+</div>
+{{!-- Copyright text --}}
+<div class="copy-right-section">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto text-center col-md-10">
+                <nav class="w-full gh-foot-menu">
+                {{#if @site.secondary_navigation}}
+                    {{navigation type="secondary"}}
+            {{/if}}
+            </nav>
+                  {{#if @custom.site_footer }}
+                <p>&copy; {{date format="YYYY"}}&nbsp;{{@site.title}} - {{@custom.site_footer}}</p>
+                {{else}}
+                <p>&copy; {{date format="YYYY"}} {{{t "All copyright reserved. Published with <a target=\"_blank\" href='https://ghost.org/?via=electron-themes46'>Ghost</a> and <a target=\"_blank\" href='http://electronthemes.com/'>Electronthemes</a>"}}}</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .text-center{
+        text-align: center;
+    }
+    .w-full{
+        width: 100%;
+    }
+    .gh-foot-inner{
+        display: block;
+    }
+    .gh-foot-menu .nav-twitter a,
+    .gh-foot-menu .nav-facebook a,
+    .gh-foot-menu .nav-instagram a,
+    .gh-foot-menu .nav-linkedin a,
+    .gh-foot-menu .nav-youtube a {
+        font-size: 0 !important;
+        opacity: 1;
+    }
+
+    .gh-foot-menu .nav-twitter a:hover,
+    .gh-foot-menu .nav-facebook a:hover,
+    .gh-foot-menu .nav-instagram a:hover,
+    .gh-foot-menu .nav-linkedin a:hover,
+    .gh-foot-menu .nav-youtube a:hover {
+        opacity: 0.9;
+    }
+    .gh-foot-menu .nav-twitter a::before,
+    .gh-foot-menu .nav-facebook a::before,
+    .gh-foot-menu .nav-instagram a::before,
+    .gh-foot-menu .nav-linkedin a::before,
+    .gh-foot-menu .nav-youtube a::before {
+        font-family: "Font Awesome 6 Brands";
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .gh-foot-menu .nav-twitter a::before {content: "\f099"}
+    .gh-foot-menu .nav-facebook a::before {content: "\f09a"}
+    .gh-foot-menu .nav-instagram a::before {content: "\f16d"}
+    .gh-foot-menu .nav-linkedin a::before {content: "\f08c"}
+    .gh-foot-menu .nav-youtube a::before {content: "\f167"}
+
+    .gh-foot-menu .nav-twitter a::before{background: #03a9f4}
+    .gh-foot-menu .nav-facebook a::before {background: #203f7f}
+    .gh-foot-menu .nav-instagram a::before {background:linear-gradient(150deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)}
+    .gh-foot-menu .nav-linkedin a::before {background: #007bff}
+    .gh-foot-menu .nav-youtube a::before {background: #dc3545}
+
+    .gh-dropdown {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04), 0 7px 20px -5px rgba(0, 0, 0, 0.15);
+    margin-top: 24px;
+    opacity: 0;
+    padding: 12px 0;
+    position: absolute;
+    right: -16px;
+    text-align: left;
+    top: 100%;
+    transform: translate3d(0, 6px, 0);
+    transition: opacity 0.3s, transform 0.2s;
+    visibility: hidden;
+    width: 200px;
+    z-index: 90;
+}
+.center-menu ul li a {
+  font-size: 14px;
+  font-weight: 400;
+}
+.center-menu ul li {
+  padding:0px 13px;
+}
+@media (max-width: 768px){
+    .center-menu ul li {
+        padding:5px 13px;
+    }
+}
+.center-menu {
+  margin-right: 0px;
+}
+</style>

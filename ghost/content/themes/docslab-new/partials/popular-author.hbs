@@ -1,0 +1,55 @@
+{{!-- Popular Authors section --}}
+{{#get "authors" limit="3" include="count.posts" order="count.posts desc"}}
+    {{#if authors}}
+    <div class="popular-author section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="section-title">{{t "We are here to help"}}</h2>
+                    <p class="section-text maxw-500 mx-auto">
+                        {{t "Find our talents to get help. We will be happy to help you with our real persons who are responsible for specific parts"}}
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-50 pt-md-60 pt-lg-70">
+                <div class="col-md-10 mx-auto">
+                    <div class="row justify-content-center">
+                        {{#foreach authors}}
+                        <div class="col-sm-6 col-lg-4 author-card-box">
+                            <div class="single-author-card">
+                                <div class="author-profile">
+                                    <a href="{{url}}">
+                                        {{#if  profile_image}}
+                                            <img srcset="{{img_url profile_image size="xs"}} 100w,
+                                                {{img_url profile_image size="sm"}} 150w"
+                                                sizes="150px" src="{{img_url profile_image size="sm"}}" alt="{{name}}">
+                                        {{else}}
+                                            <div class="no-profile-image">
+                                                <div class="no-profile-author">
+                                                {{> icons/author}}
+                                                </div>
+                                            </div>
+                                        {{/if}}
+                                    </a>
+                                </div>
+                                <div class="author-content">
+                                    <h4 class="author-title">
+                                        <a href="{{url}}">{{name}}</a>
+                                    </h4>
+                                    {{#if bio}}
+                                        <p class="author-bio">
+                                            {{bio}}
+                                        </p>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        {{/foreach}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+{{/get}}
+{{!-- // End of Popular Authors section --}}

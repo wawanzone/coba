@@ -1,0 +1,140 @@
+// Fonts
+:root {
+    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    --font-heading: 'Spartan', sans-serif;
+    --font-body: 'Alata', sans-serif;
+    --font-heading-weight: 700;
+}
+
+// Primary and Secondary Color
+:root {
+    --color-primary: var(--ghost-accent-color);
+    --color-dark-primary:var(--ghost-accent-color);
+    --color-heading: #0B1329;
+    --color-text: #292A2B;
+}
+
+// root colors
+:root {
+    --color-white: #ffffff;
+    --color-black: #000;
+    --color-header: #001950;
+    --color-author-icon: var(--color-black);
+    --color-table: var(--color-black);
+    --color-body: var(--color-white);
+    --color-logo: var(--color-white);
+    --bg-subscribe: var(--color-white);
+    --color-gray: #4A4B4B;
+    --color-desc: #4A4B4B;
+    --color-light: #F2F5FB;
+    --color-light-dark: #1A1A1A;
+    --color-primary-bg: var(--color-primary);
+    --color-red:#ca203f;
+    --color-success:#07815C;
+    --color-post:#666666;
+    --color-post-text:#e8e8e8;
+    --color-alert-primary:#004085;
+    --bg-alert-primary:#cce5ff;
+    --border-alert-primary:#b8daff;
+    --alert-hr:#9fcdff;
+    --color-alert-success:#155724;
+    --bg-alert-success:#d4edda;
+    --border-alert-success:#c3e6cb;
+    --success-hr:#b1dfbb;
+    --color-danger:#721c24;
+    --bg-danger:#f8d7da;
+    --border-color-danger:#f5c6cb;
+    --danger-hr:#f1b0b7;
+    --color-warning:#856404;
+    --bg-warning:#fff3cd;
+    --border-color-warning:#ffeeba;
+    --warning-hr:#ffe8a1;
+    --color-section-bg: #F2F5FB;
+    --bg-breadcrumbs: #F2F5FB;
+    --form-control-bg: #F2F5FB;
+    --color-subscription-box:#F2F5FB;
+    --color-light-gray:#EAEFFA;
+    --table-thead-bg: #f2f2f3;
+    --color-banner-bg: #EAEFFA;
+    --bg-sidebar:#EAEFFA;
+    --bg-changelog:#EAEFFA;
+    --color-border:#ececec;
+    --color-border-bottom:#eaeaea;
+    --table-body-bg: #F9F9F9;
+    --color-bookmark-bg: #EAF1FF;
+    --author-section-bg: #E5E5E5;
+    --promo-section-bg: #F3E6E6;
+    --bg-black: #101B3B; 
+    --bg-promo-primary: #101B3B; 
+    --bg-dark-black: #0B1329; 
+    --bg-sidebar-docs: #0B1329; 
+    --copyright-section-bg: #1F2E5B;
+    --color-light-black: #1a1f25;
+    --bg-code-wrapper: #1a1f25;
+    --color-deep-black: #090c0f;
+    --color-input-bg: #F2F5FB;
+    --medium-zoom-bg: #f7f7f7f7;
+    --input-bg: rgba(45, 54, 83, 0.8);
+    --card-box-shadow: 0px 3px 10px rgba(41, 42, 43, 0.1);
+    --navigation-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);  
+    --color-subs-text: #000;
+    --color-btn: #0B1329;
+    --color-subscribe-btn: #0B1329;
+    --color-heading-text: #0B1329;
+    --color-heading-post: #292A2B;
+    --color-changelog: #292A2B;
+    --color-input-text: #0B1329;
+    --color-contact-text: #0B1329;
+    --color-input-bg: #ffffff;
+    --card-bg: #f7e6e0;
+    --bg-faq-item: #ffffff;
+    --bg-navigation: #ffffff;
+    --color-minus-plus: var(--color-primary);
+    --color-nav-arrow:var(--color-primary);
+    --bg-tags-section:#F2F5FB;
+    --author-bg:#f2f5fb;
+    --light-dark:#233142;
+}  
+
+
+
+[data-theme='dark'] {
+    --color-body: #111117;
+    --color-section-bg:#26262c;
+    --bg-breadcrumbs:#1B1B1B;
+    --bg-tags-section:#26262c;
+    --color-heading:#fff;
+    --color-black:#fff;
+    --bg-dark-black:#fff;
+    --color-minus-plus:#fff;
+    --color-author-icon:#fff;
+    --bg-promo-primary:#101B3B;
+    --bg-navigation:#1B1B1B;
+    --navigation-box-shadow:0px 3px 20px rgba(0, 0, 0, 0.1);
+    --bg-sidebar:#0B1329;
+    --bg-changelog:#26262c;
+    --color-subscription-box:#26262c;
+    --color-text:#C0C3D0;
+    --color-changelog:#C0C3D0;
+    --color-input-text: #C0C3D0;
+    --color-contact-text: #C0C3D0;
+    --color-input-bg: rgba(255, 255, 255, 0.09);
+    --form-control-bg: #26262c;
+    --color-subs-text: #C0C3D0;
+    --color-post: #C0C3D0;
+    --color-desc: #C0C3D0;
+    --color-table: #C0C3D0;
+    --card-bg: #26262c;
+    --bg-faq-item: rgba(255, 255, 255, 0.09);
+    --color-banner-bg:#26262c;
+    --color-bookmark-bg:#26262c;
+    --table-thead-bg:#1B1B1B;
+    --table-body-bg:#26262c;
+    --color-light-dark:#F2F5FB;
+    --author-bg:#26262C;
+    --color-light-black:#C0C3D0;
+    --color-subscribe-btn:#C0C3D0;
+    --bg-code-wrapper: #26262c;
+    --bg-subscribe: #26262c;
+    --light-dark:#fff;
+}

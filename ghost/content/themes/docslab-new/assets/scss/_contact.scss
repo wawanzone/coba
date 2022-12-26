@@ -1,0 +1,101 @@
+// contact-form
+.con-heading{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color-heading);
+}
+
+.contact-form {
+    .form-control {
+        font-size: 14px;
+        padding: 10px 10px 10px 15px;
+        height: 50px;
+        width: 100%;
+        color: var(--color-text);
+        background-color: var(--form-control-bg);
+        border: 1px solid transparent;
+        font-family: var(--font-body);
+        border-radius: unset;
+        transition: .0s;
+
+        &::placeholder {
+            color: var(--color-text);
+        }
+
+        &:focus {
+            border: 1px solid transparent;
+            box-shadow: none !important;
+        }
+    }
+    textarea {
+        &.form-control {
+            width: 100%;
+            height: auto;
+            font-family: var(--font-body);
+            resize: none;
+            transition: .0s;
+        }
+    }
+    span{
+        color: var(--color-contact-text);
+    }
+}
+
+.input-wrapper {
+	padding-bottom: 20px;
+}
+
+// contact-details
+.contact-details  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+        font-size: 18px;
+        height: 40px;
+        width: 40px;
+        color: var(--color-white);
+        background-color: var(--color-primary-bg);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .0s;
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+
+        &:hover {
+            color: var(--color-white);
+        }
+    }
+}
+
+.contact-text  {
+    display: flex;
+    align-items: center;
+    a{
+        font-size: 16px;
+        color: var(--color-contact-text);
+    }
+}
+
+.contact-sub-text{
+    color: var(--color-contact-text);
+}
+
+/* media for 767px */
+@media screen and (max-width: 767px) {
+    .con-heading {
+        font-size: 35px;
+    }
+}
+
+/* media for 575px */
+@media screen and (max-width: 575px) {
+    .con-heading {
+        font-size: 24px;
+    }
+}

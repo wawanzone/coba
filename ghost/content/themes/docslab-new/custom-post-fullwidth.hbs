@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{#post}}
+{{!-- breadcrumb --}}
+{{> bredcrumb-menu}}
+
+{{> post/post-fullwidth}}
+
+{{!-- partials/contact-promo.hbs --}}
+<div class="bg-promo-section">
+    {{> contact-promo}}
+</div>
+{{/post}}
+
+
+{{#contentFor "scripts"}}
+    <script>
+        tocbot.init({
+            tocSelector: '.toc',
+            contentSelector: '.post-full-content',
+            hasInnerContainers: true,
+            orderedList: false
+        });
+        var tocWrap = document.querySelector('.toc');
+        var tocParentMob = document.querySelector('.table-inner-contents')
+        if(tocWrap.hasChildNodes()){
+            tocParentMob.style.display = 'block'
+        }
+    </script>
+{{/contentFor}}

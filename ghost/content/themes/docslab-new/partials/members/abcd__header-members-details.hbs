@@ -1,0 +1,56 @@
+<div class="members-details mr-10">
+    <div class="members-image">
+        {{#if @member.avatar_image}}
+            <img src="{{@member.avatar_image}}" alt="{{@member.name}}">
+        {{else}}
+            <img src="{{asset "img/authors/author-1.png"}}" alt="{{@member.name}}">
+        {{/if}}
+    </div>
+    <div class="members-info">
+        <h6 class="acc-details">{{t "Account details"}}</h6>
+        {{#if @member.paid}}
+            {{#foreach @member.subscriptions}}
+                <div class="members-account">
+                    {{#if @member.name}}
+                    <div class="members-mail">
+                        <div class="members-email">{{t "Name"}}</div>
+                        <div class="members-email-address">{{@member.name}}</div>
+                    </div>
+                    {{/if}}
+                    <div class="members-mail">
+                        <div class="members-email">{{t "Email address"}}</div>
+                        <div class="members-email-address">{{@member.email}}</div>
+                    </div>
+                    <div class="members-plan">
+                        <div class="members-plan"> {{t "Your plan:"}}</div>
+                        <div class="members-plan-name">
+                            {{price plan.amount currency=plan.currency currencyFormat="symbol"}}/{{plan.interval}}
+                        </div>
+                    </div>
+                </div>
+            {{/foreach}}
+        {{else if @member}}
+            <div class="members-account">
+                <div class="members-mail">
+                    <div class="members-email">{{t "Email address"}}</div>
+                    <div class="members-email-address">{{@member.email}}</div>
+                </div>
+                <div class="members-plan">
+                    <div class="members-plan"> {{t "Your plan:"}}</div>
+                    <div class="members-plan-name"> {{t "Free"}}</div>
+                </div>
+            </div>
+        {{/if}}
+
+        <div class="upg-sign d-flex justify-content-between align-items-cente">
+            <a class="btn btn-upgrade" href="{{@site.url}}/account/">
+                {{#if @member.paid}}
+                {{t "More Details"}}
+                {{else}}
+                {{t "Upgrade"}}
+                {{/if}}
+            </a>
+            <a class="btn btn-sign-out" href="javascript:" data-members-signout>{{t "Signout"}}</a>
+        </div>
+    </div>
+</div>

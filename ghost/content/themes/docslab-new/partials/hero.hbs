@@ -1,0 +1,41 @@
+{{!-- hero section --}}
+<div class="hero-section section-padding">
+    <div class="container">
+        <div class="row align-items-center">
+            {{#if @custom.show_cover_image}}
+            <div class="{{#if @site.cover_image}}col-md-6 pr-lg-60 pb-40 pb-md-0{{else}}col-md-8 mx-auto text-center{{/if}}">
+            {{else}}
+            <div class="col-md-8 mx-auto text-center">
+            {{/if}}
+                <h1 class="hero-title">{{t "Welcome to"}} {{@site.title}}</h1>
+                <p class="hero-text maxw-600 mx-auto">
+                    {{@site.description}}
+                </p>
+
+                {{!-- search-bar --}}
+                <div class="search-bar-area pt-30 w-100">
+                    <div class="serach-bar search-input-area">
+                        <span class="search-icon">{{> icons/search}}</span>
+                        <input type="text" class="form-control w-100 search-input" placeholder="{{t "Search your docs"}}"{{#unless @custom.search_content_api}} data-ghost-search{{/unless}}>
+                        <!-- search result content -->
+                        <div class="search-result nicescrol">
+                            <div class="custom">
+                                <div class="search-full-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{#if @custom.show_cover_image}}
+            {{#if @site.cover_image}}
+            <div class="col-md-6">
+                <div class="banner-image">
+                    <img src="{{@site.cover_image}}" alt="{{@site.title}}">
+                </div>
+            </div>
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</div>
+{{!-- End of hero section --}}
