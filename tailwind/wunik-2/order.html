@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="scroll-smooth" data-theme="light">
+
+<head>
+    <title>Jasa Pembuatan Website Bisnis Murah untuk UMKM | WUNIK</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <meta name="description"
+        content="Jasa pembuatan website murah dan profesional untuk bisnis UMKM Indonesia. WUNIK, cara buat website mudah dan murah untuk jangkauan bisnis lebih luas.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://wunik.id/themes/rootsite/img/favicon-96x96.png">
+    <!-- preload JS-->
+    <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.js" as="script" />
+    <!-- Preload CSS -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Public+Sans:wght@400;700&display=swap"
+        as="style">
+    <link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="dist/output.css" as="style">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Public+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="dist/output.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-white">
+    <main>
+        <section class="py-8 bg-grad-custom">
+            <div class="relative max-w-6xl px-6 mx-auto sm:px-6 rounded-2xl">
+                <a href="index.html"> <img class="w-32 py-2 mb-8 lg:w-52"
+                        src="https://wunik.id/themes/rootsite/img/logo-wunik.svg" alt="">
+                </a>
+                <form action="" id="order-form">
+                    <div class="flex flex-col md:gap-16 lg:gap-32 md:flex-row">
+                        <div class="flex flex-col flex-1 lg:w-1/2 ">
+                            <div class="mb-4 shadow-lg alert alert-success">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 w-6 h-6 stroke-current"
+                                        fill="none" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>Your purchase has been confirmed!</span>
+                                </div>
+                            </div>
+                            <div class="px-5 py-4 font-bold border border-b-0 bg-gray-50 rounded-t-xl">
+                                Data Diri
+                            </div>
+                            <div class="flex flex-col gap-5 p-5 bg-white border rounded-b-xl">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Nama Lengkap</span>
+                                    </label>
+                                    <input type="text" placeholder="Type here" class="w-full input input-bordered" />
+                                    <label class="label">
+                                        <span class="text-red-600 label-text-alt invalid-feedback">{{ $message }}</span>
+                                    </label>
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Email</span>
+                                    </label>
+                                    <input type="text" placeholder="Type here" class="w-full input input-bordered" />
+                                    <label class="label">
+                                        <span class="hidden inline text-red-600 label-text-alt invalid-feedback">invalid
+                                            input</span>
+                                    </label>
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Telepon</span>
+                                    </label>
+                                    <input type="text" placeholder="Type here" class="w-full input input-bordered" />
+                                    <label class="label">
+                                        <span class="text-red-600 label-text-alt invalid-feedback">invalid input</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="px-5 py-4 mt-10 font-bold border border-b-0 bg-gray-50 rounded-t-xl">
+                                Pilih Paket
+                            </div>
+                            <div class="flex flex-col overflow-hidden bg-white border divide-y rounded-b-xl">
+                                <div class=" form-control hover:bg-gray-50">
+                                    <label class="p-5 rounded cursor-pointer label ">
+                                        <span class="text-center label-text">Paket Startup</span>
+                                        <input type="radio" name="radio-paket" value="startup" class="radio " />
+                                    </label>
+                                </div>
+                                <div class=" form-control hover:bg-gray-50">
+                                    <label class="p-5 rounded cursor-pointer label ">
+                                        <span class="text-center label-text">Paket Bisnis <span
+                                                class="ml-3 text-xs bg-yellow-500 border-0 badge">Favorit</span></span>
+                                        <input type="radio" name="radio-paket" value="bisnis" class="radio " checked />
+                                    </label>
+                                </div>
+                                <div class="block form-control hover:bg-gray-50">
+                                    <label class="p-5 rounded cursor-pointer label ">
+                                        <span class="text-center label-text">Paket Pro</span>
+                                        <input type="radio" name="radio-paket" value="pro" class="radio " />
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="px-5 py-4 mt-10 font-bold border border-b-0 bg-gray-50 rounded-t-xl">
+                                Durasi Langganan
+                            </div>
+                            <div class="flex flex-col mb-10 overflow-hidden bg-white border divide-y rounded-b-xl">
+                                <div class="hidden p-2 text-xs rounded-none alert tigabulanan info-durasi">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            class="flex-shrink-0 w-6 h-6 stroke-info">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                        <span>Masa sewa 3 bulan tidak termasuk gratis domain</span>
+                                    </div>
+                                </div>
+                                <div class=" form-control hover:bg-gray-50">
+                                    <label class="p-5 rounded cursor-pointer label ">
+                                        <span class="text-center label-text">3 Bulanan</span>
+                                        <span class="hidden ml-auto mr-5 sm:block">Rp 259.900/mo</span>
+                                        <input type="radio" name="radio-durasi" class="radio " value="tigabulanan" />
+                                    </label>
+                                </div>
+                                <div class=" form-control hover:bg-gray-50">
+                                    <label class="p-5 rounded cursor-pointer label ">
+                                        <span class="text-center label-text">Tahunan </span>
+                                        <span class="ml-3 text-xs border-0 bg-emerald-500 badge">Hemat 28%</span>
+                                        <span class="hidden ml-auto mr-5 sm:block">Rp 184.900/mo</span>
+                                        <input type="radio" name="radio-durasi" class="radio " value="tahunan"
+                                            checked />
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- <div
+                                    class="px-5 py-4 mt-10 font-bold border border-b-0 bg-gray-50 rounded-t-xl">
+                                    Layanan Tambahan
+                                    </div>
+                                    <div class="flex flex-col mb-10 overflow-hidden bg-white border divide-y rounded-b-xl">
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">CMS</span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">Jasa update content/bulan</span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">Design logo</span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">Design favicon</span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">4 design banner</span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    <div class="form-control hover:bg-gray-50">
+                                        <label class="p-5 cursor-pointer label">
+                                            <span class="label-text">SSL <span
+                                                    class="ml-4 text-xs border-0 bg-emerald-500 badge">New</span></span>
+                                            <input type="checkbox" checked="checked" class="checkbox " />
+                                        </label>
+                                    </div>
+                                    </div> -->
+                        </div>
+                        <div class="flex flex-col flex-1 gap-5 lg:w-1/2">
+                            <div class="sticky top-0 ">
+                                <div class="overflow-x-auto">
+                                    <table class="table w-full rounded-xl md:table-normal table-compact">
+                                        <!-- head -->
+                                        <thead class="overflow-hidden border-b rounded-lg">
+                                            <tr>
+                                                <th class="rounded-0 ">Item</th>
+                                                <th class="text-right rounded-0">Harga</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="text-sm text-gray-600">Paket </span>
+                                                    <div>Bisnis</div>
+                                                </td>
+                                                <td class="text-right">106.900</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="text-sm text-gray-600">Lama Kontrak</span>
+                                                    <div>12 Bulan</div>
+                                                </td>
+                                                <td class="text-right"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    Paket ini sudah termasuk CMS, Jasa
+                                                </td>
+                                                <td class="text-right">Free</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                    <td class=""><span class="text-sm text-gray-600">Layanan Tambahan</span>
+                                                        <div>CMS</div>
+                                                    </td>
+                                                    <td class="text-right">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>Setting website 20 halaman</td>
+                                                    <td class="text-right">0</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>Jasa update konten /bulan</td>
+                                                    <td class="text-right">0</td>
+                                                    </tr> -->
+                                            <tr>
+                                                <td>Total
+                                                </td>
+                                                <td class="font-semibold text-right">2.218.800</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="text-xs alert pack-info startup">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                class="flex-shrink-0 w-6 h-6 stroke-info">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                            <span>Paket ini sudah termasuk CMS (Content Management System), Jasa update
+                                                website tiap bulan,
+                                                Setting website untuk 5 halaman, Desain 1 logo, Desain 1 favicon, System
+                                                update, Integrasi WhatsApp Bisnis </span>
+                                        </div>
+                                    </div>
+                                    <div class="hidden text-xs alert pack-info bisnis">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                class="flex-shrink-0 w-6 h-6 stroke-info">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                            <span>Paket ini sudah termasuk CMS (Content Management System), Jasa update
+                                                website tiap bulan,
+                                                Setting website untuk 10 halaman, Desain 1 logo, Desain 1 favicon,
+                                                Desain 1
+                                                banner header, Desain 3 banner slider, System update, Integrasi WhatsApp
+                                                Bisnis, SSL</span>
+                                        </div>
+                                    </div>
+                                    <div class="hidden text-xs alert pack-info pro">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                class="flex-shrink-0 w-6 h-6 stroke-info">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                                </path>
+                                            </svg>
+                                            <span>Paket ini sudah termasuk CMS (Content Management System), Jasa update
+                                                website tiap bulan,
+                                                Setting website untuk 20 halaman, Desain 1 logo, Desain 1 favicon,
+                                                Desain 1
+                                                banner header, Desain 3 banner slider, System update, Integrasi WhatsApp
+                                                Bisnis, SSL</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-5 form-control">
+                                    <label class="label">
+                                        <span class="label-text">Kode Captcha</span>
+                                    </label>
+                                    <div class="flex gap-4">
+                                        <img class="overflow-hidden rounded-md" src="http://jenterprise-branding.laravel.jcamp.biz/captcha/flat?xHX8ikEa"
+                                            alt="">
+                                            <input type="text" placeholder="Type here" class="w-full input input-bordered" />
+                                    </div>
+                                    
+                                    <label class="label">
+                                        <span class="ml-auto text-red-600 label-text-alt invalid-feedback">{{ $message }}</span>
+                                    </label>
+                                </div>
+                                <div class="my-5 form-control">
+                                    <label class="justify-start cursor-pointer label">
+                                        <input type="checkbox" checked="checked "
+                                            class="mr-4 bg-white border checkbox" />
+                                        <span class="label-text"> Dengan ini saya menyetujui <a class="link"
+                                                href="tos.html">Syarat dan Ketentuan</a> yang berlaku</span>
+                                    </label>
+                                </div>
+                                <button type="submit"
+                                    class="inline-block px-8 py-3 mx-auto text-base font-medium text-white border border-transparent rounded-full bg-rose-600 hover:bg-rose-700 md:text-lg md:px-10">
+                                    Checkout </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        $(document).ready(function () {
+            $("input[name$='radio-paket']").click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".pack-info").not(targetBox).hide();
+                $(targetBox).show();
+            });
+            $("input[name$='radio-durasi']").click(function () {
+                var inputValue = $(this).attr("value");
+                var targetBox = $("." + inputValue);
+                $(".info-durasi").not(targetBox).hide();
+                $(targetBox).show();
+            });
+        });
+    </script>
+</body>
+
+</html>

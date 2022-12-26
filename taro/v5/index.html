@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- og Image -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Taro Wonderhunt" />
+		<meta property="og:description" content="Taro Wonderhunt" />
+		<meta property="og:image" content="assets/img/og.jpeg" />
+		<meta property="og:locale" content="Taro Wonderhunt" />
+		<meta property="og:site_name" content="Taro Wonderhunt" />
+		<meta property="og:url" content="" />
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Taro" />
+		<meta name="twitter:description" content="Taro Wonderhunt" />
+		<meta name="twitter:image" content="assets/img/og.jpg" />
+		<meta name="twitter:site" content="Taro Wonderhunt" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png" />
+		<link rel="apple-touch-icon" href="assets/img/icon-180.png" />
+		<meta name="msapplication-TileImage" content="assets/img/icon-180.png" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Taro Home</title>
+	</head>
+
+	<body>
+		<div class="bg-home-ori wrap position-relative">
+			<header>
+				<nav class="m-3 index-2 right m-md-5 position-absolute">
+					<!-- <button type="button" onclick="toggleAudio()"
+                    class="mb-3 shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill dsb"
+                    data-toggle="modal" id="btn-audio">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button> -->
+				</nav>
+				<nav class="m-3 index-2 m-md-5 position-absolute">
+					<button type="button" class="mb-3 shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill" data-toggle="modal" data-target="#menu">
+						<svg viewBox="0 0 24 24" width="24" height="24">
+							<path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+						</svg>
+					</button>
+					<button type="button" onclick="toggleAudio()" class="shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill dsb" data-toggle="modal" id="btn-audio">
+						<div class="px"></div>
+					</button>
+				</nav>
+			</header>
+			<!-- Modal -->
+			<div class="modal fade" id="menu" tabindex="-1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content frame-blue">
+						<div class="p-4 text-center modal-body">
+							<button type="button" class="mr-4 text-white close position-absolute right" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h5 class="my-2 modal-title text-uppercase" id="menuLabel">Menu</h5>
+							<ul class="mt-5 list-group text-uppercase">
+								<li class="list-group-item">
+									<a class="text-white" href="index.html">Beranda</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="redeem.html">Redeem Kode Unik</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="dashboard.html">Vourcher Saya</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="dashboard.html">Poin Saya</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="dashboard.html">Tukar Poin</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="bidding-poin.html">Bidding Poin</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="pt-5 overflow-hidden d-flex align-items-center justify-content-center">
+				<div class="container pb-5">
+					<div class="row">
+						<div class="mx-auto mb-2 mb-xl-5 mt-md-4 col-7 pt-xl-4 pb-xl-2">
+							<img class="max-w-logo img-fluid" src="assets/img/logo-homepage.png " alt="" style="scale: 1.02" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="mx-auto col-6 col-sm-5">
+							<a href="data-diri.html"> <img class="login-fb" src="assets/img/fb-login.svg" alt="" /></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="mx-auto col-5 col-sm-4 mt-n2">
+							<a href=""> <img class="login-gmail" src="assets/img/gmail-login.svg" alt="" /></a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="mx-auto text-center col-12">
+							<img class="img-fluid" src="assets/img/moba-unipin.png" alt="" />
+						</div>
+					</div>
+					<div class="row mt-custom">
+						<div class="mx-auto text-center col-11">
+							<a href="#" data-toggle="modal" data-target="#popup-home"><img class="img-fluid" src="assets/img/mau-tau.png" alt="" /></a>
+							<!-- Modal -->
+							<div class="modal fade" id="popup-home" tabindex="-1" role="dialog" aria-labelledby="popup-homeLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="p-0 modal-content" style="background: transparent; border: 0px">
+										<img class="img-fluid" src="assets/img/popup-1.png" alt="" />
+										<button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+											<img class="img-fluid btn-ok" src="assets/img/btn-ok.svg" alt="" />
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row has-h">
+						<div class="mx-auto text-center col-5 col-md-4">
+							<a href=""> <img class="img-fluid" src="assets/img/whatsapp.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="py-2 mx-auto text-center py-md-4 my-xl-4 col-10 sosmed">
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/fb.svg" alt="" /></a>
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/ig.svg" alt="" /></a>
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/web.svg" alt="" /></a>
+						</div>
+					</div>
+					<div class="text-white row justify-content-center">
+						<p class="text-xs">© 2022 Taro. Wonderhunt</p>
+					</div>
+					<div class="text-center text-white d-none d-md-block position-absolute box-mouse bounce-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mouse2-fill blob yellow text-warning" viewBox="0 0 16 16">
+							<path d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z" />
+						</svg>
+						Scroll
+					</div>
+				</div>
+			</section>
+
+			<audio id="taroAudio" loop autoplay>
+				<source src="assets/img/music.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+
+			<script>
+				var mediaStream = document.getElementById("taroAudio")
+				var mediaButton = document.getElementById("btn-audio")
+
+				function toggleAudio() {
+					if ( mediaStream.paused ) {
+						mediaStream.play()
+					} else {
+						mediaStream.pause()
+					}
+					mediaButton.classList.toggle("dsb")
+				}
+
+				let checkMedia = setInterval(() => {
+					if ( mediaStream.currentTime > 0 ) mediaButton.classList.remove("dsb")
+					clearInterval(checkMedia)
+				}, 1000)
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>

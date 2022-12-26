@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- og Image -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Home GT & MT" />
+		<meta property="og:description" content="Taro Wonderhunt" />
+		<meta property="og:image" content="assets/img/og.jpeg" />
+		<meta property="og:locale" content="Taro Wonderhunt" />
+		<meta property="og:site_name" content="Taro Wonderhunt" />
+		<meta property="og:url" content="" />
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Taro" />
+		<meta name="twitter:description" content="Taro Wonderhunt" />
+		<meta name="twitter:image" content="assets/img/og.jpg" />
+		<meta name="twitter:site" content="Taro Wonderhunt" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico" />
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png" />
+		<link rel="apple-touch-icon" href="assets/img/icon-180.png" />
+		<meta name="msapplication-TileImage" content="assets/img/icon-180.png" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<title>Taro Home</title>
+	</head>
+
+	<body>
+		<div class="bg-home-ori wrap position-relative">
+			<header>
+				<nav class="m-3 index-2 right m-md-5 position-absolute"></nav>
+				<nav class="m-3 index-2 m-md-5 position-absolute">
+					<button type="button" class="mb-3 shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill" data-toggle="modal" data-target="#menu">
+						<svg viewBox="0 0 24 24" width="24" height="24">
+							<path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+						</svg>
+					</button>
+					<button type="button" onclick="toggleAudio()" class="shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill dsb" data-toggle="modal" id="btn-audio">
+						<div class="px"></div>
+					</button>
+				</nav>
+			</header>
+			<!-- Modal -->
+			<div class="modal fade" id="menu" tabindex="-1" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content frame-blue">
+						<div class="p-4 text-center modal-body">
+							<button type="button" class="mt-2 mr-4 text-white close position-absolute right" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							<h5 class="my-2 modal-title text-uppercase" id="menuLabel">Menu</h5>
+							<hr class="border-top" />
+							<ul class="mb-4 list-group text-uppercase">
+								<li class="list-group-item">
+									<a class="text-white" href="home-gt-mt.html">Beranda</a>
+								</li>
+							</ul>
+							<img src="assets/img/menu-ml.jpg" class="rounded img-fluid" alt="" />
+							<ul class="mb-4 list-group text-uppercase">
+								<li class="list-group-item">
+									<a class="text-white" href="kode-unik-ml.html">Tukar Kode Unik (Game Moba)</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="voucher-saya.html">Vourcher Saya</a>
+								</li>
+							</ul>
+							<img src="assets/img/menu-alfa.jpg" class="rounded img-fluid" alt="" />
+							<ul class="list-group text-uppercase">
+								<li class="list-group-item">
+									<a class="text-white" href="kode-unik-alfa.html">Tukar Kode Unik (Alfamart)</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="tukar-poin-merch.html">Tukar Poin Merchandise</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="tukar-poin-grandprize.html">Tukar Poin Grandprize</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="poin-saya.html">Poin Saya</a>
+								</li>
+								<li class="list-group-item">
+									<a class="text-white" href="riwayat-penukaran.html">Riwayat Poin Saya</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="pt-5 overflow-hidden d-flex align-items-center justify-content-center">
+				<div class="container pb-5">
+					<div class="row">
+						<div class="mx-auto mb-2 mb-xl-5 mt-md-4 col-7 pt-xl-4 pb-xl-2">
+							<img class="max-w-logo img-fluid" src="assets/img/logo-homepage.png " alt="" style="scale: 1.02" />
+						</div>
+					</div>
+					<!-- <div class="row">
+						<div class="mx-auto my-5 col-6 col-sm-7">
+							<img class="img-fluid" src="assets/img/mt-homepage-logged-in.png" alt="" />
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="mx-auto col-6 col-sm-6">
+							<a href="#" data-toggle="modal" data-target="#popup-login">
+								<img class="login-fb" src="assets/img/fb-login.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="mx-auto col-5 col-sm-4 mt-n2">
+							<a href="#" data-toggle="modal" data-target="#popup-login">
+								<img class="login-gmail" src="assets/img/gmail-login.svg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="row">
+						<div class="mx-auto text-center col-12">
+							<img class="img-fluid" src="assets/img/ml-banner.png" alt="" />
+							<div style="position: absolute; left: 0; right: 0; bottom: -1%">
+								<a href="kode-unik-ml.html">
+									<img class="btn-50" src="assets/img/btn-kode-unik.png" alt="" />
+								</a>
+							</div>
+							<div style="position: absolute; left: 0; right: 0; bottom: 15%">
+								<a href="#" data-toggle="modal" data-target="#popup-ml">
+									<img class="btn-35" src="assets/img/btn-cara-main.png" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 15%">
+						<div class="mx-auto text-center col-12">
+							<img class="img-fluid" src="assets/img/alfa-banner.png" alt="" />
+							<div style="position: absolute; left: 0; right: 0; bottom: -3%">
+								<a href="kode-unik-alfa.html">
+									<img class="btn-50" src="assets/img/btn-kode-unik.png" alt="" />
+								</a>
+							</div>
+							<div style="position: absolute; left: 0; right: 0; bottom: 12%">
+								<a href="#" data-toggle="modal" data-target="#popup-alfamart">
+									<img class="btn-35" src="assets/img/btn-cara-main.png" alt="" />
+								</a>
+								<a href="home-mt.html" >
+									<img class="btn-35" src="assets/img/btn-masuk-halaman.png" alt="" />
+								</a>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="popup-login" tabindex="-1" role="dialog" aria-labelledby="popup-homeLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+									<div class="p-0 modal-content" style="background: transparent; border: 0px">
+										<img class="img-fluid" src="assets/img/popup-login.png" alt="" />
+										<div style="position: absolute; left: 0; right: 0; bottom: 40%; width: 62%; margin: 0px auto">
+											<a href="home-mt.html">
+												<img class="img-fluid" src="assets/img/btn-login-fb.png" alt="" />
+											</a>
+										</div>
+										<div style="position: absolute; left: 0; right: 0; bottom: 22%; width: 62%; margin: 0px auto">
+											<a href="home-mt.html">
+												<img class="img-fluid" src="assets/img/btn-login-gmail.png" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="popup-ml" tabindex="-1" role="dialog" aria-labelledby="popup-homeLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+									<div class="p-0 modal-content" style="background: transparent; border: 0px">
+										<img class="img-fluid" src="assets/img/popup-ml.png" alt="" />
+										<button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="width: 49%; background: transparent; margin: -19% auto; padding: 4%"></button>
+									</div>
+								</div>
+							</div>
+							<!-- Modal -->
+							<div class="modal fade" id="popup-alfamart" tabindex="-1" role="dialog" aria-labelledby="popup-homeLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+									<div class="p-0 modal-content" style="background: transparent; border: 0px">
+										<img class="img-fluid" src="assets/img/popup-alfamart.png" alt="" />
+										<button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="width: 49%; background: transparent; margin: -16% auto; padding: 4%"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row has-h">
+						<div class="mx-auto text-center col-5 col-md-4">
+							<a href=""> <img class="img-fluid" src="assets/img/whatsapp.png" alt="" /></a>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="py-2 mx-auto text-center py-md-4 my-xl-3 col-10 sosmed">
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/fb.svg" alt="" /></a>
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/ig.svg" alt="" /></a>
+							<a href="" class="d-inline"> <img class="mx-2" src="assets/img/web.svg" alt="" /></a>
+						</div>
+					</div>
+					<div class="text-white row justify-content-center">
+						<p class="text-xs">© 2022 Taro. Wonderhunt</p>
+					</div>
+					<div class="text-center text-white d-none d-md-block position-absolute box-mouse bounce-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mouse2-fill blob yellow text-warning" viewBox="0 0 16 16">
+							<path d="M7.5.026C4.958.286 3 2.515 3 5.188V5.5h4.5V.026zm1 0V5.5H13v-.312C13 2.515 11.042.286 8.5.026zM13 6.5H3v4.313C3 13.658 5.22 16 8 16s5-2.342 5-5.188V6.5z" />
+						</svg>
+						Scroll
+					</div>
+				</div>
+			</section>
+
+			<audio id="taroAudio" loop autoplay>
+				<source src="assets/img/music.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+
+			<script>
+				var mediaStream = document.getElementById("taroAudio");
+				var mediaButton = document.getElementById("btn-audio");
+
+				function toggleAudio() {
+					if (mediaStream.paused) {
+						mediaStream.play();
+					} else {
+						mediaStream.pause();
+					}
+					mediaButton.classList.toggle("dsb");
+				}
+
+				let checkMedia = setInterval(() => {
+					if (mediaStream.currentTime > 0) mediaButton.classList.remove("dsb");
+					clearInterval(checkMedia);
+				}, 1000);
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		</div>
+	</body>
+</html>

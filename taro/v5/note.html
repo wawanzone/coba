@@ -1,0 +1,73 @@
+----------------------------------------------------
+css -
+----------------------------------------------------
+.dsb:after {
+    content: '';
+    width: 37px;
+    height: 3px;
+    position: absolute;
+    background: #000;
+    transform: rotate(-45deg);
+    left: 0;
+    margin: 10%;
+    right: 0;
+}
+----------------------------------------------------
+css +
+----------------------------------------------------
+#btn-audio{
+    background: #ffc107;
+    width: 46.4px;
+    height: 46.4px;
+}
+#btn-audio .px{
+    background-image: url('../img/music-note-beamed.svg');
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+#btn-audio.dsb .px{
+    background-image: url('../img/volume-mute-fill.svg');
+}
+
+----------------------------------------------------
+html replace
+----------------------------------------------------
+<nav class="m-3 index-2 m-md-5 position-absolute">
+    <button type="button" class="mb-3 shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill" data-toggle="modal" data-target="#menu">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+        </svg>
+    </button>
+    <button type="button" onclick="toggleAudio()" class="shadow cursor-pointer btn btn-lg btn-warning d-flex align-items-center rounded-pill dsb" data-toggle="modal" id="btn-audio">
+        <div class="px"></div>
+    </button>
+</nav>
+
+
+<script>
+    var mediaStream = document.getElementById("taroAudio")
+    var mediaButton = document.getElementById("btn-audio")
+
+    function toggleAudio() {
+        if ( mediaStream.paused ) {
+            mediaStream.play()
+        } else {
+            mediaStream.pause()
+        }
+        mediaButton.classList.toggle("dsb")
+    }
+
+    let checkMedia = setInterval(() => {
+        if ( mediaStream.currentTime > 0 ) mediaButton.classList.remove("dsb")
+        clearInterval(checkMedia)
+    }, 1000)
+</script>
+
+----------------------------------------------------
+asset +
+----------------------------------------------------
+/img/music-note-beamed.svg
+/img/volume-mute-fill.svg
+
+

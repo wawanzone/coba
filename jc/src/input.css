@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p{
+    max-width: 70ch;
+margin-bottom: 1rem;
+}
+
+.avatar.online::before {
+    top: 3%;
+    right: 3%;
+    box-shadow: 0 0 0 3px white;
+}

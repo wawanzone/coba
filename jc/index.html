@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="text-gray-700 bg-gray-200">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Wawanzone Web Developer">
+        <meta name="keyword"
+            content="jasa foto, fotografer, fotografi, prewedding, prewed, nikah, nikahan, pernikahan, wedding, dokumentasi, acara, event, ultah, ulang tahun, ibu hamil, maternity, keluarga family, bayi, baby, anak, indoor, outdoor, photography, photo, photographer, produk">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="author" href="wawanzone">
+        <title>Ijin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/css/lightgallery.min.css" integrity="sha512-J3GvWzuXtDGv7Kmqhj1gbn/jM2i3G40XtSBcqGEQ7eLpP0izHygFgT0FMIVCWMVRZnz7u2rS6mhTtlQ3oJsr1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="dist/output.css" rel="stylesheet">
+
+    </head>
+
+    <body class="font-sans antialiased" id="tabs-id" tabindex="0">
+
+        <main>
+            <div class="max-w-3xl p-5 mx-auto bg-gradient-to-b from-white lg:p-12 tab-content ">
+                <h2 class="mb-4 text-2xl font-extrabold text-black">Macam Ijin</h2>
+
+
+                <ul id="lightgallery" class="grid grid-cols-1 gap-0 sm:grid-cols-2 ">
+                    <li data-src="dist/foto/kamar-mandi.png">
+                        <img src="dist/foto/kamar-mandi.png" />
+                    </li>
+                    <li data-src="dist/foto/bikin-kopi.png">
+                        <img src="dist/foto/bikin-kopi.png" />
+                    </li>
+                    <li data-src="dist/foto/sholat.png">
+                        <img src="dist/foto/sholat.png" />
+                    </li>
+                    <li data-src="dist/foto/meeting.png">
+                        <img src="dist/foto/meeting.png" />
+                    </li>
+                    <li data-src="dist/foto/keperluan.png">
+                        <img src="dist/foto/keperluan.png" />
+                    </li>
+
+                </ul>
+            </div>
+        </main>
+        <footer class="max-w-3xl p-5 mx-auto bg-gray-200 lg:px-12 lg:rounded-b-xl ">
+            <p class="mb-0 text-xs text-gray-400">@wawanzone — 2022</p>
+        </footer>
+        <script type="text/javascript">
+            function changeAtiveTab(event, tabID) {
+                let element = event.target;
+                while (element.nodeName !== "A") {
+                    element = element.parentNode;
+                }
+                ulElement = element.parentNode.parentNode;
+                aElements = ulElement.querySelectorAll("li > a");
+                tabContents = document.getElementById("tabs-id").querySelectorAll(".tab-content > div");
+                for (let i = 0; i < aElements.length; i++) {
+                    aElements[i].classList.remove("text-gray-600");
+                    aElements[i].classList.remove("bg-gray-200");
+                    aElements[i].classList.add("text-gray-600");
+                    aElements[i].classList.add("bg-white");
+                    tabContents[i].classList.add("hidden");
+                    tabContents[i].classList.remove("block");
+                }
+                element.classList.remove("text-gray-600");
+                element.classList.remove("bg-white");
+                element.classList.add("text-gray-600");
+                element.classList.add("bg-gray-200");
+                document.getElementById(tabID).classList.remove("hidden");
+                document.getElementById(tabID).classList.add("block");
+            }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.4.0/lightgallery.min.js"></script>
+
+
+        <script type="text/javascript">
+            lightGallery(document.getElementById('lightgallery'), {
+                thumbnail: true,
+                loadYoutubeThumbnail: true,
+                youtubeThumbSize: 'default',
+                loadVimeoThumbnail: true,
+                vimeoThumbSize: 'thumbnail_medium',
+            });
+        </script>
+
+
+    </body>
+
+</html>

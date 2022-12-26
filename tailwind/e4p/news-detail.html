@@ -1,0 +1,972 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aksara</title>
+    <meta name="title" content="Aksara">
+    <meta name="description" content="Tema Wunik - Berita">
+    <meta name="keywords" content="website, wunik, portal, berita">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aksara">
+    <meta property="og:description" content="Tema Wunik - Berita">
+    <meta property="og:image" content="assets/img/ogp.jpeg">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Aksara">
+    <meta property="og:url" content="https://demo.jcamp.biz/wunik/aksara/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aksara">
+    <meta name="twitter:description" content="Tema Wunik - Berita">
+    <meta name="twitter:image" content="assets/img/ogp.jpeg">
+    <meta name="twitter:site" content="Aksara">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://demo.jcamp.biz/wunik/aksara/">
+    <!-- Favicon -->
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+    <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+    <meta name="msapplication-TileImage" content="assets/img/icon-180.png">
+    <!-- Status Bar -->
+    <meta name="apple-mobile-web-app-title" content="aksara">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar" content="#fff">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="theme-color" content="#fff">
+    <!-- System Theme -->
+    <meta name="color-scheme" content="dark light">
+    <!-- Preload -->
+    <link rel="preload" as="script" href="assets/js/darkmode.min.js" />
+    <link rel="preload" as="style" href="assets/css/main.css" />
+    <link rel="preload" as="script" href="assets/js/main.js" />
+    <link rel="preload" as="script" href="assets/js/hs-ui.bundle.js" />
+    <!-- Main -->
+    <script>const siteName = 'Wunik aksara'</script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body class="text-black bg-white dark:bg-gray-900 dark:text-white" id="news-detail">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v14.0&appId=139288256145728&autoLogAppEvents=1"
+        nonce="cx8KtdTm"></script>
+    <!-- ========== HEADER ========== -->
+    <header class="text-white bg-blue-900 dark:bg-slate-900 print:hidden">
+        <div
+            class="container relative flex items-center justify-between w-full px-5 py-4 mx-auto sm:px-0 xl:max-w-7xl top-bar ">
+            <div class="lg:my-5">
+                <a class="flex items-center gap-3 font-serif text-4xl dark:text-white" href="index.html">
+                    <img src="assets/img/logo.png" alt="" class="inline w-9">
+                    <span class="hidden sm:inline"> aksara</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="widget w-[333px]">
+                    <div id="ww_973c75cd88acb" v='1.20' loc='id' a='{"t":"responsive","lang":"en","ids":["wl4231"],"cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","cl_odd":"#00000000","el_wfc":3}'>Weather Data Source: <a href="https://cuacalab.id/cuaca_yogyakarta/hari_ini/" id="ww_973c75cd88acb_u" target="_blank">ramalan cuaca Yogyakarta hari ini</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_973c75cd88acb"></script>                
+                </div>
+                <div class="flex items-center justify-between gap-2 px-0 social">
+                    <button id="theme-toggle" type="button"
+                        class="p-2 text-sm text-gray-500 rounded-full dark:text-gray-400 hover:bg-gray-100 bg-white/10 dark:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="#efbf00" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="#efbf00" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class=" sm:hidden">
+                        <button type="button"
+                            class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium align-middle transition-all border rounded-md shadow-sm hs-collapse-toggle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 "
+                            data-hs-collapse="#navbar-collapse-header" aria-controls="navbar-collapse-header"
+                            aria-label="Toggle navigation">
+                            <svg class="w-4 h-4 hs-collapse-open:hidden" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <svg class="hidden w-4 h-4 hs-collapse-open:block" width="16" height="16"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex flex-wrap w-full text-sm sm:border-b sm:justify-start sm:flex-nowrap border-white/20">
+            <div class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between "
+                aria-label="Global">
+                <div class="flex items-end justify-between sm:border-t border-white/20 ">
+                    <div class="w-full sm:w-auto sm:absolute top-3 right-4">
+                        <input type="text" id="hs-inline-add-on" name="hs-inline-add-on"
+                            class="block w-full px-3 py-2 text-sm text-black border-gray-200 shadow-sm pl-11 focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                            placeholder="Pencarian...">
+                        <div class="absolute inset-y-0 left-0 z-20 flex pt-3 pl-4 pointer-events-none">
+                            <span class="text-sm text-gray-500/50">
+                                <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="navbar-collapse-header"
+                    class="hidden border-t sm:border-r sm:border-l basis-full grow sm:block border-white/20 sm:pr-[240px]">
+                    <nav
+                        class="flex flex-col flex-wrap gap-1 p-4 px-4 text-lg md:items-center sm:flex-row sm:items-start sm:mt-0 sm:pl-5 navbar">
+                        <div class="hs-mega-menu">
+                            <button id="hs-mega-menu-basic-dr" type="button"
+                                class="flex items-center w-full font-serif font-medium text-white border-white/20 hs-mega-menu-toggle hs-mega-menu-open:text-yellow-400 hover:text-yellow-400">
+                                Menu
+                                <svg class="ml-2 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                            <div class="left-0 hidden opacity-0 hs-mega-menu-content parent hs-mega-menu-open:opacity-100 top-full "
+                                aria-labelledby="hs-mega-menu-basic-dr">
+                                <a class="nav-link" href="polling.html">
+                                    Survey
+                                </a>
+                                <a class="nav-link" href="gallery.html">
+                                    Galeri
+                                </a>
+                                <a class="nav-link" href="link.html">
+                                    Tautan
+                                </a>
+                                <a class="nav-link" href="agenda.html">
+                                    Agenda
+                                </a>
+                                <a class="nav-link" href="contact.html">
+                                    Hubungi Kami
+                                </a>
+                                <a class="nav-link" href="search.html">
+                                    Pencarian
+                                </a>
+                                <div class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                    <a class="atoggle nav-link hs-mega-menu-toggle"
+                                        href="javascript:;">
+                                        Level 1
+                                        <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                        <div
+                                            class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                            <a class="atoggle nav-link hs-mega-menu-toggle"
+                                                href="javascript:;">
+                                                Level 2
+                                                <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <div
+                                                class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                                <a class="nav-link" href="page-detail.html">
+                                                    Level 3
+                                                </a>
+                                                <a class="nav-link" href="page-detail.html">
+                                                    Level 3
+                                                </a>
+                                                <div
+                                                    class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                                    <a class="atoggle nav-link hs-mega-menu-toggle"
+                                                        href="javascript:;">
+                                                        Level 3
+                                                        <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16"
+                                                            height="16" viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                    <div
+                                                        class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                                        <a class="nav-link" href="page-detail.html">
+                                                            Level 4
+                                                        </a>
+                                                        <a class="nav-link" href="page-detail.html">
+                                                            Level 4
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <a class="nav-link" href="guestbook.html">
+                                    Buku Tamu
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cat-list">
+                            <a class="nav-link-serif" href="news.html">
+                                Olahraga
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Politik
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Hukum
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Hiburan
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Ilmu Pengetahuan
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Film
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Sosial
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Narasi
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Opini
+                            </a>
+                        </div>
+                        <div class="hs-mega-menu">
+                            <button id="hs-mega-menu-basic-mm" type="button"
+                                class="flex items-center w-full font-serif font-medium text-white hs-mega-menu-toggle hs-mega-menu-open:text-yellow-500 hover:hs-mega-menu-open:text-yeloow-500 hover:text-yellow-400">
+                                Lainnya
+                                <svg class="ml-2 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                            <div
+                                class="hs-mega-menu-content container xl:max-w-7xl mx-auto relative z-50 flex flex-wrap w-full text-sm  sm:justify-start sm:flex-nowrap bo sm:transition-all transition-[opacity,margin] top-full left-0 hidden  before:absolute before:-top-5 before:left-0 before:w-full before:h-5  sm:duration-300 min-w-[15rem] sm:absolute  hs-mega-menu-open:opacity-100 opacity-0  ">
+                                <div
+                                    class="w-full p-2 mx-auto  sm:border-t  mt-[1px] border-l border-white/20 md:border-t md:p-4 ">
+                                    <div class="sm:grid xl:grid-cols-5 md:grid-cols-3 ext-menu ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN CONTENT ========== -->
+    <div id="reading-progress">
+        <div id="reading-progress-fill"></div>
+    </div>
+    <main id="content">
+        <div
+            class="container relative flex flex-col px-4 py-2 mx-auto breadcrumb print:hidden xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row">
+            <ol class="flex items-center min-w-0 whitespace-nowrap" aria-label="Breadcrumb">
+                <li class="text-xs">
+                    <a class="flex items-center text-gray-500 hover:text-blue-600" href="#">
+                        Home
+                        <svg class="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
+                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="text-xs">
+                    <a class="flex items-center text-gray-500 hover:text-blue-600" href="#">
+                        App Center
+                        <svg class="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
+                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="text-xs text-gray-800 truncate dark:text-gray-200" aria-current="page">
+                    Breadcrumb
+                </li>
+            </ol>
+        </div>
+        <div
+            class="container flex flex-col gap-5 px-4 pt-4 pb-8 mx-auto border-t xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+            <div class="flex-initial w-64 mb-5 left-side ">
+                <p class="mb-2 font-serif text-2xl text-red-600 dark:text-white">Berita Utama</p>
+                <time class="opacity-0 from-now dark:text-white/70" datetime="2022-08-22T06:05:00"></time>
+
+            </div>
+            <div class="flex w-full gap-7 right-side">
+                <div class="">
+                    <article class="max-w-2xl prose writing dark:prose-invert" id="article">
+
+                        <h1 class="font-serif text-xl sm:text-3xl ">
+                            Pakistan’s former PM Imran Khan charged
+                            under anti-terror law
+                        </h1>
+                        <div class="flex items-center justify-between gap-5">
+                            <span class="text-sm ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="inline w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg> <span id="time"></span>
+                                Menit Baca
+                            </span>
+                            <div class="h-1 border-t grow border-slate-500/50"></div>
+                            <select
+                                class="block px-3 py-2 text-xs bg-transparent print:hidden border-gray-500/50 pr-9 focus:border-gray-500 focus:ring-gray-500 "
+                                onchange="myFunction(this);">
+                                <option selected>Ukuran font:</option>
+                                <option>medium</option>
+                                <option>large</option>
+                                <option>x-large</option>
+                            </select>
+                            <script>
+                                function myFunction(selectTag) {
+                                    var listValue = selectTag.options[selectTag.selectedIndex].text;
+                                    document.getElementById("article").style.fontSize = listValue;
+                                }
+                            </script>
+                        </div>
+
+                        <img src="https://source.unsplash.com/900x600/?police" alt="">
+                        <div class=" read">
+                            <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind
+                                has been a tedious task that required a keen eye for typography and a lot of complex
+                                custom CSS.</p>
+                            <p>By default, Tailwind removes all of the default browser styling from paragraphs,
+                                headings, lists and more. This ends up being really useful for building application UIs
+                                because you spend less time undoing user-agent styles, but when you <em>really are</em>
+                                just trying to style some content that came from a rich-text editor in a CMS or a
+                                markdown file, it can be surprising and unintuitive.</p>
+                            <p>We get lots of complaints about it actually, with people regularly asking us things like:
+                            </p>
+                            <blockquote>
+                                <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I
+                                    disable this? What do you mean I lose all the other base styles too?</p>
+                            </blockquote>
+                            <p>We hear you, but we're not convinced that simply disabling our base styles is what you
+                                really want. You don't want to have to remove annoying margins every time you use a
+                                <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your
+                                blog posts to use the user-agent styles either — you want them to look <em>awesome</em>,
+                                not awful.
+                            </p>
+                            <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you
+                                <em>actually</em> want, without any of the downsides of doing something stupid like
+                                disabling our base styles.
+                            </p>
+                            <p>It adds a new <code>prose</code> class that you can slap on any block of vanilla HTML
+                                content and turn it into a beautiful, well-formatted document:</p>
+
+                            <p>For more information about how to use the plugin and the features it includes, <a
+                                    href="https://github.com/tailwindcss/typography/blob/master/README.md">read the
+                                    documentation</a>.</p>
+                            <hr>
+                            <h2>What to expect from here on out</h2>
+                            <p>What follows from here is just a bunch of absolute nonsense I've written to dogfood the
+                                plugin itself. It includes every sensible typographic element I could think of, like
+                                <strong>bold text</strong>, unordered lists, ordered lists, code blocks, block quotes,
+                                <em>and even italics</em>.
+                            </p>
+                            <p>It's important to cover all of these use cases for a few reasons:</p>
+                            <ol>
+                                <li>We want everything to look good out of the box.</li>
+                                <li>Really just the first reason, that's the whole point of the plugin.</li>
+                                <li>Here's a third pretend reason though a list with three items looks more realistic
+                                    than a list with two items.</li>
+                            </ol>
+                            <p>Now we're going to try out another header style.</p>
+                            <h3>Typography should be easy</h3>
+                            <p>So that's a header for you — with any luck if we've done our job correctly that will look
+                                pretty reasonable.</p>
+                            <p>Something a wise person once told me about typography is:</p>
+                            <blockquote>
+                                <p>Typography is pretty important if you don't want your stuff to look like trash. Make
+                                    it good then it won't be bad.</p>
+                            </blockquote>
+                            <p>It's probably important that images look okay here by default as well:</p>
+                            <figure>
+                                <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+                                    alt="">
+                                <figcaption>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                    old.</figcaption>
+                            </figure>
+                            <p>Now I'm going to show you an example of an unordered list to make sure that looks good,
+                                too:</p>
+                            <ul>
+                                <li>So here is the first item in this list.</li>
+                                <li>In this example we're keeping the items short.</li>
+                                <li>Later, we'll use longer, more complex list items.</li>
+                            </ul>
+                            <p>And that's the end of this section.</p>
+                            <h2>What if we stack headings?</h2>
+                            <h3>We should make sure that looks good, too.</h3>
+                            <p>Sometimes you have headings directly underneath each other. In those cases you often have
+                                to undo the top margin on the second heading because it usually looks better for the
+                                headings to be closer together than a paragraph followed by a heading should be.</p>
+                            <h3>When a heading comes after a paragraph …</h3>
+                            <p>When a heading comes after a paragraph, we need a bit more space, like I already
+                                mentioned above. Now let's see what a more complex list would look like.</p>
+                            <ul>
+                                <li>
+                                    <p><strong>I often do this thing where list items have headings.</strong></p>
+                                    <p>For some reason I think this looks cool which is unfortunate because it's pretty
+                                        annoying to get the styles right.</p>
+                                    <p>I often have two or three paragraphs in these list items, too, so the hard part
+                                        is getting the spacing between the paragraphs, list item heading, and separate
+                                        list items to all make sense. Pretty tough honestly, you could make a strong
+                                        argument that you just shouldn't write this way.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Since this is a list, I need at least two items.</strong></p>
+                                    <p>I explained what I'm doing already in the previous list item, but a list wouldn't
+                                        be a list if it only had one item, and we really want this to look realistic.
+                                        That's why I've added this second list item so I actually have something to look
+                                        at when writing the styles.</p>
+                                </li>
+                                <li>
+                                    <p><strong>It's not a bad idea to add a third item either.</strong></p>
+                                    <p>I think it probably would've been fine to just use two items but three is
+                                        definitely not worse, and since I seem to be having no trouble making up
+                                        arbitrary things to type, I might as well include it.</p>
+                                </li>
+                            </ul>
+                            <p>After this sort of list I usually have a closing statement or paragraph, because it kinda
+                                looks weird jumping right to a heading.</p>
+                            <h2>Code should look okay by default.</h2>
+                            <p>I think most people are going to use <a href="https://highlightjs.org/">highlight.js</a>
+                                or <a href="https://prismjs.com/">Prism</a> or something if they want to style their
+                                code blocks but it wouldn't hurt to make them look <em>okay</em> out of the box, even
+                                with no syntax highlighting.</p>
+                            <p>Here's what a default <code>tailwind.config.js</code> file looks like at the time of
+                                writing:</p>
+                            <pre><code class="language-js">module.exports = {
+  purge: [],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+}
+</code></pre>
+                            <p>Hopefully that looks good enough to you.</p>
+                            <h3>What about nested lists?</h3>
+                            <p>Nested lists basically always look bad which is why editors like Medium don't even let
+                                you do it, but I guess since some of you goofballs are going to do it we have to carry
+                                the burden of at least making it work.</p>
+                            <ol>
+                                <li>
+                                    <strong>Nested lists are rarely a good idea.</strong>
+                                    <ul>
+                                        <li>You might feel like you are being really "organized" or something but you
+                                            are just creating a gross shape on the screen that is hard to read.</li>
+                                        <li>Nested navigation in UIs is a bad idea too, keep things as flat as possible.
+                                        </li>
+                                        <li>Nesting tons of folders in your source code is also not helpful.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Since we need to have more items, here's another one.</strong>
+                                    <ul>
+                                        <li>I'm not sure if we'll bother styling more than two levels deep.</li>
+                                        <li>Two is already too much, three is guaranteed to be a bad idea.</li>
+                                        <li>If you nest four levels deep you belong in prison.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Two items isn't really a list, three is good though.</strong>
+                                    <ul>
+                                        <li>Again please don't nest lists if you want people to actually read your
+                                            content.</li>
+                                        <li>Nobody wants to look at this.</li>
+                                        <li>I'm upset that we even have to bother styling this.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p>The most annoying thing about lists in Markdown is that <code>&lt;li&gt;</code> elements
+                                aren't given a child <code>&lt;p&gt;</code> tag unless there are multiple paragraphs in
+                                the list item. That means I have to worry about styling that annoying situation too.</p>
+                            <ul>
+                                <li>
+                                    <p><strong>For example, here's another nested list.</strong></p>
+                                    <p>But this time with a second paragraph.</p>
+                                    <ul>
+                                        <li>These list items won't have <code>&lt;p&gt;</code> tags</li>
+                                        <li>Because they are only one line each</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p><strong>But in this second top-level list item, they will.</strong></p>
+                                    <p>This is especially annoying because of the spacing on this paragraph.</p>
+                                    <ul>
+                                        <li>
+                                            <p>As you can see here, because I've added a second line, this list item now
+                                                has a <code>&lt;p&gt;</code> tag.</p>
+                                            <p>This is the second line I'm talking about by the way.</p>
+                                        </li>
+                                        <li>
+                                            <p>Finally here's another list item so it's more like a list.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>A closing list item, but with no nested list, because why not?</p>
+                                </li>
+                            </ul>
+                            <p>And finally a sentence to close off this section.</p>
+                            <h2>There are other elements we need to style</h2>
+                            <p>I almost forgot to mention links, like <a href="https://tailwindcss.com">this link to the
+                                    Tailwind CSS website</a>. We almost made them blue but that's so yesterday, so we
+                                went with dark gray, feels edgier.</p>
+                            <p>We even included table styles, check it out:</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Wrestler</th>
+                                        <th>Origin</th>
+                                        <th>Finisher</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bret "The Hitman" Hart</td>
+                                        <td>Calgary, AB</td>
+                                        <td>Sharpshooter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stone Cold Steve Austin</td>
+                                        <td>Austin, TX</td>
+                                        <td>Stone Cold Stunner</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Randy Savage</td>
+                                        <td>Sarasota, FL</td>
+                                        <td>Elbow Drop</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vader</td>
+                                        <td>Boulder, CO</td>
+                                        <td>Vader Bomb</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Razor Ramon</td>
+                                        <td>Chuluota, FL</td>
+                                        <td>Razor's Edge</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>We also need to make sure inline code looks good, like if I wanted to talk about
+                                <code>&lt;span&gt;</code> elements or tell you the good news about
+                                <code>@tailwindcss/typography</code>.
+                            </p>
+                            <h3>Sometimes I even use <code>code</code> in headings</h3>
+                            <p>Even though it's probably a bad idea, and historically I've had a hard time making it
+                                look good. This <em>"wrap the code blocks in backticks"</em> trick works pretty well
+                                though really.</p>
+                            <p>
+                                Another thing I've done in the past is put a <code>code</code> tag inside of a link,
+                                like if I wanted to tell you about the <a
+                                    href="https://github.com/tailwindcss/docs"><code>tailwindcss/docs</code></a>
+                                repository. I don't love that there is an underline below the backticks but it is
+                                absolutely not worth the madness it would require to avoid it.
+                            </p>
+                            <h4>We haven't used an <code>h4</code> yet</h4>
+                            <p>But now we have. Please don't use <code>h5</code> or <code>h6</code> in your content,
+                                Medium only supports two heading levels for a reason, you animals. I honestly considered
+                                using a <code>before</code> pseudo-element to scream at you if you use an
+                                <code>h5</code> or <code>h6</code>.
+                            </p>
+                            <p>We don't style them at all out of the box because <code>h4</code> elements are already so
+                                small that they are the same size as the body copy. What are we supposed to do with an
+                                <code>h5</code>, make it <em>smaller</em> than the body copy? No thanks.
+                            </p>
+                            <h3>We still need to think about stacked headings though.</h3>
+                            <h4>Let's make sure we don't screw that up with <code>h4</code> elements, either.</h4>
+                            <p>Phew, with any luck we have styled the headings above this text and they look pretty
+                                good.</p>
+                            <p>Let's add a closing paragraph here so things end with a decently sized block of text. I
+                                can't explain why I want things to end that way but I have to assume it's because I
+                                think things will look weird or unbalanced if there is a heading too close to the end of
+                                the document.</p>
+                            <p>What I've written here is probably long enough, but adding this final sentence can't
+                                hurt.</p>
+
+                        </div>
+                    </article>
+                    <section class="flex items-center justify-between gap-3 section-share print:hidden">
+                        <div>
+                            <button data-hs-collapse="#collapse-comment" class="btn">
+                                <span class="text-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="inline w-5 h-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </svg>
+                                    4 <em class="hidden sm:inline">Komentar</em></span>
+                            </button>
+                        </div>
+                        <div class="h-1 border-t grow border-slate-500/50"></div>
+                        <button onclick="window.scrollTo(0,0);setTimeout(function(){window.print()},200)" class="btn"
+                            href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z">
+                                </path>
+                            </svg>
+                        </button>
+                        <a class="btn" rel="noopener" target="_blank" href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                        </a>
+                        <div class="ml-auto fb-share-button" data-href="https://developers.facebook.com/docs/plugins/"
+                            data-layout="button" data-size="large">
+                            <a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="collapse-comment"
+            class="print:hidden hs-collapse hidden w-full overflow-hidden transition-[height] duration-300 container flex flex-col gap-5 px-4  mx-auto border-t xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+            <div class="flex-initial w-64 pt-4 mb-5 left-side ">
+                <p class="mb-2 font-serif text-2xl text-black dark:text-white"><a href="news.html"
+                        class="hover:underline">Komentar</a></p>
+            </div>
+            <div class="w-full pt-4 pb-8 right-side">
+                <div class="flex gap-y-5">
+                    <ul class="max-w-xl text-sm">
+                        <li class="pl-0 mb-4">
+                            <article class="w-full p-3 bg-slate-500/10">
+                                <div class="flex items-center justify-between gap-3 mb-1">
+                                    <b>Pembaca</b>
+                                    <time class="from-now" datetime="2022-08-20T11:37:48">6 hari yang lalu</time>
+                                </div>
+                                <p>Lorem ipsum occaecat qui duis commodo in aute commodo incididunt ut dolor
+                                    qui incididunt mollit ea voluptate.</p>
+                            </article>
+                            <div class="flex mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-5 mt-6" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <g transform="rotate(180 12 12)">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+                                    </g>
+                                </svg>
+                                <article class="w-full p-3 bg-slate-500/10">
+                                    <div class="flex items-center justify-between gap-3 mb-1">
+                                        <b>Author</b>
+                                        <time class="from-now" datetime="2022-08-16T11:37:48">16 Ags 2022 &nbsp;·&nbsp;
+                                            11:37</time>
+                                    </div>
+                                    <p>Nisi sit velit consectetur amet ullamco</p>
+                                </article>
+                            </div>
+                        </li>
+                        <li class="pl-0 mb-4">
+                            <article class="w-full p-3 bg-slate-500/10">
+                                <div class="flex items-center justify-between gap-3 mb-1">
+                                    <b>Pembaca</b>
+                                    <time class="from-now" datetime="2022-08-11T11:37:48">11 Ags 2022 &nbsp;·&nbsp;
+                                        11:37</time>
+                                </div>
+                                <p>Dolor eu eiusmod ex mollit enim officia in </p>
+                            </article>
+                        </li>
+                    </ul>
+                    <div>
+
+                    </div>
+
+                </div>
+                <button data-hs-collapse="#collapse-add-comment" type="button" class="btn">
+                    + Komentar
+                </button>
+                <div id="collapse-add-comment"
+                    class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300"
+                    aria-labelledby="hs-basic-collapse">
+                    <div class="max-w-xl p-4 my-10 text-sm bg-gray-400/10">
+                        <div class="py-4">
+                            <div class="p-4 text-sm text-green-600 border border-green-200 rounded-md bg-green-50"
+                                role="alert">
+                                <span class="font-bold">Success</span> alert! You should check in on some of those
+                                fields
+                                below.
+                            </div>
+                            <div class="p-4 text-sm text-red-600 border border-red-200 rounded-md bg-red-50"
+                                role="alert">
+                                <span class="font-bold">Danger</span> alert! You should check in on some of those fields
+                                below.
+                            </div>
+                        </div>
+                        <form spellcheck="false">
+                            <fieldset>
+                                <label for="comment-name" class="form-label">Nama<span class="required">*</span></label>
+                                <input type="text" id="comment-name" class="form-control" placeholder="Masukkan Nama">
+                            </fieldset>
+                            <fieldset>
+                                <label for="comment-message" class="form-label">Komentar<span
+                                        class="required">*</span></label>
+                                <textarea id="comment-message" class="form-control" rows="4"
+                                    placeholder="Masukkan Kometar"></textarea>
+                            </fieldset>
+                            <fieldset>
+                                <label for="contact-captcha" class="form-label">Captcha<span
+                                        class="required">*</span></label>
+                                <div class="flex gap-2">
+                                    <div class="captcha-img">
+                                        <img src="https://kelimutu.wunik.id/captcha/flat?xBWKrUG5">
+                                    </div>
+                                    <div class="w-full">
+                                        <input type="text" id="contact-captcha" class="form-control"
+                                            placeholder="Masukkan Kode">
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <button type="submit" class="btn">Kirim Pesan</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div
+            class="container flex flex-col gap-5 px-4 pt-4 pb-8 mx-auto border-t print:hidden xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+            <div class="flex-initial w-64 mb-5 left-side">
+                <p class="mb-2 font-serif text-2xl text-black dark:text-white"><a href="news.html"
+                        class="hover:underline">Lainnya</a></p>
+            </div>
+            <div class="w-full right-side ">
+                <div class="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4 list-news">
+
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="image">
+                                <a href="news-detail.html"><img loading="lazy" src="https://source.unsplash.com/600x400/?beach"
+                                        alt=""></a>
+                            </div>
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Hiburan</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Pakistan’s former PM Imran Khan charged
+                                        under anti-terror law</a>
+                                </h3>
+                                <time class="opacity-0 from-now dark:text-white/70"
+                                    datetime="2022-08-22T06:05:00"></time>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="image">
+                                <a href="news-detail.html"><img loading="lazy" src="https://source.unsplash.com/600x400/?girl"
+                                        alt=""></a>
+                            </div>
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Hiburan</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Pakistan’s former PM Imran Khan charged
+                                        under anti-terror law</a>
+                                </h3>
+                                <time class="opacity-0 from-now dark:text-white/70"
+                                    datetime="2022-08-22T06:05:00"></time>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="image">
+                                <a href="news-detail.html"><img loading="lazy" src="https://source.unsplash.com/600x400/?sea"
+                                        alt=""></a>
+                            </div>
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Hiburan</p>
+                                <h3 class="inline font-serif text-2xl hover:underline "><a
+                                        href="news-detail.html">Pakistan’s former PM Imran Khan charged
+                                        under anti-terror law</a>
+                                </h3>
+                                <time class="opacity-0 from-now dark:text-white/70"
+                                    datetime="2022-08-22T06:05:00"></time>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="image">
+                                <a href="news-detail.html"><img loading="lazy" src="https://source.unsplash.com/600x400/?flight"
+                                        alt=""></a>
+                            </div>
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Hiburan</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Pakistan’s former PM Imran Khan charged
+                                        under anti-terror law</a>
+                                </h3>
+                                <time class="opacity-0 from-now dark:text-white/70"
+                                    datetime="2022-08-22T06:05:00"></time>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+    <footer class="pb-10 text-white bg-blue-900 border-b print:hidden dark:bg-slate-900 border-white/20">
+        <div class="relative flex w-full text-sm sm:justify-start sm:flex-nowrap border-white/20">
+            <nav class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between ">
+                <div class="flex items-center justify-between w-full border border-white/20 ">
+                    <div class="">
+                        <div class="flex gap-3 px-4 py-2 font-serif pr-28 sm:items-center sm:mt-0 ">
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Instagram</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Facebook</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Twitter</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-flex ml-auto mr-4 hs-dropdown"
+                        data-hs-dropdown-placement="top-right">
+                        <button id="hs-dropup" type="button"
+                            class="inline-flex items-center justify-center gap-2 px-3 py-2 align-middle transition-all bg-blue-900 rounded-md shadow-sm bg-black/10 text-smfont-medium hs-dropdown-toggle hover:bg-black-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                            Lang
+                            <svg class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="z-10 hidden p-2 bg-white rounded-lg shadow-md hs-dropdown-menu w-42 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+                            aria-labelledby="hs-dropup">
+                            <a class="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                Indonesia
+                            </a>
+                            <a class="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between">
+            <div class="block w-full mt-7">
+                <p class="text-xs text-center">Copyright Wunik 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/hs-ui.bundle.js"></script>
+    <!-- START - HANYA UNTUK DEMO - TIDAK UNTUK DIPASANG -->
+    <script src="assets/js/fromnow-demo.js"></script>
+    <!-- END - HANYA UNTUK DEMO - TIDAK UNTUK DIPASANG -->
+    <script>
+        var fromNowConfig = {
+            selector: '.from-now',
+            class: 'opacity-0',
+            options: {
+                monthFull: [0],
+                second: [30, (86400 * 7)],
+                separator: [' ', ':', '&nbsp;&centerdot;&nbsp;'],
+
+                // ----- if language is english -----
+                // language	: 'en',
+                // editorial	: [ 'ago', 'to go' ],
+                // unit		: [ 'A few moments ago', 'second', 'minute', 'hour', 'day', 'month', 'year' ],
+
+                // ----- if language is indonesia -----
+                language: 'id',
+                editorial: ['yang lalu', 'lagi'],
+                unit: ['Baru saja', 'detik', 'menit', 'jam', 'hari', 'bulan', 'tahun'],
+            }
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.min.js"></script>
+</body>
+
+</html>

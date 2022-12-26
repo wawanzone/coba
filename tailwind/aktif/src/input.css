@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ html {
+    scroll-behavior: smooth;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+
+
+.bg-img{
+    background-image: url("water.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.rounded-custom{
+    border-radius: 63% 37% 28% 72% / 70% 41% 59% 30% ;
+}
+
+.text-gradient-pink-blue {
+  background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+}
+
+.bg-grid {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+}
+
+
+
+/* Safari */
+.shadow {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.text-white{
+    color: #fff;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-emerald-300{
+    background: #6ee7b7;
+}
+
+.bg-green-500{
+    background: #22c55e;
+}
+
+.bg-yellow-500{
+    background: #eab308;
+}
+
+.bg-green-300{
+    background: #86efac;
+}
+
+.bg-green-300:hover{
+    background: #16a34a;
+}
+
+.text-yellow-400{
+    color: #facc15;
+}
+
+.divide-gray-50 > :not([hidden]) ~ :not([hidden]) {
+    opacity: 1;
+    border-color: #fff;
+}
+
+.moves{
+    animation: 6s infinite move;
+    transform:translateX(20px)
+}
+
+@keyframes move {
+ 50% {
+  transform:translateX(-20px)
+ }
+}

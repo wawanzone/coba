@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aksara</title>
+    <meta name="title" content="Aksara">
+    <meta name="description" content="Tema Wunik - Berita">
+    <meta name="keywords" content="website, wunik, portal, berita">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aksara">
+    <meta property="og:description" content="Tema Wunik - Berita">
+    <meta property="og:image" content="assets/img/ogp.jpeg">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Aksara">
+    <meta property="og:url" content="https://demo.jcamp.biz/wunik/aksara/">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aksara">
+    <meta name="twitter:description" content="Tema Wunik - Berita">
+    <meta name="twitter:image" content="assets/img/ogp.jpeg">
+    <meta name="twitter:site" content="Aksara">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://demo.jcamp.biz/wunik/aksara/">
+    <!-- Favicon -->
+    <link rel="shortcut icon" sizes="16x16 32x32 48x48" href="assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+    <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+    <meta name="msapplication-TileImage" content="assets/img/icon-180.png">
+    <!-- Status Bar -->
+    <meta name="apple-mobile-web-app-title" content="aksara">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar" content="#fff">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="theme-color" content="#fff">
+    <!-- System Theme -->
+    <meta name="color-scheme" content="dark light">
+    <!-- Preload -->
+    <link rel="preload" as="script" href="assets/js/darkmode.min.js" />
+    <link rel="preload" as="style" href="assets/css/main.css" />
+    <link rel="preload" as="script" href="assets/js/main.js" />
+    <link rel="preload" as="script" href="assets/js/hs-ui.bundle.js" />
+    <!-- Main -->
+    <script>const siteName = 'Wunik aksara'</script>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body class="text-black bg-white dark:bg-gray-900" id="home">
+    <!-- ========== HEADER ========== -->
+    <header class="text-white bg-blue-900 dark:bg-slate-900 print:hidden">
+        <div
+            class="container relative flex items-center justify-between w-full px-5 py-4 mx-auto sm:px-0 xl:max-w-7xl top-bar ">
+            <div class="lg:my-5">
+                <a class="flex items-center gap-3 font-serif text-4xl dark:text-white" href="index.html">
+                    <img src="assets/img/logo.png" alt="" class="inline w-9">
+                    <span class="hidden sm:inline"> aksara</span>
+                </a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="widget w-[333px]">
+                    <div id="ww_973c75cd88acb" v='1.20' loc='id' a='{"t":"responsive","lang":"en","ids":["wl4231"],"cl_bkg":"#FFFFFF00","cl_font":"rgba(255,255,255,1)","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","sl_tof":"3","sl_sot":"celsius","sl_ics":"one_a","font":"Arial","cl_odd":"#00000000","el_wfc":3}'>Weather Data Source: <a href="https://cuacalab.id/cuaca_yogyakarta/hari_ini/" id="ww_973c75cd88acb_u" target="_blank">ramalan cuaca Yogyakarta hari ini</a></div><script async src="https://srv1.weatherwidget.org/js/?id=ww_973c75cd88acb"></script>                
+                </div>
+                <div class="flex items-center justify-between gap-2 px-0 social">
+                    <button id="theme-toggle" type="button"
+                        class="p-2 text-sm text-gray-500 rounded-full dark:text-gray-400 hover:bg-gray-100 bg-white/10 dark:bg-slate-600 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="#efbf00" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="#efbf00" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                    <div class=" sm:hidden">
+                        <button type="button"
+                            class="inline-flex items-center justify-center gap-2 p-2 text-sm font-medium align-middle transition-all border rounded-md shadow-sm hs-collapse-toggle focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 "
+                            data-hs-collapse="#navbar-collapse-header" aria-controls="navbar-collapse-header"
+                            aria-label="Toggle navigation">
+                            <svg class="w-4 h-4 hs-collapse-open:hidden" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                            <svg class="hidden w-4 h-4 hs-collapse-open:block" width="16" height="16"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative flex flex-wrap w-full text-sm sm:border-b sm:justify-start sm:flex-nowrap border-white/20">
+            <div class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between "
+                aria-label="Global">
+                <div class="flex items-end justify-between sm:border-t border-white/20 ">
+                    <div class="w-full sm:w-auto sm:absolute top-3 right-4">
+                        <input type="text" id="hs-inline-add-on" name="hs-inline-add-on"
+                            class="block w-full px-3 py-2 text-sm text-black border-gray-200 shadow-sm pl-11 focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400"
+                            placeholder="Pencarian...">
+                        <div class="absolute inset-y-0 left-0 z-20 flex pt-3 pl-4 pointer-events-none">
+                            <span class="text-sm text-gray-500/50">
+                                <svg class="w-4 h-4 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div id="navbar-collapse-header"
+                    class="hidden border-t sm:border-r sm:border-l basis-full grow sm:block border-white/20 sm:pr-[240px]">
+                    <nav
+                        class="flex flex-col flex-wrap gap-1 p-4 px-4 text-lg md:items-center sm:flex-row sm:items-start sm:mt-0 sm:pl-5 navbar">
+                        <div class="hs-mega-menu">
+                            <button id="hs-mega-menu-basic-dr" type="button"
+                                class="flex items-center w-full font-serif font-medium text-white border-white/20 hs-mega-menu-toggle hs-mega-menu-open:text-yellow-400 hover:text-yellow-400">
+                                Menu
+                                <svg class="ml-2 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                            <div class="left-0 hidden opacity-0 hs-mega-menu-content parent hs-mega-menu-open:opacity-100 top-full "
+                                aria-labelledby="hs-mega-menu-basic-dr">
+                                <a class="nav-link" href="polling.html">
+                                    Survey
+                                </a>
+                                <a class="nav-link" href="gallery.html">
+                                    Galeri
+                                </a>
+                                <a class="nav-link" href="link.html">
+                                    Tautan
+                                </a>
+                                <a class="nav-link" href="agenda.html">
+                                    Agenda
+                                </a>
+                                <a class="nav-link" href="contact.html">
+                                    Hubungi Kami
+                                </a>
+                                <a class="nav-link" href="search.html">
+                                    Pencarian
+                                </a>
+                                <div class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                    <a class="atoggle nav-link hs-mega-menu-toggle"
+                                        href="javascript:;">
+                                        Level 1
+                                        <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                        <div
+                                            class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                            <a class="atoggle nav-link hs-mega-menu-toggle"
+                                                href="javascript:;">
+                                                Level 2
+                                                <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16" height="16"
+                                                    viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                            <div
+                                                class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                                <a class="nav-link" href="page-detail.html">
+                                                    Level 3
+                                                </a>
+                                                <a class="nav-link" href="page-detail.html">
+                                                    Level 3
+                                                </a>
+                                                <div
+                                                    class="hs-mega-menu relative sm:flex sm:items-center sm:gap-x-3.5 rounded-md ">
+                                                    <a class="atoggle nav-link hs-mega-menu-toggle"
+                                                        href="javascript:;">
+                                                        Level 3
+                                                        <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 " width="16"
+                                                            height="16" viewBox="0 0 16 16" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round">
+                                                            </path>
+                                                        </svg>
+                                                    </a>
+                                                    <div
+                                                        class="hidden opacity-0 hs-mega-menu-content hs-mega-menu-open:opacity-100 sm:hs-mega-menu-open:mt-0 has-child-box">
+                                                        <a class="nav-link" href="page-detail.html">
+                                                            Level 4
+                                                        </a>
+                                                        <a class="nav-link" href="page-detail.html">
+                                                            Level 4
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a class="nav-link" href="page-detail.html">
+                                            Level 2
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                <a class="nav-link" href="guestbook.html">
+                                    Buku Tamu
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cat-list">
+                            <a class="nav-link-serif" href="news.html">
+                                Olahraga
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Politik
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Hukum
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Hiburan
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Ilmu Pengetahuan
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Film
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Sosial
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Narasi
+                            </a>
+                            <a class="nav-link-serif" href="news.html">
+                                Opini
+                            </a>
+                        </div>
+                        <div class="hs-mega-menu">
+                            <button id="hs-mega-menu-basic-mm" type="button"
+                                class="flex items-center w-full font-serif font-medium text-white hs-mega-menu-toggle hs-mega-menu-open:text-yellow-500 hover:hs-mega-menu-open:text-yeloow-500 hover:text-yellow-400">
+                                Lainnya
+                                <svg class="ml-2 w-2.5 h-2.5 text-white" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                </svg>
+                            </button>
+                            <div
+                                class="hs-mega-menu-content container xl:max-w-7xl mx-auto relative z-50 flex flex-wrap w-full text-sm  sm:justify-start sm:flex-nowrap bo sm:transition-all transition-[opacity,margin] top-full left-0 hidden  before:absolute before:-top-5 before:left-0 before:w-full before:h-5  sm:duration-300 min-w-[15rem] sm:absolute  hs-mega-menu-open:opacity-100 opacity-0  ">
+                                <div
+                                    class="w-full p-2 mx-auto  sm:border-t  mt-[1px] border-l border-white/20 md:border-t md:p-4 ">
+                                    <div class="sm:grid xl:grid-cols-5 md:grid-cols-3 ext-menu ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <div id="reading-progress">
+        <div id="reading-progress-fill"></div>
+    </div>
+    <main id="content">
+        <div
+            class="container relative flex flex-col gap-5 px-4 py-2 mx-auto breadcrumb xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row">
+            <ol class="flex items-center min-w-0 whitespace-nowrap" aria-label="Breadcrumb">
+                <li class="text-xs">
+                    <a class="flex items-center text-gray-500 hover:text-blue-600" href="#">
+                        Home
+                        <svg class="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
+                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="text-xs">
+                    <a class="flex items-center text-gray-500 hover:text-blue-600" href="#">
+                        App Center
+                        <svg class="flex-shrink-0 mx-3 overflow-visible h-2.5 w-2.5 text-gray-400 dark:text-gray-600"
+                            width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 1L10.6869 7.16086C10.8637 7.35239 10.8637 7.64761 10.6869 7.83914L5 14"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="text-xs text-gray-800 truncate dark:text-gray-200" aria-current="page">
+                    Breadcrumb
+                </li>
+            </ol>
+        </div>
+        <div
+            class="container flex flex-col gap-5 px-4 pt-4 pb-8 mx-auto border-t xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+            <div class="flex-initial w-64 mb-5 left-side">
+                <p class="mb-2 font-serif text-2xl text-black dark:text-white">Agenda</p>
+            </div>
+            <div class="w-full right-side ">
+                <div class="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4 list-news">
+
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Rutin</p>
+                                <h1 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Judul Agenda</a>
+                                </h1>
+                                <span class="!text-xs mt-2 mb-1 block opacity-70 dark:text-white/70">Setiap Senin</span>
+                                <div class="my-5 read">
+                                    <p class=" dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita tenetur quaerat sed, quasi eum reiciendis omnis. Minima aspernatur amet ad beatae. Voluptatum ex excepturi vel et possimus tenetur iure saepe quis, doloribus commodi! Cumque doloremque quo illum, facere officia animi aspernatur, quam iste similique, itaque asperiores est? Adipisci, sint.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+        </div>
+        <div
+            class="container flex flex-col gap-5 px-4 pt-4 pb-8 mx-auto border-t xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+            <div class="flex-initial w-64 mb-5 left-side">
+                <p class="mb-2 font-serif text-2xl text-black dark:text-white">Lainnya</p>
+            </div>
+            <div class="w-full right-side ">
+                <div class="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4 list-news">
+
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Agustus</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Judul Agenda</a>
+                                </h3>
+                                <span class="!text-xs mt-2 mb-1 block opacity-70 dark:text-white/70">4 Agustus
+                                    2022</span>
+                                <div class="my-5 read">
+                                    <p class="line-clamp-3 dark:text-white">Pakistan’s former prime minister Imran Khan
+                                        has been charged
+                                        under the anti-terror act following accusations of threats to police and a
+                                        magistrate, after a fiery speech to supporters at the weekend.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">Agustus</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Judul Agenda</a>
+                                </h3>
+                                <span class="!text-xs mt-2 mb-1 block opacity-70 dark:text-white/70">4 Agustus
+                                    2022</span>
+                                <div class="my-5 read">
+                                    <p class="line-clamp-3 dark:text-white">Pakistan’s former prime minister Imran Khan
+                                        has been charged
+                                        under the anti-terror act following accusations of threats to police and a
+                                        magistrate, after a fiery speech to supporters at the weekend.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">September</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Judul Agenda</a>
+                                </h3>
+                                <span class="!text-xs mt-2 mb-1 block opacity-70 dark:text-white/70">4 Agustus
+                                    2022</span>
+                                <div class="my-5 read">
+                                    <p class="line-clamp-3 dark:text-white">Pakistan’s former prime minister Imran Khan
+                                        has been charged
+                                        under the anti-terror act following accusations of threats to police and a
+                                        magistrate, after a fiery speech to supporters at the weekend.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class=" bg-slate-100 dark:bg-slate-100/10 post">
+                        <div class="flex ">
+
+                            <div class="p-4 writing">
+                                <p class="mb-2 text-sm font-semibold text-red-600">September</p>
+                                <h3 class="inline font-serif text-2xl hover:underline dark:text-white"><a
+                                        href="news-detail.html">Judul Agenda</a>
+                                </h3>
+                                <span class="!text-xs mt-2 mb-1 block opacity-70 dark:text-white/70">4 Agustus
+                                    2022</span>
+                                <div class="my-5 read">
+                                    <p class="line-clamp-3 dark:text-white">Pakistan’s former prime minister Imran Khan
+                                        has been charged
+                                        under the anti-terror act following accusations of threats to police and a
+                                        magistrate, after a fiery speech to supporters at the weekend.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div
+            class="container flex flex-col gap-5 px-4 pt-4 pb-8 mx-auto border-t xl:max-w-7xl sm:border-l sm:border-r dark:border-white/20 md:flex-row div-cat">
+
+            <div class="w-full right-side ">
+                <section data-title="pagination">
+                    <nav aria-label="pagination">
+                        <ul class="pagination">
+                            <li class="page-item disabled" rel="prev" aria-disabled="true" aria-label="« Sebelumnya">
+                                <span class="page-link" aria-hidden="true">‹</span>
+                            </li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item disabled">
+                                <span class="page-link">...</span>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">8</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">9</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">10</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" rel="next" aria-label="Berikutnya »">›</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+    <footer class="pb-10 text-white bg-blue-900 border-b print:hidden dark:bg-slate-900 border-white/20">
+        <div class="relative flex w-full text-sm sm:justify-start sm:flex-nowrap border-white/20">
+            <nav class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between ">
+                <div class="flex items-center justify-between w-full border border-white/20 ">
+                    <div class="">
+                        <div class="flex gap-3 px-4 py-2 font-serif pr-28 sm:items-center sm:mt-0 ">
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Instagram</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Facebook</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="p-2 rounded-full hover:bg-white/40 bg-white/10 dark:bg-slate-600 " target="_blank"
+                                rel="noopener" href="#">
+                                <span class="sr-only">Twitter</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                    <path
+                                        d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-flex ml-auto mr-4 hs-dropdown"
+                        data-hs-dropdown-placement="top-right">
+                        <button id="hs-dropup" type="button"
+                            class="inline-flex items-center justify-center gap-2 px-3 py-2 align-middle transition-all bg-blue-900 rounded-md shadow-sm bg-black/10 text-smfont-medium hs-dropdown-toggle hover:bg-black-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                            Lang
+                            <svg class="hs-dropdown-open:rotate-180 w-2.5 h-2.5 text-gray-600" width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <div class="z-10 hidden p-2 bg-white rounded-lg shadow-md hs-dropdown-menu w-42 dark:bg-gray-800 dark:border dark:border-gray-700 dark:divide-gray-700"
+                            aria-labelledby="hs-dropup">
+                            <a class="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                Indonesia
+                            </a>
+                            <a class="flex items-center px-3 py-2 text-sm text-gray-800 rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                href="#">
+                                English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="container relative w-full mx-auto xl:max-w-7xl sm:flex sm:items-center sm:justify-between">
+            <div class="block w-full mt-7">
+                <p class="text-xs text-center">Copyright Wunik 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/hs-ui.bundle.js"></script>
+    <!-- START - HANYA UNTUK DEMO - TIDAK UNTUK DIPASANG -->
+    <script src="assets/js/fromnow-demo.js"></script>
+    <!-- END - HANYA UNTUK DEMO - TIDAK UNTUK DIPASANG -->
+    <script>
+        var fromNowConfig = {
+            selector: '.from-now',
+            class: 'opacity-0',
+            options: {
+                monthFull: [0],
+                second: [30, (86400 * 7)],
+                separator: [' ', ':', '&nbsp;&centerdot;&nbsp;'],
+
+                // ----- if language is english -----
+                // language	: 'en',
+                // editorial	: [ 'ago', 'to go' ],
+                // unit		: [ 'A few moments ago', 'second', 'minute', 'hour', 'day', 'month', 'year' ],
+
+                // ----- if language is indonesia -----
+                language: 'id',
+                editorial: ['yang lalu', 'lagi'],
+                unit: ['Baru saja', 'detik', 'menit', 'jam', 'hari', 'bulan', 'tahun'],
+            }
+        }
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.min.js"></script>
+</body>
+
+</html>
