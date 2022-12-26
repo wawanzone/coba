@@ -1,0 +1,22 @@
+{{!< default}}
+
+{{#post}}
+{{!-- breadcrumb --}}
+{{> bredcrumb-menu}}
+
+{{!-- banner Section  --}}
+{{> cover-banner}}
+
+{{!-- page-full-content --}}
+<div class="post-section py-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="post-full-content page-full-content">
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/post}}

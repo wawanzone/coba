@@ -1,0 +1,68 @@
+{{!< default}}
+{{#post}}
+{{!-- breadcrumb --}}
+{{> bredcrumb-menu}}
+
+{{#match @custom.default_post_layout "Default"}}
+    {{> post/post-default}}
+{{/match}}
+
+{{#match @custom.default_post_layout "FullWidth Image"}}
+    {{> post/post-fullwidth-image}}
+{{/match}}
+
+{{#match @custom.default_post_layout "FullWidth Content"}}
+    {{> post/post-fullwidth}}
+{{/match}}
+
+{{!-- partials/contact-promo.hbs --}}
+<div class="bg-promo-section">
+    {{> contact-promo}}
+</div>
+{{/post}}
+
+{{#contentFor "scripts"}}
+    <script>
+        var body = document.querySelector('body')
+        {{#post}}
+            {{#if access}}
+                tocbot.init({
+                    tocSelector: '.toc',
+                    contentSelector: '.post-full-content',
+                    hasInnerContainers: true,
+                    orderedList: false
+                });
+
+                tocbot.init({
+                    tocSelector: '.table-content',
+                    contentSelector: '.post-full-content',
+                    hasInnerContainers: true,
+                    orderedList: false
+                });
+                var tocWrap = document.querySelector('.table-content');
+                var tocParent = document.querySelector('.table-contents')
+                var tocParentMob = document.querySelector('.table-inner-contents')
+                var tocMob = document.querySelector('.toc')
+                if(tocWrap.hasChildNodes()){
+                    tocParent.style.display = 'block'
+                }else{
+                    body.classList.add('post-locked-members')
+                }
+
+                if(tocMob.hasChildNodes()){
+                    tocParentMob.style.display = 'block'
+                }
+
+                // Table of contents sticky
+                var sidebar = new StickySidebar('.table-sidebar-docs', {
+                    topSpacing: 20,
+                    bottomSpacing: 20,
+                    containerSelector: '.post-full-content-wrapper',
+                    innerWrapperSelector: '.table-sidebar'
+                });
+            {{else}}
+                body.classList.add('post-locked-members')
+            {{/if}}
+        {{/post}}
+    </script>
+{{/contentFor}}

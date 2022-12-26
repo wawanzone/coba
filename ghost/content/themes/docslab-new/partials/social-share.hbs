@@ -1,0 +1,22 @@
+{{#has visibility="public"}}
+<div class="social-icon text-center">
+    <a onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" target="_blank">{{> icons/social-icons/facebook}}
+    </a>
+
+    <a onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" target="_blank">{{> icons/social-icons/twitter}}
+    </a>
+
+    <a onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://www.linkedin.com/shareArticle?mini=true&url={{encode title}}&url={{url absolute="true"}}">
+        {{> icons/social-icons/linkedin}}
+    </a>
+
+    <a onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" href="https://pinterest.com/pin/create/button/?url={{encode title}}&url={{url absolute="true"}}">
+    {{> icons/social-icons/pinterest}}
+    </a>
+
+    <a class="copy-link" data-link="{{@site.url}}{{url}}" href="#">
+        {{> icons/copy}}
+        <span class="copied">{{t "Copied to clipboard"}}</span>
+    </a>
+</div>
+{{/has}}

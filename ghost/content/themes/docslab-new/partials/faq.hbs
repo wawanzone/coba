@@ -1,0 +1,44 @@
+{{!-- FAQ START --}}
+{{#get "posts" limit="all" filter="tag:hash-faq"}}
+    {{#if posts}}
+    <div class="faq-section section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 class="section-title">{{t "FAQ"}}</h2>
+                    <p class="section-text maxw-500 mx-auto">
+                        {{t "Everything you will find questions that can come in your mind. For more question, contact with us"}}
+                    </p>
+                </div>
+            </div>
+            <div class="row pt-50 pt-md-60 pt-lg-70">
+                <div class="col-md-8 mx-auto"> 
+                    <ul class="list-group">
+                        {{#foreach posts visibility="all"}}
+                            <li class="list-group-item list-group-box">
+                                <div class="faq-qus-title">
+                                    <h6>
+                                        <a href="{{url}}">{{title}}</a>
+                                        <span class="expand-toggle plus-icon">{{> icons/plus}}</span>
+                                        <span class="expand-toggle minus-icon">{{> icons/minus}}</span>
+                                    </h6>
+                                </div>
+                                <div class="faq-qus-ans">
+                                    <p>
+                                        {{#if custom_excerpt}}
+                                            {{custom_excerpt}}
+                                        {{else}}
+                                            {{excerpt words="20"}}
+                                        {{/if}}
+                                    </p>
+                                </div>
+                            </li>
+                        {{/foreach}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
+{{/get}}
+{{!-- End of FAQ section  --}}

@@ -1,0 +1,10 @@
+.error-styles {
+    h1 {
+        font-size: 120px;
+        line-height: 1;
+        font-family: var(--font-heading);
+        font-weight: 800;
+        background: linear-gradient(to right, var(--color-heading) 0%, var(--color-black) 100%);
+        -webkit-background-clip: text;
+    }
+}

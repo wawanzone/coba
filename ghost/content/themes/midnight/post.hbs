@@ -1,0 +1,95 @@
+{{!< default}}
+
+<main class="site-main">
+
+    {{#post}}
+
+    <article id="article-time" class="{{post_class}}">
+        
+        <header class="gh-article-header gh-canvas">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{@site.url}}">Home</a></li>
+                {{#foreach tags limit="1"}}
+                <li class="breadcrumb-item"><a href="{{url}}">{{name}}</a></li>
+            {{/foreach}}
+            <li class="breadcrumb-item breadcrumb-item-current">{{title}}</li>
+            </ul>
+            <h1 class="gh-article-title">{{title}}</h1>
+            <div class="post-meta">
+                Last updated on&nbsp;
+                <time datetime="{{date format="YYYY-MM-DD"}}">{{date updated_at}}</time>
+                &nbsp;—&nbsp; <span id="time"></span>min read
+            </div>
+            {{> "post-image"}}
+        </header>
+
+        <div class="gh-content gh-canvas">
+            <aside class="gh-sidebar"><div class="gh-toc"></div></aside> {{! The TOC will be inserted here }}
+            {{content}}
+        </div>
+
+        <div class="pagination-container gh-canvas">
+        <nav class="pagination">
+
+            <div class="pagination-left">
+                {{#prev_post}}
+                    <a class="newer-posts" href="{{url}}">
+                        <span class="pagination-label">Previous</span>
+                        {{title}}
+                    </a>
+                {{/prev_post}}
+            </div>
+
+            <div class="pagination-right">
+                {{#next_post}}
+                    <a class="older-posts" href="{{url}}">
+                        <span class="pagination-label">Next</span>
+                        {{title}}
+                    </a>
+                {{/next_post}}
+            </div>
+
+        </nav>
+        </div>
+
+        
+            <div class="article-comments gh-comments gh-canvas">
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    
+                    var disqus_config = function () {
+                            this.page.url = "{{url absolute="true"}}";
+                            this.page.identifier = "ghost-{{comment_id}}"
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://tutorial-kfqnyrzjvp.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                
+            </div>
+
+    </article>
+
+    {{/post}}
+
+</main>
+<script>
+    // reading time
+
+function readingTime() {
+    const text = document.getElementById("article-time").innerText;
+    const wpm = 225;
+    const words = text.trim().split(/\s+/).length;
+    const time = Math.ceil(words / wpm);
+    document.getElementById("time").innerText = time;
+}
+readingTime();
+</script>

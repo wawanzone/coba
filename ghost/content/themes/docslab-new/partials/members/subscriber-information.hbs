@@ -1,0 +1,84 @@
+{{#post}}
+<div class="membership-cover-wrapper">
+    {{#if feature_image}}
+        <div class="membership-feature">
+            <img srcset="{{img_url feature_image size="s"}} 300w,
+            {{img_url feature_image size="m"}} 600w,
+            {{img_url feature_image size="l"}} 1000w,
+            {{img_url feature_image size="xl"}} 2000w"
+            sizes="(max-width: 800px) 400px,
+            (max-width: 1170px) 700px,
+            1400px" src="{{img_url feature_image size="xl"}}" alt="{{title}}">
+        </div>
+    {{/if}}
+    <div class="{{#if feature_image}}subscribe-cover-box{{else}}membership-no-feature mx-auto text-center{{/if}}">
+        <div class="subscribe-cover-section">
+            <h2 class="member-name">
+                {{#if @member.name}}
+                    {{@member.name}}
+                {{else}}
+                    {{t "Your Account"}}
+                {{/if}}
+            </h2>
+            <div class="subscription-message">
+                <p>
+                    {{t "Hey! You have an active {blogTitle} account with access to all areas. Get in touch if have any problems or need some help getting things updated, and thanks for subscribing." blogTitle=@site.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/post}}
+
+
+
+<div class="account-holder-info pb-50 pb-md-80 pb-lg-100">
+    <div class="account-informations">
+        {{#foreach @member.subscriptions}}
+        <div class="account-inner-sec">
+            <div class="account-information-sub pt-50 pt-md-80 pt-lg-100">
+                <div class="account-details-inner d-flex justify-content-between align-items-center flex-wrap">
+                    <span class="account-details">{{t "Account Details"}}</span>
+                    <div class="mem-edit-bill">
+                        <a href="javascript:" data-members-edit-billing>{{t "Edit billing info →"}}</a>
+                    </div>
+                </div>
+                <div class="py-10">
+                <div class="account mb-15">
+                    <div class="your-plan">
+                        <div class="customer-email">{{t "Email address"}}</div>
+                        <div class="customer-email-address">{{@member.email}}</div>
+                    </div>
+                    <div class="your-plan">
+                        <div class="plan-nickname">{{t "Your plan"}}</div>
+                        <div class="plan-interval">{{plan.nickname}} - {{price plan}}/{{plan.interval}}</div>
+                    </div>
+                </div>
+                <div class="account mb-15">
+                    <div class="your-plan">
+                        <div class="customer-card">{{t "Card"}}</div>
+                        <div class="customer-card-number">**** **** **** {{default_payment_card_last4}}</div>
+                    </div>
+                    <div class="your-plan">
+                        <div class="start-date">{{t "Next billing date"}}</div>
+                        <div class="end-date">{{date current_period_end format="DD MMM YYYY"}}</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="cancel-subscription">
+                {{cancel_link}}
+
+            </div>
+            {{#if cancel_at_period_end}}
+            <div class="expiration-warning">
+                <p>
+                    <strong class="subscription-expiration-warning">{{t "Your subscription will expire on"}} {{date current_period_end format="DD MMM YYYY"}}.</strong> {{t "If you change your mind in the mean time you can turn auto-renew back on to continue your subscription."}}
+                </p>
+            </div>
+            {{/if}}
+        </div>
+        {{/foreach}}
+    </div>
+</div>

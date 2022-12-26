@@ -1,0 +1,100 @@
+.releases-side{
+    padding: 40px 50px;
+    background-color: var(--bg-sidebar);
+    position: sticky;
+    top: 0;
+}
+
+.releases-heading-inner {
+    position: relative;
+}
+
+.c-shape {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    content: "";
+    svg {
+        color: var(--ghost-accent-color);
+    }
+}
+
+.releases-heading {
+    font-weight: 30;
+    font-weight: bold;
+    color: var(--color-heading);
+    padding-bottom: 30px;
+}
+
+ul.releases-version{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: block;
+        a{
+            font-size: 16px;
+            color: var(--color-text);
+            font-family: var(--font-body);
+            padding-bottom: 15px;
+            transition: 0.3s;
+            display: block;
+
+            &:hover {
+                color: var(--color-primary);
+            }
+        }
+        &.active{
+            a{
+                color: var(--color-primary);
+            }
+        }
+    }
+}
+
+
+.version-details{
+    font-size: 16px;
+    color: var(--color-black);
+    margin-bottom: 30px;
+}
+
+.post-full-content {
+    &.version-content-box{
+        .code-wrapper{
+            background-color: transparent;
+            pre{
+                padding: 25px 20px;
+                color: var(--color-text);
+                background-color: var(--bg-changelog);
+                border-left: 3px solid var(--color-primary);
+                overflow: auto;
+                code {
+                    color: var(--color-changelog);
+                    line-height: 1.6;
+                }
+            }
+            .toolbar{
+                display: none;
+            }
+        }
+        
+        a {
+            border-bottom: 0;
+            transition: 0.4s;
+            padding-right: 10px;
+            color: var(--color-primary);
+            opacity: .5;
+
+            &:hover {
+                color: var(--color-primary);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.changelog-space + * {
+	margin-top: 0 !important;
+}

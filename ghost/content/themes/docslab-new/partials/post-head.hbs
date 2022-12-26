@@ -1,0 +1,20 @@
+<div class="post-headlines">
+    <ul class="post-tag-meta">
+        {{#foreach tags visibility="public" limit="3"}}
+        <li><a href="{{url}}">{{name}}</a></li>
+        {{/foreach}}
+    </ul>
+    <h1>{{title}}</h1>
+    {{#primary_author}}
+    <div class="post-author-meta">
+        <a href="{{url}}">
+            {{#if profile_image}}
+                <img srcset="{{img_url profile_image size="xxs"}} 30w,
+                {{img_url profile_image size="xs"}} 100w"
+                sizes="50px" src="{{img_url profile_image size="xs"}}" alt="{{name}}">
+            {{/if}}
+            {{name}}
+        </a>
+    </div>
+    {{/primary_author}}
+</div>

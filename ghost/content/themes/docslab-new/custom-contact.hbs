@@ -1,0 +1,106 @@
+{{!< default}}
+
+
+{{#post}}
+{{!-- breadcrumb --}}
+{{> bredcrumb-menu}}
+
+{{!-- banner Section  --}}
+{{> cover-banner}}
+{{/post}}
+
+
+<!-- Contact section -->
+<div class="contact-sec section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-md-0 mb-30">
+                <div class="contact-form">
+                    <div class="mb-35">
+                        <h5 class="con-heading mb-0">{{t "Get in touch"}}</h5>
+                        <span>{{t "We will respond to your message as soon as possible."}}</span>
+                    </div>
+                    {{#if @custom.contact_form_endpoint_url}}
+                    <form class="row" action="{{@custom.contact_form_endpoint_url}}"  method="POST">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input placeholder="Full name" name="user" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input placeholder="Email Address"  type="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input placeholder="Phone No." name="phone" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input placeholder="Subject" name="subject" type="text" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <div class="input-text-form">
+                                    <textarea class="form-control" name="message" cols="10" rows="10" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="signin-btn mb-30">
+                                <button type="submit" class="btn btn-primary btn-cus-siz mt-20">{{t "Submit"}}</button>
+                            </div>
+                        </div>
+                    </form>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="col-md-6 pl-lg-100">
+                <div class="contact-info">
+                    <div class="mb-35">
+                        <h4 class="contact-title mb-0">{{t "Electron Themes"}}</h4>
+                        <span class="contact-sub-text">{{t "Curabitur convallis, diam a egestas iaculis, neque lorem interdum felis, in viverra lacus tortor in leo."}}</span>
+                    </div>
+                    <div class="single-contact-info d-flex flex-row mb-20">
+                        <div class="contact-details maxw-70 mr-15">
+                           <span>{{> icons/social-icons/phone}}</span>
+                        </div>
+                        <div class="contact-text">
+                            <a href="{{url}}">{{t "+1 (305) 1234-5678"}}</a>
+                        </div>
+                    </div>
+
+                    <div class="single-contact-info d-flex flex-row mb-20">
+                        <div class="contact-details maxw-70 mr-15">
+                           <span>{{> icons/social-icons/envelope}}</span>
+                        </div>
+                        <div class="contact-text">
+                            <a href="{{url}}">{{t "electronthemes@gmail.com"}}</a>
+                        </div>
+                    </div>
+
+                    <div class="single-contact-info d-flex flex-row mb-20">
+                        <div class="contact-details maxw-70 mr-15">
+                           <span>{{> icons/social-icons/map}}</span>
+                        </div>
+                        <div class="contact-text">
+                            <a href="{{url}}">{{t "23/4 ST. Road, California, USA"}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- // Contact section -->

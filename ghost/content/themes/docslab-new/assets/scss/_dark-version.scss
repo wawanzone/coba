@@ -1,0 +1,66 @@
+.dark-light {
+    cursor: pointer;
+    svg {
+        color: var(--color-white);
+    }
+    .icon-light {
+        display: block;
+    }
+    .icon-dark {
+        display: none;
+    }
+}
+
+[data-theme='dark'] {
+    .dark-light {
+        .icon-light {
+            display: none;
+        }
+        .icon-dark {
+            display: block;
+        }
+    }
+
+    .medium-zoom-overlay {
+        background-color: var(--color-body) !important;
+    }
+    .single-result-item {
+        border-bottom: 2px solid #1B1B1B;
+    }
+    .members-preview-content:before{
+        background: linear-gradient(0deg, rgba(17, 17, 23, 1) 0%, rgba(17, 17, 23, 1) 0%, rgba(17, 17, 23, .8) 40%, rgba(17, 17, 23, 0) 100%);
+    }
+
+    .cove-input {
+        border: 1px solid #343b41 !important;
+    }
+
+    // kg-audio-title
+     .kg-audio-title {
+        color: #dad4d4;
+    }
+    .kg-file-card-title {
+        color: #dad4d4;
+    }
+    .kg-file-card-metadata {
+        color: #dad4d4;
+    }
+    .kg-file-card-icon::before {
+        background: #dad4d4;
+    }
+
+    .kg-callout-text {
+        color: #fff;
+    }
+    .kg-callout-card div.kg-callout-text {
+        color: #fff;
+    }
+
+    .kg-header-card.kg-style-light {
+        background-color: #26262c !important;
+    }
+    .kg-audio-player-container input[type="range"] {
+        color: #dad4d4 !important;
+    }
+
+}

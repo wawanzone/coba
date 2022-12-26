@@ -1,0 +1,148 @@
+{
+    "name": "docslab-new",
+    "description": "Docslab is a knowledge base and documentation ghost theme",
+    "demo": "https://docslab.electronthemes-ghost.com",
+    "version": "2.6.0",
+    "engines": {
+        "ghost": ">=5.0.0"
+    },
+    "scripts": {
+        "sass": "sass --watch assets/scss:assets/css --style compressed",
+        "dev": "gulp",
+        "test": "gscan .",
+        "zip": "gulp zip"
+    },
+    "author": {
+        "name": "Electronthemes",
+        "email": "electronthemes@gmail.com",
+        "url": "http://electronthemes.com/"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine",
+            "Blog"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme",
+        "ghost-theme",
+        "documentation-theme",
+        "documentation"
+    ],
+    "config": {
+        "posts_per_page": 6,
+        "image_sizes": {
+            "xxs": {
+                "width": 30
+            },
+            "xs": {
+                "width": 100
+            },
+            "sm": {
+                "width": 150
+            },
+            "s": {
+                "width": 300
+            },
+            "m": {
+                "width": 600
+            },
+            "lm": {
+                "width": 777
+            },
+            "l": {
+                "width": 940
+            },
+            "xl":{
+                "width": 1130
+            },
+            "xxl": {
+                "width": 2000
+            }
+        },
+        "card_assets": {
+            "exclude": ["bookmark", "gallery"]
+        },
+        "custom": {
+            "select_color_scheme": {
+                "type": "select",
+                "options": [
+                    "Light",
+                    "Dark",
+                    "Auto"
+                ],
+                "default": "Light"
+            },
+            "fonts": {
+                "type": "select",
+                "options": ["System fonts", "Spartan + Alata", "Archivo + System fonts", "Bona Nova + Inter", "EB Garamond + Inter", "Inter", "Roboto + Lato", "Lora + System fonts", "Merriweather + Nunito", "Oswald + Roboto", "Playfair + System fonts", "Inter + Poppins", "Raleway + System fonts", "Roboto", "Inter + Space Grotesk", "Sora + Inter", "Inter + Syne", "Inter + Work Sans"],
+                "default": "Spartan + Alata"
+            },
+            "rtl_view": {
+                "type": "boolean",
+                "default": false
+            },
+            "search_content_api": {
+                "type": "text"
+            },
+            "github_link": {
+                "type": "text",
+                "default": "#"
+            },
+            "contact_form_endpoint_url": {
+                "type": "text",
+                "default": "#"
+            },
+            "site_footer": {
+                "type": "text"
+            },
+            "show_faq": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "show_popular_author": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "show_cover_image": {
+                "type": "boolean",
+                "default": true,
+                "group": "homepage"
+            },
+            "default_post_layout": {
+                "type": "select",
+                "options": [
+                    "Default",
+                    "FullWidth Image",
+                    "FullWidth Content"
+                ],
+                "default": "Default",
+                "group": "post"
+            },            
+            "select_comment": {
+                "type": "select",
+                "options": [
+                    "Native Comments",
+                    "Cove",
+                    "Disqus",
+                    "Disable"
+                ],
+                "default": "Native Comments",
+                "group": "post"
+            },
+            "cove_publication_id": {
+                "type": "text",
+                "group": "post"
+            },
+            "disqus_shortname": {
+                "type": "text",
+                "group": "post"
+            }        
+        }
+    }
+}

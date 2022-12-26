@@ -1,0 +1,51 @@
+{{!-- search-bar --}}
+<div class="sidebar-docs">
+    <div class="sidebar-toggle-icon">
+        {{> "icons/settings"}}
+    </div>
+    <div class="sidebar-docs-inner">
+        <div class="sidebar-doc-lists">
+            <div class="search-bar-area w-100">
+                <div class="serach-bar live-search-bar search-input-area">
+                    <span class="search-icon">{{> icons/search}}</span>
+                    <input type="text" class="form-control w-100 search-input" placeholder="{{t "Search your keyword"}}"{{#unless @custom.search_content_api}} data-ghost-search{{/unless}}>
+                    <div class="search-result nicescrol">
+                        <div class="custom">
+                            <div class="search-full-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+                {{#if tags}}
+                <div class="tags-inner-section pt-30">
+                    <ul class="list-group">
+                        {{#foreach tags visibility="public"}}
+                            <li class="tags-group-item">
+                                <div class="tag-qus-title">
+                                    <h6>
+                                        <a id="{{slug}}" href="{{url}}">{{name}}</a>
+                                        <span class="expand-toggle chevron-down">{{> icons/chevron-down}}</span>
+                                        <span class="expand-toggle chevron-up">{{> icons/chevron-up}}</span>
+                                    </h6>
+                                </div>
+                                <div class="docs-ans">
+                                    {{#get "posts" limit="all" filter="tag:{{slug}}"}}
+                                        {{#if posts}}
+                                        <ul class="docs-articles">
+                                            {{#foreach posts visibility="all"}}
+                                            <li><a id="{{slug}}" href="{{url}}">{{title}}</a></li>
+                                            {{/foreach}}
+                                        </ul>
+                                        {{/if}}
+                                    {{/get}}
+                                </div>
+                            </li>
+                        {{/foreach}}
+                    </ul>
+                </div>
+                {{/if}}
+            {{/get}}
+        </div>
+    </div>
+</div>

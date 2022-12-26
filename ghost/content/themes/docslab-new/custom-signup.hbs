@@ -1,0 +1,45 @@
+{{!< default}}
+
+{{#if @member.paid}}
+    {{!-- Logged in: Redirect home --}}
+    <script>window.location = '{{@site.url}}';</script>
+{{else if @member}}
+    {{!-- Member: Redirect to Subscribe --}}
+    <script>window.location = '{{@site.url}}/account/';</script>
+{{else}}
+
+<!-- subscribe section start from here    -->
+<div class="subscribe-section py-50 pt-lg-100 pb-lg-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  col-md-10 mx-auto">
+                <div class="subscribe-title mb-40">
+                    <h2>{{t "Get started with"}} {{@site.title}}</h2>
+                    <p>{{t "Sign up to get full access for our articles"}}</p>
+                </div>
+                <div class="signup-form">
+                    <form data-members-form="signup">
+                        <div class="subscribe-form">
+                            <input data-members-email class="form-control" type="email" required placeholder="{{t "Enter your email"}}">
+                            <button  type="submit" class="btn btn-subscribe">
+                                <span class="button-text">{{t "Signup"}}</span>
+                                <span class="button-loader">{{> "icons/loader"}}</span>
+                            </button>
+                        </div>
+                        <p>{{t "Already have an account?"}}&nbsp;<a href="{{@site.url}}/signin/">{{t "Sign in"}}</a></p>
+                        <div class="message-text">
+                            <div class="message-success">
+                               {{{t "<strong>Please</strong> check your inbox and click the link to confirm your subscription."}}}
+                            </div>
+                            <div class="message-error">
+                                {{t "Please enter a valid email address!"}}
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>   
+        </div>
+    </div>
+</div>
+{{/if}}
+<!-- // subscribe section end from here   -->

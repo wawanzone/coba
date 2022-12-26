@@ -1,0 +1,11 @@
+<div class="banner-section {{#if feature_image}}has-cover-image{{else}} no-cover-image{{/if}}">
+    {{#if feature_image}}
+    <img src="{{feature_image}}" alt="{{title}}">
+    {{/if}}
+    <div class="banner-content{{^if excerpt}} no-excerpt{{/if}}">
+        <h1 class="post-title">{{title}}</h1>
+        {{#if excerpt}}
+            <p class="excerpt">{{excerpt}}</p>
+        {{/if}}
+    </div>
+</div>

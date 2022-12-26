@@ -1,0 +1,19 @@
+{{!-- page header --}}
+<div class="author-section-wrapper{{#if feature_image}} has-thumbnail{{/if}}"{{#if feature_image}} style="background-image: url({{feature_image}})"{{/if}}>
+    <div class="author-single-title tag-single-title">
+       <div class="title-text author-details">
+             <h2 class="mb-3">{{t "Nice, you're a subscriber!"}}</h2>
+    <p>{{t "Currently, you're not a paying subscriber. You've an active account with access to posts for subscribers only. Upgrade your account and get access to the full library of posts."}}</p>
+       </div>
+    </div>     
+</div>
+
+<div class="subscribe-cover">
+    <ul class="subscriber-info">
+        {{#if @member.name}}
+        <li><strong>{{t "Name:"}}</strong> {{@member.name}}</li>
+        {{/if}}
+        <li><strong>{{t "Email address:"}}</strong> {{@member.email}}</li>
+        <li><strong>{{t "Your plan:"}}</strong> {{t "Free"}}</li>
+    </ul>
+</div>

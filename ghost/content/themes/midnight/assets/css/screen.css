@@ -1,0 +1,50 @@
+@import "@tryghost/shared-theme-assets/assets/css/screen.css";
+@import "general/vars.css";
+@import "general/form.css";
+@import "home.css";
+@import "site/layout.css";
+@import "site/header.css";
+@import "site/cover.css";
+@import "site/search.css";
+@import "site/topic.css";
+@import "site/term.css";
+@import "blog/post.css";
+@import "blog/feed.css";
+@import "blog/pagination.css";
+@import "blog/featured.css";
+@import "blog/article.css";
+@import "blog/related.css";
+@import "blog/comment.css";
+@import "misc/utilities.css";
+@import "misc/owl.css";
+
+:root {
+    --color-midnight: #003580;
+  }
+  .is-head-open:not(.is-head-brand):not(.is-head-dark):not(.is-head-transparent) #gh-head,
+  .gh-head {
+      background-color: var(--color-midnight);
+  }
+  .is-head-open #gh-head .gh-head-actions {
+      background-color: var(--color-midnight);
+  }
+  .gh-burger::after, .gh-burger::before {
+    background-color: var(--color-white);
+  }
+  .gh-head a {
+    color: #fff;
+  }
+  .gh-head .gh-icon-btn {
+    color: var(--color-white);
+  }
+  .gh-btn{
+    color: var(--color-black);
+  }
+  .no-image.u-overlay::before {
+    background-color: #002d6c;
+  }
+  @media (min-width: 1300px){
+      .topic-feed {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }

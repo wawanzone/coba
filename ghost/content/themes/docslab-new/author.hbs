@@ -1,0 +1,103 @@
+{{!< default}}
+
+
+<!-- banner Section -->
+{{#author}}
+<div class="breadcrumbs-section">
+    {{^is "home"}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb pl-0 mb-0">
+                        <li class="breadcrumb-item " aria-current="page"><a href="{{@site.url}}">{{t "Home"}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{name}}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    {{/is}}
+</div>
+
+<div class="author-section section-padding">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <div class="author-box-content">
+                    {{#if profile_image}}
+                        <div class="author-thumb">
+                            <img srcset="{{img_url profile_image size="sm"}} 100w"
+                                sizes="150px" src="{{img_url profile_image size="sm"}}" alt="{{name}}">
+                        </div>
+                    {{else}}
+                        <div class="no-profile-image">
+                            <div class="no-profile-author">
+                            {{> icons/author}}
+                            </div>
+                        </div>
+                    {{/if}}
+                    <h4 class="author pt-10">{{name}}</h4>
+                    <div class="edit-icons">
+                        <div class="article-lists">
+                            {{> icons/social-icons/edit}}
+                            {{plural ../pagination.total empty=(t "0 post") singular=(t "% article") plural=(t "% articles")}}
+                        </div>
+                        {{#if location}}
+                            <div class="location">{{t "From"}}&nbsp;{{ location }}</div>
+                        {{/if}}
+                    </div>
+                    {{#has any="facebook, twitter,website"}}
+                    <div class="social-portfolio py-10">
+                        {{#if facebook}}
+                            <a href="{{facebook_url}}">
+                                {{> icons/social-icons/facebook}}
+                            </a>
+                        {{/if}}
+                        {{#if twitter}}
+                            <a href="{{twitter_url}}">
+                                {{> icons/social-icons/twitter}}
+                            </a>
+                        {{/if}}
+                        {{#if website}}
+                            <a href="{{website}}">
+                               {{> icons/social-icons/link}}
+                            </a>
+                        {{/if}}
+                    </div>
+                    {{/has}}
+                    {{#if bio}}
+                    <p class="excerpt">{{bio}}</p>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/author}}
+<!-- // banner Section -->
+
+
+<div class="post-card-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="posts-wrapper pb-30">
+                    {{> post-card}}
+                </div>
+                <div class="loadmore-section pb-50 mx-auto">
+                    <div class="mx-auto text-center">
+                        <div class="read-more-btn">
+                            <button class="btn btn-primary load-more-posts">
+                                {{t "Load More"}}
+                                <span class="loading-posts">
+                                    {{> icons/loader}}
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

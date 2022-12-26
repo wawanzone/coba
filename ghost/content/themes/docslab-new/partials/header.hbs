@@ -1,0 +1,63 @@
+{{!-- header start from here --}}
+<div class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 unset">
+                <div class="header-area-inner d-flex justify-content-between align-items-center flex-wrap">
+                    <!-- logo -->
+                    <div class="logo py-2 text-center">
+                        {{#if @site.logo}}
+                            <a href="{{@site.url}}">
+                                <img src="{{@site.logo}}" alt="logo-img">
+                            </a>
+                        {{else}}
+                            <h2><a href="{{@site.url}}">{{@site.title}}</a></h2>
+                        {{/if}}
+                    </div>
+                    <!-- Menu sec -->
+                    <div class="menu-wrapper d-flex justify-content-between align-items-center text-center">
+                        <div class="center-menu">
+                            {{{navigation}}}
+                        </div>
+                        {{> members/header-members-details}}
+                        <!-- bar icon -->
+                        <div class="mobile-menu-bar d-lg-none d-flex align-items-center">
+                            <div class="bar-icon">
+                                <div class="bar-line"></div>
+                                <div class="bar-line"></div>
+                                <div class="bar-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile-menu-bar -->
+    <div class="mobile-menu-wrapper">
+        <div class="container">
+           <div class="row">
+                <div class="mobile-menu"></div>
+           </div>
+        </div>
+    </div>
+    {{!-- light-dark version --}}
+    <div class="promo-icon{{#unless @custom.github_link}} without-link{{/unless}}">
+        {{#if @custom.github_link}}
+        <div class="github-profile">
+            <a href="{{@custom.github_link}}">
+                {{> icons/github}}
+            </a>
+        </div>
+        {{/if}}
+        <div class="dark-light">
+            <div class="icon-dark">
+                {{> icons/light}}
+            </div>
+            <div class="icon-light">
+                {{> icons/dark}}
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- header end from here --}}

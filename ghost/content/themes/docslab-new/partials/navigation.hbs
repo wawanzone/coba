@@ -1,0 +1,22 @@
+{{#if isSecondary}}
+    {{!-- secondary navigation --}}
+    <ul class="mb-5 d-inline-flex">
+        {{#foreach navigation}}
+        <li class="mx-2 nav-{{slug}}{{#if current}} active{{/if}}"><a href="{{url}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+{{else}}
+    {{!-- primary navigation --}}
+    <ul id="nav" class="nav">
+        {{#foreach navigation}}
+            <li><a class="nav-{{slug}}{{#if current}} active{{/if}}"  href="{{url}}">{{label}}</a></li>
+        {{/foreach}}
+
+        {{#if @site.members_enabled}}
+        <li><a href="{{@site.url}}/signin/">{{t "Signin"}}</a></li>
+        <li class="subscribes-btn">
+            <a class="btn btn-membership" href="{{@site.url}}/membership/">{{t "Subscribe"}}</a>
+        </li>
+        {{/if}}
+    </ul>
+{{/if}}
