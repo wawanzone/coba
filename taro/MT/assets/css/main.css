@@ -427,6 +427,12 @@ background: linear-gradient(0deg, rgba(6,119,75,1) 0%, rgba(7,118,75,1) 50%, rgb
         min-height: 100vh;
         padding: 5% 0;
     }
+    .bg-home-mt{
+        background: url(../img/bg-home-mt-xs.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size:100%;
+    }
     .has-h{
         margin-top:32vw;
     }
