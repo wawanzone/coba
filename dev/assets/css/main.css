@@ -17,7 +17,7 @@ body {
 
 .lead {
     font: 400 18px/1.7777777778 Segoe UI, system-ui, -apple-system, sans-serif;
-    opacity: .8;
+    opacity: .85;
     font-size: clamp(.850rem, 4vw, 18px);
 }
 
@@ -586,6 +586,11 @@ header.sticky-top {
 }
 
 /* main */
+
+.btn-link {
+  color: #0072ec;
+}
+
 main .display-4 {
     font-size: 3rem;
 }
