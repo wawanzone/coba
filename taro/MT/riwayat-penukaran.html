@@ -91,7 +91,7 @@
 			<section class="d-flex align-items-center justify-content-center">
 				<div class="container">
 					<div class="row">
-						<div class="mx-auto mt-md-5 col-6 col-md-4 ">
+						<div class="mx-auto mt-md-5 col-6 col-md-4">
 							<img class="img-fluid" src="assets/img/logo-homepage.png " alt="" />
 						</div>
 					</div>
@@ -260,6 +260,52 @@
 					</div>
 				</div>
 			</section>
+			<style>
+				/* table */
+				@media only screen and (max-width: 768px) {
+					.has-responsive {
+						font-size: 12px;
+					}
+					.has-responsive thead {
+						display: none;
+					}
+					.has-responsive tbody td::before {
+						text-transform: uppercase;
+						width: 100px;
+						opacity: 0.8;
+						height: 40px;
+						position: absolute;
+						left: 10px;
+					}
+
+					.has-responsive tbody td {
+						display: block;
+						border: 0px solid #ddd;
+						padding-left: 130px;
+					}
+					.has-responsive tbody td:first-child:before {
+						content: "No";
+					}
+					.has-responsive tbody td:nth-child(2):before {
+						content: "Kategori";
+					}
+					.has-responsive tbody td:nth-child(3):before {
+						content: "Kode";
+					}
+					.has-responsive tbody td:nth-child(4):before {
+						content: "Voucher/Pin";
+					}
+					.has-responsive tbody td:nth-child(5):before {
+						content: "Serial";
+					}
+					.has-responsive tbody td:nth-child(6):before {
+						content: "Jenis Voucher";
+					}
+					.has-responsive tbody td:nth-child(7):before {
+						content: "Tanggal";
+					}
+				}
+			</style>
 			<script>
 				var music = false;
 
