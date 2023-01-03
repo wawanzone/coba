@@ -3,9 +3,9 @@
     <div class="tag-wrapper section-padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 mx-auto text-center">
+                <div class="mx-auto text-center col-md-8">
                     <h2 class="section-title">{{t "Find your docs"}}</h2>
-                    <p class="section-text maxw-500 mx-auto">
+                    <p class="mx-auto section-text maxw-500">
                         {{t "The following articles are the most helpful articles. One of them might be the one you look for your product"}}
                     </p>
                 </div>
@@ -15,15 +15,15 @@
                 {{#foreach tags limit="all" visibility="public"}}
                     <div class="col-lg-4 col-md-6 single-docs">
                         <div class="single-tag-item">
-                            <div class="single-tag-box d-flex flex-row flex-wrap">
+                            <div class="flex-row flex-wrap single-tag-box d-flex">
                                 {{#if feature_image}}
-                                <div class="tag-thumb  maxw-100 w-100 mr-15">
+                                <div class="tag-thumb maxw-100 w-100 mr-15">
                                     <img class="tag-feature-img" srcset="{{img_url feature_image size="xxs"}} 30w,
                                     {{img_url feature_image size="xs"}} 100w"
                                     sizes="100px" src="{{img_url feature_image size="xs"}}" alt="{{name}}">
                                 </div>
                                 {{/if}}
-                                <div class="tag-details flex-1">
+                                <div class="flex-1 tag-details">
                                     <a href="{{url}}">{{name}}</a>
                                     <p class="total-posts"># {{plural count.posts empty=(t "0 article") singular=(t "% article") plural=(t "% articles")}}</p>
                                     {{#if description}}
@@ -43,7 +43,7 @@
                                     </ul>
                                     {{/if}}
                                 {{/get}}
-                                <div class="articles-details pt-20">
+                                <div class="pt-20 articles-details">
                                     <a class="btn btn-primary btn-sm" href="{{@site.url}}/tag/{{slug}}">{{t "View All"}}</a>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                 {{/foreach}}
             </div>
             <div class="row show-more-docs">
-                <div class="col-md-8 mx-auto text-center">
+                <div class="mx-auto text-center col-md-8">
                     <div class="tags-details">
                         <a id="show-more-docs" class="btn btn-primary btn-xl d-flex" href="#">
                             {{t "See More"}}

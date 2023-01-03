@@ -3,9 +3,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 unset">
-                <div class="header-area-inner d-flex justify-content-between align-items-center flex-wrap">
+                <div class="flex-wrap header-area-inner d-flex justify-content-between align-items-center">
                     <!-- logo -->
-                    <div class="logo py-2 text-center">
+                    <div class="py-2 text-center logo">
                         {{#if @site.logo}}
                             <a href="{{@site.url}}">
                                 <img src="{{@site.logo}}" alt="logo-img">
@@ -15,7 +15,7 @@
                         {{/if}}
                     </div>
                     <!-- Menu sec -->
-                    <div class="menu-wrapper d-flex justify-content-between align-items-center text-center">
+                    <div class="text-center menu-wrapper d-flex justify-content-between align-items-center">
                         <div class="center-menu">
                             {{{navigation}}}
                         </div>

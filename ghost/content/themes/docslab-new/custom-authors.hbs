@@ -31,8 +31,8 @@
                                 {{/if}}
                                 <div class="overlay">
                                     {{#has any="facebook, twitter,website"}}
-                                    <div class="overlay-content d-flex justify-content-center flex-column align-items-center text-center px-15 py-15 h-100">
-                                        <ul class="social-profile-link d-flex flex-wrap">
+                                    <div class="text-center overlay-content d-flex justify-content-center flex-column align-items-center px-15 py-15 h-100">
+                                        <ul class="flex-wrap social-profile-link d-flex">
                                             {{#if facebook}}
                                             <li>
                                                 <a target="_blank" href="{{facebook_url}}">{{> icons/social-icons/facebook}}</a>
@@ -55,7 +55,7 @@
                                 
                             </div>
 
-                            <div class="single-authors-title py-10 px-20">
+                            <div class="px-20 py-10 single-authors-title">
                                 <h5 class="mb-10"><a href="{{url}}">{{name}}</a></h5>
                                 {{#if bio}}
                                     <p>{{bio}}</p>
