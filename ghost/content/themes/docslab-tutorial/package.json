@@ -1,8 +1,8 @@
 {
-    "name": "docslab-new",
+    "name": "docslab-tutorial",
     "description": "Docslab is a knowledge base and documentation ghost theme",
     "demo": "https://docslab.electronthemes-ghost.com",
-    "version": "2.6.0",
+    "version": "1.0",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -99,6 +99,17 @@
             "site_footer": {
                 "type": "text"
             },
+            "whatsapp_number": {
+                "type": "text",
+                "default": "#"
+            },
+            "modal_image": {
+                "type": "image"
+            },
+            "modal_link": {
+                "type": "text",
+                "default": "#"
+            },            
             "show_faq": {
                 "type": "boolean",
                 "default": true,

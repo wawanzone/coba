@@ -46,7 +46,17 @@
 
 {{!-- body --}}
 {{{body}}}
-
+    <div id="modal">
+      <div id="close_btn" class="close-fixie">
+        +
+      </div>
+      <div id="slidemodal_1" class="slidemodal_contents">
+        <a href="{{#if @custom.modal_link}}{{@custom.modal_link}}{{/if}}">
+            <img src="{{img_url @custom.modal_image size="large"}}" alt="tutorial-modal" />
+        </a>
+      </div>
+    </div>
+    
 {{!-- Footer --}}
 {{> footer}}
 <script>
@@ -59,10 +69,10 @@
 </script>
 
 {{!-- Jquery scripts --}}
-<script src="{{asset "/js/scripts.js"}}"></script>
+<script src="{{asset '/js/scripts.js'}}"></script>
 
 {{#is "post,page"}}
-<script src="{{asset "/js/single.js"}}"></script>
+<script src="{{asset '/js/single.js'}}"></script>
 {{/is}}
 
 <script>
@@ -114,5 +124,132 @@
 {{!-- ghost footer --}}
 {{ghost_foot}}
 
+<script>
+
+
+
+    $(".close-fixie").on('click', function(){ 
+        $("#fixie").fadeOut(193);
+        $("#modal").animate({top:0, opacity:0}, 555, function() {
+        $("#modal").hide();
+        var windowHeight = $(window).height();
+        $("#modal").css("top",windowHeight);
+        });
+    });
+</script>
+
+<script>
+        // cursor out top, banner show
+        var mouseY = 0;
+        var topValue = 0;
+        var popcounter = 0;
+        window.addEventListener(
+            "mouseout",
+            function (e) {
+                mouseY = e.clientY;
+                if (mouseY <= topValue) {
+                    if (popcounter <= 0) {
+                        $("#modal").show();
+                        var windowHeight = $(window).height();
+                        var modalMove = (windowHeight * 0.19);
+                        $("#fixie").fadeIn(55);
+                        $("#modal").animate({ top: modalMove, opacity: 1 }, 555, function () { });
+                        popcounter++;
+                    }
+
+                }
+            },
+            false
+        );
+
+</script>
+
+<style>
+    #close_btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        color: white;
+        background: #000;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        transform: rotate(45deg);
+        font-size: 24px;
+    }
+
+    #close_btn:hover {
+        opacity: 0.5;
+    }
+
+    #fixie {
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        animation: fadein 0.2s;
+        background: linear-gradient(315deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    #modal {
+        position: fixed;
+        width: 70%;
+        left: 15%;
+        top: 100%;
+        background: white;
+        opacity: 0;
+        display: none;
+        z-index: 101;
+        padding: 0%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    @media (min-width: 992px) {
+        #modal {
+            width: 33%;
+            left: 33%;
+        }
+    }
+
+    .slidemodal_contents {
+        width: 100%;
+        left: 100%
+    }
+
+    .section9style {
+        color: #555;
+        cursor: pointer;
+        border-radius: 25px;
+        height: 45px;
+        width: 45px;
+        overflow: hidden;
+        font-size: 131%;
+        background-color: rgba(13, 13, 13, 0.13);
+        border-right: 3px solid rgba(69, 69, 69, 0.62);
+        border-bottom: 3px solid rgba(69, 69, 69, 0.62);
+        border-left: 2px solid rgba(241, 241, 241, 0.62);
+        border-top: 2px solid rgba(241, 241, 241, 0.62);
+        box-shadow:
+            1px 1px 0px #898989,
+            2px 2px 0px #898989,
+            3px 3px 0px #898989
+    }
+
+    .section9style:hover {
+        background: #cfcfcf;
+    }
+</style>
+<div id="fixie" class="close-fixie"></div>
 </body>
 </html>
