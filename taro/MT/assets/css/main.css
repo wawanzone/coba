@@ -66,7 +66,7 @@ input[type="number"] {
 		-moz-appearance: textfield;
 	}
 
-    .xsmall {
+	.xsmall {
 		font-size: 0.875em;
 	}
 
@@ -198,6 +198,9 @@ input[type="number"] {
 	.frame-md.diamond {
 		background-image: url(../img/banner-kodeunik-diamond.png);
 	}
+	.frame-md.poin {
+		background-image: url(../img/popup-tambah-poin.png);
+	}
 	.frame-md.unipin {
 		background-image: url(../img/unipin2.png);
 	}
@@ -295,6 +298,18 @@ input[type="number"] {
 }
 .table {
 	margin-bottom: 0px !important;
+}
+
+.poin-add {
+	margin-bottom: 250px;
+	width: 100%;
+	max-width: 50%;
+	color: #fff;
+	background: linear-gradient(0deg, rgb(38, 85, 58) 15%, rgb(51, 115, 76) 42%);
+	cursor: default !important;
+}
+.poin-add:hover {
+	color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -434,9 +449,22 @@ input[type="number"] {
 	.has-h2 {
 		margin-top: 8vw;
 	}
+
+	.poin-add {
+		margin-bottom: -40px;
+	}
+
+	.has-before-total:before{
+		content: 'TOTAL POIN KAMU SAAT INI';
+		font-size: 13px;
+		padding: 10px;
+		display: block;
+	}
+
 	.frame-md.blank,
 	.frame-md.diamond,
 	.frame-md.unipin,
+	.frame-md.poin,
 	.frame-md {
 		background: radial-gradient(circle, rgb(25, 85, 143) 50%, rgb(15, 28, 57) 100%);
 		border-radius: 10px;
@@ -481,8 +509,6 @@ input[type="number"] {
 	.xsmall {
 		font-size: 0.675em;
 	}
-
-
 
 	.btn-taro-3 {
 		width: 50%;
