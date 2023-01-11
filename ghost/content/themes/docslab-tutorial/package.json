@@ -2,7 +2,7 @@
     "name": "docslab-tutorial",
     "description": "Docslab is a knowledge base and documentation ghost theme",
     "demo": "https://docslab.electronthemes-ghost.com",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -106,7 +106,7 @@
             "modal_image": {
                 "type": "image"
             },
-            "modal_link": {
+            "download_link": {
                 "type": "text",
                 "default": "#"
             },            

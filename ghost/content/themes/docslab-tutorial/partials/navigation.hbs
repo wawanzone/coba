@@ -11,12 +11,12 @@
         {{#foreach navigation}}
             <li><a class="nav-{{slug}}{{#if current}} active{{/if}}"  href="{{url}}">{{label}}</a></li>
         {{/foreach}}
-
+{{!-- 
         {{#if @site.members_enabled}}
         <li><a href="{{@site.url}}/signin/">{{t "Signin"}}</a></li>
         <li class="subscribes-btn">
             <a class="btn btn-membership" href="{{@site.url}}/membership/">{{t "Subscribe"}}</a>
         </li>
-        {{/if}}
+        {{/if}} --}}
     </ul>
 {{/if}}
