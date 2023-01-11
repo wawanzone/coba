@@ -2,7 +2,7 @@
     "name": "docslab-tutorial",
     "description": "Docslab is a knowledge base and documentation ghost theme",
     "demo": "https://docslab.electronthemes-ghost.com",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -87,26 +87,19 @@
                 "type": "text"
             },
             "github_link": {
-                "type": "text",
-                "default": ""
+                "type": "text"
             },
             "contact_form_endpoint_url": {
-                "type": "text",
-                "default": ""
-            },
-            "site_footer": {
-                "type": "All Rights Reserved"
+                "type": "text"
             },
             "whatsapp_number": {
-                "type": "text",
-                "default": "#"
+                "type": "text"
             },
             "modal_image": {
                 "type": "image"
             },
             "download_link": {
-                "type": "text",
-                "default": "#"
+                "type": "text"
             },            
             "show_faq": {
                 "type": "boolean",
@@ -137,15 +130,10 @@
                 "type": "select",
                 "options": [
                     "Native Comments",
-                    "Cove",
                     "Disqus",
                     "Disable"
                 ],
                 "default": "Native Comments",
-                "group": "post"
-            },
-            "cove_publication_id": {
-                "type": "text",
                 "group": "post"
             },
             "disqus_shortname": {

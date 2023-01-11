@@ -48,11 +48,7 @@
                     {{#match @custom.select_comment "Disqus"}} 
                         {{> comments/disqus-comment}}
                     {{/match}}
-
-                    {{#match @custom.select_comment "Cove"}} 
-                        {{> comments/cove-comments}}
-                    {{/match}}
-
+                    
                     {{#match @custom.select_comment "Native Comments"}} 
                         {{> comments/native-comments}}
                     {{/match}}
