@@ -2,7 +2,7 @@
     "name": "docslab-tutorial",
     "description": "Docslab is a knowledge base and documentation ghost theme",
     "demo": "https://docslab.electronthemes-ghost.com",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -20,8 +20,6 @@
     "gpm": {
         "type": "theme",
         "categories": [
-            "Minimal",
-            "Magazine",
             "Blog"
         ]
     },
@@ -79,7 +77,7 @@
             "fonts": {
                 "type": "select",
                 "options": ["System fonts", "Spartan + Alata", "Archivo + System fonts", "Bona Nova + Inter", "EB Garamond + Inter", "Inter", "Roboto + Lato", "Lora + System fonts", "Merriweather + Nunito", "Oswald + Roboto", "Playfair + System fonts", "Inter + Poppins", "Raleway + System fonts", "Roboto", "Inter + Space Grotesk", "Sora + Inter", "Inter + Syne", "Inter + Work Sans"],
-                "default": "Spartan + Alata"
+                "default": "Inter + Poppins"
             },
             "rtl_view": {
                 "type": "boolean",
@@ -90,14 +88,14 @@
             },
             "github_link": {
                 "type": "text",
-                "default": "#"
+                "default": ""
             },
             "contact_form_endpoint_url": {
                 "type": "text",
-                "default": "#"
+                "default": ""
             },
             "site_footer": {
-                "type": "text"
+                "type": "All Rights Reserved"
             },
             "whatsapp_number": {
                 "type": "text",
@@ -112,17 +110,17 @@
             },            
             "show_faq": {
                 "type": "boolean",
-                "default": true,
+                "default": false,
                 "group": "homepage"
             },
             "show_popular_author": {
                 "type": "boolean",
-                "default": true,
+                "default": false,
                 "group": "homepage"
             },
             "show_cover_image": {
                 "type": "boolean",
-                "default": true,
+                "default": false,
                 "group": "homepage"
             },
             "default_post_layout": {

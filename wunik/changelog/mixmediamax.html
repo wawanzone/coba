@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id" class="
+	bg-sky-50/70 prose prose-sm md:prose max-w-[initial]
+	[&_body]:break-words [&_body]:cursor-default [&_body]:px-7 [&_body]:my-10
+	[&_header_form]:mt-3
+	[&_main]:my-10
+	[&_section]:max-w-2xl [&_section]:mx-auto [&_section]:mb-10 last:[&_section]:mb-0
+	[&_label]:inline-block [&_label]:text-sm [&_label]:opacity-30 [&_label]:mt-2
+	[&_select]:block [&_select]:w-full [&_select]:appearance-none [&_select]:cursor-pointer [&_select]:rounded-xl [&_select]:py-3 [&_select]:pl-4 [&_select]:pr-8 [&_select]:shadow-xl [&_select]:shadow-sky-500/10 [&_select]:border [&_select]:border-gray-100 focus:[&_select]:border-sky-500 focus:[&_select]:ring-sky-500
+	[&_h1]:mb-3
+	[&_h2]:p-4 [&_h2]:-mx-4 [&_h2]:my-0 [&_h2]:sticky [&_h2]:top-0 [&_h2]:z-[1] [&_h2]:bg-[#f4faff]
+	[&_article]:bg-white [&_article]:py-5 [&_article]:px-6 md:[&_article]:py-6 md:[&_article]:px-7 [&_article]:rounded-xl [&_article]:shadow-xl [&_article]:shadow-sky-500/10 [&_article]:mb-7 last:[&_article]:mb-0 first:[&_article_*]:mt-0 last:[&_article_*]:mb-0 [&_article_p+pre]:mt-4 [&_article_img]:border [&_article_img]:rounded-lg [&_article_ol]:-mt-4 [&_article_ul]:-mt-4
+	[&_a]:text-sky-500 hover:[&_a]:text-sky-400 hover:[&_a]:no-underline
+	[&_data]:hidden
+	[&_pre]:rounded-lg
+	[&_a[download]]:bg-sky-500 [&_a[download]]:text-white hover:[&_a[download]]:bg-sky-600 [&_a[download]]:transition-all [&_a[download]]:duration-300 [&_a[download]]:py-3 [&_a[download]]:px-5 [&_a[download]]:text-xs md:[&_a[download]]:text-sm [&_a[download]]:font-bold [&_a[download]]:uppercase [&_a[download]]:tracking-widest [&_a[download]]:rounded-lg [&_a[download]]:w-full [&_a[download]]:block [&_a[download]]:text-center [&_a[download]]:no-underline
+	[&_button]:bg-sky-500 [&_button]:text-white hover:[&_button]:bg-sky-600 [&_button]:transition-all [&_button]:duration-300 [&_button]:py-3 [&_button]:px-5 [&_button]:text-xs md:[&_button]:text-sm [&_button]:font-bold [&_button]:uppercase [&_button]:tracking-widest [&_button]:rounded-lg [&_button]:w-full
+">
+<head>
+	<title>Changelog</title>
+	<meta name="title" content="Changelog">
+	<meta name="description" content="Rincian perubahan pada custom website">
+	<meta name="google" content="notranslate">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" sizes="16x16 32x32 48x48" href="https://demo.jcamp.biz/_assets/img/favicon.ico">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography/dist/typography.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/forms/dist/forms.min.css">
+</head>
+
+<body>
+
+<header>
+	<section>
+		<h1>Changelog Documentation</h1>
+		<form>
+			<select>
+				<option value="2022-12-31">2023-01-11</option>
+			</select>
+		</form>
+	</section>
+</header>
+
+<main datetime="2022-12-31">
+	<section>
+		<h2>4. Icon kategori tidak lurus sejajar</h2>
+		<article>
+			<p class="!-mb-3">div ini</p>
+			<data value='<div class="top-0 bottom-0 p-4 position-absolute start-0 end-0 bg-dark-transparent d-flex align-items-center z-index-4">'/>
+			
+		</article>
+		<article>
+			<p class="!-mb-3">diganti dengan</p>
+			<data value='<div class="top-0 bottom-0 p-4 position-absolute start-0 end-0 bg-dark-transparent d-flex align-items-start z-index-4">'/>
+		</article>
+	</section>
+	<section>
+		<h2>9. Jika dalam dark mode, unsur logo yang berwarna hitam diganti menjadi putih yang warna
+			orange tetap (versi logo putih)</h2>
+		<article>
+			<p class="!-mb-3">div ini</p>
+			<data value='<div class="top-0 bottom-0 p-4 position-absolute start-0 end-0 bg-dark-transparent d-flex align-items-center z-index-4">'/>
+		</article>
+	</section>
+</main>
+
+
+<slot>
+	<div class="!bg-green-600"></div>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;display=swap"/><style>:root{--kuning:#ffed5d}body{font-family:'DM Sans',sans-serif}mark{background-color:var(--kuning)}.prose code:before,.prose code:after{content:'.';color:var(--kuning)}</style>
+	<script>
+		function sourceCode() {
+			var entityMap = {
+				"&": "&amp;",
+				"<": "&lt;",
+				">": "&gt;",
+				'"': '&quot;',
+				"'": '&#39;',
+				"/": '&#x2F;'
+			}
+
+			function escapeHtml(string) {
+				return String(string).replace(/[&<>"'\/]/g, function(s) {
+					return entityMap[s]
+				})
+			}
+
+			// document.addEventListener("DOMContentLoaded", init, false);
+
+			window.onload = function init() {
+				let codeblock = document.querySelectorAll('data');
+				
+				if (codeblock.length) {
+					for (let i=0, len=codeblock.length; i<len; i++) {
+						let dom = codeblock[i]
+						let html = escapeHtml(dom.getAttribute('value'))
+						let target = dom.closest('article')
+
+						let content = document.createElement('pre')
+							content.innerHTML = '<code>' + html + '</code>'
+						target.insertBefore(content, codeblock[i])
+
+						let button = document.createElement('button')
+							button.type = 'button'
+							button.innerHTML = 'Salin Source Code'
+							button.setAttribute('onclick','copy(this)')
+						target.insertBefore(button, codeblock[i])
+					}
+				}
+			}
+		}
+		sourceCode()
+
+		function copy(selector) {
+			let text = selector.innerText
+			selector.innerText = 'Berhasil Disalin'
+			selector.classList.toggle('!bg-green-600')
+			selector.setAttribute('disabled','disabled')
+
+			let content = selector.closest('article').querySelector('data').getAttribute('value')
+			let temp = document.createElement('textarea')
+			selector.closest('article').appendChild(temp)
+			temp.value = content
+			temp.select()
+			document.execCommand('copy')
+			temp.remove()
+
+			setTimeout(() => {
+				selector.innerText = text
+				selector.classList.toggle('!bg-green-600')
+				selector.removeAttribute('disabled')
+			},2000)
+		}
+
+		function filter(selector1,selector2) {
+			document.querySelectorAll(selector1).forEach(trigger => {
+				let aaa = document.createElement('label')
+					aaa.innerText = 'Tanggal Dokumentasi (YYYY-MM-DD)'
+				trigger.closest('form').appendChild(aaa)
+				trigger.onchange = (e) => {
+					document.querySelectorAll(selector2).forEach(target => {
+						if ( e.target.value !== target.getAttribute('datetime') ) {
+							target.classList.add('hidden')
+						} else {
+							target.classList.remove('hidden')
+						}
+					})
+				}
+				document.querySelectorAll(selector2).forEach(target => {
+					if ( trigger.options[trigger.selectedIndex].value !== target.getAttribute('datetime') ) {
+						target.classList.add('hidden')
+					}
+				})
+			})
+		}
+		filter('header select','main')
+	</script>
+</slot>
+
+</body>
+</html>
