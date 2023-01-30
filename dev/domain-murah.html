@@ -4253,6 +4253,17 @@
 							background-repeat: no-repeat;
 							background-size: cover;
 						}
+						/* Chrome, Safari, Edge, Opera */
+						input::-webkit-outer-spin-button,
+						input::-webkit-inner-spin-button {
+						-webkit-appearance: none;
+						margin: 0;
+						}
+
+						/* Firefox */
+						input[type=number] {
+						-moz-appearance: textfield;
+						}
 					</style>
 					
 					<div class="bg-transparent border-0 modal-header">
@@ -4301,17 +4312,21 @@
 							<div class="col-md-12">
 								<div class="p-3" style="background: rgba(255, 255, 255, 0.85); border-radius: 16px; -webkit-backdrop-filter: blur(8.6px); border-radius: 16px">
 									<span class="px-3 py-2 alert-info small font-weight-bold position-absolute rounded-pill" style="top: -18px; background: #12eb82; border-color: #12eb82; color: #000"> Silahkan isi data diri Anda </span>
-									<form>
+									<form id="formgetkupon" method="post" action="">
 										<div class="mt-4 alert alert-danger " id="alertpopup" role="alert" style="">Silakan isi nama anda</div>
 										<div class="mt-3 form-group">
 											<label for="exampleInputName">Nama</label>
-											<input type="text" class="form-control" id="exampleInputName" />
+											<input type="text" class="form-control" required id="exampleInputName" />
+										</div>
+										<div class="form-group">
+											<label for="exampleInputPhone">No. WA</label>
+											<input type="number" class="form-control" required id="exampleInputNumber" />
 										</div>
 										<div class="form-group">
 											<label for="exampleInputEmail">Email</label>
-											<input type="email" class="form-control" id="exampleInputEmail" />
+											<input type="email" class="form-control" required id="exampleInputEmail" />
 										</div>
-										<button type="button" id="step-3-btn" class="mt-4 mr-auto border-0 shadow-lg btn btn-warning">Dapatkan Kode Kupon</button>
+										<button type="submit" id="step-3-btn" class="mt-4 mr-auto border-0 shadow-lg btn btn-warning">Dapatkan Kode Kupon</button>
 									</form>
 								</div>
 							</div>
@@ -4340,6 +4355,10 @@
 									
 								</div>
 								<p class="mt-4 text-center text-white small">* Hanya berlaku untuk member baru</p>
+
+								<button type="button" class="mx-auto mt-4 border-0 shadow-lg d-block btn btn-warning" data-dismiss="modal" aria-label="Close">
+									Beli Hosting Sekarang
+								</button>
 							</div>
 						</div>
 					</div>
@@ -4358,12 +4377,12 @@
 
 			// coupon
 			var clipboard = new ClipboardJS(".btn-copy");
-			clipboard.on("success", function (e) {
+			clipboard.on("success", function(e) {
 				e.clearSelection();
 
-				console.info("Action:", e.action);
-				console.info("Text:", e.text);
-				console.info("Trigger:", e.trigger);
+				// console.info("Action:", e.action);
+				// console.info("Text:", e.text);
+				// console.info("Trigger:", e.trigger);
 
 				showTooltip(e.trigger, "Copied!");
 			});
@@ -4377,12 +4396,12 @@
 			}
 
 			function clearTooltip(e) {
-				e.currentTarget.setAttribute("class", "btn");
+				e.currentTarget.setAttribute("class", "btn btn-copy");
 				e.currentTarget.removeAttribute("aria-label");
 			}
 
 			function showTooltip(elem, msg) {
-				elem.setAttribute("class", "btn tooltipped tooltipped-s");
+				elem.setAttribute("class", "btn btn-copy tooltipped tooltipped-s");
 				elem.setAttribute("aria-label", msg);
 			}
 

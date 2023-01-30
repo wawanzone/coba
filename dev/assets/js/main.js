@@ -1,23 +1,23 @@
-$('body').toggleClass(localStorage.mode);
+// $('body').toggleClass(localStorage.mode);
 
-function darkLight() {
-    /*DARK CLASS*/
-    if (localStorage.mode != 'dark') {
-        $('body').toggleClass('dark', true);
-        localStorage.mode = "dark";
+// function darkLight() {
+//     /*DARK CLASS*/
+//     if (localStorage.mode != 'dark') {
+//         $('body').toggleClass('dark', true);
+//         localStorage.mode = "dark";
 
-    } else {
-        $('body').toggleClass('dark', false);
-        localStorage.mode = "light";
-    }
-}
+//     } else {
+//         $('body').toggleClass('dark', false);
+//         localStorage.mode = "light";
+//     }
+// }
 
-/*Add 'checked' property to input if background == dark*/
-if ($('body').hasClass('dark')) {
-    $('#customSwitch1').prop("checked", true)
-} else {
-    $('#customSwitch1').prop("checked", false)
-}
+// /*Add 'checked' property to input if background == dark*/
+// if ($('body').hasClass('dark')) {
+//     $('#customSwitch1').prop("checked", true)
+// } else {
+//     $('#customSwitch1').prop("checked", false)
+// }
 
 $(document).ready(function() {
     // $("#customSwitch1").change(function() {
