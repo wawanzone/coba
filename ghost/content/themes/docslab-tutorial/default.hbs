@@ -46,7 +46,7 @@
 
 {{!-- body --}}
 {{{body}}}
-    <div id="modal">
+    {{!-- <div id="modal">
         <div id="slidemodal_1" class="slidemodal_contents">
             <img src="{{img_url @custom.modal_image size="large"}}" alt="" />
         </div>
@@ -71,9 +71,6 @@
                 </div>
             </div>
             </form>
-            {{!-- <div id="secondDiv" 
-                <a class="gh-portal-btn gh-portal-btn-main gh-portal-btn-primary" style="color: rgb(255, 255, 255); background-color: rgb(0, 190, 80); opacity: 1; pointer-events: auto; width: 100%;" href="">Download</a>
-            </div> --}}
             
         </div>
 
@@ -96,7 +93,7 @@
             }
         </script>
 
-    </div>
+    </div> --}}
     
 {{!-- Footer --}}
 {{> footer}}
@@ -165,7 +162,7 @@
 {{!-- ghost footer --}}
 {{ghost_foot}}
 
-<script>
+{{!-- <script>
     $(".close-fixie").on('click', function(){ 
         $("#fixie").fadeOut(193);
         $("#modal").animate({top:0, opacity:0}, 555, function() {
@@ -195,8 +192,8 @@
             },
             false
         );
-</script>
+</script> --}}
 
-<div id="fixie" class="close-fixie"></div>
+{{!-- <div id="fixie" class="close-fixie"></div> --}}
 </body>
 </html>
