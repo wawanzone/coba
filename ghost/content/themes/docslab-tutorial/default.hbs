@@ -14,9 +14,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title page=(t "Page %")}}</title>
+    <link rel="preload" as="style" href="{{asset "/css/style.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset '/css/style.css'}}" />
     <!-- CSS Files -->
-    {{> google-fonts}}
-    <link rel="stylesheet" type="text/css" href="{{asset "/css/style.css"}}" />
     <script>
         if (typeof (Storage) !== 'undefined') {
             if (localStorage.getItem('selected-theme') == 'dark') {
@@ -27,7 +27,6 @@
             }
         }
     </script>
-    {{{block "fonts_css"}}}
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{#match @custom.select_color_scheme "Auto"}} 
     <script>
@@ -195,5 +194,8 @@
 </script> --}}
 
 {{!-- <div id="fixie" class="close-fixie"></div> --}}
+    {{> google-fonts}}
+    
+    {{!-- {{{block "fonts_css"}}} --}}
 </body>
 </html>

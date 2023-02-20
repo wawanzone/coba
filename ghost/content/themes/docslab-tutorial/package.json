@@ -2,7 +2,7 @@
     "name": "docslab-tutorial",
     "description": "Docslab is a knowledge base and documentation ghost theme",
     "demo": "https://docslab.electronthemes-ghost.com",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "engines": {
         "ghost": ">=5.0.0"
     },
@@ -74,11 +74,7 @@
                 ],
                 "default": "Light"
             },
-            "fonts": {
-                "type": "select",
-                "options": ["System fonts", "Spartan + Alata", "Archivo + System fonts", "Bona Nova + Inter", "EB Garamond + Inter", "Inter", "Roboto + Lato", "Lora + System fonts", "Merriweather + Nunito", "Oswald + Roboto", "Playfair + System fonts", "Inter + Poppins", "Raleway + System fonts", "Roboto", "Inter + Space Grotesk", "Sora + Inter", "Inter + Syne", "Inter + Work Sans"],
-                "default": "Inter + Poppins"
-            },
+           
             "rtl_view": {
                 "type": "boolean",
                 "default": false
@@ -95,12 +91,6 @@
             "whatsapp_number": {
                 "type": "text"
             },
-            "modal_image": {
-                "type": "image"
-            },
-            "download_link": {
-                "type": "text"
-            },            
             "show_faq": {
                 "type": "boolean",
                 "default": false,
